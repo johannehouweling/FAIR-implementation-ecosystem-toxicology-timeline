@@ -1,6 +1,6 @@
 # FAIR-enabling resources in toxicology
 
-This repository hosts the dashboard at https://johannehouweling.github.io/fair-tox-dashboard/.
+This repository hosts the dashboard at https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/.
 It shows standards, databases, policies and tools that make toxicology data findable, accessible,
 interoperable and reusable, curated by the ELIXIR Toxicology Community together with the FAIRsharing
 Toxicology collection. The data can be downloaded from the dashboard as JSON-LD and CSV.

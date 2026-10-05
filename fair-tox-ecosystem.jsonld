@@ -100,9 +100,9 @@
    "Tool": "Software or service; FAIRsharing does not register these."
   },
   "scope": {
-   "FAIR": "Generic FAIR infrastructure, not specific to a research domain.",
+   "Generic": "Infrastructure not specific to a research domain, including FAIR resources such as the FIP.",
    "Life Sciences": "Generic life-science infrastructure that toxicology uses.",
-   "Toxicology": "Made for toxicology, including toxicology resources that build on FAIR infrastructure."
+   "Toxicology": "Made for toxicology, including toxicology instances of generic resources."
   },
   "phase": {
    "Data Generation": "Mainly used to generate, record or describe experimental toxicology data.",
@@ -115,7 +115,7 @@
    "Regulator": "Made by a regulatory agency or intergovernmental body, such as OECD, EFSA, ECHA or US EPA."
   },
   "lane": {
-   "FAIR infrastructure": "Generic FAIR resources.",
+   "Generic infrastructure": "Resources not specific to a research domain.",
    "Life Sciences infrastructure": "Generic life-science resources that toxicology uses.",
    "Data Generation": "Toxicology resources mainly used to generate and describe data.",
    "Tools & Integration": "Toxicology resources mainly used to integrate, model and analyse data.",
@@ -1383,7 +1383,7 @@
     "the-fair-cookbook"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2020",
    "dateBasis": "release",
    "dateSource": "https://doi.org/10.1038/s41597-023-02166-3",
@@ -1930,7 +1930,7 @@
     "Edelweissdata"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "subdomains": [
     "in vitro toxicology"
    ],
@@ -1947,6 +1947,7 @@
    "key": "efsa_fairmem",
    "name": "EFSA statement on the interpretation of FAIR principles for mechanistic effect models in the regulatory environmental risk assessment of pesticides",
    "alternateName": [
+    "EFSA FAIR statement",
     "EFSA FAIR statement for mechanistic effect models"
    ],
    "type": "Policy: institution",
@@ -2230,6 +2231,9 @@
    "@id": "https://doi.org/10.25504/FAIRsharing.e1124d",
    "key": "epa_integrated_risk_information",
    "name": "EPA Integrated Risk Information System",
+   "alternateName": [
+    "EPA IRIS"
+   ],
    "type": "Database: knowledgebase",
    "scope": "Toxicology",
    "phase": "Application (Regulatory Use)",
@@ -2549,7 +2553,7 @@
     "FAIR connect"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2022",
    "dateBasis": "release",
    "dateSource": "https://web.archive.org/web/20221025092955/https://fairconnect.pro/",
@@ -2566,7 +2570,7 @@
     "FAIRsharing registry"
    ],
    "type": "Database: knowledgebase and repository",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2011",
    "dateBasis": "release",
    "dateSource": "https://doi.org/10.1093/database/baw075",
@@ -2597,7 +2601,7 @@
     "FIP wizard"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
    ],
@@ -2618,7 +2622,7 @@
     "FAIR Convergence Matrix"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2019-01",
    "dateBasis": "release",
    "dateSource": "http://web.archive.org/web/20240425011817/https://www.go-fair.org/today/FAIR-matrix/",
@@ -2637,7 +2641,7 @@
     "domain specific FIPs"
    ],
    "type": "Standard: model/format",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2020",
    "dateBasis": "release",
    "dateSource": "https://web.archive.org/web/20200811221637/https://www.go-fair.org/how-to-go-fair/fair-implementation-profile/",
@@ -2689,7 +2693,7 @@
     "FUIJ"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2020-10-02",
    "dateBasis": "release",
    "dateSource": "https://doi.org/10.5281/zenodo.4063720",
@@ -2729,6 +2733,7 @@
    "key": "gd417",
    "name": "OECD Guidance Document on the Generation, Reporting and Use of Research Data for Regulatory Assessments",
    "alternateName": [
+    "OECD research data guidance",
     "OECD Guidance Document on research data"
    ],
    "type": "Policy: institution",
@@ -3198,7 +3203,7 @@
    "qualifiedRelation": [
     {
      "relation": "#oht",
-     "hadRole": "implements"
+     "hadRole": "related_to"
     }
    ]
   },
@@ -3206,6 +3211,9 @@
    "@id": "#iupac_immunotox",
    "key": "iupac_immunotox",
    "name": "IUPAC Glossary of terms used in immunotoxicology (IUPAC Recommendations 2012)",
+   "alternateName": [
+    "IUPAC immunotox glossary"
+   ],
    "type": "Standard: terminology artefact",
    "scope": "Toxicology",
    "phase": "Data Generation",
@@ -3225,6 +3233,7 @@
    "key": "iupac_toxgloss",
    "name": "IUPAC Glossary of terms used in toxicology, 2nd edition (IUPAC Recommendations 2007)",
    "alternateName": [
+    "IUPAC toxicology glossary",
     "Glossary Of Terms Used In Toxicology"
    ],
    "type": "Standard: terminology artefact",
@@ -3669,7 +3678,7 @@
     "machine-readable nanopublication"
    ],
    "type": "Standard: model/format",
-   "scope": "FAIR",
+   "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
    ],
@@ -4024,7 +4033,7 @@
     "OWL"
    ],
    "type": "Standard: model/format",
-   "scope": "FAIR",
+   "scope": "Generic",
    "subdomains": [
     "nanotoxicology"
    ],
@@ -4238,7 +4247,7 @@
     "RDF"
    ],
    "type": "Standard: model/format",
-   "scope": "FAIR",
+   "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
    ],
@@ -4259,7 +4268,7 @@
     "ELIXIR Research Data Management Kit"
    ],
    "type": "Tool",
-   "scope": "FAIR",
+   "scope": "Generic",
    "datePublished": "2021-03-31",
    "dateBasis": "release",
    "dateSource": "https://doi.org/10.5281/zenodo.5110072",
@@ -4660,7 +4669,7 @@
     "SPARQL endpoint"
    ],
    "type": "Standard: model/format",
-   "scope": "FAIR",
+   "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
    ],

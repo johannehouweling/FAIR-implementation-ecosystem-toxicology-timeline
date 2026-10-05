@@ -22,7 +22,7 @@ enm_ont,extends,cl
 enm_ont,extends,bao
 eutr_ki,related_to,biostudies
 fairaop,implements,fipwiz
-iuclid,implements,oht
+iuclid,related_to,oht
 miametox,extends,miame
 miriam,related_to,sbml
 nanoaop,extends,aopwikirdf

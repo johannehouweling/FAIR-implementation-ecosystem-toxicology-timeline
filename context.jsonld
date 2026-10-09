@@ -1,0 +1,118 @@
+{
+ "@context": {
+  "@base": "https://w3id.org/fair-tox/dataset",
+  "@vocab": "https://w3id.org/fair-tox/terms#",
+  "schema": "https://schema.org/",
+  "dcat": "http://www.w3.org/ns/dcat#",
+  "dct": "http://purl.org/dc/terms/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "pav": "http://purl.org/pav/",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "fip": "https://w3id.org/fair/fip/terms/",
+  "name": "schema:name",
+  "alternateName": {
+   "@id": "schema:alternateName",
+   "@container": "@set"
+  },
+  "description": "schema:description",
+  "url": {
+   "@id": "schema:url",
+   "@type": "@id"
+  },
+  "datePublished": "schema:datePublished",
+  "creator": "schema:creator",
+  "version": "schema:version",
+  "dateModified": "schema:dateModified",
+  "license": {
+   "@id": "schema:license",
+   "@type": "@id"
+  },
+  "creditText": "schema:creditText",
+  "isBasedOn": {
+   "@id": "schema:isBasedOn",
+   "@type": "@id"
+  },
+  "hasPart": {
+   "@id": "schema:hasPart",
+   "@container": "@set"
+  },
+  "key": "dct:identifier",
+  "type": "dct:type",
+  "subdomains": {
+   "@id": "dct:subject",
+   "@container": "@set"
+  },
+  "maintained": "schema:creativeWorkStatus",
+  "reviewedBy": "pav:curatedBy",
+  "note": "skos:editorialNote",
+  "source": "dct:source",
+  "fsrType": {
+   "@id": "rdf:type",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "stakeholders": {
+   "@container": "@set"
+  },
+  "span": {
+   "@container": "@set"
+  },
+  "dateSource": {
+   "@type": "@id"
+  },
+  "qualifiedRelation": {
+   "@id": "dcat:qualifiedRelation",
+   "@container": "@set"
+  },
+  "relation": {
+   "@id": "dct:relation",
+   "@type": "@id"
+  },
+  "hadRole": {
+   "@id": "dcat:hadRole",
+   "@type": "@vocab"
+  },
+  "fipDeclaration": {
+   "@id": "dct:hasPart",
+   "@container": "@set"
+  },
+  "question": {
+   "@id": "fip:refers-to-question",
+   "@type": "@id"
+  },
+  "considerations": "fip:considerations",
+  "declares-current-use-of": {
+   "@id": "fip:declares-current-use-of",
+   "@type": "@id"
+  },
+  "declares-planned-use-of": {
+   "@id": "fip:declares-planned-use-of",
+   "@type": "@id"
+  },
+  "declares-planned-development-of": {
+   "@id": "fip:declares-planned-development-of",
+   "@type": "@id"
+  },
+  "declares-planned-replacement-of": {
+   "@id": "fip:declares-planned-replacement-of",
+   "@type": "@id"
+  },
+  "declared-by": {
+   "@id": "fip:declared-by",
+   "@type": "@id"
+  },
+  "fsr": {
+   "@id": "skos:exactMatch",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "buildsOnFair": null,
+  "fsrCategory": null,
+  "declaredIn": null,
+  "principles": null,
+  "principle": null,
+  "sources": null,
+  "vocabularies": null,
+  "fairsharing": null
+ }
+}

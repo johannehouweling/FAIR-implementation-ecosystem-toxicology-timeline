@@ -5,6 +5,10 @@
   "schema": "https://schema.org/",
   "dcat": "http://www.w3.org/ns/dcat#",
   "dct": "http://purl.org/dc/terms/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "pav": "http://purl.org/pav/",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "fip": "https://w3id.org/fair/fip/terms/",
   "name": "schema:name",
   "alternateName": {
    "@id": "schema:alternateName",
@@ -32,7 +36,25 @@
    "@id": "schema:hasPart",
    "@container": "@set"
   },
+  "key": "dct:identifier",
+  "type": "dct:type",
   "subdomains": {
+   "@id": "dct:subject",
+   "@container": "@set"
+  },
+  "maintained": "schema:creativeWorkStatus",
+  "reviewedBy": "pav:curatedBy",
+  "note": "skos:editorialNote",
+  "source": "dct:source",
+  "fsrType": {
+   "@id": "rdf:type",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "stakeholders": {
+   "@container": "@set"
+  },
+  "span": {
    "@container": "@set"
   },
   "dateSource": {
@@ -50,34 +72,127 @@
    "@id": "dcat:hadRole",
    "@type": "@vocab"
   },
-  "sources": {
-   "@type": "@json"
+  "fipDeclaration": {
+   "@id": "dct:hasPart",
+   "@container": "@set"
   },
-  "vocabularies": {
-   "@type": "@json"
+  "question": {
+   "@id": "fip:refers-to-question",
+   "@type": "@id"
   },
-  "fairsharing": {
-   "@type": "@json"
-  }
+  "considerations": "fip:considerations",
+  "declares-current-use-of": {
+   "@id": "fip:declares-current-use-of",
+   "@type": "@id"
+  },
+  "declares-planned-use-of": {
+   "@id": "fip:declares-planned-use-of",
+   "@type": "@id"
+  },
+  "declares-planned-development-of": {
+   "@id": "fip:declares-planned-development-of",
+   "@type": "@id"
+  },
+  "declares-planned-replacement-of": {
+   "@id": "fip:declares-planned-replacement-of",
+   "@type": "@id"
+  },
+  "declared-by": {
+   "@id": "fip:declared-by",
+   "@type": "@id"
+  },
+  "fsr": {
+   "@id": "skos:exactMatch",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "buildsOnFair": null,
+  "fsrCategory": null,
+  "declaredIn": null,
+  "principles": null,
+  "principle": null,
+  "sources": null,
+  "vocabularies": null,
+  "fairsharing": null
  },
  "@id": "",
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
- "description": "FAIR-enabling resources used in toxicology (standards, databases, policies and tools), curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "0.1.0",
- "dateModified": "2026-10-05",
+ "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
+ "version": "0.2.0",
+ "dateModified": "2026-10-09",
  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
  "creator": "ELIXIR Toxicology Community",
  "creditText": "Contains information from FAIRsharing (https://fairsharing.org), licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).",
  "isBasedOn": [
-  "https://doi.org/10.25504/FAIRsharing.f60a10"
+  "https://doi.org/10.25504/FAIRsharing.f60a10",
+  "https://w3id.org/np/RAKa7vUwc8qVbktDqDSpuq7lRrrKcjPKvkB4Tn7WHvr7E/fip",
+  "https://w3id.org/np/RAQMnw2u-ZG_zVkVIzEdtYn3o4tYqyhsnOhiWaMLG01Bc#fip"
  ],
  "sources": {
   "fairsharing": {
-   "collection": "https://doi.org/10.25504/FAIRsharing.f60a10",
-   "members": 74,
-   "method": "FAIRsharing REST API",
-   "retrieved": "2026-10-05T11:50:51Z"
+   "retrieved": "2026-10-09",
+   "members": 74
+  },
+  "fip": {
+   "parcfip": {
+    "label": "PARC Toxicology",
+    "profile": "https://w3id.org/np/RAKa7vUwc8qVbktDqDSpuq7lRrrKcjPKvkB4Tn7WHvr7E/fip",
+    "nanopub": "https://w3id.org/np/RAKa7vUwc8qVbktDqDSpuq7lRrrKcjPKvkB4Tn7WHvr7E",
+    "index": "https://w3id.org/np/RATReWJWVaVcOU7UrhKTkMPuNW4P_hmuD07FyOm4UtN3U",
+    "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
+    "created": "2026-09-07T12:48:22Z",
+    "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "retrieved": "2026-10-09",
+    "declarations": 74,
+    "noChoice": [
+     "A1.2-MD",
+     "A2",
+     "S-F1-Persistency-Policy",
+     "S-F2-Metadata-Editor",
+     "S-F4-Persistency-Policy",
+     "S-FAIR-Enrichment-Service",
+     "S-FAIR-Practice",
+     "S-FAIR-Representation-Service",
+     "S-FAIR-supporting-software",
+     "S-I2-Metadata-Editor",
+     "S-I3-Metadata-Editor",
+     "S-Validation-Service",
+     "S-Web-API",
+     "S-crosswalk",
+     "S-provenance-tracking-service"
+    ],
+    "invalidated": 0,
+    "ontology": "FIP Ontology version 20260227",
+    "method": "Nanopublications read through each FIP's declaration index; validity from the admin graph of the nanopub query service (https://query.knowledgepixels.com/repo/full): not invalidated by a nanopublication signed with the same key."
+   },
+   "fairaop": {
+    "label": "Reference Adverse Outcome Pathways FIP",
+    "profile": "https://w3id.org/np/RAQMnw2u-ZG_zVkVIzEdtYn3o4tYqyhsnOhiWaMLG01Bc#fip",
+    "nanopub": "https://w3id.org/np/RAQMnw2u-ZG_zVkVIzEdtYn3o4tYqyhsnOhiWaMLG01Bc",
+    "index": "https://w3id.org/np/RA7v67Y0p-79BguV0xtwyWCCwKfX_UneHSyXNe2z1XeCc",
+    "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
+    "created": "2025-07-14T13:50:02Z",
+    "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "retrieved": "2026-10-09",
+    "declarations": 13,
+    "noChoice": [
+     "A1.2-D",
+     "A1.2-MD",
+     "A2",
+     "F2",
+     "F3",
+     "I2-D",
+     "I2-MD",
+     "I3-D",
+     "I3-MD",
+     "R1.2-D",
+     "R1.2-MD"
+    ],
+    "invalidated": 0,
+    "ontology": "FIP Ontology version 20260227",
+    "method": "Nanopublications read through each FIP's declaration index; validity from the admin graph of the nanopub query service (https://query.knowledgepixels.com/repo/full): not invalidated by a nanopublication signed with the same key."
+   }
   }
  },
  "vocabularies": {
@@ -96,18 +211,18 @@
    "Policy: funder": "Data policy of a funder.",
    "Policy: project": "Policy or guidance issued by a project.",
    "Policy: institution": "Policy or guidance issued by an institution or agency, such as OECD guidance.",
-   "Collection": "Curated collection of FAIR-enabling resources.",
+   "Collection": "Curated collection of standards, databases and policies.",
    "Tool": "Software or service; FAIRsharing does not register these."
   },
   "scope": {
    "Generic": "Infrastructure not specific to a research domain, including FAIR resources such as the FIP.",
-   "Life Sciences": "Generic life-science infrastructure that toxicology uses.",
+   "Life Sciences": "Life-science infrastructure, not specific to toxicology, that toxicology uses.",
    "Toxicology": "Made for toxicology, including toxicology instances of generic resources."
   },
   "phase": {
-   "Data Generation": "Mainly used to generate, record or describe experimental toxicology data.",
-   "Data Integration": "Mainly used to combine, curate, link, model or analyse toxicology data and knowledge.",
-   "Application (Regulatory Use)": "Mainly used to prepare, submit, assess or publish data for regulatory decisions."
+   "Data generation": "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them.",
+   "Data integration": "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models.",
+   "Regulatory assessment": "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions."
   },
   "stakeholders": {
    "Wet-lab research": "Made by experimental (wet-lab) researchers, mostly academic.",
@@ -116,10 +231,10 @@
   },
   "lane": {
    "Generic infrastructure": "Resources not specific to a research domain.",
-   "Life Sciences infrastructure": "Generic life-science resources that toxicology uses.",
-   "Data Generation": "Toxicology resources mainly used to generate and describe data.",
-   "Tools & Integration": "Toxicology resources mainly used to integrate, model and analyse data.",
-   "Application (regulatory)": "Toxicology resources mainly used in regulatory decisions."
+   "Life sciences infrastructure": "Life-science resources, not specific to toxicology, that toxicology uses.",
+   "Data generation": "Toxicology resources whose phase, the earliest they act on, is data generation.",
+   "Data integration": "Toxicology resources whose phase, the earliest they act on, is data integration.",
+   "Regulatory assessment": "Toxicology resources whose phase, the earliest they act on, is regulatory assessment."
   },
   "creatorLane": {
    "Made by wet-lab research": "Toxicology resources made by wet-lab research only.",
@@ -156,6 +271,13 @@
    "recommends": "The policy recommends the target.",
    "deprecates": "The subject replaces the target.",
    "related_to": "The resources are related without one building on the other."
+  },
+  "declaration": {
+   "declares-current-use-of": "The FIP declares that its community uses the target.",
+   "declares-planned-use-of": "The FIP declares that its community plans to use the target.",
+   "declares-planned-development-of": "The FIP declares that its community plans to develop the target.",
+   "declares-planned-replacement-of": "The FIP declares that its community plans to replace the target.",
+   "declared-by": "The FIP is declared by the target, a FAIR Implementation Community."
   }
  },
  "hasPart": [
@@ -164,8 +286,14 @@
    "key": "agritox",
    "name": "AGRITOX",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -181,6 +309,7 @@
    "description": "French database of pesticide active substances, created by INRA and now run by ANSES. It holds expert-validated data from regulatory dossiers and the literature: identity, physicochemical properties, acute toxicity, reference values (ADI, ARfD, AOEL), ecotoxicity and classification. The data are released as open files, so regulatory pesticide hazard data can be reused.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.73888a",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5629,
     "doi": "10.25504/FAIRsharing.73888a",
@@ -192,7 +321,7 @@
     "homepage": "https://www.data.gouv.fr/fr/datasets/base-de-donnees-agritox/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -203,8 +332,14 @@
     "AICIS"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -219,10 +354,11 @@
    "description": "Online database search portal of Australia's industrial chemicals regulator, which replaced NICNAS in July 2020. It gives access to the Australian Inventory of Industrial Chemicals, published human-health and environmental hazard, exposure and risk assessments (including reports inherited from NICNAS) and risk-management recommendations.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.79e002",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5642,
     "doi": "10.25504/FAIRsharing.79e002",
-    "name": "Australian Industrial Chemicals Introduction Scheme ",
+    "name": "Australian Industrial Chemicals Introduction Scheme",
     "abbreviation": "AICIS",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -231,7 +367,7 @@
     "homepage": "https://services.industrialchemicals.gov.au",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -245,8 +381,14 @@
     "FAIR assessment of nanosafety data reusability with community standards"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Assessment-Specification"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -259,7 +401,8 @@
    "creator": "Maastricht University (BiGCaT)",
    "url": "https://github.com/NSDRA/nsdra-maturity-indicators",
    "description": "These are machine-readable FAIR maturity indicators derived from twelve nanosafety minimum reporting standards. The NSDRA framework uses them to annotate nanosafety datasets and score how reusable the datasets are for specific computational risk assessment use cases.",
-   "maintained": "unknown"
+   "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#aop_ec",
@@ -269,8 +412,14 @@
     "Event Components"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -283,7 +432,8 @@
    "creator": "US EPA; EC JRC",
    "url": "https://aopwiki.org/sub_events",
    "description": "A structured way of describing each AOP Key Event as a biological process, a biological object and an action, each term taken from an existing ontology or controlled vocabulary. Implemented in the AOP-Wiki, it makes Key Events machine-readable so AOPs can be searched, compared and linked computationally.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "#aopdb",
@@ -294,8 +444,14 @@
     "US EPA AOP-DB"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -309,6 +465,7 @@
    "url": "https://aopdb.epa.gov",
    "description": "The US EPA Adverse Outcome Pathway Database (AOP-DB) links AOP information from the AOP-Wiki to public data on genes, chemicals, diseases, pathways, species orthology and ToxCast assays. It supports computational exploration of the molecular targets and biological context of AOPs; this row covers the first version, described in 2018.",
    "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#aopwiki",
@@ -326,8 +483,14 @@
     "The 2021 update of the EPA's adverse outcome pathway database"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -340,7 +503,8 @@
    "creator": "US EPA",
    "url": "https://doi.org/10.23719/1522396",
    "description": "Version 2 of the EPA AOP-DB (2021 update) added automated AOP-Wiki data pulls, tissue-, individual- and population-level gene data, semantic mapping with a SPARQL endpoint, and the first public web interface. The full database was also released as downloadable SQL files.",
-   "maintained": "unknown"
+   "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "#aopdbrdf",
@@ -350,8 +514,14 @@
     "mortensen2022"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -366,6 +536,7 @@
    "url": "https://aopdb.rdf.bigcat-bioinformatics.org/sparql",
    "description": "AOP-DB RDF is a semantic-web (RDF) version of selected AOP-DB tables, mapped to ontologies and aligned with AOP-Wiki RDF, and served through a public SPARQL endpoint. It allows federated queries that link AOP data with genes, diseases, pathways and ToxCast assays.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#aopdb",
@@ -385,8 +556,14 @@
     "jaylet2023"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -399,7 +576,8 @@
    "creator": "Universite Paris Cite / Inserm",
    "url": "https://aop-helpfinder.u-paris-sciences.fr/",
    "description": "AOP-helpFinder is a web tool with open code that text-mines PubMed abstracts. It finds where chemical stressors and biological events (molecular initiating events, key events, adverse outcomes) are mentioned together, so researchers can collect literature evidence to build and weigh adverse outcome pathways.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#aophelp_2025",
@@ -410,8 +588,14 @@
     "btaf381"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -424,7 +608,8 @@
    "creator": "Universite Paris Cite / Inserm",
    "url": "https://aop-helpfinder-v3.u-paris-sciences.fr/",
    "description": "AOP-helpFinder 3.0 is the third major version of AOP-helpFinder. It adds network views of the stressor-event and event-event (key event relationship) links found by text mining, and annotates them with data from external sources such as AOP-Wiki, KEGG, WikiPathways, Reactome, UniProt and disease-gene databases.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#aopkb",
@@ -434,8 +619,15 @@
     "AOP-KB"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -449,7 +641,17 @@
    "creator": "OECD (with US EPA, EC JRC and US Army ERDC)",
    "url": "https://aopkb.oecd.org",
    "description": "The OECD Adverse Outcome Pathway Knowledge Base (AOP-KB) is the OECD web platform that brings together tools for developing, reviewing and sharing adverse outcome pathways. The AOP-Wiki is its core module, alongside Effectopedia, AOP Xplorer and the Intermediate Effects DB. Since mid-2026 its address redirects to the AOP-Wiki.",
-   "maintained": "discontinued"
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#fairaop"
+   ],
+   "principles": [
+    "F4"
+   ],
+   "fsr": [
+    "https://w3id.org/np/RA7YayduNraHqcPIydwTnQN6JKrcEmOgpanf1SsFFIpM0#AOP-KB"
+   ]
   },
   {
    "@id": "#aopnet",
@@ -459,8 +661,14 @@
     "yarar2025"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Visualization-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -474,6 +682,7 @@
    "url": "https://aop-networkfinder.no/",
    "description": "AOP-networkFinder is a web application, also available as open code and a Docker image. It pulls content from AOP-Wiki to build, merge, annotate and visualise networks of adverse outcome pathways, and exports them to Cytoscape for further analysis.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "#aopwiki",
@@ -489,8 +698,14 @@
     "AOP Ontology"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -504,6 +719,7 @@
    "url": "https://github.com/DataSciBurgoon/aop-ontology",
    "description": "An OWL ontology for adverse outcome pathways that reuses classes from existing biomedical ontologies to describe molecular initiating events, key events and adverse outcomes in a common vocabulary. It enables computational reasoning over AOPs, and its terms are reused, for example, in the AOP-Wiki RDF.",
    "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#aopwiki",
@@ -519,8 +735,15 @@
     "AOP-wiki"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -535,6 +758,16 @@
    "url": "https://aopwiki.org",
    "description": "The AOP-Wiki is the OECD collaborative wiki for building, reviewing and publishing adverse outcome pathways. It records molecular initiating events, key events, key event relationships, stressors and the supporting evidence in a structured template. Its downloadable content is the central reference store of AOP knowledge for regulatory and computational toxicology.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#fairaop"
+   ],
+   "principles": [
+    "F4"
+   ],
+   "fsr": [
+    "http://purl.org/np/RANeiOpnxatbd9img13duWA6RPl2aKHu6fsbxezleCbUY#AOP-Wiki"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -550,8 +783,14 @@
     "AOP-Wiki RDF representation"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -565,6 +804,7 @@
    "url": "https://aopwiki.rdf.bigcat-bioinformatics.org",
    "description": "A Linked Data version of the AOP-Wiki, converted from the AOP-Wiki XML export into RDF and served through a public SPARQL endpoint. It maps AOPs, key events and stressors to external gene, protein and chemical identifiers, so AOP knowledge can be queried and combined with other resources.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#aopdbrdf",
@@ -588,8 +828,14 @@
     "APVMA-CR"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -604,9 +850,10 @@
    "description": "Listing of chemical reviews by the Australian Pesticides and Veterinary Medicines Authority: completed, ongoing and scheduled reconsiderations of registered agricultural and veterinary chemicals. Review reports document human-health, environmental, residue and worker-safety assessments and the resulting regulatory decisions.",
    "maintained": "active",
    "fairsharingRecord": "5630",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5630,
-    "name": "The Australian Pesticides and Veterinary Medicines Authority (APVMA) database of completed chemical reviews ",
+    "name": "The Australian Pesticides and Veterinary Medicines Authority (APVMA) database of completed chemical reviews",
     "abbreviation": "APVMA-CR",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -615,7 +862,7 @@
     "homepage": "https://www.apvma.gov.au/regulation/chemical-review",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -623,6 +870,9 @@
    "key": "arrayexpress",
    "name": "ArrayExpress",
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "toxicogenomics"
@@ -635,6 +885,13 @@
    "description": "Public EMBL-EBI archive for functional genomics experiments, mainly gene expression data from microarrays and high-throughput sequencing (including single-cell), annotated to MIAME and MINSEQE. Now served through BioStudies but with its own data model and Annotare submission tool, it lets toxicogenomics datasets be deposited, found and reused.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.6k0kwd",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 1845,
     "doi": "10.25504/FAIRsharing.6k0kwd",
@@ -646,7 +903,7 @@
     "homepage": "https://www.ebi.ac.uk/biostudies/arrayexpress/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -657,8 +914,16 @@
     "arraytrack"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Supporting-Software"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -672,6 +937,7 @@
    "url": "https://www.fda.gov/science-research/bioinformatics-tools/arraytracktm-hca-pca-standalone-package-powerful-data-exploring-tools",
    "description": "ArrayTrack is FDA NCTR software that combines a MIAME-supportive microarray database, local copies of public annotation libraries and analysis tools. It was used to store, analyse and interpret toxicogenomics and pharmacogenomics data, including genomic data submitted to FDA.",
    "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
@@ -688,6 +954,9 @@
     "Bioassay Ontology"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "in vitro toxicology",
@@ -701,6 +970,7 @@
    "description": "The BioAssay Ontology (BAO) is an OWL ontology that describes biological screening assays and their results, including assay format, design, detection technology, target and endpoint. It allows bioassay and high-throughput screening data (for example from PubChem) to be annotated consistently, queried and integrated.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.mye76w",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 874,
     "doi": "10.25504/FAIRsharing.mye76w",
@@ -713,7 +983,7 @@
     "homepage": "http://bioassayontology.org/bioassayontology/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -721,6 +991,9 @@
    "key": "biomodels",
    "name": "BioModels",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -733,6 +1006,7 @@
    "description": "A repository of mathematical models of biological processes taken from the literature, many of them manually curated, annotated and checked for reproducibility, mostly in SBML. Models get stable identifiers and semantic annotations, so they can be found, cited, simulated and reused, including in quantitative systems toxicology and PBK modelling.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.paz6mh",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -751,7 +1025,7 @@
     "homepage": "https://www.ebi.ac.uk/biomodels/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -759,6 +1033,9 @@
    "key": "bioschemas_chemicalsubstance",
    "name": "Bioschemas ChemicalSubstance Profile",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2018-12-07",
    "dateBasis": "release",
@@ -768,6 +1045,7 @@
    "description": "Bioschemas profile that sets out which schema.org properties (identifiers, names, composition, links to ChEBI and other ontology terms) to use when marking up web pages about chemical substances. Substance records on websites and databases then become findable by search engines and harvesters and interoperable as structured metadata.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.82f7b4",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 3584,
     "doi": "10.25504/FAIRsharing.82f7b4",
@@ -779,7 +1057,7 @@
     "homepage": "https://bioschemas.org/profiles/ChemicalSubstance/0.4-RELEASE",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -787,6 +1065,9 @@
    "key": "bioschemas_computationaltool",
    "name": "Bioschemas ComputationalTool Profile",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2019-11-26",
    "dateBasis": "release",
@@ -796,6 +1077,7 @@
    "description": "Bioschemas profile for describing software tools and services with schema.org markup: name, function, inputs and outputs, version, operating system, licence and citation, using EDAM terms as in bio.tools. It makes research software, including in silico toxicology tools, findable and comparable on the web.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.991d4e",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 3608,
     "doi": "10.25504/FAIRsharing.991d4e",
@@ -807,7 +1089,7 @@
     "homepage": "https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -815,6 +1097,9 @@
    "key": "bioschemas_computationalworkflow",
    "name": "Bioschemas ComputationalWorkflow Profile",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2019-02-08",
    "dateBasis": "release",
@@ -824,6 +1109,7 @@
    "description": "Bioschemas profile that defines schema.org metadata for computational workflows (creators, workflow language, inputs and outputs as formal parameters, licence, version), so that workflows can be described, found and cited, for example in WorkflowHub and Workflow RO-Crate. It supports FAIR sharing of analysis pipelines, including those used in toxicology.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.e457b5",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 3585,
     "doi": "10.25504/FAIRsharing.e457b5",
@@ -835,7 +1121,7 @@
     "homepage": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -843,6 +1129,9 @@
    "key": "bioschemas_dataset_profile",
    "name": "Bioschemas Dataset Profile",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2017",
    "dateBasis": "release",
@@ -852,6 +1141,7 @@
    "description": "A Bioschemas profile that sets out which schema.org Dataset properties life-science data providers should embed in their dataset web pages, graded as minimum, recommended or optional. Consistent markup lets search engines, registries and portals harvest dataset descriptions, so datasets are easier to find across repositories.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.20sbr9",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1203,
     "doi": "10.25504/FAIRsharing.20sbr9",
@@ -863,7 +1153,7 @@
     "homepage": "https://bioschemas.org/profiles/Dataset/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -871,6 +1161,9 @@
    "key": "bioschemas_molecularentity",
    "name": "Bioschemas MolecularEntity Profile",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2018-11-14",
    "dateBasis": "release",
@@ -880,6 +1173,7 @@
    "description": "A Bioschemas profile for describing chemical entities such as molecules, ions or complexes on web pages with schema.org properties (names, identifiers, InChI, InChIKey, SMILES, molecular formula). Chemical records on different sites can then be harvested and linked through shared structured metadata.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.ccaad2",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 3588,
     "doi": "10.25504/FAIRsharing.ccaad2",
@@ -891,7 +1185,7 @@
     "homepage": "https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -899,6 +1193,9 @@
    "key": "bioschemas_sample_profile",
    "name": "Bioschemas Sample Profile",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2017",
    "dateBasis": "release",
@@ -908,6 +1205,7 @@
    "description": "A Bioschemas profile with a minimal set of schema.org properties, plus Bioschemas extensions, to identify, link and describe biological samples on web pages. Biobanks and sample databases can then expose comparable sample metadata that search engines and aggregators can harvest.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.f3a3ca",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 3589,
     "doi": "10.25504/FAIRsharing.f3a3ca",
@@ -919,7 +1217,7 @@
     "homepage": "https://bioschemas.org/profiles/Sample/0.2-RELEASE-2018_11_10",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -930,6 +1228,9 @@
     "BioSD"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "toxicogenomics"
@@ -942,6 +1243,16 @@
    "description": "EMBL-EBI database that stores and curates metadata about biological samples used in assays and gives each one a stable accession. A sample can be described once and then linked to data in archives such as ENA, ArrayExpress and PRIDE, so omics data can be searched and combined across databases by sample characteristics.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.ewjdq6",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F4"
+   ],
+   "fsr": [
+    "https://fairsharing.org/10.25504/FAIRsharing.ewjdq6"
+   ],
    "fairsharing": {
     "id": 1554,
     "doi": "10.25504/FAIRsharing.ewjdq6",
@@ -954,7 +1265,7 @@
     "homepage": "https://www.ebi.ac.uk/biosamples/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -965,6 +1276,9 @@
     "BioStudies repository"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "in vitro toxicology",
@@ -978,6 +1292,13 @@
    "description": "An EMBL-EBI archive for whole biological studies. It stores study-level metadata, links to data held in other archives, and data files that have no dedicated repository. It hosts project collections, including those of toxicology projects, and now holds the ArrayExpress functional genomics data.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.mtjvme",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F1"
+   ],
    "fairsharing": {
     "id": 2507,
     "doi": "10.25504/FAIRsharing.mtjvme",
@@ -990,7 +1311,7 @@
     "homepage": "https://www.ebi.ac.uk/biostudies/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1001,8 +1322,14 @@
     "BiU"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1018,10 +1345,11 @@
    "description": "Database of the German Environment Agency on the ChemInfo platform. It collects monitoring data on biocidal active substances in water, wastewater, soil, sediment, sewage sludge and biota from Germany, Austria and Switzerland, together with approval status, physicochemical properties and CLP classification. Environmental occurrence data for biocides can be searched and exported.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.f37bb6",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 7183,
     "doi": "10.25504/FAIRsharing.f37bb6",
-    "name": "Biocides in the environment ",
+    "name": "Biocides in the environment",
     "abbreviation": "BiU",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -1029,7 +1357,7 @@
     "homepage": "https://recherche.chemikalieninfo.de/biu",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1040,8 +1368,14 @@
     "Blood Exposome DB"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -1056,6 +1390,7 @@
    "description": "Database of chemicals reported in human blood. It was built by text-mining PubMed and PubChem and merging chemical lists from metabolomics, exposure science, toxicology and nutrition. It supports exposome research and the annotation of untargeted metabolomics and exposomics data.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.68a369",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4723,
     "doi": "10.25504/FAIRsharing.68a369",
@@ -1067,7 +1402,7 @@
     "homepage": "http://bloodexposome.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1078,6 +1413,9 @@
     "CAS RN"
    ],
    "type": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "regulatory toxicology"
@@ -1090,6 +1428,7 @@
    "description": "Numeric identifier, up to ten digits in three hyphenated parts ending in a check digit, that CAS assigns to each distinct substance in its CAS REGISTRY. It is the most widely used substance identifier in chemical inventories, regulations and safety data, and links names and data across sources.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.r7Kwy7",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 381,
     "doi": "10.25504/FAIRsharing.r7Kwy7",
@@ -1101,7 +1440,7 @@
     "homepage": "https://www.cas.org/training/documentation/chemical-substances/checkdig",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1112,8 +1451,14 @@
     "CESAR"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1128,10 +1473,11 @@
    "description": "Canadian repository of risk and other regulatory assessment reports on existing substances under the Canadian Environmental Protection Act, from the Priority Substances List and the Chemicals Management Plan. Each report covers substance identity, exposure, effects and risk characterisation. Reports are reached through eChemPortal and Health Canada's chemical substances portal.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.750d23",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5631,
     "doi": "10.25504/FAIRsharing.750d23",
-    "name": "Canada’s Existing Substances Assessment Repository ",
+    "name": "Canada’s Existing Substances Assessment Repository",
     "abbreviation": "CESAR",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -1139,7 +1485,7 @@
     "homepage": "https://www.canada.ca/en/health-canada/services/chemical-substances.html",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1150,6 +1496,9 @@
     "ChEBI"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "nanotoxicology",
@@ -1163,6 +1512,16 @@
    "description": "ChEBI (Chemical Entities of Biological Interest) is a freely available dictionary and ontology of small molecular entities, classified by chemical structure and by biological or application role. Its stable identifiers, names, structures and cross-references are widely used to annotate chemicals in databases and ontologies.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.62qk8w",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "I2"
+   ],
+   "fsr": [
+    "https://w3id.org/np/RAiHZjVo32RyXg_i777br8u1oT-TW6ul20Xv5HAWszcis#ChEBI"
+   ],
    "fairsharing": {
     "id": 1036,
     "doi": "10.25504/FAIRsharing.62qk8w",
@@ -1175,7 +1534,7 @@
     "homepage": "http://www.ebi.ac.uk/chebi/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1186,6 +1545,9 @@
     "ChEMBL"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -1198,6 +1560,16 @@
    "description": "Open, manually curated database of bioactive, drug-like molecules that links chemical structures to bioactivity measurements, assays and targets, mostly extracted from the medicinal chemistry literature. Its standardised, downloadable data support in silico modelling, including of off-target and toxicity-related activities.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.m3jtpg",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "I2"
+   ],
+   "fsr": [
+    "http://purl.org/np/RAVAVosrskaZNJP2MtoEkVlNJXyuY4hB5fW2D4jOb4OvQ#ChEMBL"
+   ],
    "fairsharing": {
     "id": 1561,
     "doi": "10.25504/FAIRsharing.m3jtpg",
@@ -1210,7 +1582,7 @@
     "homepage": "https://www.ebi.ac.uk/chembl",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1218,8 +1590,14 @@
    "key": "cheminfo",
    "name": "ChemInfo",
    "type": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1235,6 +1613,7 @@
    "description": "Chemical information system run jointly by the German federal and state authorities as the successor of the GSBL substance data pool. For each substance it compiles identity, physicochemical, toxicological and ecotoxicological data, environmental occurrence, hazard and emergency-response information and the relevant legal provisions. A public subset can be searched without registration; the full data set is open to authorities and emergency services.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.b5a070",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 6260,
     "doi": "10.25504/FAIRsharing.b5a070",
@@ -1245,7 +1624,7 @@
     "homepage": "https://recherche.chemikalieninfo.de/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1256,6 +1635,9 @@
     "ChemSpider"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2007-03",
    "dateBasis": "release",
@@ -1265,6 +1647,7 @@
    "description": "Free chemical structure database, now run by the Royal Society of Chemistry. It merges compounds from hundreds of data sources into structure-based records with names, identifiers, properties and links back to the sources. It helps resolve chemical identity and locate data on a substance.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.96f3gm",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2042,
     "doi": "10.25504/FAIRsharing.96f3gm",
@@ -1277,7 +1660,7 @@
     "homepage": "http://www.chemspider.com/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1288,6 +1671,9 @@
     "Cell Ontology"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "nanotoxicology"
@@ -1300,6 +1686,7 @@
    "description": "The Cell Ontology (CL) is an OBO Foundry ontology of cell types across organisms, with definitions and links to anatomy and other ontologies. It gives standard terms for annotating the cell types used in experiments and recorded in datasets.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.j9y503",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1004,
     "doi": "10.25504/FAIRsharing.j9y503",
@@ -1312,7 +1699,7 @@
     "homepage": "https://github.com/obophenotype/cell-ontology",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1324,6 +1711,9 @@
     "FAIRsharing.ad3f2b"
    ],
    "type": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -1335,15 +1725,69 @@
    "url": "https://fairsharing.org/FAIRsharing.ad3f2b",
    "description": "A FAIRsharing collection, maintained with the COMBINE network, that groups the community standards for computational modelling in biology (e.g. SBML, CellML, SED-ML, SBGN and the COMBINE archive format) with related resources. It gives modellers one curated entry point to interoperable formats for exchanging, annotating and simulating models.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.ad3f2b"
+   "fairsharingRecord": "FAIRsharing.ad3f2b",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 3495,
+    "doi": "10.25504/FAIRsharing.ad3f2b",
+    "name": "Computational Modeling (COMBINE)",
+    "abbreviation": "ComputationalModelingCOMBINE",
+    "registry": "Collection",
+    "recordType": "collection",
+    "status": "ready",
+    "homepage": "http://co.mbine.org/",
+    "inCollection": false,
+    "associations": [
+     [
+      "collects",
+      3
+     ],
+     [
+      "collects",
+      18
+     ],
+     [
+      "collects",
+      80
+     ],
+     [
+      "collects",
+      434
+     ],
+     [
+      "collects",
+      952
+     ],
+     [
+      "collects",
+      1087
+     ],
+     [
+      "collects",
+      1149
+     ],
+     [
+      "collects",
+      1537
+     ]
+    ],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.tfj7gt",
    "key": "comptox",
    "name": "EPA CompTox Chemicals Dashboard",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1360,6 +1804,7 @@
    "description": "US EPA web application built on the curated DSSTox substance and structure database. For about a million chemicals it brings together physicochemical, fate, exposure, use, in vivo toxicity and ToxCast/Tox21 in vitro bioactivity data. Batch search, identifier mapping and downloads make these data reusable for computational toxicology and risk assessment.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.tfj7gt",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2480,
     "doi": "10.25504/FAIRsharing.tfj7gt",
@@ -1371,7 +1816,7 @@
     "homepage": "https://comptox.epa.gov/dashboard",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1383,6 +1828,9 @@
     "the-fair-cookbook"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Training-Material"
+   ],
    "scope": "Generic",
    "datePublished": "2020",
    "dateBasis": "release",
@@ -1390,7 +1838,8 @@
    "creator": "FAIRplus / ELIXIR",
    "url": "https://faircookbook.elixir-europe.org",
    "description": "An open online collection of practical recipes that show step by step how to make life-science data findable, accessible, interoperable and reusable. Topics include identifiers, metadata, vocabularies, licensing and FAIRness assessment. Domain experts write and review the recipes, and communities, including toxicology, can add their own.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.522e02",
@@ -1400,8 +1849,14 @@
     "CosIng"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1416,6 +1871,7 @@
    "description": "European Commission information database on cosmetic substances and ingredients. It gives INCI names, CAS/EC numbers, functions and regulatory status under EU cosmetics law (annex entries and restrictions back to 1976), with links to scientific committee opinions. It has no legal value, but it makes the regulatory status of an ingredient easy to find.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.522e02",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 6238,
     "doi": "10.25504/FAIRsharing.522e02",
@@ -1427,7 +1883,7 @@
     "homepage": "https://ec.europa.eu/growth/tools-databases/cosing/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1438,8 +1894,15 @@
     "CRED"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "Regulator"
@@ -1454,7 +1917,8 @@
    "creator": "Swiss Ecotox Centre; RIVM; Stockholm University",
    "url": "https://www.ecotoxcentre.ch/projects/risk-assessment/cred-criteria-for-reporting-and-evaluating-ecotoxicity-data",
    "description": "A method for evaluating the reliability (20 criteria) and relevance (13 criteria) of aquatic ecotoxicity studies, with reporting recommendations and an Excel evaluation tool. It makes study evaluations transparent and consistent, so peer-reviewed ecotoxicity data can be reused in regulatory hazard and risk assessment.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.h3tjtr",
@@ -1464,8 +1928,14 @@
     "CTD"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -1481,6 +1951,7 @@
    "description": "Public knowledgebase in which biocurators extract chemical-gene, chemical-disease, gene-disease and chemical exposure relationships from the literature. These are integrated with external data such as GO and pathways to infer chemical-gene-disease networks. It helps generate hypotheses on how environmental chemicals affect human health.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.h3tjtr",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1716,
     "doi": "10.25504/FAIRsharing.h3tjtr",
@@ -1493,7 +1964,7 @@
     "homepage": "https://ctdbase.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1501,8 +1972,15 @@
    "key": "danish_q_sar_database",
    "name": "Danish (Q)SAR Database",
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -1519,6 +1997,7 @@
    "description": "Searchable database of (Q)SAR predictions for a large inventory of chemicals. It covers physicochemical, environmental fate, ecotoxicity, ADME and human health endpoints, uses commercial, free and DTU-built models, and documents each model in QMRF format. It is used to screen and prioritise chemicals and to support classification in chemical regulation.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.bca16f",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4640,
     "doi": "10.25504/FAIRsharing.bca16f",
@@ -1530,7 +2009,7 @@
     "homepage": "https://qsar.food.dtu.dk/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1538,8 +2017,14 @@
    "key": "dc_data_explorer",
    "name": "DC Data Explorer",
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Integration-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -1553,7 +2038,8 @@
    "creator": "Douglas Connect (now Edelweiss Connect)",
    "url": "https://data.douglasconnect.com/",
    "description": "DC Data Explorer is a Douglas Connect web interface with REST APIs. It gives harmonised programmatic access to the US EPA ToxCast/Tox21 and ToxRefDB data and to the Open TG-GATEs toxicogenomics data, so users can search across these sources and pull the data into workflow tools.",
-   "maintained": "unknown"
+   "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#dixa",
@@ -1564,8 +2050,15 @@
     "diXa data warehouse"
    ],
    "type": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research",
@@ -1581,6 +2074,7 @@
    "url": "https://doi.org/10.1093/bioinformatics/btu827",
    "description": "A data infrastructure from the EU FP7 diXa project that connected a central toxicogenomics data warehouse at EMBL-EBI to a portal linking chemical, molecular and phenotype information. It offered online templates and guidelines for depositing data, plus tools for analysing them; the service is no longer online.",
    "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#tggates",
@@ -1597,6 +2091,9 @@
    "key": "drugbank",
    "name": "DrugBank",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -1609,6 +2106,7 @@
    "description": "Bioinformatics and cheminformatics knowledgebase that combines detailed drug data (chemistry, pharmacology, pharmacokinetics, toxicity) with information on drug targets, enzymes and transporters. It is free for academic use and supports drug discovery and computational studies of drug safety.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.353yat",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1844,
     "doi": "10.25504/FAIRsharing.353yat",
@@ -1620,7 +2118,7 @@
     "homepage": "http://www.drugbank.ca/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1631,6 +2129,9 @@
     "DSLD"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "exposome"
@@ -1643,6 +2144,7 @@
    "description": "Public NIH database of the full label content of dietary supplement products sold in the United States (ingredients and amounts, claims, warnings and label images) for current and historical products, searchable online and downloadable through an API. It supports research on supplement composition and exposure, including screening for potentially harmful ingredients.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.c5b513",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 6486,
     "doi": "10.25504/FAIRsharing.c5b513",
@@ -1655,7 +2157,7 @@
     "homepage": "https://dsld.od.nih.gov/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1663,8 +2165,14 @@
    "key": "ec_inventory",
    "name": "EC Inventory",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1679,6 +2187,7 @@
    "description": "Combined EU list of EINECS (substances on the market between 1971 and 1981), ELINCS (notified new substances) and the No-Longer-Polymers list, now maintained by ECHA. It assigns the EC numbers that identify substances in EU chemicals legislation and provides reference names for regulatory submissions.",
    "maintained": "active",
    "fairsharingRecord": "6245",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 6245,
     "name": "EC Inventory",
@@ -1689,7 +2198,7 @@
     "homepage": "https://echa.europa.eu/information-on-chemicals/ec-inventory",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1700,8 +2209,14 @@
     "ECHA-BPR"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1716,10 +2231,11 @@
    "description": "ECHA database of biocidal active substances, organised by active substance and product type. For each it shows approval status under the Biocidal Products Regulation, whether it is a candidate for substitution, and links to assessment reports and authorised products. It makes the outcome of EU biocide evaluations publicly accessible.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.60ef2d",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5678,
     "doi": "10.25504/FAIRsharing.60ef2d",
-    "name": " ECHA Biocidal Products Regulation",
+    "name": "ECHA Biocidal Products Regulation",
     "abbreviation": "ECHA-BPR",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -1727,7 +2243,7 @@
     "homepage": "https://echa.europa.eu/information-on-chemicals/biocidal-active-substances",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1738,8 +2254,14 @@
     "ECHA CHEM - REACH"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1754,6 +2276,7 @@
    "description": "ECHA's public chemicals database. Its first release published the non-confidential content of all REACH registration dossiers: substance identity, physicochemical, toxicological and ecotoxicological data and safe-use information. It is gradually absorbing ECHA's other public chemical data, such as the C&L Inventory.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.ab25e3",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5677,
     "doi": "10.25504/FAIRsharing.ab25e3",
@@ -1765,7 +2288,7 @@
     "homepage": "https://chem.echa.europa.eu/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1776,8 +2299,14 @@
     "ECHA-CLP"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1792,6 +2321,7 @@
    "description": "Public EU database of classification and labelling information on substances notified or registered under the CLP and REACH Regulations. It includes industry self-classifications and the harmonised classifications of CLP Annex VI. The stand-alone database opened in 2012 and has been replaced by the C&L Inventory in ECHA CHEM.",
    "maintained": "discontinued",
    "fairsharingRecord": "FAIRsharing.4782f1",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5679,
     "doi": "10.25504/FAIRsharing.4782f1",
@@ -1803,7 +2333,7 @@
     "homepage": "https://echa.europa.eu/web/guest/information-on-chemicals/cl-inventory-database",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1811,8 +2341,14 @@
    "key": "echemportal",
    "name": "OECD eChemPortal",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1827,6 +2363,7 @@
    "description": "OECD global portal that searches many national, regional and international government chemical databases at once. It returns physicochemical, fate, ecotoxicity and toxicity data, hazard and risk assessments and GHS classifications, with direct links to the source records.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.25fbf6",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#oht",
@@ -1844,7 +2381,7 @@
     "homepage": "https://www.echemportal.org/echemportal/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1855,8 +2392,15 @@
     "ECOTOX"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -1872,6 +2416,7 @@
    "description": "US EPA knowledgebase of curated single-chemical toxicity test results for aquatic organisms, terrestrial plants and wildlife, taken from the literature and coded with controlled vocabularies. Its searchable, downloadable records, linked to other chemical resources, support ecological risk assessment, water-quality criteria and model development.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.4b2234",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4704,
     "doi": "10.25504/FAIRsharing.4b2234",
@@ -1884,7 +2429,7 @@
     "homepage": "https://cfpub.epa.gov/ecotox/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1892,8 +2437,14 @@
    "key": "ectothes",
    "name": "Ecotoxicology thesaurus",
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -1908,6 +2459,7 @@
    "description": "A bilingual French-English SKOS thesaurus of about 4,700 ecotoxicology concepts, published by INIST-CNRS on the Loterre platform. It covers pollutants and their effects on ecosystems and human health, as well as organisms, places and chemical compounds. It provides controlled, linkable terms with synonyms for indexing and searching ecotoxicology literature and data.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.560f4e",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4460,
     "doi": "10.25504/FAIRsharing.560f4e",
@@ -1919,7 +2471,7 @@
     "homepage": "https://loterre.istex.fr/3WV/en/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -1930,7 +2482,17 @@
     "Edelweissdata"
    ],
    "type": "Tool",
-   "scope": "Generic",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Publishing-Service"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
+   "stakeholders": [
+    "In silico research"
+   ],
    "subdomains": [
     "in vitro toxicology"
    ],
@@ -1940,7 +2502,8 @@
    "creator": "Edelweiss Connect",
    "url": "https://edelweissdata.com/",
    "description": "A data management and publishing platform from Edelweiss Connect that ingests, annotates, harmonises and versions tabular datasets and serves them through a web interface and a query API. Its public instance hosts toxicology-related datasets, including in vitro and QSAR data.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#efsa_fairmem",
@@ -1951,8 +2514,16 @@
     "EFSA FAIR statement for mechanistic effect models"
    ],
    "type": "Policy: institution",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Interpretation"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -1968,7 +2539,8 @@
    "creator": "EFSA",
    "url": "https://doi.org/10.2903/j.efsa.2025.9741",
    "description": "This EFSA statement interprets the FAIR principles for mechanistic effect models used in the environmental risk assessment of pesticides. It covers the underlying data, the model code and the model assessment, lists supporting resources, and gives recommendations for putting the principles into practice.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#elixir_depdb",
@@ -1978,6 +2550,9 @@
     "ELIXIR deposition databases"
    ],
    "type": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2017-07",
    "dateBasis": "adoption",
@@ -1985,15 +2560,23 @@
    "creator": "ELIXIR",
    "url": "https://elixir-europe.org/platforms/data/elixir-deposition-databases",
    "description": "ELIXIR's list of recommended repositories for depositing experimental life-science data, chosen against technical-quality and governance criteria in line with the FAIR principles. It points researchers, funders and publishers to suitable archives (e.g. ENA, ArrayExpress/BioStudies, PRIDE, MetaboLights, BioModels) for publishing open data.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.r18yt0",
    "key": "enm_db",
    "name": "eNanoMapper database",
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -2008,6 +2591,7 @@
    "description": "A public database, built by Ideaconsult on its AMBIT software within the eNanoMapper project, that holds nanomaterial characterisation data together with biological and toxicological study results. Data can be uploaded via configurable spreadsheet templates, searched, and downloaded in several standard formats through a web interface and REST API.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.r18yt0",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#opentox",
@@ -2034,7 +2618,7 @@
     "homepage": "https://data.enanomapper.net/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2042,8 +2626,15 @@
    "key": "enm_ont",
    "name": "eNanoMapper ontology",
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -2058,6 +2649,7 @@
    "description": "An OWL ontology for nanomaterial safety that assembles slimmed modules from existing ontologies such as ChEBI, NPO, BAO and OBI and adds nano-specific classes. It supplies the shared vocabulary for annotating nanomaterials, their characterisation and toxicity assays in eNanoMapper-based databases.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.2gpf81",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.284e1z",
@@ -2088,7 +2680,7 @@
     "homepage": "https://github.com/enanomapper/ontologies",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2096,6 +2688,9 @@
    "key": "ensembl",
    "name": "Ensembl",
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "toxicogenomics"
@@ -2108,6 +2703,13 @@
    "description": "Genome database and browser that produces and distributes reference genome assemblies, gene and transcript annotation with stable identifiers, comparative genomics, variation and regulatory data for vertebrates and other eukaryotes, through the web, APIs and bulk downloads. Toxicology uses it to map, identify and annotate genes in omics data.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.fx0mw7",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 1867,
     "doi": "10.25504/FAIRsharing.fx0mw7",
@@ -2119,7 +2721,7 @@
     "homepage": "http://www.ensembl.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2130,6 +2732,9 @@
     "ENVO"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "exposome",
@@ -2143,6 +2748,7 @@
    "description": "An OBO Foundry ontology of environments: biomes, environmental features and systems, environmental materials and processes. Its terms annotate where organisms and samples come from, so environmental metadata can be integrated and searched across databases.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.azqskx",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 919,
     "doi": "10.25504/FAIRsharing.azqskx",
@@ -2155,7 +2761,7 @@
     "homepage": "http://environmentontology.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2163,8 +2769,14 @@
    "key": "epa_aquatic_life_benchmarks",
    "name": "EPA Aquatic Life Benchmarks",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2180,6 +2792,7 @@
    "description": "Table from EPA's Office of Pesticide Programs giving freshwater toxicity benchmarks for registered pesticides and their degradates: acute and chronic values for fish, invertebrates and plants. Each value links to the EPA risk assessment it comes from, with Office of Water criteria shown where they exist. States, tribes and others use it to interpret pesticide levels measured in water and to decide which sites to follow up.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.eca652",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5680,
     "doi": "10.25504/FAIRsharing.eca652",
@@ -2190,7 +2803,7 @@
     "homepage": "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/aquatic-life-benchmarks-and-ecological-risk#benchmarks",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2198,8 +2811,14 @@
    "key": "epa_chemview",
    "name": "EPA ChemView",
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2214,6 +2833,7 @@
    "description": "US EPA web database that brings together, per chemical, health and safety data submitted under the Toxic Substances Control Act and EPA's own assessments and regulatory actions (such as significant new use rules), with summary templates, links to source documents and export. It makes non-confidential TSCA chemical information findable and reusable.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.4a5271",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 6221,
     "doi": "10.25504/FAIRsharing.4a5271",
@@ -2224,7 +2844,7 @@
     "homepage": "https://chemview.epa.gov/chemview/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2235,8 +2855,14 @@
     "EPA IRIS"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2251,6 +2877,7 @@
    "description": "US EPA programme and database of chemical health hazard assessments. Each assessment has a peer-reviewed toxicological review and toxicity values such as oral reference doses, inhalation reference concentrations and cancer slope factors or unit risks. It gives agencies and others a consistent, citable source of human-health toxicity values for risk assessment.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.e1124d",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5681,
     "doi": "10.25504/FAIRsharing.e1124d",
@@ -2261,7 +2888,7 @@
     "homepage": "https://www.epa.gov/iris",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2269,8 +2896,15 @@
    "key": "epa_substance_registry_services",
    "name": "EPA Substance Registry Services",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2285,6 +2919,7 @@
    "description": "EPA's central registry of the chemicals, biological organisms and other substances that EPA tracks or regulates. Each substance gets an EPA identifier with its names, synonyms and CAS number, and links to the EPA programmes, lists and regulations that cover it, so substances are identified the same way across EPA data systems.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.d4074e",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5684,
     "doi": "10.25504/FAIRsharing.d4074e",
@@ -2295,7 +2930,7 @@
     "homepage": "https://cdxapps.epa.gov/oms-substance-registry-services/search",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2306,8 +2941,14 @@
     "EpiCrDB"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -2324,6 +2965,7 @@
    "description": "Small University of Cincinnati web portal giving FAIR access to epigenomics datasets (ChIP-seq, ATAC-seq, MNase-seq, FAIRE) on how hexavalent chromium disturbs chromatin organisation. It adds curated chemical, cell, antibody and treatment metadata, with links to GEO, BioProject and PubMed.",
    "maintained": "discontinued",
    "fairsharingRecord": "2973",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2973,
     "name": "Chromium Epigenomics Toxicology",
@@ -2335,7 +2977,7 @@
     "homepage": "http://eh4.uc.edu/chromium/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2347,8 +2989,14 @@
     "eTRANSAFE: Building a sustainable framework to share reproducible drug safety knowledge with the public domain"
    ],
    "type": "Policy: project",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -2362,7 +3010,8 @@
    "creator": "eTRANSAFE consortium (IMI2)",
    "url": "https://doi.org/10.12688/f1000research.74024.1",
    "description": "Guidelines from the IMI2 eTRANSAFE project on research reproducibility in drug safety, made up of FAIR data-sharing guidelines and guidelines for verifying predictive models. They describe how public and proprietary preclinical and clinical safety data and models should be managed and shared so results can be reproduced and reused.",
-   "maintained": "discontinued"
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.b5c52c",
@@ -2372,8 +3021,14 @@
     "EUON"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2389,6 +3044,7 @@
    "description": "Observatory website hosted by ECHA that gives neutral public information, in all EU languages, on nanomaterials on the EU market: their uses, safety, regulation and research. It links to searchable nanomaterial data such as registered nanoforms and related databases and studies.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.b5c52c",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2618,
     "doi": "10.25504/FAIRsharing.b5c52c",
@@ -2401,7 +3057,7 @@
     "homepage": "https://euon.echa.europa.eu/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2414,8 +3070,15 @@
     "modular knowledge infrastructure"
    ],
    "type": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -2430,6 +3093,7 @@
    "url": "https://doi.org/10.1016/j.tiv.2024.105903",
    "description": "The data and knowledge management infrastructure of the EU-ToxRisk project. It combines a common data and metadata format, a methods database documenting test protocols, data archiving, an API for access to individual data points, analysis notebooks and a knowledge portal. It was built to make in vitro new approach method data from many laboratories documented, shareable and reusable for risk assessment.",
    "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.mtjvme",
@@ -2445,8 +3109,14 @@
     "ExO"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -2462,6 +3132,7 @@
    "description": "An exposure-science ontology built on four core concepts: exposure stressor, exposure receptor, exposure event and exposure outcome. It was developed with the Comparative Toxicogenomics Database and gives shared terms for capturing exposure data and linking them to toxicology, epidemiology and health data.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.6hna78",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 512,
     "doi": "10.25504/FAIRsharing.6hna78",
@@ -2474,7 +3145,7 @@
     "homepage": "https://github.com/CTDbase/exposure-ontology",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2482,8 +3153,15 @@
    "key": "expexplorer",
    "name": "Exposome Explorer",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -2499,6 +3177,7 @@
    "description": "Manually curated IARC database of biomarkers of exposure to dietary and environmental risk factors. It records measured concentrations in human biospecimens, the study populations and analytical methods, correlations with external exposure measures, and reproducibility over time. Researchers use it to choose and compare exposure biomarkers for exposome and epidemiological studies.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.fbbcf8",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4722,
     "doi": "10.25504/FAIRsharing.fbbcf8",
@@ -2509,7 +3188,7 @@
     "homepage": "http://exposome-explorer.iarc.fr/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2521,8 +3200,14 @@
     "aopfip"
    ],
    "type": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Reference-FAIR-Implementation-Profile"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -2538,12 +3223,55 @@
    "description": "This is the reference FAIR Implementation Profile for adverse outcome pathways. It records which FAIR-enabling resources (identifiers, vocabularies, formats, repositories, licences) the FAIR-AOPs community recommends for each FAIR principle, published as machine-readable nanopublications through the FIP Wizard.",
    "maintained": "active",
    "buildsOnFair": true,
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#fipwiz",
      "hadRole": "implements"
     }
+   ],
+   "declared-by": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
+   "fipDeclaration": [
+    {
+     "@id": "https://w3id.org/np/RAmpd6FeQ9bWFwWTyJagvCC6jXZSaevobkuLFCruZggYM#declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "#aopkb",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAaRmioQIZJc3LktQyIldg-uFgtc2JHS5Qp0mgrb5-kVQ#declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "#aopwiki",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAkgio7XcREYKglRWF-5v2T1CeEu_NgjGgLjsy-TA0z8o#declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "#aopwiki",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    }
    ]
+  },
+  {
+   "@id": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
+   "key": "fairaop_cluster",
+   "name": "FAIR AOP Cluster",
+   "type": "Policy: society",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Implementation-Community"
+   ],
+   "scope": "Toxicology",
+   "subdomains": [
+    "AOP-based mechanistic knowledge"
+   ],
+   "datePublished": "2023-01-30",
+   "dateSource": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk",
+   "url": "https://forum.aopwiki.org/showthread.php?tid=197",
+   "description": "Community that implements the FAIR principles for adverse outcome pathways. It was initiated within the CIAO project and involves the GO FAIR Foundation, the Joint Research Centre of the European Commission, the US Environmental Protection Agency, research and non-profit institutes, and companies.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#fairconnect",
@@ -2553,6 +3281,9 @@
     "FAIR connect"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Generic",
    "datePublished": "2022",
    "dateBasis": "release",
@@ -2560,7 +3291,8 @@
    "creator": "GO FAIR Foundation and IOS Press (now Sage), with CODATA, DTL and Health-RI",
    "url": "https://fairconnect.pro",
    "description": "An open-access platform for FAIR data stewardship where FAIR-supporting resources, FAIR Implementation Profiles and community good practices are published, searched and discussed. It links the human-readable descriptions in the FAIR Connect journal to their machine-readable nanopublications and offers a search engine and dashboard over them.",
-   "maintained": "unknown"
+   "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.2abjs5",
@@ -2570,6 +3302,9 @@
     "FAIRsharing registry"
    ],
    "type": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Generic",
    "datePublished": "2011",
    "dateBasis": "release",
@@ -2579,6 +3314,16 @@
    "description": "A curated registry covering all disciplines that lists data and metadata standards, databases and repositories, data policies and collections. The records link to each other and each carries a DOI. It helps researchers, publishers and funders find, choose and cite suitable standards and repositories, and it gives FAIR assessment tools machine-readable descriptions of these resources.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.2abjs5",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F4"
+   ],
+   "fsr": [
+    "https://w3id.org/np/RAqEeg0TsBbCE6tdp3xdZifswbiUEOh8psfJ8LoD5zrDc#FS"
+   ],
    "fairsharing": {
     "id": 2521,
     "doi": "10.25504/FAIRsharing.2abjs5",
@@ -2590,7 +3335,7 @@
     "homepage": "https://fairsharing.org",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2601,6 +3346,9 @@
     "FIP wizard"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Editor"
+   ],
    "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -2611,7 +3359,8 @@
    "creator": "GO FAIR Foundation / Data Stewardship Wizard team (CTU Prague)",
    "url": "https://fip.fair-wizard.com",
    "description": "A web application built on the Data Stewardship Wizard that guides a community through the FIP questionnaire to declare its FAIR implementation choices for each principle. It publishes the resulting FAIR Implementation Profiles, and any newly declared FAIR-enabling resources, as machine-actionable nanopublications.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#fipmatrix",
@@ -2622,6 +3371,9 @@
     "FAIR Convergence Matrix"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Editor"
+   ],
    "scope": "Generic",
    "datePublished": "2019-01",
    "dateBasis": "release",
@@ -2629,7 +3381,8 @@
    "creator": "GO FAIR",
    "url": "https://doi.org/10.1162/dint_a_00038",
    "description": "The GO FAIR FAIR Convergence Matrix: an online questionnaire platform in which communities of practice record, principle by principle, the standards, vocabularies and services they use to implement FAIR. The answers form their FAIR Implementation Profiles. Combining these choices shows where communities converge, so others can reuse proven FAIR implementation options.",
-   "maintained": "discontinued"
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#fipwiz",
@@ -2641,6 +3394,9 @@
     "domain specific FIPs"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Implementation-Profile"
+   ],
    "scope": "Generic",
    "datePublished": "2020",
    "dateBasis": "release",
@@ -2648,15 +3404,22 @@
    "creator": "GO FAIR Foundation",
    "url": "https://www.go-fair.org/how-to-go-fair/fair-implementation-profile/",
    "description": "A FAIR Implementation Profile lists, principle by principle, the FAIR-enabling resources (standards, vocabularies, identifier schemes, repositories, licences) that a community of practice has chosen. FIPs are published as machine-actionable nanopublications, so communities can document, compare and reuse each other's choices and move towards interoperable solutions.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.c7bb32",
    "key": "food_and_feed_information_portal",
    "name": "Food and Feed Information Portal Database",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2671,6 +3434,7 @@
    "description": "European Commission portal that brings together EU databases on authorised food and feed substances and products. It covers food additives, enzymes, flavourings and smoke flavourings, feed additives, food contact materials, novel foods, GMOs and health claims, with their authorisation status and conditions of use.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.c7bb32",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 7182,
     "doi": "10.25504/FAIRsharing.c7bb32",
@@ -2681,7 +3445,7 @@
     "homepage": "https://ec.europa.eu/food/food-feed-portal/screen/home",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2693,6 +3457,9 @@
     "FUIJ"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Validation-Service"
+   ],
    "scope": "Generic",
    "datePublished": "2020-10-02",
    "dateBasis": "release",
@@ -2700,7 +3467,8 @@
    "creator": "PANGAEA (FAIRsFAIR)",
    "url": "https://www.f-uji.net",
    "description": "An open-source web service and API that automatically assesses how FAIR a published dataset is, starting from its persistent identifier and applying the FAIRsFAIR data object assessment metrics. It reports scores and test results for each FAIR principle, which repositories and data producers can use to improve their metadata.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#gd211",
@@ -2711,8 +3479,15 @@
     "GD 211"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2726,7 +3501,8 @@
    "creator": "OECD",
    "url": "https://www.oecd.org/en/publications/guidance-document-for-describing-non-guideline-in-vitro-test-methods_9789264274730-en.html",
    "description": "OECD guidance with a harmonised template for describing non-guideline in vitro test methods, covering the test system, procedure, data interpretation and performance. It makes method metadata complete and consistent, so regulators can judge whether data from such methods can be used in assessments.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "#gd417",
@@ -2737,8 +3513,15 @@
     "OECD Guidance Document on research data"
    ],
    "type": "Policy: institution",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2751,7 +3534,8 @@
    "creator": "OECD",
    "url": "https://www.oecd.org/en/publications/guidance-document-on-the-generation-reporting-and-use-of-research-data-for-regulatory-assessments_8d49ec1d-en.html",
    "description": "OECD guidance on how research data, for example from academic studies that do not follow test guidelines, should be generated, reported and evaluated so they can be used in regulatory chemical assessments. It sets expectations for documentation and data availability that make such data reusable by regulators.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.5hc8vt",
@@ -2761,6 +3545,9 @@
     "GEO"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "toxicogenomics"
@@ -2772,7 +3559,29 @@
    "url": "https://www.ncbi.nlm.nih.gov/geo/",
    "description": "NCBI's public archive for high-throughput functional genomics data, mostly microarray and sequencing-based gene expression studies. It stores raw and processed data with MIAME-oriented descriptions under stable accessions, so toxicogenomics datasets can be retrieved and reanalysed.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.5hc8vt"
+   "fairsharingRecord": "FAIRsharing.5hc8vt",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F1",
+    "F4"
+   ],
+   "fairsharing": {
+    "id": 1975,
+    "doi": "10.25504/FAIRsharing.5hc8vt",
+    "name": "Gene Expression Omnibus",
+    "abbreviation": "GEO",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "yearCreation": 2002,
+    "homepage": "https://www.ncbi.nlm.nih.gov/geo/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.c8f1cd",
@@ -2782,8 +3591,14 @@
     "GHS-J"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2798,6 +3613,7 @@
    "description": "NITE's consolidated database of the Japanese Government's GHS hazard classifications. For each substance it gives only the latest classification, with hazard categories, label elements and the rationale, as web pages and downloadable Excel lists in Japanese and English. It supports GHS labels and safety data sheets and the reuse of authoritative hazard classifications.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.c8f1cd",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5636,
     "doi": "10.25504/FAIRsharing.c8f1cd",
@@ -2810,7 +3626,7 @@
     "homepage": "https://www.chem-info.nite.go.jp/chem/english/ghs/ghs_nite_download_e.html",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2821,6 +3637,9 @@
     "Gene Ontology terms"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -2832,7 +3651,28 @@
    "url": "https://geneontology.org",
    "description": "The Gene Ontology (GO) is a structured vocabulary, independent of species, of molecular functions, biological processes and cellular components, used to annotate genes and gene products. It enables consistent functional annotation and enrichment analysis across organisms and databases.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.6xq0ee"
+   "fairsharingRecord": "FAIRsharing.6xq0ee",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "I2"
+   ],
+   "fairsharing": {
+    "id": 1417,
+    "doi": "10.25504/FAIRsharing.6xq0ee",
+    "name": "Gene Ontology",
+    "abbreviation": "GO",
+    "registry": "Standard",
+    "recordType": "terminology_artefact",
+    "status": "ready",
+    "yearCreation": 1998,
+    "homepage": "http://www.geneontology.org",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.amcv1e",
@@ -2843,6 +3683,9 @@
     "HUGO Gene Nomenclature Committee"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -2854,7 +3697,22 @@
    "url": "https://www.genenames.org",
    "description": "The approved symbols, names and stable identifiers that the HUGO Gene Nomenclature Committee assigns to human genes, served through genenames.org. They give each gene one unambiguous label across publications and databases, which is needed to link gene-level toxicology knowledge, such as AOP key events, to other resources.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.amcv1e"
+   "fairsharingRecord": "FAIRsharing.amcv1e",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 741,
+    "doi": "10.25504/FAIRsharing.amcv1e",
+    "name": "HGNC Gene Symbols, Gene Names and IDs",
+    "abbreviation": "HGNC",
+    "registry": "Standard",
+    "recordType": "terminology_artefact",
+    "status": "ready",
+    "yearCreation": 1979,
+    "homepage": "https://www.genenames.org/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.d6e8fa",
@@ -2864,8 +3722,14 @@
     "ICSCs"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2880,10 +3744,11 @@
    "description": "Collection of standardised, peer-reviewed data sheets on chemicals, written in standard phrases. Each card gives identity, physical and chemical properties, health and environmental hazards, exposure limits, classification and protective measures; more than 1,700 cards exist in many languages. They give workplaces concise hazard information and can be searched in the ILO ICSC database.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.d6e8fa",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5632,
     "doi": "10.25504/FAIRsharing.d6e8fa",
-    "name": "ILO-WHO International Chemical Safety Cards ",
+    "name": "ILO-WHO International Chemical Safety Cards",
     "abbreviation": "ICSCs",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -2891,7 +3756,7 @@
     "homepage": "https://www.ilo.org/resource/ilo-who-international-chemical-safety-cards-icscs",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2902,6 +3767,9 @@
     "Identifiers.org resolvable identifiers"
    ],
    "type": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -2913,7 +3781,21 @@
    "url": "https://identifiers.org",
    "description": "Identifiers.org is an EMBL-EBI registry and resolver that gives life-science data collections a namespace prefix and resolves compact identifiers (prefix:accession) and identifiers.org URIs to the matching data record. It makes references to data stable, globally unique and resolvable, which supports the annotation of models and datasets.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.2b0d92"
+   "fairsharingRecord": "FAIRsharing.2b0d92",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 5046,
+    "doi": "10.25504/FAIRsharing.2b0d92",
+    "name": "Identifiers.org namespace",
+    "registry": "Standard",
+    "recordType": "identifier_schema",
+    "status": "ready",
+    "yearCreation": 2012,
+    "homepage": "https://docs.identifiers.org/pages/identification_scheme.html",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.801285",
@@ -2923,8 +3805,14 @@
     "IGS"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -2939,6 +3827,7 @@
    "description": "Public substance information system of the North Rhine-Westphalia environment agency. For each chemical or microbiological substance it compiles regulatory information from German, EU, Swiss, US and other legislation, together with physical-chemical, toxicological and emergency-response data. The public, authorities and emergency services use it to look up the legal status and hazards of substances.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.801285",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5654,
     "doi": "10.25504/FAIRsharing.801285",
@@ -2951,7 +3840,7 @@
     "homepage": "https://igsvtu.lanuv.nrw.de/en/home/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -2963,6 +3852,9 @@
     "International Chemical Identifier"
    ],
    "type": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2005-04",
    "dateBasis": "release",
@@ -2971,7 +3863,31 @@
    "url": "https://www.inchi-trust.org",
    "description": "The IUPAC International Chemical Identifier (InChI) is an open algorithm and text string that encodes a chemical structure in a canonical, layered form; the hashed InChIKey is a fixed-length version for searching. It gives chemical substances a unique, machine-readable identifier, so chemical records can be linked and deduplicated across databases.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.ddk9t9"
+   "fairsharingRecord": "FAIRsharing.ddk9t9",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F1"
+   ],
+   "fsr": [
+    "http://purl.org/np/RAp2h5QufBE4kWgqbhwyajGHzvTN-foKe14pQYypDQKWk#InChI"
+   ],
+   "fairsharing": {
+    "id": 1477,
+    "doi": "10.25504/FAIRsharing.ddk9t9",
+    "name": "IUPAC International Chemical Identifier",
+    "abbreviation": "InChI",
+    "registry": "Standard",
+    "recordType": "identifier_schema",
+    "status": "ready",
+    "yearCreation": 2005,
+    "homepage": "https://www.inchi-trust.org/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.9gqfpm",
@@ -2981,8 +3897,14 @@
     "INHAND"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research"
    ],
@@ -2997,6 +3919,7 @@
    "description": "An internationally harmonised nomenclature, with diagnostic criteria, for proliferative and non-proliferative lesions in laboratory animals. The toxicologic pathology societies publish it one organ system at a time, and it is maintained on the goRENI platform. It standardises how histopathology findings in non-clinical safety studies are recorded and supports the controlled terminology used for regulatory data exchange (SEND).",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.9gqfpm",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 392,
     "doi": "10.25504/FAIRsharing.9gqfpm",
@@ -3009,7 +3932,7 @@
     "homepage": "http://www.goreni.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3020,8 +3943,15 @@
     "INTOB"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Editor"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -3036,7 +3966,8 @@
    "creator": "UFZ Helmholtz Centre for Environmental Research (marketed by GREENBAY Software GmbH)",
    "url": "https://intob.app",
    "description": "INTOB is a cloud-based data management application with an integrated database and a controlled vocabulary of effects. It records phenotypic observations and metadata from organism-level toxicity tests, mainly the zebrafish embryo acute toxicity test, so that results can be compared and reanalysed across studies.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.667115",
@@ -3046,8 +3977,16 @@
     "IPCHEM"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3063,6 +4002,7 @@
    "description": "European Commission platform, hosted by the JRC, for finding and accessing chemical monitoring data collections in four modules: environment, human biomonitoring, food and feed, and products and indoor air. Data come from EU bodies, Member States, international organisations and research projects. It harmonises and quality-checks occurrence data and offers one access point for exposure and risk assessment.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.667115",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5633,
     "doi": "10.25504/FAIRsharing.667115",
@@ -3074,7 +4014,7 @@
     "homepage": "https://ipchem.jrc.ec.europa.eu/#",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3085,8 +4025,14 @@
     "IPCS INCHEM"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3101,6 +4047,7 @@
    "description": "Free portal from WHO's International Programme on Chemical Safety and the Canadian Centre for Occupational Health and Safety. It gives searchable full-text access to internationally peer-reviewed chemical safety documents, including EHC monographs, CICADs, JECFA and JMPR evaluations, IARC summaries, ICSCs and poisons information monographs.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.fc4807",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5641,
     "doi": "10.25504/FAIRsharing.fc4807",
@@ -3112,7 +4059,7 @@
     "homepage": "https://www.inchem.org/#/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3123,6 +4070,9 @@
     "ISA JSON"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "in vitro toxicology"
@@ -3134,7 +4084,22 @@
    "url": "https://isa-specs.readthedocs.io/en/latest/isajson.html",
    "description": "ISA-JSON is the JSON serialisation of the ISA (Investigation-Study-Assay) metadata model, defined by JSON schemas and implemented in the ISA-API. It records study design, sample provenance, protocols and data files in machine-actionable form, so metadata can be validated, converted and submitted to repositories.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.yhLgTV"
+   "fairsharingRecord": "FAIRsharing.yhLgTV",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 1501,
+    "doi": "10.25504/FAIRsharing.yhLgTV",
+    "name": "Investigation Study Assay JSON",
+    "abbreviation": "ISA-JSON",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2017,
+    "homepage": "https://isa-specs.readthedocs.io/en/latest/isajson.html",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.53gp75",
@@ -3147,6 +4112,9 @@
     "ISA-TAB"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "in vitro toxicology",
@@ -3162,6 +4130,13 @@
    "description": "The ISA framework is a general Investigation-Study-Assay metadata model, with ISA-Tab as its tab-delimited format and a set of supporting tools, for describing multi-omics and other life-science experiments. It records study design, sample characteristics, protocols and data files, so experimental metadata can be reported consistently, validated and reused.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.53gp75",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F2"
+   ],
    "fairsharing": {
     "id": 1497,
     "doi": "10.25504/FAIRsharing.53gp75",
@@ -3174,7 +4149,7 @@
     "homepage": "https://isa-specs.readthedocs.io/en/latest/isatab.html",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3185,8 +4160,14 @@
     "IUCLID"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Editor"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3200,6 +4181,7 @@
    "url": "https://iuclid6.echa.europa.eu",
    "description": "IUCLID is free software for recording, storing, maintaining and exchanging data on the intrinsic and hazard properties of chemical substances. It implements the OECD Harmonised Templates and is the required format for dossiers under REACH, the Biocidal Products Regulation and other regulatory programmes.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "#oht",
@@ -3215,8 +4197,14 @@
     "IUPAC immunotox glossary"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research"
    ],
@@ -3226,7 +4214,8 @@
    "creator": "IUPAC",
    "url": "https://doi.org/10.1351/pac-rec-11-06-03",
    "description": "An IUPAC Recommendation that gives agreed definitions, with explanatory notes, for terms used in immunotoxicology. It supports consistent terminology when immunotoxicity data are reported and interpreted.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "#iupac_toxgloss",
@@ -3237,8 +4226,16 @@
     "Glossary Of Terms Used In Toxicology"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Wet-lab research"
    ],
@@ -3248,7 +4245,8 @@
    "creator": "IUPAC",
    "url": "https://doi.org/10.1351/pac200779071153",
    "description": "The second edition of IUPAC's glossary of toxicology, giving recommended definitions for terms used in toxicology and chemical risk assessment. It serves as a common reference vocabulary for consistent use of toxicological terms in data and publications.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.39044c",
@@ -3258,8 +4256,14 @@
     "J-CHECK"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3275,6 +4279,7 @@
    "description": "Japanese government database on substances covered by the Chemical Substances Control Law (CSCL). It gives the official substance lists and classes; test results on biodegradation, bioaccumulation, ecotoxicity and human toxicity from the existing-chemicals survey and the Japan Challenge Program; and risk assessment outcomes, in Japanese and English. It is linked to the OECD eChemPortal.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.39044c",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5640,
     "doi": "10.25504/FAIRsharing.39044c",
@@ -3287,7 +4292,7 @@
     "homepage": "https://www.nite.go.jp/chem/jcheck/top.action?request_locale=en",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3298,8 +4303,14 @@
     "JECDB"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3314,10 +4325,11 @@
    "description": "Japanese database of toxicity test reports on existing chemicals tested in Japan's safety programme and in the OECD HPV programme, covering acute, repeated-dose, reproductive and developmental, genotoxicity and other tests. It gives English summaries, full reports in Japanese and IUCLID export files.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.3b78e1",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5634,
     "doi": "10.25504/FAIRsharing.3b78e1",
-    "name": "Japan Existing Chemical Database ",
+    "name": "Japan Existing Chemical Database",
     "abbreviation": "JECDB",
     "registry": "Database",
     "recordType": "knowledgebase",
@@ -3326,7 +4338,7 @@
     "homepage": "https://dra4.nihs.go.jp/mhlw_data/jsp/SearchPageENG.jsp",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3337,6 +4349,9 @@
     "MARS"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Publishing-Service"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "in vitro toxicology",
@@ -3348,13 +4363,17 @@
    "creator": "ELIXIR (BioHackathon Europe; ELIXIR Data Platform)",
    "url": "https://elixir-europe.github.io/MARS/",
    "description": "MARS (Multi-omics Adapter for Repository Submissions) is an ELIXIR framework, with a command-line tool and repository adapters, for submitting a multi-omics study described in ISA-JSON to several public repositories (BioSamples, ENA, MetaboLights) in one go. It aims to keep metadata and accession numbers consistent across those repositories.",
-   "maintained": "in development"
+   "maintained": "in development",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.hxvt6c",
    "key": "mdl_molfile_format",
    "name": "MDL Molfile Format",
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -3367,6 +4386,7 @@
    "description": "A plain-text chemical file format from the CTfile family first published by MDL. It stores a molecule's atoms, bonds and coordinates as a connection table with optional property blocks (V2000 and V3000). Almost all cheminformatics software reads it, so it is a standard way to exchange structures, for example as input to QSAR and read-across tools.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.hxvt6c",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1480,
     "doi": "10.25504/FAIRsharing.hxvt6c",
@@ -3378,7 +4398,7 @@
     "homepage": "https://discover.3ds.com/sites/default/files/2020-08/biovia_ctfileformats_2020.pdf",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3390,6 +4410,9 @@
     "MIAMI"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "toxicogenomics"
@@ -3402,6 +4425,7 @@
    "description": "MIAME is a reporting guideline that lists the minimum information needed to interpret and reproduce a microarray experiment: raw and processed data, sample annotation, experimental design, array design and protocols. It underlies the transcriptomics submission requirements of repositories such as GEO and ArrayExpress and of many journals.",
    "maintained": "discontinued",
    "fairsharingRecord": "FAIRsharing.32b10v",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 96,
     "doi": "10.25504/FAIRsharing.32b10v",
@@ -3414,7 +4438,7 @@
     "homepage": "http://www.fged.org/projects/miame/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3425,8 +4449,14 @@
     "MIAME/Tox"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -3442,6 +4472,7 @@
    "description": "An extension of MIAME that lists what to report with array-based toxicogenomics experiments, adding toxicology study design, treatments and conventional toxicity endpoints to the microarray description. It was meant to make toxicogenomics data comparable and ready for deposition in ArrayExpress (via Tox-MIAMExpress) and CEBS. It is no longer maintained.",
    "maintained": "discontinued",
    "fairsharingRecord": "FAIRsharing.zrmjr7",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
@@ -3460,7 +4491,7 @@
     "homepage": "http://mibbi.sourceforge.net/projects/MIAME-Tox.shtml",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3471,8 +4502,14 @@
     "MIATE"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research"
    ],
@@ -3487,6 +4524,7 @@
    "description": "A community minimum-information checklist (MIATE/invivo) for the metadata of in vivo animal toxicology studies. It comes with recommended ontologies and templates for CEDAR, GEO, ISA and the Single Cell Portal. Labs can record study design and conditions in a standard form, so animal toxicology and toxicogenomics data can be found and reused.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.wYScsE",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1111,
     "doi": "10.25504/FAIRsharing.wYScsE",
@@ -3499,7 +4537,7 @@
     "homepage": "https://github.com/zacharewskilab/MIATE",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3510,6 +4548,9 @@
     "MIRIAM"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -3522,6 +4563,7 @@
    "description": "MIRIAM is a set of minimum-information guidelines for encoding and annotating quantitative biochemical models. It requires models to be reproducible, attributed and annotated with references to external database resources, which encourages reusable, well-documented computational models (for example in BioModels).",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.ap169a",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -3540,7 +4582,7 @@
     "homepage": "https://pubmed.ncbi.nlm.nih.gov/16333295/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3551,8 +4593,14 @@
     "MIT Nanosafety"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -3568,6 +4616,7 @@
    "description": "A modular minimum information table that sets out what to report with experimental results on the biological effects of engineered nanomaterials. Its six modules are general information, material, biological model, exposure, endpoint read-out, and analysis and statistics. It supports structured, harmonised documentation of nanosafety studies so the data can be reused.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.e2b341",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5228,
     "doi": "10.25504/FAIRsharing.e2b341",
@@ -3580,7 +4629,7 @@
     "homepage": "https://doi.org/10.1186/s12989-021-00442-x",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3593,8 +4642,14 @@
     "From papers to RDF-based integration of physicochemical data and adverse outcome pathways for nanomaterials"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -3610,6 +4665,7 @@
    "url": "https://nanosafety.rdf.bigcat-bioinformatics.org",
    "description": "An RDF knowledge graph that combines literature-curated physicochemical data on nanomaterials with AOP information from the AOP-Wiki, using ontology terms and European Registry of Materials identifiers. A public SPARQL endpoint supports federated queries that relate nanomaterial properties to molecular initiating events and key events.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#aopwikirdf",
@@ -3630,8 +4686,15 @@
     "NanoCommons datasets"
    ],
    "type": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -3646,6 +4709,7 @@
    "description": "A knowledge base built in the H2020 NanoCommons project on Biomax's BioXM platform. It brings together nanomaterial characterisation, exposure and (eco)toxicity data from projects and the literature, and offers harmonised, ontology-annotated access to these nanosafety data with analysis tools.",
    "maintained": "unknown",
    "fairsharingRecord": "FAIRsharing.9e23f2",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.2gpf81",
@@ -3667,7 +4731,7 @@
     "homepage": "https://www.nanocommons.eu/nanocommons-knowledge-base/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3678,6 +4742,9 @@
     "machine-readable nanopublication"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Provenance-model"
+   ],
    "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -3689,7 +4756,22 @@
    "url": "https://nanopub.net",
    "description": "A nanopublication is the smallest publishable unit of information: a single assertion in RDF, packaged with named graphs that hold its provenance and publication metadata. Nanopublications get resolvable, verifiable identifiers and are spread over a decentralised server network, so machines can find, cite and reuse individual statements such as AOP or FIP declarations.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.a6dcff"
+   "fairsharingRecord": "FAIRsharing.a6dcff",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 4396,
+    "doi": "10.25504/FAIRsharing.a6dcff",
+    "name": "Nanopublication Schema",
+    "abbreviation": "Nanopub",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2015,
+    "homepage": "https://nanopub.net/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.9ATgeT",
@@ -3699,8 +4781,15 @@
     "NORMAN SusDat"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research"
@@ -3717,6 +4806,7 @@
    "description": "Merged and curated database of more than 100,000 substances of environmental concern, compiled from the suspect lists contributed to the NORMAN Suspect List Exchange. It adds harmonised identifiers (CAS, SMILES, InChIKey, PubChem CID, DTXSID), MS-ready structures and predicted properties and ecotoxicity thresholds. It supports suspect and non-target screening, prioritisation and exposure assessment of emerging contaminants.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.9ATgeT",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 3023,
     "doi": "10.25504/FAIRsharing.9ATgeT",
@@ -3729,7 +4819,7 @@
     "homepage": "https://www.norman-network.com/nds/susdat/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3740,6 +4830,9 @@
     "OBI"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "nanotoxicology"
@@ -3752,6 +4845,7 @@
    "description": "The Ontology for Biomedical Investigations (OBI) is an OBO Foundry ontology of terms for describing biomedical investigations: study designs, protocols, instruments, materials, assays and data transformations. It supports consistent, machine-readable annotation of experimental metadata.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.284e1z",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1488,
     "doi": "10.25504/FAIRsharing.284e1z",
@@ -3764,7 +4858,7 @@
     "homepage": "http://obi-ontology.org/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3776,6 +4870,9 @@
     "OBO Foundry"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2006",
    "dateBasis": "release",
@@ -3784,15 +4881,35 @@
    "url": "https://obofoundry.org",
    "description": "A community registry of open, interoperable biomedical ontologies developed under shared principles such as open licences, common formats, unique identifiers and clearly bounded scope. It provides ontology metadata, persistent URLs and quality checks, so data can be annotated with reusable terms that work together across ontologies.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.847069"
+   "fairsharingRecord": "FAIRsharing.847069",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 2600,
+    "doi": "10.25504/FAIRsharing.847069",
+    "name": "OBO Foundry",
+    "abbreviation": "OBO",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "homepage": "http://www.obofoundry.org/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.ced127",
    "key": "oecd_existing_chemicals_database",
    "name": "OECD Existing Chemicals Database",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3807,6 +4924,7 @@
    "description": "OECD database that tracks the chemicals in the OECD Cooperative Chemicals Assessment Programme (formerly the HPV Chemicals Programme). It shows each chemical's assessment status, sponsoring countries, SIDS contacts and categories, and gives access to the published assessment profiles, reports and dossiers.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.ced127",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 6246,
     "doi": "10.25504/FAIRsharing.ced127",
@@ -3817,7 +4935,7 @@
     "homepage": "https://hpvchemicals.oecd.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3829,8 +4947,14 @@
     "OHTs"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3843,7 +4967,8 @@
    "creator": "OECD",
    "url": "https://www.oecd.org/en/topics/sub-issues/assessment-of-chemicals/harmonised-templates.html",
    "description": "Standard data formats, published with XML schemas, for reporting summaries of studies on the physicochemical properties, environmental fate and (eco)toxicological effects of chemicals. Implemented in systems such as IUCLID, they let governments and industry exchange test summary data electronically in one harmonised structure.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.27tnee",
@@ -3854,6 +4979,9 @@
     "COMBINE archive"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -3866,6 +4994,7 @@
    "description": "OMEX (the COMBINE archive format) is a ZIP-based container with a manifest that packs all files of a modelling project (models, simulation descriptions, data and metadata) into one exchangeable file. It lets computational models and their simulation experiments be shared and reproduced as a single package.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.27tnee",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -3884,7 +5013,7 @@
     "homepage": "http://co.mbine.org/specifications/omex.version-1",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3895,8 +5024,15 @@
     "OORF"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research",
@@ -3914,6 +5050,13 @@
    "description": "An OECD reporting framework that sets out what to report for transcriptomics and metabolomics data from laboratory toxicology studies, from study design and data acquisition to processing and statistical analysis. It makes omics data transparent and reproducible enough for regulators to evaluate and use.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.41af40",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "#rodaf",
@@ -3932,7 +5075,7 @@
     "homepage": "https://www.oecd.org/en/publications/oecd-omics-reporting-framework-oorf-guidance-on-reporting-elements-for-the-regulatory-use-of-omics-data-from-laboratory-based-toxicology-studies_6bb2e6ce-en.html",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3943,8 +5086,14 @@
     "OpenFoodTox"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -3959,6 +5108,7 @@
    "description": "EFSA's open chemical hazards database. For each substance it summarises the identity, the EFSA outputs and legal background, and the critical endpoints, reference points and health-based guidance values from EFSA risk assessments. It is released as downloadable open data and dashboards (built on IUCLID since OpenFoodTox 3.0 in 2026), so the hazard data can be reused, for example in QSAR and read-across work.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.80d69d",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4727,
     "doi": "10.25504/FAIRsharing.80d69d",
@@ -3971,7 +5121,7 @@
     "homepage": "https://www.efsa.europa.eu/en/microstrategy/openfoodtox",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -3983,8 +5133,14 @@
     "OpenRiskNet virtual research environment"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -3997,7 +5153,8 @@
    "creator": "OpenRiskNet consortium",
    "url": "https://openrisknet.org",
    "description": "The OpenRiskNet e-infrastructure offered virtual research environments where containerised data and modelling services for predictive toxicology and risk assessment could be discovered, combined and deployed. The services had documented APIs and semantic annotation, and environments could run on workstations or on public and in-house clouds.",
-   "maintained": "discontinued"
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "#opentox",
@@ -4008,8 +5165,14 @@
     "OpenTox"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -4023,7 +5186,8 @@
    "creator": "OpenTox consortium (Douglas Connect)",
    "url": "https://doi.org/10.1186/1758-2946-2-7",
    "description": "The web-service API and data model of the OpenTox framework, defining REST interfaces and RDF/OWL representations for compounds, datasets, features, algorithms, models and validation in predictive toxicology. It enabled interoperable, distributed toxicity prediction services and was later reused and extended for nanomaterials by eNanoMapper.",
-   "maintained": "discontinued"
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.atygwy",
@@ -4033,6 +5197,9 @@
     "OWL"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
+   ],
    "scope": "Generic",
    "subdomains": [
     "nanotoxicology"
@@ -4044,7 +5211,61 @@
    "url": "https://www.w3.org/OWL/",
    "description": "The W3C Web Ontology Language, used to write ontologies with formal, logic-based meaning that software can reason over; it is layered on RDF. Most biomedical ontologies, including the eNanoMapper ontology and other ontologies used in toxicology, are built and shared in OWL, which makes annotations semantically interoperable.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.atygwy"
+   "fairsharingRecord": "FAIRsharing.atygwy",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "I1"
+   ],
+   "fsr": [
+    "http://purl.org/np/RAIpnldLlIedp5J7Jcy8pt_X9_YpOez4rO-fHxZl0T96Y#OWL"
+   ],
+   "fairsharing": {
+    "id": 409,
+    "doi": "10.25504/FAIRsharing.atygwy",
+    "name": "Web Ontology Language",
+    "abbreviation": "OWL 2",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2012,
+    "homepage": "https://www.w3.org/TR/owl2-overview",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
+  },
+  {
+   "@id": "http://purl.org/np/RAvuwR9iDrKdPeDCZAxMhW_wDmwuIYDSOcQaZ_QBFZs8M#PARC",
+   "key": "parc_partnership",
+   "name": "European Partnership for the Assessment of Risks from Chemicals (PARC)",
+   "alternateName": [
+    "PARC"
+   ],
+   "type": "Policy: project",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Implementation-Community"
+   ],
+   "scope": "Toxicology",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
+   "stakeholders": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "AOP-based mechanistic knowledge",
+    "computational and predictive toxicology"
+   ],
+   "datePublished": "2023-01-19",
+   "dateSource": "http://purl.org/np/RAvuwR9iDrKdPeDCZAxMhW_wDmwuIYDSOcQaZ_QBFZs8M",
+   "creator": "EU Horizon Europe partnership",
+   "url": "https://www.eu-parc.eu",
+   "description": "EU public-public partnership that develops regulatory risk assessment of chemicals and brings novel assessment methods and next-generation risk assessment tools into regulatory practice.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#parcfip",
@@ -4055,10 +5276,18 @@
     "Toxicology specific FIPs (PARC)"
    ],
    "type": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Implementation-Profile"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
-    "In silico research"
+    "Wet-lab research",
+    "In silico research",
+    "Regulator"
    ],
    "datePublished": "2026-09-07",
    "dateBasis": "release",
@@ -4068,10 +5297,174 @@
    "description": "This is the FAIR Implementation Profile of the PARC Chemicals Toxicology Community. It declares which FAIR-enabling resources the community uses for each FAIR principle and is published as machine-readable nanopublications from the FIP Wizard.",
    "maintained": "active",
    "buildsOnFair": true,
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#fipwiz",
      "hadRole": "implements"
+    }
+   ],
+   "fipDeclaration": [
+    {
+     "@id": "https://w3id.org/np/RA0cLnggwZpj38HLE_G1rwEH6AFghCqNr42DRIQUErAi8/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.2abjs5",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAdzprsjp5DlD-dkkneCVDpD-czcBNa49OJGLumVz0nNQ/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.2abjs5",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RA-3rhljBzX2_vK3km9B1fLmTVEu3S9vGmxRLtJunSI2I/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.41af40",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+     "principle": "F2"
+    },
+    {
+     "@id": "https://w3id.org/np/RAA5gdn6zln6HXmuHDT0jLIlbySAc6q5Ee1NsSLb-vwKY/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.53gp75",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+     "principle": "F2"
+    },
+    {
+     "@id": "https://w3id.org/np/RA4EPeAstKy9L_8TnPprO-vfCQyYpE56aHWC1SpZQL9D8/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.5hc8vt",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAzJSR-0zMkTns3NuWUyBOOcSxCPWd6yxbSTHBb2IymUk/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.5hc8vt",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+     "principle": "F1"
+    },
+    {
+     "@id": "https://w3id.org/np/RA5CgPS2THrBnF_2UP8FrzDj4tjvxIHh9q19M53m_FBsk/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.62qk8w",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+     "principle": "I2"
+    },
+    {
+     "@id": "https://w3id.org/np/RAYmMXSZKWaEjjQVS-fImNfFGkV8XN743b7mP1Dmn_ynY/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.62qk8w",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+     "principle": "I2"
+    },
+    {
+     "@id": "https://w3id.org/np/RA4C4fGwOD8ojHuUttCfEw4yz9wqLxFtEebD1f6UUSpPA/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.6k0kwd",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAv_oJ4aUzkmBx3R9qiro2WF2yLXWSX3s0pcUnadHKgFA/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.6k0kwd",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAATEBvkJYIAlZGZqx0Fn0GV-nV4tCClUJ61UJc3LnFm4/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.6xq0ee",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+     "principle": "I2"
+    },
+    {
+     "@id": "https://w3id.org/np/RAnLoxcQmutsbI_w4xqCnWSB2oKh8iXwa-6S_7UJlGhkg/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.6xq0ee",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+     "principle": "I2"
+    },
+    {
+     "@id": "https://w3id.org/np/RAQKYdfyIVZmEHNRc8JuYzreg9vnN81x6z3RhVzBw7sUE/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.atygwy",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+     "principle": "I1"
+    },
+    {
+     "@id": "https://w3id.org/np/RAsO344FHH7InmoOj-DXRSg4dBCWKfeZRzdELrpcG80rc/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.atygwy",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+     "principle": "I1"
+    },
+    {
+     "@id": "https://w3id.org/np/RAjbJFzmZu_j_2FXzBwYLBognt0IYJ1Zpz7cy4957bxbs/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.ddk9t9",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+     "principle": "F1"
+    },
+    {
+     "@id": "https://w3id.org/np/RAq6Uv2GE-R25SyjjxRGJAgp9seimC7Y8RApywmvd633U/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.ewjdq6",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAC8esIc4gALh2RekieDCPbY9RNrsKfyNVR-LVWCObUdA/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.fx0mw7",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAUXRJj1BZjFUpeqUhnxE0WZvvzruEqFHFbucWTC4mS1U/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.fx0mw7",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAD64SP5YH3Fncur8a0vfPvK_KHpLHiYgnEkmUUl83EtE/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.m3jtpg",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+     "principle": "I2"
+    },
+    {
+     "@id": "https://w3id.org/np/RALH6uamETQaXYDGTeFNjIRu-l0TIF1GZD-hR8DNDuLHU/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.mtjvme",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+     "principle": "F1"
+    },
+    {
+     "@id": "https://w3id.org/np/RAuTfW_qyZSy1iv3Cw4jcJ-OLnyhsQZy2Jb_Ia8bYX-Ww/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.mtjvme",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+     "principle": "F1"
+    },
+    {
+     "@id": "https://w3id.org/np/RA0eRJdxb9RWySbYaiX3vATq4tDcRk4vVEy7ztAbqVst8/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+     "principle": "I1"
+    },
+    {
+     "@id": "https://w3id.org/np/RAHtOs37rJmHeDVXZhAR5AIE6U1lCgadR_X4hNadFtR2w/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+     "principle": "I1"
     }
    ]
   },
@@ -4083,8 +5476,15 @@
     "An exchange standard for FAIR PBK models in chemical risk assessment"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -4099,6 +5499,7 @@
    "url": "https://fair-pbk.github.io/fair-pbk-standard/",
    "description": "A community exchange standard, developed within PARC, for encoding and annotating physiologically based kinetic (PBK) models used in chemical risk assessment, building on the SBML model format. It lets PBK models be shared, understood and reused across software tools in line with the FAIR principles.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -4114,8 +5515,14 @@
     "Portail Substances Chimiques (PSC)"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -4131,6 +5538,7 @@
    "description": "French INERIS portal that brings together toxicological, ecotoxicological, physico-chemical, technical-economic and regulatory information on chemical substances. It includes INERIS toxicological and environmental data sheets, acute toxicity thresholds for accidents and environmental quality standards, mainly in French.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.b71e74",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5653,
     "doi": "10.25504/FAIRsharing.b71e74",
@@ -4143,7 +5551,7 @@
     "homepage": "https://substances.ineris.fr/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4154,6 +5562,9 @@
     "Protein Ontology"
    ],
    "type": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -4165,7 +5576,22 @@
    "url": "https://proconsortium.org",
    "description": "The Protein Ontology (PRO) is an ontology of protein entities, from families to gene-specific forms, isoforms, post-translationally modified forms and complexes, each with a stable identifier. It allows precise annotation of the exact protein form involved, for instance in pathway or key-event descriptions.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.4ndncv"
+   "fairsharingRecord": "FAIRsharing.4ndncv",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 1229,
+    "doi": "10.25504/FAIRsharing.4ndncv",
+    "name": "PRotein Ontology",
+    "abbreviation": "PRO",
+    "registry": "Standard",
+    "recordType": "terminology_artefact",
+    "status": "ready",
+    "yearCreation": 2006,
+    "homepage": "https://proconsortium.org/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.qt3w7z",
@@ -4175,6 +5601,9 @@
     "PubChem"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "in vitro toxicology",
@@ -4188,6 +5617,7 @@
    "description": "Open chemistry database of the US National Library of Medicine. Its linked Substance, Compound and BioAssay records, contributed by hundreds of depositors, cover structures, identifiers, properties, bioactivity screening results (including Tox21), safety and toxicity information, patents and literature, with web and programmatic access. It is a central hub for chemical identifiers and data in toxicology.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.qt3w7z",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1989,
     "doi": "10.25504/FAIRsharing.qt3w7z",
@@ -4200,7 +5630,7 @@
     "homepage": "https://pubchem.ncbi.nlm.nih.gov/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4211,6 +5641,9 @@
     "QsarDB, QDB"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -4223,10 +5656,11 @@
    "description": "Open repository of (Q)SAR and QSPR models and their data, stored in the open QsarDB format with persistent handles. Published models can be archived, cited, inspected, visualised and re-run for new predictions, which makes in silico models reusable.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.ad3e10",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 4904,
     "doi": "10.25504/FAIRsharing.ad3e10",
-    "name": "QSAR DataBase ",
+    "name": "QSAR DataBase",
     "abbreviation": "QsarDB, QDB",
     "registry": "Database",
     "recordType": "repository",
@@ -4235,7 +5669,7 @@
     "homepage": "http://qsardb.org/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4247,6 +5681,9 @@
     "RDF"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
+   ],
    "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -4258,7 +5695,31 @@
    "url": "https://www.w3.org/RDF/",
    "description": "The W3C Resource Description Framework is a graph data model that states facts as subject-predicate-object triples named by IRIs. It underlies linked data, so toxicology resources such as AOP-Wiki RDF and AOP-DB can be merged with other data and queried across sources.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.p77ph9"
+   "fairsharingRecord": "FAIRsharing.p77ph9",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "#parcfip"
+   ],
+   "principles": [
+    "I1"
+   ],
+   "fsr": [
+    "http://purl.org/np/RAutRQwoS4d5eLq7eBV1xsnWZ2spDYH4xfhhRzOxSZdhs#RDF"
+   ],
+   "fairsharing": {
+    "id": 1047,
+    "doi": "10.25504/FAIRsharing.p77ph9",
+    "name": "Resource Description Framework",
+    "abbreviation": "RDF",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2011,
+    "homepage": "https://www.w3.org/TR/rdf11-concepts/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "#rdmkit",
@@ -4268,6 +5729,9 @@
     "ELIXIR Research Data Management Kit"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
    "scope": "Generic",
    "datePublished": "2021-03-31",
    "dateBasis": "release",
@@ -4275,7 +5739,8 @@
    "creator": "ELIXIR",
    "url": "https://rdmkit.elixir-europe.org",
    "description": "ELIXIR's open, community-written toolkit of research data management guidance for the life sciences, organised by data life-cycle stage, role and scientific domain, with links to relevant tools and standards. It helps researchers and data stewards choose the practices, metadata standards and repositories that make data FAIR.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.acbc28",
@@ -4286,8 +5751,15 @@
     "Toxicology data (RDMkit)"
    ],
    "type": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -4303,8 +5775,9 @@
    "url": "https://rdmkit.elixir-europe.org/toxicology_data",
    "description": "This is the toxicology domain page of the ELIXIR RDMkit. It explains data management problems and solutions for in vitro, animal, human and ecotoxicology data, and points to relevant standards, databases and tools; its resource list is mirrored as a FAIRsharing collection.",
    "maintained": "active",
-   "fairsharingRecord": "7474",
+   "fairsharingRecord": "FAIRsharing.acbc28",
    "buildsOnFair": true,
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "#rdmkit",
@@ -4359,7 +5832,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4370,8 +5843,14 @@
     "Issue #668 FAIRplus/the-fair-cookbook"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Training-Material"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -4387,6 +5866,7 @@
    "description": "A FAIR Cookbook recipe, proposed on GitHub and not yet published, on annotating AOP-Wiki key events with ontology terms for process, object, action, cell type and organ, so that key event annotations are consistent and AOPs more interoperable.",
    "maintained": "in development",
    "buildsOnFair": true,
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "#cookbook",
@@ -4402,8 +5882,14 @@
     "Issue #666 FAIRplus/the-fair-cookbook"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -4418,6 +5904,7 @@
    "description": "A FAIR Cookbook recipe, proposed on GitHub and not yet published, setting out minimum and desirable metadata for cell-based toxicology assays and how to annotate them with BioAssay Ontology terms, so that the data can be found and linked to AOPs.",
    "maintained": "in development",
    "buildsOnFair": true,
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "#cookbook",
@@ -4438,8 +5925,14 @@
     "omics data analysis framework for regulatory application"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Supporting-Software"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -4454,7 +5947,8 @@
    "creator": "Maastricht University; Health Canada (Cefic LRI C4 project)",
    "url": "https://github.com/R-ODAF",
    "description": "R-ODAF is an open-source pipeline with extra filtering criteria that turns raw transcriptomics data (RNA-seq, TempO-Seq, microarray) into reproducible lists of differentially expressed genes. It was designed so that omics data can be accepted in regulatory hazard assessment.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#s2cie",
@@ -4465,8 +5959,14 @@
     "kumar2026"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Enrichment-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research",
     "Regulator"
@@ -4480,7 +5980,8 @@
    "creator": "Universitat Rovira i Virgili (IISPV)",
    "url": "https://dev.s2cie.insilicohub.org/",
    "description": "S2CIE is a web platform and API that annotates PubMed abstracts word by word with grammar, entity types and dependencies. It supports rule-based and semantic searches to extract mechanistic evidence, such as stressor-event links and key event relationships, for AOP development.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -4490,6 +5991,9 @@
     "SBML"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -4502,6 +6006,7 @@
    "description": "The Systems Biology Markup Language (SBML) is an XML exchange format for computational models of biological processes, such as biochemical reaction networks. It lets models be shared, reused and simulated across many software tools.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.9qv71f",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 18,
     "doi": "10.25504/FAIRsharing.9qv71f",
@@ -4514,7 +6019,7 @@
     "homepage": "http://sbml.org",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4525,8 +6030,15 @@
     "SciRAP"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Validation-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Wet-lab research"
    ],
@@ -4541,7 +6053,8 @@
    "creator": "Karolinska Institutet; Stockholm University",
    "url": "https://www.scirap.org",
    "description": "A web resource from Karolinska Institutet and Stockholm University. It offers criteria and tools for evaluating the reliability and relevance of in vivo, in vitro, ecotoxicity (CRED) and epidemiological studies, plus reporting checklists for researchers. It makes study evaluations transparent and helps academic studies report what regulatory risk assessment needs.",
-   "maintained": "active"
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.6f7m6j",
@@ -4551,6 +6064,9 @@
     "SED-ML"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -4563,6 +6079,7 @@
    "description": "SED-ML is an XML format for describing simulation experiments on computational models: which models to use, how to change them, which simulations to run and which outputs to produce. It makes model-based simulation results reproducible across software tools.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.6f7m6j",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -4581,7 +6098,7 @@
     "homepage": "http://sed-ml.org/",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4593,8 +6110,16 @@
     "CDISC SEND"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research",
@@ -4611,6 +6136,7 @@
    "description": "A CDISC standard that specifies how data from nonclinical (animal) toxicology studies are organised, formatted and coded for exchange and electronic submission to regulators such as the US FDA. Its implementation guides define domains, variables and controlled terminology so study data can be reviewed, pooled and reused consistently.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.7z842d",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 790,
     "doi": "10.25504/FAIRsharing.7z842d",
@@ -4623,7 +6149,7 @@
     "homepage": "https://www.cdisc.org/standards/foundational/send",
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4634,6 +6160,9 @@
     "SMILES"
    ],
    "type": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -4646,6 +6175,7 @@
    "description": "Line notation that writes a chemical structure as a short ASCII string, with canonical and isomeric forms and an open community specification (OpenSMILES). It is used to exchange, store and search structures and as input to QSAR, read-across and other in silico toxicology tools.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.qv4b3c",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 140,
     "doi": "10.25504/FAIRsharing.qv4b3c",
@@ -4658,7 +6188,7 @@
     "homepage": "http://opensmiles.org/opensmiles.html",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4669,6 +6199,9 @@
     "SPARQL endpoint"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Communication-protocol"
+   ],
    "scope": "Generic",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -4680,7 +6213,22 @@
    "url": "https://www.w3.org/TR/sparql11-query/",
    "description": "The W3C query language and protocol for RDF data. Through SPARQL endpoints, people and software can query and combine linked datasets, such as AOP-Wiki RDF and AOP-DB RDF, in a standard way.",
    "maintained": "active",
-   "fairsharingRecord": "FAIRsharing.87ccfd"
+   "fairsharingRecord": "FAIRsharing.87ccfd",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 1063,
+    "doi": "10.25504/FAIRsharing.87ccfd",
+    "name": "Simple Protocol and RDF Query Language Overview",
+    "abbreviation": "SPARQL",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2004,
+    "homepage": "http://www.w3.org/TR/sparql11-overview/",
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-09"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.5fee61",
@@ -4690,8 +6238,14 @@
     "SPIN"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -4707,6 +6261,7 @@
    "description": "Public database on the use of chemical substances in products in Norway, Sweden, Denmark and Finland. It is derived from the national product registers without disclosing confidential information and gives tonnages, numbers of products, industry sectors (NACE) and use categories per substance and year, online and as a downloadable offline database. It supports exposure assessment and regulatory prioritisation of chemicals.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.5fee61",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 5635,
     "doi": "10.25504/FAIRsharing.5fee61",
@@ -4719,7 +6274,7 @@
     "homepage": "http://spin2000.net/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4730,8 +6285,14 @@
     "T3DB"
    ],
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -4747,6 +6308,7 @@
    "description": "Bioinformatics knowledgebase of common toxic substances, such as pollutants, pesticides, drugs and food toxins. Each toxin record links to its protein targets, mechanisms of action, toxicity values, and chemical and spectral data, and can be searched by text, structure or sequence. It was later presented as the Toxic Exposome Database.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.psn0h2",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2085,
     "doi": "10.25504/FAIRsharing.psn0h2",
@@ -4759,7 +6321,7 @@
     "homepage": "http://www.t3db.ca/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4770,8 +6332,14 @@
     "TBC"
    ],
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research",
@@ -4788,6 +6356,7 @@
    "description": "A checklist of the information that should accompany data from a toxicology or toxicogenomics study: subject characteristics, treatment and sample collection, husbandry and disposition, and the study timeline. It was proposed so that study data deposited in databases such as CEBS could be interpreted and compared across studies. It is no longer maintained.",
    "maintained": "discontinued",
    "fairsharingRecord": "FAIRsharing.jgbxr",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 229,
     "doi": "10.25504/FAIRsharing.jgbxr",
@@ -4800,7 +6369,7 @@
     "homepage": "http://mibbi.sf.net/projects/TBC.shtml",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4808,6 +6377,9 @@
    "key": "temowl",
    "name": "TeMOwl",
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Integration-Service"
+   ],
    "scope": "Life Sciences",
    "datePublished": "2019",
    "dateBasis": "release",
@@ -4815,7 +6387,8 @@
    "creator": "Fraunhofer SCAI",
    "url": "https://openrisknet.org/e-infrastructure/services/163/",
    "description": "TeMOwl is a Fraunhofer SCAI API service that gives one programmatic access point to controlled vocabularies, terminologies and ontologies from different providers, and maps equivalent concepts across them. In OpenRiskNet it was used to map identifiers and names to concepts.",
-   "maintained": "discontinued"
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#tggates",
@@ -4825,8 +6398,15 @@
     "Open TG-GATEs"
    ],
    "type": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "In silico research",
@@ -4844,6 +6424,7 @@
    "description": "Toxicogenomics database from the Japanese Toxicogenomics Project with microarray gene expression, blood chemistry, haematology and pathology data for 170 compounds, tested in rats and in rat and human primary hepatocytes. It could be searched by compound or pathological finding, with raw CEL files for download. The original site has closed; the data remain in the Japanese Life Science Database Archive.",
    "maintained": "discontinued",
    "fairsharingRecord": "2604",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2604,
     "name": "Open Toxicogenomics Project-Genomics Assisted Toxicity Evaluation system",
@@ -4855,7 +6436,7 @@
     "homepage": "http://toxico.nibiohn.go.jp/english/",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -4867,8 +6448,16 @@
     "FAIRsharing collection 3496"
    ],
    "type": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -4881,6 +6470,7 @@
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.f60a10",
    "buildsOnFair": true,
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.2abjs5",
@@ -5196,7 +6786,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -5207,8 +6797,14 @@
     "ToxML"
    ],
    "type": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Integration",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
    "stakeholders": [
     "In silico research"
    ],
@@ -5223,6 +6819,7 @@
    "description": "An open XML schema with a controlled vocabulary for recording toxicity studies and endpoints (e.g. genetic toxicity, carcinogenicity, repeated-dose toxicity) in enough detail for database integration and (Q)SAR modelling. Leadscope developed it and Lhasa Limited later hosted it; it gave toxicity data from different sources a common exchange structure. Its website is no longer online.",
    "maintained": "discontinued",
    "fairsharingRecord": "FAIRsharing.emw61v",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 374,
     "doi": "10.25504/FAIRsharing.emw61v",
@@ -5235,7 +6832,7 @@
     "homepage": "http://toxml.org",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -5246,8 +6843,14 @@
     "ToxRTool"
    ],
    "type": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Validation-Service"
+   ],
    "scope": "Toxicology",
-   "phase": "Application (Regulatory Use)",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Regulator"
    ],
@@ -5261,15 +6864,23 @@
    "creator": "EC JRC (ECVAM); FoBiG",
    "url": "https://doi.org/10.1016/j.toxlet.2009.05.013",
    "description": "An Excel-based tool, made in an ECVAM-funded project, with criteria for judging the reliability of in vivo and in vitro toxicity studies and assigning them to Klimisch categories 1 to 3. It makes reliability judgements explicit and harmonised, which supports reuse of published and non-guideline studies in regulatory assessment.",
-   "maintained": "unknown"
+   "maintained": "unknown",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "#toxtemp",
    "key": "toxtemp",
    "name": "ToxTemp",
    "type": "Standard: reporting guideline",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
    "scope": "Toxicology",
-   "phase": "Data Generation",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
    "stakeholders": [
     "Wet-lab research",
     "Regulator"
@@ -5285,6 +6896,7 @@
    "url": "https://doi.org/10.14573/altex.1909271",
    "description": "A structured template, developed within EU-ToxRisk and aligned with OECD GD 211, for describing cell-based toxicological test methods comprehensively and in a standard order. It captures the metadata needed to judge the readiness, relevance and reliability of in vitro methods and their data for regulatory use.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "#gd211",
@@ -5297,6 +6909,9 @@
    "key": "uniprot",
    "name": "UniProt",
    "type": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "computational and predictive toxicology"
@@ -5309,6 +6924,7 @@
    "description": "A comprehensive, freely available resource of protein sequences and functional information. It combines the expert-curated Swiss-Prot and the automatically annotated TrEMBL sections with the UniRef clusters and the UniParc archive. Its stable accessions and many cross-references are used to identify proteins unambiguously when annotating models, pathways and mechanistic toxicology data.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.s1ne3g",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 2077,
     "doi": "10.25504/FAIRsharing.s1ne3g",
@@ -5321,7 +6937,7 @@
     "homepage": "https://www.uniprot.org",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   },
   {
@@ -5329,6 +6945,9 @@
    "key": "wikipathways",
    "name": "WikiPathways",
    "type": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
    "scope": "Life Sciences",
    "subdomains": [
     "AOP-based mechanistic knowledge"
@@ -5341,6 +6960,7 @@
    "description": "An open, community-curated database of biological pathways, edited collaboratively and released under CC0 in machine-readable formats such as GPML and RDF. Pathway elements are linked to gene, protein and metabolite identifiers, so the pathways support omics enrichment analysis and links to adverse outcome pathways.",
    "maintained": "active",
    "fairsharingRecord": "FAIRsharing.1x53qk",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "fairsharing": {
     "id": 1698,
     "doi": "10.25504/FAIRsharing.1x53qk",
@@ -5353,7 +6973,7 @@
     "homepage": "https://wikipathways.org",
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-05"
+    "retrieved": "2026-10-09"
    }
   }
  ]

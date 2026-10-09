@@ -1,391 +1,197 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix fip: <https://w3id.org/fair/fip/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix terms: <https://w3id.org/fair-tox/terms#> .
+
+<http://id.nlm.nih.gov/mesh/D054750> skos:exactMatch <https://doi.org/10.1351/goldbook.14399> .
+
+<http://purl.obolibrary.org/obo/NCIT_C20179> skos:exactMatch <https://doi.org/10.1351/goldbook.16156> .
+
+<http://semanticscience.org/resource/SIO_000619> skos:closeMatch <http://purl.obolibrary.org/obo/OBI_0000450> .
+
+<http://www.wikidata.org/entity/Q6013136> skos:broadMatch <http://purl.obolibrary.org/obo/NCIT_C17206>,
+        <https://doi.org/10.1351/goldbook.T06417> .
 
 <https://w3id.org/fair-tox/terms> a owl:Ontology ;
     rdfs:label "Terms of the FAIR implementation ecosystem for toxicology" ;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     owl:versionInfo "0.2.0" .
 
-terms:creatorLane-made-by-in-silico-research a skos:Concept ;
-    skos:definition "Toxicology resources made by in silico research only." ;
-    skos:inScheme terms:creatorLane-values ;
-    skos:prefLabel "Made by in silico research" .
-
-terms:creatorLane-made-by-regulators a skos:Concept ;
-    skos:definition "Toxicology resources made by regulators only." ;
-    skos:inScheme terms:creatorLane-values ;
-    skos:prefLabel "Made by regulators" .
-
-terms:creatorLane-made-by-wet-lab-research a skos:Concept ;
-    skos:definition "Toxicology resources made by wet-lab research only." ;
-    skos:inScheme terms:creatorLane-values ;
-    skos:prefLabel "Made by wet-lab research" .
-
-terms:creatorLane-made-jointly a skos:Concept ;
-    skos:definition "Toxicology resources made by two or more creator types together." ;
-    skos:inScheme terms:creatorLane-values ;
-    skos:prefLabel "Made jointly" .
-
-terms:dateBasis a rdf:Property ;
-    rdfs:label "date basis" ;
-    skos:definition "What the first-published date refers to." .
-
-terms:dateBasis-adoption a skos:Concept ;
-    skos:definition "Official adoption or publication of guidance or policy." ;
-    skos:inScheme terms:dateBasis-values ;
-    skos:prefLabel "adoption" .
-
-terms:dateBasis-fairsharing-year a skos:Concept ;
-    skos:definition "FAIRsharing's year of creation, used only when nothing better was found." ;
-    skos:inScheme terms:dateBasis-values ;
-    skos:prefLabel "FAIRsharing year" .
-
-terms:dateBasis-publication a skos:Concept ;
-    skos:definition "Online publication of the paper that first describes the resource." ;
-    skos:inScheme terms:dateBasis-values ;
-    skos:prefLabel "publication" .
-
-terms:dateBasis-release a skos:Concept ;
-    skos:definition "First public release or launch." ;
-    skos:inScheme terms:dateBasis-values ;
-    skos:prefLabel "release" .
-
-terms:dateSource a rdf:Property ;
-    rdfs:label "date source" ;
-    rdfs:subPropertyOf schema:subjectOf ;
-    skos:definition "DOI or URL of the source that shows the first-published date." .
-
-terms:declaration-declared-by a skos:Concept ;
-    skos:definition "The FIP is declared by the target, a FAIR Implementation Community." ;
-    skos:exactMatch fip:declared-by ;
-    skos:inScheme terms:declaration-values ;
-    skos:prefLabel "declared-by" .
-
-terms:declaration-declares-current-use-of a skos:Concept ;
-    skos:definition "The FIP declares that its community uses the target." ;
-    skos:exactMatch fip:declares-current-use-of ;
-    skos:inScheme terms:declaration-values ;
-    skos:prefLabel "declares-current-use-of" .
-
-terms:declaration-declares-planned-development-of a skos:Concept ;
-    skos:definition "The FIP declares that its community plans to develop the target." ;
-    skos:exactMatch fip:declares-planned-development-of ;
-    skos:inScheme terms:declaration-values ;
-    skos:prefLabel "declares-planned-development-of" .
-
-terms:declaration-declares-planned-replacement-of a skos:Concept ;
-    skos:definition "The FIP declares that its community plans to replace the target." ;
-    skos:exactMatch fip:declares-planned-replacement-of ;
-    skos:inScheme terms:declaration-values ;
-    skos:prefLabel "declares-planned-replacement-of" .
-
-terms:declaration-declares-planned-use-of a skos:Concept ;
-    skos:definition "The FIP declares that its community plans to use the target." ;
-    skos:exactMatch fip:declares-planned-use-of ;
-    skos:inScheme terms:declaration-values ;
-    skos:prefLabel "declares-planned-use-of" .
-
-terms:deprecates a skos:Concept ;
-    skos:closeMatch dct:replaces ;
+terms:deprecates a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The subject replaces the target." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "deprecates" ;
+    schema:termCode "deprecates" ;
     skos:definition "The subject replaces the target." ;
+    skos:exactMatch dct:replaces ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "deprecates" .
 
-terms:extends a skos:Concept ;
-    skos:closeMatch schema:isBasedOn ;
+terms:extends a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The subject builds on and extends the target." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "extends" ;
+    schema:termCode "extends" ;
+    skos:broadMatch schema:isBasedOn ;
+    skos:closeMatch <http://purl.org/spar/cito/extends> ;
     skos:definition "The subject builds on and extends the target." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "extends" .
 
-terms:fairsharingRecord a rdf:Property ;
-    rdfs:label "FAIRsharing record" ;
-    skos:definition "FAIRsharing record code, or the numeric id of a record without a DOI." .
-
-terms:implements a skos:Concept ;
-    skos:closeMatch dct:conformsTo ;
+terms:implements a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The database implements the standard." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "implements" ;
+    schema:termCode "implements" ;
+    skos:closeMatch dct:conformsTo,
+        <http://semanticscience.org/resource/SIO_000233>,
+        fip:implements ;
     skos:definition "The database implements the standard." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "implements" .
 
-terms:lane-data-generation a skos:Concept ;
-    skos:definition "Toxicology resources whose phase, the earliest they act on, is data generation." ;
-    skos:inScheme terms:lane-values ;
-    skos:prefLabel "Data generation" .
-
-terms:lane-data-integration a skos:Concept ;
-    skos:definition "Toxicology resources whose phase, the earliest they act on, is data integration." ;
-    skos:inScheme terms:lane-values ;
-    skos:prefLabel "Data integration" .
-
-terms:lane-generic-infrastructure a skos:Concept ;
-    skos:definition "Resources not specific to a research domain." ;
-    skos:inScheme terms:lane-values ;
-    skos:prefLabel "Generic infrastructure" .
-
-terms:lane-life-sciences-infrastructure a skos:Concept ;
-    skos:definition "Life-science resources, not specific to toxicology, that toxicology uses." ;
-    skos:inScheme terms:lane-values ;
-    skos:prefLabel "Life sciences infrastructure" .
-
-terms:lane-regulatory-assessment a skos:Concept ;
-    skos:definition "Toxicology resources whose phase, the earliest they act on, is regulatory assessment." ;
-    skos:inScheme terms:lane-values ;
-    skos:prefLabel "Regulatory assessment" .
-
-terms:maintained-active a skos:Concept ;
+terms:maintained-active a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "Maintained and available." ;
+    schema:inDefinedTermSet terms:maintained-values ;
+    schema:name "active" ;
+    schema:termCode "maintained-active" ;
+    skos:closeMatch <http://publications.europa.eu/resource/authority/distribution-status/ONGOING> ;
     skos:definition "Maintained and available." ;
     skos:inScheme terms:maintained-values ;
     skos:prefLabel "active" .
 
-terms:maintained-discontinued a skos:Concept ;
-    skos:definition "No longer maintained or available (shown with a dagger)." ;
-    skos:inScheme terms:maintained-values ;
-    skos:prefLabel "discontinued" .
-
-terms:maintained-in-development a skos:Concept ;
-    skos:definition "Not yet released in a stable form." ;
-    skos:inScheme terms:maintained-values ;
-    skos:prefLabel "in development" .
-
-terms:maintained-unknown a skos:Concept ;
-    skos:definition "Status could not be established." ;
-    skos:inScheme terms:maintained-values ;
-    skos:prefLabel "unknown" .
-
-terms:phase a rdf:Property ;
-    rdfs:label "phase" ;
-    skos:definition "For a toxicology resource: the data life-cycle phase it acts on; when it acts on several, the earliest at which it must be applied." .
-
-terms:phase-data-generation a skos:Concept ;
+terms:phase-data-generation a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them." ;
+    schema:inDefinedTermSet terms:phase-values ;
+    schema:name "Data generation" ;
+    schema:termCode "phase-data-generation" ;
+    skos:closeMatch <http://edamontology.org/topic_3077>,
+        <http://purl.obolibrary.org/obo/T4FS_0000108> ;
     skos:definition "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them." ;
     skos:inScheme terms:phase-values ;
     skos:prefLabel "Data generation" .
 
-terms:phase-data-integration a skos:Concept ;
+terms:phase-data-integration a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models." ;
+    schema:inDefinedTermSet terms:phase-values ;
+    schema:name "Data integration" ;
+    schema:termCode "phase-data-integration" ;
+    skos:closeMatch <http://edamontology.org/topic_3366>,
+        <http://purl.obolibrary.org/obo/T4FS_0000487> ;
     skos:definition "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models." ;
     skos:inScheme terms:phase-values ;
     skos:prefLabel "Data integration" .
 
-terms:phase-regulatory-assessment a skos:Concept ;
+terms:phase-regulatory-assessment a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions." ;
+    schema:inDefinedTermSet terms:phase-values ;
+    schema:name "Regulatory assessment" ;
+    schema:termCode "phase-regulatory-assessment" ;
     skos:definition "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions." ;
     skos:inScheme terms:phase-values ;
-    skos:prefLabel "Regulatory assessment" .
+    skos:prefLabel "Regulatory assessment" ;
+    skos:relatedMatch <http://edamontology.org/topic_3394>,
+        <http://id.nlm.nih.gov/mesh/D018570>,
+        <http://purl.obolibrary.org/obo/T4FS_0000507>,
+        <https://doi.org/10.1351/goldbook.16194>,
+        <https://vhp4safety.github.io/glossary#VHP0000101>,
+        <https://vhp4safety.github.io/glossary#VHP0000103>,
+        <https://vhp4safety.github.io/glossary#VHP0000159> .
 
-terms:profiles a skos:Concept ;
-    skos:closeMatch dct:conformsTo ;
+terms:profiles a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The standard is a profile of the target standard." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "profiles" ;
+    schema:termCode "profiles" ;
+    skos:broadMatch dct:conformsTo ;
     skos:definition "The standard is a profile of the target standard." ;
+    skos:exactMatch <http://www.w3.org/ns/dx/prof/isProfileOf> ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "profiles" .
 
-terms:recommends a skos:Concept ;
+terms:recommends a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The policy recommends the target." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "recommends" ;
+    schema:termCode "recommends" ;
+    skos:broadMatch dct:relation ;
     skos:definition "The policy recommends the target." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "recommends" .
 
-terms:related_to a skos:Concept ;
-    skos:closeMatch dct:relation ;
+terms:related_to a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The resources are related without one building on the other." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "related_to" ;
+    schema:termCode "related_to" ;
     skos:definition "The resources are related without one building on the other." ;
+    skos:exactMatch dct:relation ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "related_to" .
 
-terms:scope a rdf:Property ;
-    rdfs:label "scope" ;
-    skos:definition "What the resource was made for: generic, life-science or toxicology infrastructure." .
-
-terms:scope-generic a skos:Concept ;
-    skos:definition "Infrastructure not specific to a research domain, including FAIR resources such as the FIP." ;
-    skos:inScheme terms:scope-values ;
-    skos:prefLabel "Generic" .
-
-terms:scope-life-sciences a skos:Concept ;
-    skos:definition "Life-science infrastructure, not specific to toxicology, that toxicology uses." ;
-    skos:inScheme terms:scope-values ;
-    skos:prefLabel "Life Sciences" .
-
-terms:scope-toxicology a skos:Concept ;
-    skos:definition "Made for toxicology, including toxicology instances of generic resources." ;
-    skos:inScheme terms:scope-values ;
-    skos:prefLabel "Toxicology" .
-
-terms:span a rdf:Property ;
-    rdfs:label "span" ;
-    skos:definition "For a toxicology resource: every data life-cycle phase it acts on, starting with its phase." .
-
-terms:stakeholders a rdf:Property ;
-    rdfs:label "creator types" ;
-    skos:definition "For a toxicology resource: who made it; several may apply." .
-
-terms:stakeholders-in-silico-research a skos:Concept ;
-    skos:definition "Made by computational researchers: modellers, AOP, PBK, QSAR, informatics and data stewards." ;
-    skos:inScheme terms:stakeholders-values ;
-    skos:prefLabel "In silico research" .
-
-terms:stakeholders-regulator a skos:Concept ;
-    skos:definition "Made by a regulatory agency or intergovernmental body, such as OECD, EFSA, ECHA or US EPA." ;
-    skos:inScheme terms:stakeholders-values ;
-    skos:prefLabel "Regulator" .
-
-terms:stakeholders-wet-lab-research a skos:Concept ;
-    skos:definition "Made by experimental (wet-lab) researchers, mostly academic." ;
-    skos:inScheme terms:stakeholders-values ;
-    skos:prefLabel "Wet-lab research" .
-
-terms:subdomains-aop-based-mechanistic-knowledge a skos:Concept ;
-    skos:definition "Integration and tools." ;
+terms:subdomains-regulatory-toxicology a schema:DefinedTerm,
+        skos:Concept ;
+    dct:source <https://doi.org/10.1016/S0378-4274(01)00457-X> ;
+    schema:description "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X)." ;
+    schema:inDefinedTermSet terms:subdomains-values ;
+    schema:name "regulatory toxicology" ;
+    schema:termCode "subdomains-regulatory-toxicology" ;
+    skos:broadMatch <http://purl.obolibrary.org/obo/NCIT_C17206>,
+        <https://doi.org/10.1351/goldbook.T06417> ;
+    skos:definition "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X)." ;
     skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "AOP-based mechanistic knowledge" .
+    skos:prefLabel "regulatory toxicology" ;
+    skos:relatedMatch <http://www.wikidata.org/entity/Q2448782> .
 
-terms:subdomains-computational-and-predictive-toxicology a skos:Concept ;
-    skos:definition "Integration and tools." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "computational and predictive toxicology" .
+terms:maintained-values a schema:DefinedTermSet,
+        skos:ConceptScheme ;
+    dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
+    schema:name "maintained values" ;
+    skos:definition "Maintenance statuses of a resource, where no outside concept exists." ;
+    skos:hasTopConcept terms:maintained-active ;
+    skos:prefLabel "maintained values" .
 
-terms:subdomains-eco-toxicology a skos:Concept ;
-    skos:definition "Data generation." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "eco-toxicology" .
+terms:subdomains-values a schema:DefinedTermSet,
+        skos:ConceptScheme ;
+    dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
+    schema:name "subdomains values" ;
+    skos:definition "Toxicology sub-domains that a resource serves, where no outside concept exists." ;
+    skos:hasTopConcept terms:subdomains-regulatory-toxicology ;
+    skos:prefLabel "subdomains values" .
 
-terms:subdomains-exposome a skos:Concept ;
-    skos:definition "Data generation." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "exposome" .
+terms:phase-values a schema:DefinedTermSet,
+        skos:ConceptScheme ;
+    dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
+    schema:name "phase values" ;
+    skos:definition "Data life-cycle phases that a toxicology resource acts on." ;
+    skos:hasTopConcept terms:phase-data-generation,
+        terms:phase-data-integration,
+        terms:phase-regulatory-assessment ;
+    skos:prefLabel "phase values" .
 
-terms:subdomains-in-vitro-toxicology a skos:Concept ;
-    skos:definition "Data generation." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "in vitro toxicology" .
-
-terms:subdomains-nanotoxicology a skos:Concept ;
-    skos:definition "Data generation." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "nanotoxicology" .
-
-terms:subdomains-regulatory-toxicology a skos:Concept ;
-    skos:definition "Application." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "regulatory toxicology" .
-
-terms:subdomains-toxicogenomics a skos:Concept ;
-    skos:definition "Integration and tools." ;
-    skos:inScheme terms:subdomains-values ;
-    skos:prefLabel "toxicogenomics" .
-
-terms:type-collection a skos:Concept ;
-    skos:definition "Curated collection of standards, databases and policies." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Collection" .
-
-terms:type-database-knowledgebase a skos:Concept ;
-    skos:definition "Curated knowledge resource or data portal." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Database: knowledgebase" .
-
-terms:type-database-knowledgebase-and-repository a skos:Concept ;
-    skos:definition "Both a curated knowledge resource and an archive." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Database: knowledgebase and repository" .
-
-terms:type-database-repository a skos:Concept ;
-    skos:definition "Archive that accepts data deposits." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Database: repository" .
-
-terms:type-policy-funder a skos:Concept ;
-    skos:definition "Data policy of a funder." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Policy: funder" .
-
-terms:type-policy-institution a skos:Concept ;
-    skos:definition "Policy or guidance issued by an institution or agency, such as OECD guidance." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Policy: institution" .
-
-terms:type-policy-journal a skos:Concept ;
-    skos:definition "Data policy of a journal." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Policy: journal" .
-
-terms:type-policy-journal-publisher a skos:Concept ;
-    skos:definition "Data policy of a publisher." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Policy: journal publisher" .
-
-terms:type-policy-project a skos:Concept ;
-    skos:definition "Policy or guidance issued by a project." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Policy: project" .
-
-terms:type-policy-society a skos:Concept ;
-    skos:definition "Policy or guidance of a learned society." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Policy: society" .
-
-terms:type-standard-identifier-schema a skos:Concept ;
-    skos:definition "Identifier scheme or resolver." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Standard: identifier schema" .
-
-terms:type-standard-model-format a skos:Concept ;
-    skos:definition "Data or metadata model, schema, exchange format." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Standard: model/format" .
-
-terms:type-standard-principle a skos:Concept ;
-    skos:definition "Published set of principles with a reusable artefact." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Standard: principle" .
-
-terms:type-standard-reporting-guideline a skos:Concept ;
-    skos:definition "Minimum information checklist or reporting template." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Standard: reporting guideline" .
-
-terms:type-standard-terminology-artefact a skos:Concept ;
-    skos:definition "Ontology, controlled vocabulary, thesaurus or glossary." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Standard: terminology artefact" .
-
-terms:type-tool a skos:Concept ;
-    skos:definition "Software or service; FAIRsharing does not register these." ;
-    skos:inScheme terms:type-values ;
-    skos:prefLabel "Tool" .
-
-terms:phase-values a skos:ConceptScheme ;
-    rdfs:label "phase values" .
-
-terms:scope-values a skos:ConceptScheme ;
-    rdfs:label "scope values" .
-
-terms:stakeholders-values a skos:ConceptScheme ;
-    rdfs:label "stakeholders values" .
-
-terms:creatorLane-values a skos:ConceptScheme ;
-    rdfs:label "creatorLane values" .
-
-terms:dateBasis-values a skos:ConceptScheme ;
-    rdfs:label "dateBasis values" .
-
-terms:maintained-values a skos:ConceptScheme ;
-    rdfs:label "maintained values" .
-
-terms:declaration-values a skos:ConceptScheme ;
-    rdfs:label "declaration values" .
-
-terms:lane-values a skos:ConceptScheme ;
-    rdfs:label "lane values" .
-
-terms:hadRole-values a skos:ConceptScheme ;
-    rdfs:label "hadRole values" .
-
-terms:subdomains-values a skos:ConceptScheme ;
-    rdfs:label "subdomains values" .
-
-terms:type-values a skos:ConceptScheme ;
-    rdfs:label "type values" .
+terms:hadRole-values a schema:DefinedTermSet,
+        skos:ConceptScheme ;
+    dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
+    schema:name "hadRole values" ;
+    skos:definition "FAIRsharing's labels for relations between records, read subject first." ;
+    skos:hasTopConcept terms:deprecates,
+        terms:extends,
+        terms:implements,
+        terms:profiles,
+        terms:recommends,
+        terms:related_to ;
+    skos:prefLabel "hadRole values" .
 

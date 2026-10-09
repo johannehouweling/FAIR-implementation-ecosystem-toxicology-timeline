@@ -5,11 +5,40 @@
   "owl": "http://www.w3.org/2002/07/owl#",
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-  "schema": "https://schema.org/",
+  "schema": "http://schema.org/",
   "skos": "http://www.w3.org/2004/02/skos/core#",
   "terms": "https://w3id.org/fair-tox/terms#"
  },
  "@graph": [
+  {
+   "@id": "http://id.nlm.nih.gov/mesh/D054750",
+   "skos:exactMatch": {
+    "@id": "https://doi.org/10.1351/goldbook.14399"
+   }
+  },
+  {
+   "@id": "http://purl.obolibrary.org/obo/NCIT_C20179",
+   "skos:exactMatch": {
+    "@id": "https://doi.org/10.1351/goldbook.16156"
+   }
+  },
+  {
+   "@id": "http://semanticscience.org/resource/SIO_000619",
+   "skos:closeMatch": {
+    "@id": "http://purl.obolibrary.org/obo/OBI_0000450"
+   }
+  },
+  {
+   "@id": "http://www.wikidata.org/entity/Q6013136",
+   "skos:broadMatch": [
+    {
+     "@id": "http://purl.obolibrary.org/obo/NCIT_C17206"
+    },
+    {
+     "@id": "https://doi.org/10.1351/goldbook.T06417"
+    }
+   ]
+  },
   {
    "@id": "https://w3id.org/fair-tox/terms",
    "@type": "owl:Ontology",
@@ -20,174 +49,21 @@
    "rdfs:label": "Terms of the FAIR implementation ecosystem for toxicology"
   },
   {
-   "@id": "terms:creatorLane-made-by-in-silico-research",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources made by in silico research only.",
-   "skos:inScheme": {
-    "@id": "terms:creatorLane-values"
-   },
-   "skos:prefLabel": "Made by in silico research"
-  },
-  {
-   "@id": "terms:creatorLane-made-by-regulators",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources made by regulators only.",
-   "skos:inScheme": {
-    "@id": "terms:creatorLane-values"
-   },
-   "skos:prefLabel": "Made by regulators"
-  },
-  {
-   "@id": "terms:creatorLane-made-by-wet-lab-research",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources made by wet-lab research only.",
-   "skos:inScheme": {
-    "@id": "terms:creatorLane-values"
-   },
-   "skos:prefLabel": "Made by wet-lab research"
-  },
-  {
-   "@id": "terms:creatorLane-made-jointly",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources made by two or more creator types together.",
-   "skos:inScheme": {
-    "@id": "terms:creatorLane-values"
-   },
-   "skos:prefLabel": "Made jointly"
-  },
-  {
-   "@id": "terms:creatorLane-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "creatorLane values"
-  },
-  {
-   "@id": "terms:dateBasis",
-   "@type": "rdf:Property",
-   "rdfs:label": "date basis",
-   "skos:definition": "What the first-published date refers to."
-  },
-  {
-   "@id": "terms:dateBasis-adoption",
-   "@type": "skos:Concept",
-   "skos:definition": "Official adoption or publication of guidance or policy.",
-   "skos:inScheme": {
-    "@id": "terms:dateBasis-values"
-   },
-   "skos:prefLabel": "adoption"
-  },
-  {
-   "@id": "terms:dateBasis-fairsharing-year",
-   "@type": "skos:Concept",
-   "skos:definition": "FAIRsharing's year of creation, used only when nothing better was found.",
-   "skos:inScheme": {
-    "@id": "terms:dateBasis-values"
-   },
-   "skos:prefLabel": "FAIRsharing year"
-  },
-  {
-   "@id": "terms:dateBasis-publication",
-   "@type": "skos:Concept",
-   "skos:definition": "Online publication of the paper that first describes the resource.",
-   "skos:inScheme": {
-    "@id": "terms:dateBasis-values"
-   },
-   "skos:prefLabel": "publication"
-  },
-  {
-   "@id": "terms:dateBasis-release",
-   "@type": "skos:Concept",
-   "skos:definition": "First public release or launch.",
-   "skos:inScheme": {
-    "@id": "terms:dateBasis-values"
-   },
-   "skos:prefLabel": "release"
-  },
-  {
-   "@id": "terms:dateBasis-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "dateBasis values"
-  },
-  {
-   "@id": "terms:dateSource",
-   "@type": "rdf:Property",
-   "rdfs:label": "date source",
-   "rdfs:subPropertyOf": {
-    "@id": "schema:subjectOf"
-   },
-   "skos:definition": "DOI or URL of the source that shows the first-published date."
-  },
-  {
-   "@id": "terms:declaration-declared-by",
-   "@type": "skos:Concept",
-   "skos:definition": "The FIP is declared by the target, a FAIR Implementation Community.",
-   "skos:exactMatch": {
-    "@id": "fip:declared-by"
-   },
-   "skos:inScheme": {
-    "@id": "terms:declaration-values"
-   },
-   "skos:prefLabel": "declared-by"
-  },
-  {
-   "@id": "terms:declaration-declares-current-use-of",
-   "@type": "skos:Concept",
-   "skos:definition": "The FIP declares that its community uses the target.",
-   "skos:exactMatch": {
-    "@id": "fip:declares-current-use-of"
-   },
-   "skos:inScheme": {
-    "@id": "terms:declaration-values"
-   },
-   "skos:prefLabel": "declares-current-use-of"
-  },
-  {
-   "@id": "terms:declaration-declares-planned-development-of",
-   "@type": "skos:Concept",
-   "skos:definition": "The FIP declares that its community plans to develop the target.",
-   "skos:exactMatch": {
-    "@id": "fip:declares-planned-development-of"
-   },
-   "skos:inScheme": {
-    "@id": "terms:declaration-values"
-   },
-   "skos:prefLabel": "declares-planned-development-of"
-  },
-  {
-   "@id": "terms:declaration-declares-planned-replacement-of",
-   "@type": "skos:Concept",
-   "skos:definition": "The FIP declares that its community plans to replace the target.",
-   "skos:exactMatch": {
-    "@id": "fip:declares-planned-replacement-of"
-   },
-   "skos:inScheme": {
-    "@id": "terms:declaration-values"
-   },
-   "skos:prefLabel": "declares-planned-replacement-of"
-  },
-  {
-   "@id": "terms:declaration-declares-planned-use-of",
-   "@type": "skos:Concept",
-   "skos:definition": "The FIP declares that its community plans to use the target.",
-   "skos:exactMatch": {
-    "@id": "fip:declares-planned-use-of"
-   },
-   "skos:inScheme": {
-    "@id": "terms:declaration-values"
-   },
-   "skos:prefLabel": "declares-planned-use-of"
-  },
-  {
-   "@id": "terms:declaration-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "declaration values"
-  },
-  {
    "@id": "terms:deprecates",
-   "@type": "skos:Concept",
-   "skos:closeMatch": {
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The subject replaces the target.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "deprecates",
+   "schema:termCode": "deprecates",
+   "skos:definition": "The subject replaces the target.",
+   "skos:exactMatch": {
     "@id": "dct:replaces"
    },
-   "skos:definition": "The subject replaces the target.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
@@ -195,9 +71,21 @@
   },
   {
    "@id": "terms:extends",
-   "@type": "skos:Concept",
-   "skos:closeMatch": {
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The subject builds on and extends the target.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "extends",
+   "schema:termCode": "extends",
+   "skos:broadMatch": {
     "@id": "schema:isBasedOn"
+   },
+   "skos:closeMatch": {
+    "@id": "http://purl.org/spar/cito/extends"
    },
    "skos:definition": "The subject builds on and extends the target.",
    "skos:inScheme": {
@@ -206,22 +94,61 @@
    "skos:prefLabel": "extends"
   },
   {
-   "@id": "terms:fairsharingRecord",
-   "@type": "rdf:Property",
-   "rdfs:label": "FAIRsharing record",
-   "skos:definition": "FAIRsharing record code, or the numeric id of a record without a DOI."
-  },
-  {
    "@id": "terms:hadRole-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "hadRole values"
+   "@type": [
+    "schema:DefinedTermSet",
+    "skos:ConceptScheme"
+   ],
+   "dct:conformsTo": {
+    "@id": "https://w3id.org/cdif/conceptscheme/1.1"
+   },
+   "schema:name": "hadRole values",
+   "skos:definition": "FAIRsharing's labels for relations between records, read subject first.",
+   "skos:hasTopConcept": [
+    {
+     "@id": "terms:implements"
+    },
+    {
+     "@id": "terms:extends"
+    },
+    {
+     "@id": "terms:profiles"
+    },
+    {
+     "@id": "terms:recommends"
+    },
+    {
+     "@id": "terms:deprecates"
+    },
+    {
+     "@id": "terms:related_to"
+    }
+   ],
+   "skos:prefLabel": "hadRole values"
   },
   {
    "@id": "terms:implements",
-   "@type": "skos:Concept",
-   "skos:closeMatch": {
-    "@id": "dct:conformsTo"
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The database implements the standard.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
    },
+   "schema:name": "implements",
+   "schema:termCode": "implements",
+   "skos:closeMatch": [
+    {
+     "@id": "fip:implements"
+    },
+    {
+     "@id": "http://semanticscience.org/resource/SIO_000233"
+    },
+    {
+     "@id": "dct:conformsTo"
+    }
+   ],
    "skos:definition": "The database implements the standard.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
@@ -229,58 +156,20 @@
    "skos:prefLabel": "implements"
   },
   {
-   "@id": "terms:lane-data-generation",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources whose phase, the earliest they act on, is data generation.",
-   "skos:inScheme": {
-    "@id": "terms:lane-values"
-   },
-   "skos:prefLabel": "Data generation"
-  },
-  {
-   "@id": "terms:lane-data-integration",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources whose phase, the earliest they act on, is data integration.",
-   "skos:inScheme": {
-    "@id": "terms:lane-values"
-   },
-   "skos:prefLabel": "Data integration"
-  },
-  {
-   "@id": "terms:lane-generic-infrastructure",
-   "@type": "skos:Concept",
-   "skos:definition": "Resources not specific to a research domain.",
-   "skos:inScheme": {
-    "@id": "terms:lane-values"
-   },
-   "skos:prefLabel": "Generic infrastructure"
-  },
-  {
-   "@id": "terms:lane-life-sciences-infrastructure",
-   "@type": "skos:Concept",
-   "skos:definition": "Life-science resources, not specific to toxicology, that toxicology uses.",
-   "skos:inScheme": {
-    "@id": "terms:lane-values"
-   },
-   "skos:prefLabel": "Life sciences infrastructure"
-  },
-  {
-   "@id": "terms:lane-regulatory-assessment",
-   "@type": "skos:Concept",
-   "skos:definition": "Toxicology resources whose phase, the earliest they act on, is regulatory assessment.",
-   "skos:inScheme": {
-    "@id": "terms:lane-values"
-   },
-   "skos:prefLabel": "Regulatory assessment"
-  },
-  {
-   "@id": "terms:lane-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "lane values"
-  },
-  {
    "@id": "terms:maintained-active",
-   "@type": "skos:Concept",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "Maintained and available.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:maintained-values"
+   },
+   "schema:name": "active",
+   "schema:termCode": "maintained-active",
+   "skos:closeMatch": {
+    "@id": "http://publications.europa.eu/resource/authority/distribution-status/ONGOING"
+   },
    "skos:definition": "Maintained and available.",
    "skos:inScheme": {
     "@id": "terms:maintained-values"
@@ -288,46 +177,41 @@
    "skos:prefLabel": "active"
   },
   {
-   "@id": "terms:maintained-discontinued",
-   "@type": "skos:Concept",
-   "skos:definition": "No longer maintained or available (shown with a dagger).",
-   "skos:inScheme": {
-    "@id": "terms:maintained-values"
-   },
-   "skos:prefLabel": "discontinued"
-  },
-  {
-   "@id": "terms:maintained-in-development",
-   "@type": "skos:Concept",
-   "skos:definition": "Not yet released in a stable form.",
-   "skos:inScheme": {
-    "@id": "terms:maintained-values"
-   },
-   "skos:prefLabel": "in development"
-  },
-  {
-   "@id": "terms:maintained-unknown",
-   "@type": "skos:Concept",
-   "skos:definition": "Status could not be established.",
-   "skos:inScheme": {
-    "@id": "terms:maintained-values"
-   },
-   "skos:prefLabel": "unknown"
-  },
-  {
    "@id": "terms:maintained-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "maintained values"
-  },
-  {
-   "@id": "terms:phase",
-   "@type": "rdf:Property",
-   "rdfs:label": "phase",
-   "skos:definition": "For a toxicology resource: the data life-cycle phase it acts on; when it acts on several, the earliest at which it must be applied."
+   "@type": [
+    "schema:DefinedTermSet",
+    "skos:ConceptScheme"
+   ],
+   "dct:conformsTo": {
+    "@id": "https://w3id.org/cdif/conceptscheme/1.1"
+   },
+   "schema:name": "maintained values",
+   "skos:definition": "Maintenance statuses of a resource, where no outside concept exists.",
+   "skos:hasTopConcept": {
+    "@id": "terms:maintained-active"
+   },
+   "skos:prefLabel": "maintained values"
   },
   {
    "@id": "terms:phase-data-generation",
-   "@type": "skos:Concept",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:phase-values"
+   },
+   "schema:name": "Data generation",
+   "schema:termCode": "phase-data-generation",
+   "skos:closeMatch": [
+    {
+     "@id": "http://purl.obolibrary.org/obo/T4FS_0000108"
+    },
+    {
+     "@id": "http://edamontology.org/topic_3077"
+    }
+   ],
    "skos:definition": "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them.",
    "skos:inScheme": {
     "@id": "terms:phase-values"
@@ -336,7 +220,24 @@
   },
   {
    "@id": "terms:phase-data-integration",
-   "@type": "skos:Concept",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:phase-values"
+   },
+   "schema:name": "Data integration",
+   "schema:termCode": "phase-data-integration",
+   "skos:closeMatch": [
+    {
+     "@id": "http://purl.obolibrary.org/obo/T4FS_0000487"
+    },
+    {
+     "@id": "http://edamontology.org/topic_3366"
+    }
+   ],
    "skos:definition": "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models.",
    "skos:inScheme": {
     "@id": "terms:phase-values"
@@ -345,25 +246,88 @@
   },
   {
    "@id": "terms:phase-regulatory-assessment",
-   "@type": "skos:Concept",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:phase-values"
+   },
+   "schema:name": "Regulatory assessment",
+   "schema:termCode": "phase-regulatory-assessment",
    "skos:definition": "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions.",
    "skos:inScheme": {
     "@id": "terms:phase-values"
    },
-   "skos:prefLabel": "Regulatory assessment"
+   "skos:prefLabel": "Regulatory assessment",
+   "skos:relatedMatch": [
+    {
+     "@id": "http://id.nlm.nih.gov/mesh/D018570"
+    },
+    {
+     "@id": "http://edamontology.org/topic_3394"
+    },
+    {
+     "@id": "http://purl.obolibrary.org/obo/T4FS_0000507"
+    },
+    {
+     "@id": "https://doi.org/10.1351/goldbook.16194"
+    },
+    {
+     "@id": "https://vhp4safety.github.io/glossary#VHP0000103"
+    },
+    {
+     "@id": "https://vhp4safety.github.io/glossary#VHP0000159"
+    },
+    {
+     "@id": "https://vhp4safety.github.io/glossary#VHP0000101"
+    }
+   ]
   },
   {
    "@id": "terms:phase-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "phase values"
+   "@type": [
+    "schema:DefinedTermSet",
+    "skos:ConceptScheme"
+   ],
+   "dct:conformsTo": {
+    "@id": "https://w3id.org/cdif/conceptscheme/1.1"
+   },
+   "schema:name": "phase values",
+   "skos:definition": "Data life-cycle phases that a toxicology resource acts on.",
+   "skos:hasTopConcept": [
+    {
+     "@id": "terms:phase-data-generation"
+    },
+    {
+     "@id": "terms:phase-data-integration"
+    },
+    {
+     "@id": "terms:phase-regulatory-assessment"
+    }
+   ],
+   "skos:prefLabel": "phase values"
   },
   {
    "@id": "terms:profiles",
-   "@type": "skos:Concept",
-   "skos:closeMatch": {
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The standard is a profile of the target standard.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "profiles",
+   "schema:termCode": "profiles",
+   "skos:broadMatch": {
     "@id": "dct:conformsTo"
    },
    "skos:definition": "The standard is a profile of the target standard.",
+   "skos:exactMatch": {
+    "@id": "http://www.w3.org/ns/dx/prof/isProfileOf"
+   },
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
@@ -371,7 +335,19 @@
   },
   {
    "@id": "terms:recommends",
-   "@type": "skos:Concept",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The policy recommends the target.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "recommends",
+   "schema:termCode": "recommends",
+   "skos:broadMatch": {
+    "@id": "dct:relation"
+   },
    "skos:definition": "The policy recommends the target.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
@@ -380,323 +356,72 @@
   },
   {
    "@id": "terms:related_to",
-   "@type": "skos:Concept",
-   "skos:closeMatch": {
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The resources are related without one building on the other.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "related_to",
+   "schema:termCode": "related_to",
+   "skos:definition": "The resources are related without one building on the other.",
+   "skos:exactMatch": {
     "@id": "dct:relation"
    },
-   "skos:definition": "The resources are related without one building on the other.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
    "skos:prefLabel": "related_to"
   },
   {
-   "@id": "terms:scope",
-   "@type": "rdf:Property",
-   "rdfs:label": "scope",
-   "skos:definition": "What the resource was made for: generic, life-science or toxicology infrastructure."
-  },
-  {
-   "@id": "terms:scope-generic",
-   "@type": "skos:Concept",
-   "skos:definition": "Infrastructure not specific to a research domain, including FAIR resources such as the FIP.",
-   "skos:inScheme": {
-    "@id": "terms:scope-values"
-   },
-   "skos:prefLabel": "Generic"
-  },
-  {
-   "@id": "terms:scope-life-sciences",
-   "@type": "skos:Concept",
-   "skos:definition": "Life-science infrastructure, not specific to toxicology, that toxicology uses.",
-   "skos:inScheme": {
-    "@id": "terms:scope-values"
-   },
-   "skos:prefLabel": "Life Sciences"
-  },
-  {
-   "@id": "terms:scope-toxicology",
-   "@type": "skos:Concept",
-   "skos:definition": "Made for toxicology, including toxicology instances of generic resources.",
-   "skos:inScheme": {
-    "@id": "terms:scope-values"
-   },
-   "skos:prefLabel": "Toxicology"
-  },
-  {
-   "@id": "terms:scope-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "scope values"
-  },
-  {
-   "@id": "terms:span",
-   "@type": "rdf:Property",
-   "rdfs:label": "span",
-   "skos:definition": "For a toxicology resource: every data life-cycle phase it acts on, starting with its phase."
-  },
-  {
-   "@id": "terms:stakeholders",
-   "@type": "rdf:Property",
-   "rdfs:label": "creator types",
-   "skos:definition": "For a toxicology resource: who made it; several may apply."
-  },
-  {
-   "@id": "terms:stakeholders-in-silico-research",
-   "@type": "skos:Concept",
-   "skos:definition": "Made by computational researchers: modellers, AOP, PBK, QSAR, informatics and data stewards.",
-   "skos:inScheme": {
-    "@id": "terms:stakeholders-values"
-   },
-   "skos:prefLabel": "In silico research"
-  },
-  {
-   "@id": "terms:stakeholders-regulator",
-   "@type": "skos:Concept",
-   "skos:definition": "Made by a regulatory agency or intergovernmental body, such as OECD, EFSA, ECHA or US EPA.",
-   "skos:inScheme": {
-    "@id": "terms:stakeholders-values"
-   },
-   "skos:prefLabel": "Regulator"
-  },
-  {
-   "@id": "terms:stakeholders-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "stakeholders values"
-  },
-  {
-   "@id": "terms:stakeholders-wet-lab-research",
-   "@type": "skos:Concept",
-   "skos:definition": "Made by experimental (wet-lab) researchers, mostly academic.",
-   "skos:inScheme": {
-    "@id": "terms:stakeholders-values"
-   },
-   "skos:prefLabel": "Wet-lab research"
-  },
-  {
-   "@id": "terms:subdomains-aop-based-mechanistic-knowledge",
-   "@type": "skos:Concept",
-   "skos:definition": "Integration and tools.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "AOP-based mechanistic knowledge"
-  },
-  {
-   "@id": "terms:subdomains-computational-and-predictive-toxicology",
-   "@type": "skos:Concept",
-   "skos:definition": "Integration and tools.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "computational and predictive toxicology"
-  },
-  {
-   "@id": "terms:subdomains-eco-toxicology",
-   "@type": "skos:Concept",
-   "skos:definition": "Data generation.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "eco-toxicology"
-  },
-  {
-   "@id": "terms:subdomains-exposome",
-   "@type": "skos:Concept",
-   "skos:definition": "Data generation.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "exposome"
-  },
-  {
-   "@id": "terms:subdomains-in-vitro-toxicology",
-   "@type": "skos:Concept",
-   "skos:definition": "Data generation.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "in vitro toxicology"
-  },
-  {
-   "@id": "terms:subdomains-nanotoxicology",
-   "@type": "skos:Concept",
-   "skos:definition": "Data generation.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "nanotoxicology"
-  },
-  {
    "@id": "terms:subdomains-regulatory-toxicology",
-   "@type": "skos:Concept",
-   "skos:definition": "Application.",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "dct:source": {
+    "@id": "https://doi.org/10.1016/S0378-4274(01)00457-X"
+   },
+   "schema:description": "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X).",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:subdomains-values"
+   },
+   "schema:name": "regulatory toxicology",
+   "schema:termCode": "subdomains-regulatory-toxicology",
+   "skos:broadMatch": [
+    {
+     "@id": "http://purl.obolibrary.org/obo/NCIT_C17206"
+    },
+    {
+     "@id": "https://doi.org/10.1351/goldbook.T06417"
+    }
+   ],
+   "skos:definition": "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X).",
    "skos:inScheme": {
     "@id": "terms:subdomains-values"
    },
-   "skos:prefLabel": "regulatory toxicology"
-  },
-  {
-   "@id": "terms:subdomains-toxicogenomics",
-   "@type": "skos:Concept",
-   "skos:definition": "Integration and tools.",
-   "skos:inScheme": {
-    "@id": "terms:subdomains-values"
-   },
-   "skos:prefLabel": "toxicogenomics"
+   "skos:prefLabel": "regulatory toxicology",
+   "skos:relatedMatch": {
+    "@id": "http://www.wikidata.org/entity/Q2448782"
+   }
   },
   {
    "@id": "terms:subdomains-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "subdomains values"
-  },
-  {
-   "@id": "terms:type-collection",
-   "@type": "skos:Concept",
-   "skos:definition": "Curated collection of standards, databases and policies.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
+   "@type": [
+    "schema:DefinedTermSet",
+    "skos:ConceptScheme"
+   ],
+   "dct:conformsTo": {
+    "@id": "https://w3id.org/cdif/conceptscheme/1.1"
    },
-   "skos:prefLabel": "Collection"
-  },
-  {
-   "@id": "terms:type-database-knowledgebase",
-   "@type": "skos:Concept",
-   "skos:definition": "Curated knowledge resource or data portal.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
+   "schema:name": "subdomains values",
+   "skos:definition": "Toxicology sub-domains that a resource serves, where no outside concept exists.",
+   "skos:hasTopConcept": {
+    "@id": "terms:subdomains-regulatory-toxicology"
    },
-   "skos:prefLabel": "Database: knowledgebase"
-  },
-  {
-   "@id": "terms:type-database-knowledgebase-and-repository",
-   "@type": "skos:Concept",
-   "skos:definition": "Both a curated knowledge resource and an archive.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Database: knowledgebase and repository"
-  },
-  {
-   "@id": "terms:type-database-repository",
-   "@type": "skos:Concept",
-   "skos:definition": "Archive that accepts data deposits.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Database: repository"
-  },
-  {
-   "@id": "terms:type-policy-funder",
-   "@type": "skos:Concept",
-   "skos:definition": "Data policy of a funder.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Policy: funder"
-  },
-  {
-   "@id": "terms:type-policy-institution",
-   "@type": "skos:Concept",
-   "skos:definition": "Policy or guidance issued by an institution or agency, such as OECD guidance.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Policy: institution"
-  },
-  {
-   "@id": "terms:type-policy-journal",
-   "@type": "skos:Concept",
-   "skos:definition": "Data policy of a journal.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Policy: journal"
-  },
-  {
-   "@id": "terms:type-policy-journal-publisher",
-   "@type": "skos:Concept",
-   "skos:definition": "Data policy of a publisher.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Policy: journal publisher"
-  },
-  {
-   "@id": "terms:type-policy-project",
-   "@type": "skos:Concept",
-   "skos:definition": "Policy or guidance issued by a project.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Policy: project"
-  },
-  {
-   "@id": "terms:type-policy-society",
-   "@type": "skos:Concept",
-   "skos:definition": "Policy or guidance of a learned society.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Policy: society"
-  },
-  {
-   "@id": "terms:type-standard-identifier-schema",
-   "@type": "skos:Concept",
-   "skos:definition": "Identifier scheme or resolver.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Standard: identifier schema"
-  },
-  {
-   "@id": "terms:type-standard-model-format",
-   "@type": "skos:Concept",
-   "skos:definition": "Data or metadata model, schema, exchange format.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Standard: model/format"
-  },
-  {
-   "@id": "terms:type-standard-principle",
-   "@type": "skos:Concept",
-   "skos:definition": "Published set of principles with a reusable artefact.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Standard: principle"
-  },
-  {
-   "@id": "terms:type-standard-reporting-guideline",
-   "@type": "skos:Concept",
-   "skos:definition": "Minimum information checklist or reporting template.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Standard: reporting guideline"
-  },
-  {
-   "@id": "terms:type-standard-terminology-artefact",
-   "@type": "skos:Concept",
-   "skos:definition": "Ontology, controlled vocabulary, thesaurus or glossary.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Standard: terminology artefact"
-  },
-  {
-   "@id": "terms:type-tool",
-   "@type": "skos:Concept",
-   "skos:definition": "Software or service; FAIRsharing does not register these.",
-   "skos:inScheme": {
-    "@id": "terms:type-values"
-   },
-   "skos:prefLabel": "Tool"
-  },
-  {
-   "@id": "terms:type-values",
-   "@type": "skos:ConceptScheme",
-   "rdfs:label": "type values"
+   "skos:prefLabel": "subdomains values"
   }
  ]
 }

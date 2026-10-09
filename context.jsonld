@@ -1,27 +1,29 @@
 {
  "@context": {
+  "@version": 1.1,
   "@base": "https://w3id.org/fair-tox/dataset",
-  "@vocab": "https://w3id.org/fair-tox/terms#",
-  "schema": "https://schema.org/",
+  "schema": "http://schema.org/",
   "dcat": "http://www.w3.org/ns/dcat#",
   "dct": "http://purl.org/dc/terms/",
   "skos": "http://www.w3.org/2004/02/skos/core#",
-  "pav": "http://purl.org/pav/",
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "fip": "https://w3id.org/fair/fip/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "spdx": "http://spdx.org/rdf/terms#",
+  "identifier": {
+   "@id": "schema:identifier",
+   "@type": "@id"
+  },
   "name": "schema:name",
   "alternateName": {
    "@id": "schema:alternateName",
    "@container": "@set"
   },
   "description": "schema:description",
-  "url": {
-   "@id": "schema:url",
-   "@type": "@id"
-  },
-  "datePublished": "schema:datePublished",
+  "url": "schema:url",
   "creator": "schema:creator",
   "version": "schema:version",
+  "inLanguage": "schema:inLanguage",
   "dateModified": "schema:dateModified",
   "license": {
    "@id": "schema:license",
@@ -32,33 +34,132 @@
    "@id": "schema:isBasedOn",
    "@type": "@id"
   },
+  "wasDerivedFrom": {
+   "@id": "prov:wasDerivedFrom",
+   "@type": "@id"
+  },
+  "keywords": {
+   "@id": "schema:keywords",
+   "@container": "@set"
+  },
+  "parentOrganization": {
+   "@id": "schema:parentOrganization",
+   "@type": "@id"
+  },
+  "temporalCoverage": "schema:temporalCoverage",
+  "variableMeasured": {
+   "@id": "schema:variableMeasured",
+   "@container": "@set"
+  },
+  "propertyID": {
+   "@id": "schema:propertyID",
+   "@type": "@id"
+  },
+  "value": "schema:value",
+  "distribution": {
+   "@id": "schema:distribution",
+   "@container": "@set"
+  },
+  "contentUrl": "schema:contentUrl",
+  "encodingFormat": "schema:encodingFormat",
+  "conformsTo": {
+   "@id": "dct:conformsTo",
+   "@type": "@id"
+  },
+  "checksum": "spdx:checksum",
+  "algorithm": "spdx:algorithm",
+  "checksumValue": "spdx:checksumValue",
+  "subjectOf": "schema:subjectOf",
+  "about": {
+   "@id": "schema:about",
+   "@type": "@id"
+  },
+  "additionalType": {
+   "@id": "schema:additionalType",
+   "@type": "@id"
+  },
+  "sdDatePublished": "schema:sdDatePublished",
   "hasPart": {
    "@id": "schema:hasPart",
    "@container": "@set"
   },
+  "schemaType": "@type",
   "key": "dct:identifier",
-  "type": "dct:type",
-  "subdomains": {
-   "@id": "dct:subject",
-   "@container": "@set"
-  },
-  "maintained": "schema:creativeWorkStatus",
-  "reviewedBy": "pav:curatedBy",
-  "note": "skos:editorialNote",
-  "source": "dct:source",
+  "type": "schema:additionalType",
   "fsrType": {
    "@id": "rdf:type",
    "@type": "@id",
    "@container": "@set"
   },
-  "stakeholders": {
-   "@container": "@set"
+  "scope": {
+   "@id": "schema:about",
+   "@type": "@vocab",
+   "@context": {
+    "Generic": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+    "Life Sciences": "http://aims.fao.org/aos/agrovoc/c_4318",
+    "Toxicology": "http://purl.obolibrary.org/obo/NCIT_C17206"
+   }
+  },
+  "subdomains": {
+   "@id": "schema:about",
+   "@type": "@vocab",
+   "@container": "@set",
+   "@context": {
+    "in vitro toxicology": "http://www.wikidata.org/entity/Q6013136",
+    "nanotoxicology": "https://doi.org/10.1351/goldbook.15908",
+    "exposome": "http://id.nlm.nih.gov/mesh/D000081413",
+    "eco-toxicology": "http://id.nlm.nih.gov/mesh/D054750",
+    "toxicogenomics": "http://purl.obolibrary.org/obo/NCIT_C20179",
+    "AOP-based mechanistic knowledge": "http://id.nlm.nih.gov/mesh/D000073931",
+    "computational and predictive toxicology": "https://doi.org/10.1351/goldbook.15583",
+    "regulatory toxicology": "https://w3id.org/fair-tox/terms#subdomains-regulatory-toxicology"
+   }
   },
   "span": {
-   "@container": "@set"
+   "@id": "dcat:theme",
+   "@type": "@vocab",
+   "@container": "@set",
+   "@context": {
+    "Data generation": "https://w3id.org/fair-tox/terms#phase-data-generation",
+    "Data integration": "https://w3id.org/fair-tox/terms#phase-data-integration",
+    "Regulatory assessment": "https://w3id.org/fair-tox/terms#phase-regulatory-assessment"
+   }
   },
+  "creatorType": {
+   "@id": "schema:creator",
+   "@type": "@vocab",
+   "@container": "@set",
+   "@context": {
+    "Wet-lab research": "http://www.ebi.ac.uk/efo/EFO_0009741",
+    "In silico research": "http://www.ebi.ac.uk/efo/EFO_0009742",
+    "Regulator": "http://semanticscience.org/resource/SIO_000619"
+   }
+  },
+  "maintained": {
+   "@id": "schema:creativeWorkStatus",
+   "@type": "@vocab",
+   "@context": {
+    "active": "https://w3id.org/fair-tox/terms#maintained-active",
+    "discontinued": "http://publications.europa.eu/resource/authority/dataset-status/DISCONT",
+    "in development": "http://purl.org/adms/status/UnderDevelopment",
+    "unknown": "http://purl.obolibrary.org/obo/NCIT_C17998"
+   }
+  },
+  "datePublished": "schema:datePublished",
+  "dateReleased": "dct:issued",
+  "dateAdopted": "dct:dateAccepted",
+  "dateCreated": "schema:dateCreated",
+  "date": "dct:date",
   "dateSource": {
+   "@id": "schema:citation",
    "@type": "@id"
+  },
+  "fairsharingRecord": {
+   "@id": "schema:sameAs",
+   "@type": "@vocab",
+   "@context": {
+    "@vocab": "https://fairsharing.org/"
+   }
   },
   "qualifiedRelation": {
    "@id": "dcat:qualifiedRelation",
@@ -70,10 +171,18 @@
   },
   "hadRole": {
    "@id": "dcat:hadRole",
-   "@type": "@vocab"
+   "@type": "@vocab",
+   "@context": {
+    "implements": "https://w3id.org/fair-tox/terms#implements",
+    "extends": "https://w3id.org/fair-tox/terms#extends",
+    "profiles": "https://w3id.org/fair-tox/terms#profiles",
+    "recommends": "https://w3id.org/fair-tox/terms#recommends",
+    "deprecates": "https://w3id.org/fair-tox/terms#deprecates",
+    "related_to": "https://w3id.org/fair-tox/terms#related_to"
+   }
   },
   "fipDeclaration": {
-   "@id": "dct:hasPart",
+   "@id": "schema:hasPart",
    "@container": "@set"
   },
   "question": {
@@ -105,14 +214,6 @@
    "@id": "skos:exactMatch",
    "@type": "@id",
    "@container": "@set"
-  },
-  "buildsOnFair": null,
-  "fsrCategory": null,
-  "declaredIn": null,
-  "principles": null,
-  "principle": null,
-  "sources": null,
-  "vocabularies": null,
-  "fairsharing": null
+  }
  }
 }

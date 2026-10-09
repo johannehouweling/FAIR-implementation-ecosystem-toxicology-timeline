@@ -1,4 +1,4 @@
-# FAIR-enabling resources in toxicology
+# FAIR-supporting resources in toxicology
 
 This repository hosts the dashboard at https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/.
 It shows standards, databases, policies and tools that make toxicology data findable, accessible,

@@ -1,7 +1,6 @@
 {
  "@context": {
   "@version": 1.1,
-  "@base": "https://w3id.org/fair-tox/dataset",
   "schema": "http://schema.org/",
   "dcat": "http://www.w3.org/ns/dcat#",
   "dct": "http://purl.org/dc/terms/",
@@ -70,6 +69,16 @@
   "algorithm": "spdx:algorithm",
   "checksumValue": "spdx:checksumValue",
   "subjectOf": "schema:subjectOf",
+  "maintainer": "schema:maintainer",
+  "theme": {
+   "@id": "dcat:theme",
+   "@type": "@id"
+  },
+  "resource": {
+   "@id": "dcat:resource",
+   "@type": "@id",
+   "@container": "@set"
+  },
   "about": {
    "@id": "schema:about",
    "@type": "@id"
@@ -85,7 +94,7 @@
   },
   "schemaType": "@type",
   "key": "dct:identifier",
-  "type": "schema:additionalType",
+  "fairsharingType": "schema:additionalType",
   "fsrType": {
    "@id": "rdf:type",
    "@type": "@id",
@@ -125,14 +134,19 @@
     "Regulatory assessment": "https://w3id.org/fair-tox/terms#phase-regulatory-assessment"
    }
   },
-  "creatorType": {
-   "@id": "schema:creator",
-   "@type": "@vocab",
+  "qualifiedAttribution": {
+   "@id": "prov:qualifiedAttribution",
    "@container": "@set",
    "@context": {
-    "Wet-lab research": "http://www.ebi.ac.uk/efo/EFO_0009741",
-    "In silico research": "http://www.ebi.ac.uk/efo/EFO_0009742",
-    "Regulator": "http://semanticscience.org/resource/SIO_000619"
+    "hadRole": {
+     "@id": "dcat:hadRole",
+     "@type": "@vocab",
+     "@context": {
+      "Wet-lab research": "http://www.ebi.ac.uk/efo/EFO_0009741",
+      "In silico research": "http://www.ebi.ac.uk/efo/EFO_0009742",
+      "Regulator": "http://semanticscience.org/resource/SIO_000619"
+     }
+    }
    }
   },
   "maintained": {
@@ -211,7 +225,7 @@
    "@type": "@id"
   },
   "fsr": {
-   "@id": "skos:exactMatch",
+   "@id": "schema:sameAs",
    "@type": "@id",
    "@container": "@set"
   }

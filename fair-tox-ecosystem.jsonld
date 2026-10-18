@@ -1571,7 +1571,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Supporting-Software"
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -3566,7 +3566,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Training-Material"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "scope": "Generic",
    "dateReleased": "2020",
@@ -5013,7 +5013,7 @@
    ],
    "fairsharingType": "Policy: institution",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Interpretation"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -11800,7 +11800,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Training-Material"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "scope": "Generic",
    "dateReleased": "2021-03-31",
@@ -11937,7 +11937,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Training-Material"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "scope": "Toxicology",
    "phase": "Data integration",
@@ -12037,7 +12037,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Supporting-Software"
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -14348,7 +14348,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "f4d2d611069dbb554af7a2fb655e43673cc4c6754a9a67fbff0723d73593ee19"
+    "checksumValue": "b0284bf838484a824f574383de91777460898ab70c1a420036161058ee9ac426"
    }
   },
   {

@@ -235,7 +235,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.4.0",
- "dateModified": "2026-10-10",
+ "dateModified": "2026-10-18",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -260,7 +260,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-10-17",
+   "retrieved": "2026-10-18",
    "members": 74
   },
   "fip": {
@@ -272,7 +272,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-17",
+    "retrieved": "2026-10-18",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -303,7 +303,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-17",
+    "retrieved": "2026-10-18",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -480,7 +480,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -575,7 +575,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -654,6 +654,72 @@
      "@type": "prov:Attribution",
      "hadRole": "Regulator"
     }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.4ndncv",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.62qk8w",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.6xq0ee",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.j9y503",
+     "hadRole": "implements"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#aop_wiki_id",
+   "identifier": "https://w3id.org/fair-tox/dataset#aop_wiki_id",
+   "schemaType": "schema:CreativeWork",
+   "key": "aop_wiki_id",
+   "name": "Adverse Outcome Pathways Wiki Identifier",
+   "alternateName": [
+    "AOP-WIKI-ID"
+   ],
+   "fairsharingType": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "in vitro toxicology",
+    "nanotoxicology",
+    "AOP-based mechanistic knowledge"
+   ],
+   "dateReleased": "2013-05",
+   "dateSource": "https://aopwiki.org/handbooks/6#section-1-%E2%80%93-aop-description-41",
+   "url": "https://aopwiki.org/aops",
+   "description": "Each AOP is automatically given a numerical AOP identifier by the AOP-Wiki when it is created (e.g., AOP: ###).",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "https://w3id.org/fair-tox/dataset#fairaop"
+   ],
+   "principles": [
+    "F1"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ],
+   "fsr": [
+    "https://w3id.org/np/RAp3fIzqG9r4IlvjvnMpkU6bvJhwD7U_xJAQ-H5niEmlM#AOP-WIKI-ID"
    ]
   },
   {
@@ -698,6 +764,14 @@
     {
      "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
      "hadRole": "extends"
+    },
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopxml",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.tfj7gt",
+     "hadRole": "related_to"
     }
    ]
   },
@@ -771,6 +845,7 @@
    "url": "https://aopdb.rdf.bigcat-bioinformatics.org/sparql",
    "description": "AOP-DB RDF is a semantic-web (RDF) version of selected AOP-DB tables, mapped to ontologies and aligned with AOP-Wiki RDF, and served through a public SPARQL endpoint. It allows federated queries that link AOP data with genes, diseases, pathways and ToxCast assays.",
    "maintained": "active",
+   "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedAttribution": [
     {
@@ -789,6 +864,14 @@
     },
     {
      "relation": "https://w3id.org/fair-tox/dataset#aopo",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.87ccfd",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
      "hadRole": "implements"
     }
    ]
@@ -828,6 +911,12 @@
     {
      "@type": "prov:Attribution",
      "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
+     "hadRole": "related_to"
     }
    ]
   },
@@ -1060,6 +1149,10 @@
    ],
    "qualifiedRelation": [
     {
+     "relation": "https://w3id.org/fair-tox/dataset#aopkb",
+     "hadRole": "related_to"
+    },
+    {
      "relation": "https://doi.org/10.25504/FAIRsharing.1x53qk",
      "hadRole": "related_to"
     }
@@ -1095,6 +1188,7 @@
    "url": "https://aopwiki.rdf.bigcat-bioinformatics.org",
    "description": "A Linked Data version of the AOP-Wiki, converted from the AOP-Wiki XML export into RDF and served through a public SPARQL endpoint. It maps AOPs, key events and stressors to external gene, protein and chemical identifiers, so AOP knowledge can be queried and combined with other resources.",
    "maintained": "active",
+   "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedAttribution": [
     {
@@ -1108,11 +1202,129 @@
      "hadRole": "related_to"
     },
     {
+     "relation": "https://w3id.org/fair-tox/dataset#aopo",
+     "hadRole": "implements"
+    },
+    {
      "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
      "hadRole": "extends"
     },
     {
+     "relation": "https://w3id.org/fair-tox/dataset#aopxml",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.2b0d92",
+     "hadRole": "implements"
+    },
+    {
      "relation": "https://doi.org/10.25504/FAIRsharing.62qk8w",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.6xq0ee",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.87ccfd",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.amcv1e",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.j9y503",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "hadRole": "implements"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#aopxml",
+   "identifier": "https://w3id.org/fair-tox/dataset#aopxml",
+   "schemaType": "schema:CreativeWork",
+   "key": "aopxml",
+   "name": "AOP-XML (AOP-Wiki XML exchange format)",
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "In silico research",
+    "Regulator"
+   ],
+   "subdomains": [
+    "AOP-based mechanistic knowledge",
+    "computational and predictive toxicology"
+   ],
+   "dateReleased": "2017-03-28",
+   "dateSource": "https://github.com/swandle06/AopXml",
+   "creator": "AOP-Wiki development team (US EPA; SAAOP)",
+   "url": "https://github.com/swandle06/AopXml",
+   "description": "The XML schema and exchange format in which the AOP-Wiki exports its full content (AOPs, Key Events, KERs, stressors, Event Components and evidence fields), published as nightly and quarterly frozen downloads. It is the machine-readable source that downstream resources such as AOP-Wiki RDF and AOP-DB are built from.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#aopxplorer",
+   "identifier": "https://w3id.org/fair-tox/dataset#aopxplorer",
+   "schemaType": "schema:SoftwareApplication",
+   "key": "aopxplorer",
+   "name": "AOP Xplorer",
+   "fairsharingType": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Visualization-Service"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "AOP-based mechanistic knowledge",
+    "computational and predictive toxicology"
+   ],
+   "dateReleased": "2017-04-14",
+   "dateSource": "https://apps.cytoscape.org/apps/aopxplorer",
+   "creator": "US Army Engineer Research and Development Center (Lyle Burgoon)",
+   "url": "https://datasciburgoon.github.io/aopxplorer/",
+   "description": "AOPXplorer is a Cytoscape app with companion R packages that builds AOP networks from the AOP Ontology and overlays user data, such as gene expression, on them. It was the AOP-KB module for viewing AOPs in a wider network context.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopkb",
+     "hadRole": "related_to"
+    },
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopo",
      "hadRole": "implements"
     }
    ]
@@ -1197,7 +1409,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1345,7 +1557,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1353,7 +1565,7 @@
    "identifier": "https://w3id.org/fair-tox/dataset#arraytrack",
    "schemaType": "schema:SoftwareApplication",
    "key": "arraytrack",
-   "name": "ArrayTrack",
+   "name": "ArrayTrack HCA-PCA Standalone Package",
    "alternateName": [
     "arraytrack"
    ],
@@ -1531,7 +1743,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1616,7 +1828,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1675,7 +1887,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1734,7 +1946,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1793,7 +2005,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1860,7 +2072,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1919,7 +2131,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -1978,7 +2190,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2093,7 +2305,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2174,7 +2386,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2253,7 +2465,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2339,7 +2551,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2404,7 +2616,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2498,7 +2710,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2654,7 +2866,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2801,7 +3013,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2889,7 +3101,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -2976,7 +3188,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3098,7 +3310,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3221,7 +3433,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3339,7 +3551,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3429,7 +3641,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3443,7 +3655,7 @@
    ],
    "fairsharingType": "Standard: reporting guideline",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -3465,7 +3677,7 @@
    "url": "https://www.ecotoxcentre.ch/projects/risk-assessment/cred-criteria-for-reporting-and-evaluating-ecotoxicity-data",
    "description": "A method for evaluating the reliability (20 criteria) and relevance (13 criteria) of aquatic ecotoxicity studies, with reporting recommendations and an Excel evaluation tool. It makes study evaluations transparent and consistent, so peer-reviewed ecotoxicity data can be reused in regulatory hazard and risk assessment.",
    "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -3762,7 +3974,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3860,7 +4072,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -3895,66 +4107,6 @@
     {
      "@type": "prov:Attribution",
      "hadRole": "In silico research"
-    }
-   ]
-  },
-  {
-   "@id": "https://w3id.org/fair-tox/dataset#dixa",
-   "identifier": "https://w3id.org/fair-tox/dataset#dixa",
-   "schemaType": "schema:CreativeWork",
-   "key": "dixa",
-   "name": "diXa data infrastructure for chemical safety assessment",
-   "alternateName": [
-    "diXa",
-    "diXa data warehouse"
-   ],
-   "fairsharingType": "Database: knowledgebase and repository",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
-   ],
-   "scope": "Toxicology",
-   "phase": "Data generation",
-   "span": [
-    "Data generation",
-    "Data integration"
-   ],
-   "creatorType": [
-    "Wet-lab research",
-    "In silico research",
-    "Regulator"
-   ],
-   "subdomains": [
-    "toxicogenomics"
-   ],
-   "dateReleased": "2014",
-   "dateSource": "https://web.archive.org/web/20140207104020/http://www.dixa-fp7.eu/",
-   "creator": "diXa consortium (Maastricht University, EMBL-EBI)",
-   "url": "https://doi.org/10.1093/bioinformatics/btu827",
-   "description": "A data infrastructure from the EU FP7 diXa project that connected a central toxicogenomics data warehouse at EMBL-EBI to a portal linking chemical, molecular and phenotype information. It offered online templates and guidelines for depositing data, plus tools for analysing them; the service is no longer online.",
-   "maintained": "discontinued",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Wet-lab research"
-    },
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "In silico research"
-    },
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Regulator"
-    }
-   ],
-   "qualifiedRelation": [
-    {
-     "relation": "https://w3id.org/fair-tox/dataset#tggates",
-     "hadRole": "related_to"
-    },
-    {
-     "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
-     "hadRole": "implements"
     }
    ]
   },
@@ -4033,7 +4185,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4115,7 +4267,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4189,7 +4341,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4291,7 +4443,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4369,7 +4521,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4455,7 +4607,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4544,7 +4696,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4657,7 +4809,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4753,7 +4905,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -4791,6 +4943,61 @@
     {
      "@type": "prov:Attribution",
      "hadRole": "In silico research"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#effectopedia",
+   "identifier": "https://w3id.org/fair-tox/dataset#effectopedia",
+   "schemaType": "schema:CreativeWork",
+   "key": "effectopedia",
+   "name": "Effectopedia",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "In silico research",
+    "Regulator"
+   ],
+   "subdomains": [
+    "AOP-based mechanistic knowledge",
+    "computational and predictive toxicology"
+   ],
+   "dateReleased": "2009-08-05",
+   "dateSource": "https://sourceforge.net/projects/effectopedia/",
+   "creator": "OECD (developed by Hristo Aladjov)",
+   "url": "https://sourceforge.net/projects/effectopedia/",
+   "description": "Effectopedia was the AOP-KB module for building structured and quantitative AOPs collaboratively. AOPs were drawn as diagrams whose elements carried test methods, experimental dose-response data and computational models. It was open-source desktop software (GPLv3) connected to a central OECD database, and it supported the AOP-XML format and OECD Harmonised Template 201.",
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopkb",
+     "hadRole": "related_to"
+    },
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
+     "hadRole": "related_to"
+    },
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#oht",
+     "hadRole": "implements"
     }
    ]
   },
@@ -4968,7 +5175,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5071,7 +5278,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5219,7 +5426,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5334,7 +5541,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5417,7 +5624,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5515,7 +5722,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5616,7 +5823,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5699,7 +5906,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5823,7 +6030,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -5948,7 +6155,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -6107,7 +6314,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -6203,7 +6410,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -6258,6 +6465,20 @@
    ],
    "declared-by": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
    "fipDeclaration": [
+    {
+     "@id": "https://w3id.org/np/RAZiMrgnhgfRmIA45-4l-c9B3tJjoJKng-uFwv8QmDy9c#declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#aop_wiki_id",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+     "principle": "F1"
+    },
+    {
+     "@id": "https://w3id.org/np/RApHitDTyJ1C55KAmZeyeq8SBTjHv03n4_aFGWNdnZoD4#declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#aop_wiki_id",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+     "principle": "F1"
+    },
     {
      "@id": "https://w3id.org/np/RAmpd6FeQ9bWFwWTyJagvCC6jXZSaevobkuLFCruZggYM#declaration",
      "@type": "fip:FIP-Declaration",
@@ -6486,7 +6707,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -6640,7 +6861,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -6953,7 +7174,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7032,7 +7253,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7208,7 +7429,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7299,7 +7520,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7374,7 +7595,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7455,7 +7676,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7550,7 +7771,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7663,7 +7884,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7750,7 +7971,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7876,7 +8097,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -7954,7 +8175,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8076,7 +8297,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8242,7 +8463,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8439,7 +8660,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8534,7 +8755,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8646,7 +8867,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8825,7 +9046,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -8963,7 +9184,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9050,7 +9271,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9170,7 +9391,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9270,7 +9491,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9307,6 +9528,7 @@
    "url": "https://nanosafety.rdf.bigcat-bioinformatics.org",
    "description": "An RDF knowledge graph that combines literature-curated physicochemical data on nanomaterials with AOP information from the AOP-Wiki, using ontology terms and European Registry of Materials identifiers. A public SPARQL endpoint supports federated queries that relate nanomaterial properties to molecular initiating events and key events.",
    "maintained": "active",
+   "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedAttribution": [
     {
@@ -9325,6 +9547,14 @@
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.2gpf81",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.87ccfd",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
      "hadRole": "implements"
     }
    ]
@@ -9503,7 +9733,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9577,7 +9807,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9687,7 +9917,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9801,7 +10031,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -9944,7 +10174,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -10018,7 +10248,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -10119,7 +10349,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -10318,7 +10548,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -10413,7 +10643,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -10567,7 +10797,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -10940,7 +11170,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -11166,7 +11396,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -11281,7 +11511,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -11483,7 +11713,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -11556,7 +11786,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -11570,7 +11800,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+    "https://w3id.org/fair/fip/terms/FAIR-Training-Material"
    ],
    "scope": "Generic",
    "dateReleased": "2021-03-31",
@@ -11693,7 +11923,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -11995,7 +12225,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12116,7 +12346,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12224,7 +12454,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12338,7 +12568,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12428,7 +12658,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12508,7 +12738,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12668,7 +12898,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12765,7 +12995,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -12906,7 +13136,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -13313,7 +13543,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -13497,7 +13727,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -13790,7 +14020,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
   },
   {
@@ -13861,8 +14091,54 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-17"
+    "retrieved": "2026-10-18"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#wikipathways_aopportal",
+   "identifier": "https://w3id.org/fair-tox/dataset#wikipathways_aopportal",
+   "schemaType": "schema:CreativeWork",
+   "key": "wikipathways_aopportal",
+   "name": "WikiPathways AOP Portal",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "toxicogenomics",
+    "AOP-based mechanistic knowledge"
+   ],
+   "datePublished": "2018-12-21",
+   "dateSource": "https://doi.org/10.3389/fgene.2018.00661",
+   "creator": "WikiPathways (BiGCaT/TGX, Maastricht University)",
+   "url": "https://www.wikipathways.org/communities/aop.html",
+   "description": "The AOP community portal of WikiPathways, which collects the molecular pathway models that underlie AOP-Wiki Key Events, including molecular AOPs. It links Key Events to curated, identifier-mapped pathways, so that omics data can be analysed and visualised in the context of an AOP.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
+     "hadRole": "related_to"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.1x53qk",
+     "hadRole": "extends"
+    }
+   ]
   }
  ],
  "inLanguage": "en",
@@ -14072,7 +14348,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "863e144ea38ed70c509e56067a1a2da832f4eb81db46f0aa5ff4c17f2fc880a9"
+    "checksumValue": "f4d2d611069dbb554af7a2fb655e43673cc4c6754a9a67fbff0723d73593ee19"
    }
   },
   {
@@ -14083,7 +14359,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "4ef196924bbf98fb4c63abfc0e37250fc6d1870914ab317fbabdb4b01193cc85"
+    "checksumValue": "6188431c385cb8b5fac43f381bbb7eede7c1e1deb03ed45c1959bed760fd1d5a"
    }
   },
   {
@@ -14117,6 +14393,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-10-10"
+  "sdDatePublished": "2026-10-18"
  }
 }

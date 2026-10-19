@@ -235,7 +235,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.6.0",
- "dateModified": "2026-10-18",
+ "dateModified": "2026-10-19",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -5939,7 +5939,7 @@
    "dateSource": "https://fairsharing.org/2973",
    "creator": "University of Cincinnati (Puga laboratory)",
    "url": "http://eh4.uc.edu/chromium/",
-   "description": "Small University of Cincinnati web portal giving FAIR access to epigenomics datasets (ChIP-seq, ATAC-seq, MNase-seq, FAIRE) on how hexavalent chromium disturbs chromatin organisation. It adds curated chemical, cell, antibody and treatment metadata, with links to GEO, BioProject and PubMed.",
+   "description": "University of Cincinnati web portal giving FAIR access to epigenomics datasets (ChIP-seq, ATAC-seq, MNase-seq, FAIRE) on how hexavalent chromium disturbs chromatin organisation. It adds curated chemical, cell, antibody and treatment metadata, with links to GEO, BioProject and PubMed.",
    "maintained": "discontinued",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/2973",
@@ -11987,7 +11987,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -12007,7 +12007,7 @@
    "description": "A FAIR Cookbook recipe, proposed on GitHub and not yet published, setting out minimum and desirable metadata for cell-based toxicology assays and how to annotate them with BioAssay Ontology terms, so that the data can be found and linked to AOPs.",
    "maintained": "in development",
    "buildsOnFair": true,
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14348,7 +14348,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "b0284bf838484a824f574383de91777460898ab70c1a420036161058ee9ac426"
+    "checksumValue": "8fc4cd565c3af716b2e6e6eddde45f066f7824cae70672c6a615ac263916f458"
    }
   },
   {
@@ -14393,6 +14393,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-10-18"
+  "sdDatePublished": "2026-10-19"
  }
 }

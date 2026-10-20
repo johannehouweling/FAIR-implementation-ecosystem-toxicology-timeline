@@ -696,9 +696,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "nanotoxicology",
-    "AOP-based mechanistic knowledge"
+    "in vitro toxicology"
    ],
    "dateReleased": "2013-05",
    "dateSource": "https://aopwiki.org/handbooks/6#section-1-%E2%80%93-aop-description-41",
@@ -14348,7 +14346,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "5d08d2f8f0af9c6397363c25ee5b7cd3246e4bed3dda592a450d5cff0d18df8a"
+    "checksumValue": "6e50d4e718780be5a6cf50f06b6ea87ac7e2730335a4c052f80e93c12ddc61c9"
    }
   },
   {

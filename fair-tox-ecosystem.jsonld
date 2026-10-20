@@ -349,9 +349,9 @@
    "Toxicology": "Made for toxicology, including toxicology instances of generic resources."
   },
   "phase": {
-   "Data generation": "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them.",
-   "Data integration": "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models.",
-   "Regulatory assessment": "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions."
+   "Data generation": "Supports the planning of individual toxicology studies, the recording of their results and study context (metadata, protocols, data processing) and the deposition of study-level datasets linked to that context.",
+   "Data integration": "Supports the linking of existing research output from different studies across test systems, stressors, exposures and endpoints, with mechanistic knowledge and models; includes the derivative objects this produces.",
+   "Regulatory assessment": "Supports the reporting of studies for regulatory submission and the identification and evaluation of toxicology research outputs for a specified regulatory question."
   },
   "creatorType": {
    "Wet-lab research": "Made by experimental (wet-lab) researchers, mostly academic.",
@@ -361,9 +361,9 @@
   "lane": {
    "Generic infrastructure": "Resources not specific to a research domain.",
    "Life sciences infrastructure": "Life-science resources, not specific to toxicology, that toxicology uses.",
-   "Data generation": "Toxicology resources whose phase, the earliest they act on, is data generation.",
-   "Data integration": "Toxicology resources whose phase, the earliest they act on, is data integration.",
-   "Regulatory assessment": "Toxicology resources whose phase, the earliest they act on, is regulatory assessment."
+   "Data generation": "Toxicology resources whose earliest phase is data generation; it supports the planning of individual toxicology studies, the recording of their results and study context (metadata, protocols, data processing) and the deposition of study-level datasets linked to that context.",
+   "Data integration": "Toxicology resources whose earliest phase is data integration; it supports the linking of existing research output from different studies across test systems, stressors, exposures and endpoints, with mechanistic knowledge and models; includes the derivative objects this produces.",
+   "Regulatory assessment": "Toxicology resources whose earliest phase is regulatory assessment; it supports the reporting of studies for regulatory submission and the identification and evaluation of toxicology research outputs for a specified regulatory question."
   },
   "creatorLane": {
    "Made by wet-lab research": "Toxicology resources made by wet-lab research only.",
@@ -14370,7 +14370,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "b3e408b2663234acb09d9d023da4ff8b30f5a4c50d904e36fdd79db6ae3fca44"
+    "checksumValue": "ebd5e89ecc9adcd39ea67ad42e602f49c104bcc7f4fb32d69ffd41245f7143e8"
    }
   }
  ],

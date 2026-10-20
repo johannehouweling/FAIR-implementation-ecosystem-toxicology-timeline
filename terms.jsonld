@@ -198,7 +198,7 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them.",
+   "schema:description": "Supports the planning of individual toxicology studies, the recording of their results and study context (metadata, protocols, data processing) and the deposition of study-level datasets linked to that context.",
    "schema:inDefinedTermSet": {
     "@id": "terms:phase-values"
    },
@@ -212,7 +212,7 @@
      "@id": "http://edamontology.org/topic_3077"
     }
    ],
-   "skos:definition": "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them.",
+   "skos:definition": "Supports the planning of individual toxicology studies, the recording of their results and study context (metadata, protocols, data processing) and the deposition of study-level datasets linked to that context.",
    "skos:inScheme": {
     "@id": "terms:phase-values"
    },
@@ -224,7 +224,7 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models.",
+   "schema:description": "Supports the linking of existing research output from different studies across test systems, stressors, exposures and endpoints, with mechanistic knowledge and models; includes the derivative objects this produces.",
    "schema:inDefinedTermSet": {
     "@id": "terms:phase-values"
    },
@@ -238,7 +238,7 @@
      "@id": "http://edamontology.org/topic_3366"
     }
    ],
-   "skos:definition": "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models.",
+   "skos:definition": "Supports the linking of existing research output from different studies across test systems, stressors, exposures and endpoints, with mechanistic knowledge and models; includes the derivative objects this produces.",
    "skos:inScheme": {
     "@id": "terms:phase-values"
    },
@@ -250,13 +250,13 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions.",
+   "schema:description": "Supports the reporting of studies for regulatory submission and the identification and evaluation of toxicology research outputs for a specified regulatory question.",
    "schema:inDefinedTermSet": {
     "@id": "terms:phase-values"
    },
    "schema:name": "Regulatory assessment",
    "schema:termCode": "phase-regulatory-assessment",
-   "skos:definition": "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions.",
+   "skos:definition": "Supports the reporting of studies for regulatory submission and the identification and evaluation of toxicology research outputs for a specified regulatory question.",
    "skos:inScheme": {
     "@id": "terms:phase-values"
    },

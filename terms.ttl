@@ -69,35 +69,35 @@ terms:maintained-active a schema:DefinedTerm,
 
 terms:phase-data-generation a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them." ;
+    schema:description "Supports the planning of individual toxicology studies, the recording of their results and study context (metadata, protocols, data processing) and the deposition of study-level datasets linked to that context." ;
     schema:inDefinedTermSet terms:phase-values ;
     schema:name "Data generation" ;
     schema:termCode "phase-data-generation" ;
     skos:closeMatch <http://edamontology.org/topic_3077>,
         <http://purl.obolibrary.org/obo/T4FS_0000108> ;
-    skos:definition "Planning, producing and depositing primary records: datasets, protocols, method descriptions and the publications reporting them." ;
+    skos:definition "Supports the planning of individual toxicology studies, the recording of their results and study context (metadata, protocols, data processing) and the deposition of study-level datasets linked to that context." ;
     skos:inScheme terms:phase-values ;
     skos:prefLabel "Data generation" .
 
 terms:phase-data-integration a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models." ;
+    schema:description "Supports the linking of existing research output from different studies across test systems, stressors, exposures and endpoints, with mechanistic knowledge and models; includes the derivative objects this produces." ;
     schema:inDefinedTermSet terms:phase-values ;
     schema:name "Data integration" ;
     schema:termCode "phase-data-integration" ;
     skos:closeMatch <http://edamontology.org/topic_3366>,
         <http://purl.obolibrary.org/obo/T4FS_0000487> ;
-    skos:definition "Integrating and synthesising those records into secondary resources and evidence: curated databases, knowledge bases, ontologies, pathway networks and models." ;
+    skos:definition "Supports the linking of existing research output from different studies across test systems, stressors, exposures and endpoints, with mechanistic knowledge and models; includes the derivative objects this produces." ;
     skos:inScheme terms:phase-values ;
     skos:prefLabel "Data integration" .
 
 terms:phase-regulatory-assessment a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions." ;
+    schema:description "Supports the reporting of studies for regulatory submission and the identification and evaluation of toxicology research outputs for a specified regulatory question." ;
     schema:inDefinedTermSet terms:phase-values ;
     schema:name "Regulatory assessment" ;
     schema:termCode "phase-regulatory-assessment" ;
-    skos:definition "Assessing records and secondary resources for reliability and relevance in a regulatory context and integrating them into weight of evidence and decisions." ;
+    skos:definition "Supports the reporting of studies for regulatory submission and the identification and evaluation of toxicology research outputs for a specified regulatory question." ;
     skos:inScheme terms:phase-values ;
     skos:prefLabel "Regulatory assessment" ;
     skos:relatedMatch <http://edamontology.org/topic_3394>,

@@ -192,7 +192,8 @@
     "profiles": "https://w3id.org/fair-tox/terms#profiles",
     "recommends": "https://w3id.org/fair-tox/terms#recommends",
     "deprecates": "https://w3id.org/fair-tox/terms#deprecates",
-    "related_to": "https://w3id.org/fair-tox/terms#related_to"
+    "related_to": "https://w3id.org/fair-tox/terms#related_to",
+    "uses": "https://w3id.org/fair-tox/terms#uses"
    }
   },
   "fipDeclaration": {

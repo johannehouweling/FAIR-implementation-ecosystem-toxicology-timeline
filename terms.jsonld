@@ -122,6 +122,9 @@
     },
     {
      "@id": "terms:related_to"
+    },
+    {
+     "@id": "terms:uses"
     }
    ],
    "skos:prefLabel": "hadRole values"
@@ -422,6 +425,27 @@
     "@id": "terms:subdomains-regulatory-toxicology"
    },
    "skos:prefLabel": "subdomains values"
+  },
+  {
+   "@id": "terms:uses",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The subject uses the target.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "uses",
+   "schema:termCode": "uses",
+   "skos:broadMatch": {
+    "@id": "dct:relation"
+   },
+   "skos:definition": "The subject uses the target.",
+   "skos:inScheme": {
+    "@id": "terms:hadRole-values"
+   },
+   "skos:prefLabel": "uses"
   }
  ]
 }

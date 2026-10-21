@@ -192,7 +192,8 @@
     "profiles": "https://w3id.org/fair-tox/terms#profiles",
     "recommends": "https://w3id.org/fair-tox/terms#recommends",
     "deprecates": "https://w3id.org/fair-tox/terms#deprecates",
-    "related_to": "https://w3id.org/fair-tox/terms#related_to"
+    "related_to": "https://w3id.org/fair-tox/terms#related_to",
+    "uses": "https://w3id.org/fair-tox/terms#uses"
    }
   },
   "fipDeclaration": {
@@ -399,7 +400,8 @@
    "profiles": "The standard is a profile of the target standard.",
    "recommends": "The policy or guidance recommends the target.",
    "deprecates": "The subject replaces the target.",
-   "related_to": "The resources are related without one building on the other."
+   "related_to": "The resources are related without one building on the other.",
+   "uses": "The subject uses the target."
   },
   "declaration": {
    "declares-current-use-of": "The FIP declares that its community uses the target.",
@@ -14368,7 +14370,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "32909079e81422eb156277994136e2916c5b2e2907c3aa4159d54fb6526cedcc"
+    "checksumValue": "a593ef3e5a678850dacba2b30b2cbe91d2a4a8c68adc7495ced869731d52b853"
    }
   }
  ],

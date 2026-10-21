@@ -156,6 +156,17 @@ terms:subdomains-regulatory-toxicology a schema:DefinedTerm,
     skos:prefLabel "regulatory toxicology" ;
     skos:relatedMatch <http://www.wikidata.org/entity/Q2448782> .
 
+terms:uses a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The subject uses the target." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "uses" ;
+    schema:termCode "uses" ;
+    skos:broadMatch dct:relation ;
+    skos:definition "The subject uses the target." ;
+    skos:inScheme terms:hadRole-values ;
+    skos:prefLabel "uses" .
+
 terms:maintained-values a schema:DefinedTermSet,
         skos:ConceptScheme ;
     dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
@@ -192,6 +203,7 @@ terms:hadRole-values a schema:DefinedTermSet,
         terms:implements,
         terms:profiles,
         terms:recommends,
-        terms:related_to ;
+        terms:related_to,
+        terms:uses ;
     skos:prefLabel "hadRole values" .
 

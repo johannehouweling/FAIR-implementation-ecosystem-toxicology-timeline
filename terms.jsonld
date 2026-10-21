@@ -45,7 +45,7 @@
    "dct:license": {
     "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
-   "owl:versionInfo": "0.6.3",
+   "owl:versionInfo": "0.7.0",
    "rdfs:label": "Terms of the FAIR implementation ecosystem for toxicology"
   },
   {
@@ -132,7 +132,7 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "The database implements the standard.",
+   "schema:description": "The subject implements the standard or FAIR specification.",
    "schema:inDefinedTermSet": {
     "@id": "terms:hadRole-values"
    },
@@ -149,7 +149,7 @@
      "@id": "dct:conformsTo"
     }
    ],
-   "skos:definition": "The database implements the standard.",
+   "skos:definition": "The subject implements the standard or FAIR specification.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
@@ -339,7 +339,7 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "The policy recommends the target.",
+   "schema:description": "The policy or guidance recommends the target.",
    "schema:inDefinedTermSet": {
     "@id": "terms:hadRole-values"
    },
@@ -348,7 +348,7 @@
    "skos:broadMatch": {
     "@id": "dct:relation"
    },
-   "skos:definition": "The policy recommends the target.",
+   "skos:definition": "The policy or guidance recommends the target.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },

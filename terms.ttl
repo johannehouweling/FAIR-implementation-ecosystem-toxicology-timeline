@@ -18,7 +18,7 @@
 <https://w3id.org/fair-tox/terms> a owl:Ontology ;
     rdfs:label "Terms of the FAIR implementation ecosystem for toxicology" ;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    owl:versionInfo "0.6.3" .
+    owl:versionInfo "0.7.0" .
 
 terms:deprecates a schema:DefinedTerm,
         skos:Concept ;
@@ -45,14 +45,14 @@ terms:extends a schema:DefinedTerm,
 
 terms:implements a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "The database implements the standard." ;
+    schema:description "The subject implements the standard or FAIR specification." ;
     schema:inDefinedTermSet terms:hadRole-values ;
     schema:name "implements" ;
     schema:termCode "implements" ;
     skos:closeMatch dct:conformsTo,
         <http://semanticscience.org/resource/SIO_000233>,
         fip:implements ;
-    skos:definition "The database implements the standard." ;
+    skos:definition "The subject implements the standard or FAIR specification." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "implements" .
 
@@ -122,12 +122,12 @@ terms:profiles a schema:DefinedTerm,
 
 terms:recommends a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "The policy recommends the target." ;
+    schema:description "The policy or guidance recommends the target." ;
     schema:inDefinedTermSet terms:hadRole-values ;
     schema:name "recommends" ;
     schema:termCode "recommends" ;
     skos:broadMatch dct:relation ;
-    skos:definition "The policy recommends the target." ;
+    skos:definition "The policy or guidance recommends the target." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "recommends" .
 

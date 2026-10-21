@@ -234,7 +234,7 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "0.6.3",
+ "version": "0.7.0",
  "dateModified": "2026-10-21",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -394,10 +394,10 @@
    "unknown": "Status could not be established."
   },
   "hadRole": {
-   "implements": "The database implements the standard.",
+   "implements": "The subject implements the standard or FAIR specification.",
    "extends": "The subject builds on and extends the target.",
    "profiles": "The standard is a profile of the target standard.",
-   "recommends": "The policy recommends the target.",
+   "recommends": "The policy or guidance recommends the target.",
    "deprecates": "The subject replaces the target.",
    "related_to": "The resources are related without one building on the other."
   },
@@ -11985,7 +11985,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -12005,7 +12005,7 @@
    "description": "A FAIR Cookbook recipe, proposed on GitHub and not yet published, setting out minimum and desirable metadata for cell-based toxicology assays and how to annotate them with BioAssay Ontology terms, so that the data can be found and linked to AOPs.",
    "maintained": "in development",
    "buildsOnFair": true,
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14172,7 +14172,7 @@
   "url": "https://w3id.org/fair-tox/dataset"
  },
  "url": "https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/",
- "datePublished": "2026-10-20",
+ "datePublished": "2026-10-21",
  "temporalCoverage": "1965/2026",
  "wasDerivedFrom": [
   "https://doi.org/10.25504/FAIRsharing.f60a10",
@@ -14346,7 +14346,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "6e50d4e718780be5a6cf50f06b6ea87ac7e2730335a4c052f80e93c12ddc61c9"
+    "checksumValue": "5c97c7c064230fe71fc7b1f32772ba3a2565e3e8f75b1b4bd457bd09e7ad9f7d"
    }
   },
   {
@@ -14368,7 +14368,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "4436e3ad070896d5cf2e078ca9c0c5f66c8f91d72a32e59d74f6d22f212d8c0a"
+    "checksumValue": "32909079e81422eb156277994136e2916c5b2e2907c3aa4159d54fb6526cedcc"
    }
   }
  ],

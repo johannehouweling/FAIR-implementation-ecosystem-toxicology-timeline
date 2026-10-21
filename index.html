@@ -445,7 +445,7 @@ function figure(G, svg) {
     text(x + 4 * u, G.TOP - G.FS * .6, G.FS, 'FAIR principles published, 2016', {'font-weight': bold});
   }
 
-  // Links run from the earlier resource (src) to the one that builds on it (dst); related_to links, which have no
+  // Links run from the earlier resource (src) to the one that builds on or uses it (dst); related_to links, which have no
   // arrowhead, from the left one of the pair. Every link ends at its target's marker: from the left, or at 45 degrees
   // from the upper or lower left when the label is on the marker's left, which clears that label and any marker right
   // above or below. A link to a target that is not well right of its source leaves the source upwards or downwards when
@@ -528,7 +528,7 @@ function figure(G, svg) {
   item(textWidth('†', G.SMALL), (x, y) => text(x, y + mid, G.SMALL, '†', {fill: C.ink2}), 'No longer maintained');
   if (shown.some(italic)) item(textWidth('Italic', G.SMALL, 'italic '), (x, y) => text(x, y + mid, G.SMALL, 'Italic', {fill: C.ink2, 'font-style': 'italic'}),
     'label: toxicology resource building on FAIR');
-  item(28 * u, sample(true), 'Points to the resource that builds on the other');
+  item(28 * u, sample(true), 'Points to the resource that builds on or uses the other');
   item(28 * u, sample(false), 'Related');
   if (fipOn) item(28 * u, (x, y) => el('path', {d: `M${x} ${y}H${x + 28 * u}`, ...dots}, svg), 'Declared in a FIP');
   const H = Math.ceil(ly + G.SMALL * .5 + 10 * u);

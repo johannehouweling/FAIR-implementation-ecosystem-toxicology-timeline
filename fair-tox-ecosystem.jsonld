@@ -236,7 +236,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.8.0",
- "dateModified": "2026-10-21",
+ "dateModified": "2026-10-22",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -261,7 +261,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-10-21",
+   "retrieved": "2026-10-22",
    "members": 74
   },
   "fip": {
@@ -273,7 +273,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-21",
+    "retrieved": "2026-10-22",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -304,7 +304,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-21",
+    "retrieved": "2026-10-22",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -482,7 +482,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -577,7 +577,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -1149,6 +1149,10 @@
    ],
    "qualifiedRelation": [
     {
+     "relation": "https://w3id.org/fair-tox/dataset#aop_wiki_id",
+     "hadRole": "uses"
+    },
+    {
      "relation": "https://w3id.org/fair-tox/dataset#aopkb",
      "hadRole": "related_to"
     },
@@ -1409,7 +1413,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -1557,7 +1561,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -1743,7 +1747,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -1828,7 +1832,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -1887,7 +1891,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -1946,7 +1950,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2005,7 +2009,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2072,7 +2076,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2131,7 +2135,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2190,7 +2194,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2305,7 +2309,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2386,7 +2390,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2465,7 +2469,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2551,7 +2555,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2616,7 +2620,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2710,7 +2714,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -2866,7 +2870,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3013,7 +3017,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3101,7 +3105,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3188,7 +3192,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3310,7 +3314,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3433,7 +3437,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3551,7 +3555,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3641,7 +3645,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -3974,7 +3978,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4072,7 +4076,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4185,7 +4189,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4267,7 +4271,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4341,7 +4345,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4443,7 +4447,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4521,7 +4525,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4607,7 +4611,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4696,7 +4700,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4809,7 +4813,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -4905,7 +4909,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5141,6 +5145,10 @@
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
      "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "hadRole": "implements"
     }
    ],
    "fairsharing": {
@@ -5175,7 +5183,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5242,6 +5250,10 @@
      "hadRole": "extends"
     },
     {
+     "relation": "https://doi.org/10.25504/FAIRsharing.atygwy",
+     "hadRole": "implements"
+    },
+    {
      "relation": "https://doi.org/10.25504/FAIRsharing.j9y503",
      "hadRole": "extends"
     },
@@ -5278,7 +5290,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5426,7 +5438,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5541,7 +5553,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5624,7 +5636,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5722,7 +5734,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5823,7 +5835,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -5906,7 +5918,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -6030,7 +6042,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -6155,7 +6167,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -6314,7 +6326,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -6410,7 +6422,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -6707,7 +6719,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -6861,7 +6873,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7174,7 +7186,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7253,7 +7265,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7429,7 +7441,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7520,7 +7532,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7595,7 +7607,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7676,7 +7688,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7771,7 +7783,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7884,7 +7896,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -7971,7 +7983,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8097,7 +8109,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8175,7 +8187,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8297,7 +8309,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8463,7 +8475,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8660,7 +8672,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8755,7 +8767,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -8867,7 +8879,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9046,7 +9058,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9184,7 +9196,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9271,7 +9283,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9391,7 +9403,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9491,7 +9503,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9733,7 +9745,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9807,7 +9819,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -9917,7 +9929,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10031,7 +10043,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10174,7 +10186,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10248,7 +10260,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10349,7 +10361,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10548,7 +10560,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10643,7 +10655,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -10773,6 +10785,12 @@
    "fsr": [
     "http://purl.org/np/RAIpnldLlIedp5J7Jcy8pt_X9_YpOez4rO-fHxZl0T96Y#OWL"
    ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "hadRole": "implements"
+    }
+   ],
    "fairsharing": {
     "id": 409,
     "doi": "10.25504/FAIRsharing.atygwy",
@@ -10797,7 +10815,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -11170,7 +11188,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -11396,7 +11414,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -11511,7 +11529,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -11713,7 +11731,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -11786,7 +11804,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -11923,7 +11941,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12225,7 +12243,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12346,7 +12364,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12454,7 +12472,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12568,7 +12586,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12622,6 +12640,12 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "hadRole": "uses"
+    }
+   ],
    "fairsharing": {
     "id": 1063,
     "doi": "10.25504/FAIRsharing.87ccfd",
@@ -12658,7 +12682,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12738,7 +12762,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12898,7 +12922,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -12995,7 +13019,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -13136,7 +13160,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -13543,7 +13567,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -13727,7 +13751,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -14020,7 +14044,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -14091,7 +14115,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-22"
    }
   },
   {
@@ -14348,7 +14372,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "5c97c7c064230fe71fc7b1f32772ba3a2565e3e8f75b1b4bd457bd09e7ad9f7d"
+    "checksumValue": "26290496c2d4b6c71279fde7449fb360659c11091031e3f32805e8d4f8e3a101"
    }
   },
   {
@@ -14359,7 +14383,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "6188431c385cb8b5fac43f381bbb7eede7c1e1deb03ed45c1959bed760fd1d5a"
+    "checksumValue": "0b70dc73cbd1312b6d70502f2346e12b4804f3b43f4c6265cd56ab667f157524"
    }
   },
   {
@@ -14393,6 +14417,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-10-21"
+  "sdDatePublished": "2026-10-22"
  }
 }

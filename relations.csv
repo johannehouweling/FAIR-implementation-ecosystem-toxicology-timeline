@@ -13,6 +13,7 @@ aopdbrdf,implements,rdf
 aophelp,related_to,aopwiki
 aopnet,related_to,aopwiki
 aopo,related_to,aopwiki
+aopwiki,uses,aop_wiki_id
 aopwiki,related_to,aopkb
 aopwiki,related_to,wikipathways
 aopwikirdf,related_to,aopdbrdf
@@ -37,8 +38,10 @@ effectopedia,implements,oht
 enm_db,implements,opentox
 enm_db,implements,enm_ont
 enm_db,implements,isatab
+enm_db,implements,rdf
 enm_ont,extends,obi
 enm_ont,extends,chebi
+enm_ont,implements,owl
 enm_ont,extends,cl
 enm_ont,extends,bao
 eutr_ki,related_to,biostudies
@@ -54,6 +57,7 @@ nanocommons,implements,enm_ont
 nanocommons,related_to,enm_db
 omex,related_to,sbml
 oorf,related_to,rodaf
+owl,implements,rdf
 parcfip,implements,fipwiz
 pbk,profiles,sbml
 rdmtox,extends,rdmkit
@@ -61,6 +65,7 @@ recipe_aop,extends,cookbook
 recipe_bao,extends,cookbook
 recipe_bao,recommends,bao
 sedml,related_to,sbml
+sparql,uses,rdf
 toxcoll,extends,fairsharing
 toxtemp,extends,gd211
 wikipathways_aopportal,related_to,aopwiki

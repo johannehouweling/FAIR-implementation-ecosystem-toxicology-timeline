@@ -67,6 +67,7 @@ recipe_bao,recommends,bao
 sedml,related_to,sbml
 sparql,uses,rdf
 toxcoll,extends,fairsharing
+toxtemp,related_to,eutr_ki
 toxtemp,extends,gd211
 wikipathways_aopportal,related_to,aopwiki
 wikipathways_aopportal,extends,wikipathways

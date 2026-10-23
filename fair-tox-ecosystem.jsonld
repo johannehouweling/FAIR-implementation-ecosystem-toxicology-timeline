@@ -6448,9 +6448,9 @@
     "https://w3id.org/fair/fip/terms/Reference-FAIR-Implementation-Profile"
    ],
    "scope": "Toxicology",
-   "phase": "Data generation",
+   "phase": "Data integration",
    "span": [
-    "Data generation"
+    "Data integration"
    ],
    "creatorType": [
     "In silico research",
@@ -10883,9 +10883,9 @@
     "https://w3id.org/fair/fip/terms/FAIR-Implementation-Profile"
    ],
    "scope": "Toxicology",
-   "phase": "Data integration",
+   "phase": "Data generation",
    "span": [
-    "Data integration"
+    "Data generation"
    ],
    "creatorType": [
     "Wet-lab research",
@@ -13847,6 +13847,10 @@
    ],
    "qualifiedRelation": [
     {
+     "relation": "https://w3id.org/fair-tox/dataset#eutr_ki",
+     "hadRole": "related_to"
+    },
+    {
      "relation": "https://w3id.org/fair-tox/dataset#gd211",
      "hadRole": "extends"
     }
@@ -14390,7 +14394,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "a5b5eb67eca30d932f383f85198eef0c85abf93fb850f54e3219aa7a6ecfb99f"
+    "checksumValue": "8a8a6b070bf28c2b60e959dcdd4a5df9e24f61ebf33dfaa46b9a7eb2dd9e9deb"
    }
   },
   {
@@ -14401,7 +14405,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "0b70dc73cbd1312b6d70502f2346e12b4804f3b43f4c6265cd56ab667f157524"
+    "checksumValue": "ed4ef9dec78ffb52c428fb155b786ec470eee36513b5e98ee4e67dcc211d54a9"
    }
   },
   {

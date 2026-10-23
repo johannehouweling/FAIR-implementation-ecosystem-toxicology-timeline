@@ -55,6 +55,7 @@ nanoaop,implements,sparql
 nanoaop,implements,rdf
 nanocommons,implements,enm_ont
 nanocommons,related_to,enm_db
+nanopub,uses,rdf
 omex,related_to,sbml
 oorf,related_to,rodaf
 owl,implements,rdf

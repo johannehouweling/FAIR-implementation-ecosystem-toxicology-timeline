@@ -2085,6 +2085,358 @@
    }
   },
   {
+   "@id": "https://doi.org/10.25504/FAIRsharing.a847f0",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.a847f0",
+   "schemaType": "schema:CreativeWork",
+   "key": "bioschemas_deploys",
+   "name": "Bioschemas Deploys",
+   "fairsharingType": "Collection",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema",
+    "https://w3id.org/fair/fip/terms/Provenance-model",
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2016-02-23",
+   "dateSource": "https://github.com/BioSchemas/bioschemas.github.io",
+   "creator": "ELIXIR Bioschemas Community",
+   "url": "https://bioschemas.org",
+   "description": "List the sites that use Bioschemas markup to - a direct link to the site, an example deployment page, and a link to test the markup syntax using the Schema.org Markup Validation tool is provided",
+   "maintained": "active",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.a847f0",
+    "about": [
+     {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "name": "Life Science"
+     },
+     {
+      "@id": "http://edamontology.org/topic_3316",
+      "name": "Computer Science"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/operation_0226",
+      "name": "Annotation"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "https://w3id.org/fair-tox/dataset#parcfip"
+   ],
+   "principles": [
+    "F2",
+    "R1.2"
+   ],
+   "fsr": [
+    "https://fairsharing.org/fairsharing_records/3517"
+   ],
+   "fairsharing": {
+    "id": 3517,
+    "doi": "10.25504/FAIRsharing.a847f0",
+    "name": "Bioschemas Deploys",
+    "registry": "Collection",
+    "recordType": "collection",
+    "status": "ready",
+    "yearCreation": 2015,
+    "homepage": "https://bioschemas.org",
+    "subjects": [
+     {
+      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "label": "Life Science"
+     },
+     {
+      "iri": "http://edamontology.org/topic_3316",
+      "label": "Computer Science"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/operation_0226",
+      "label": "Annotation"
+     }
+    ],
+    "inCollection": false,
+    "associations": [
+     [
+      "collects",
+      1180
+     ],
+     [
+      "collects",
+      1554
+     ],
+     [
+      "collects",
+      1561
+     ],
+     [
+      "collects",
+      1609
+     ],
+     [
+      "collects",
+      1612
+     ],
+     [
+      "collects",
+      1660
+     ],
+     [
+      "collects",
+      1698
+     ],
+     [
+      "collects",
+      1770
+     ],
+     [
+      "collects",
+      1854
+     ],
+     [
+      "collects",
+      1860
+     ],
+     [
+      "collects",
+      1865
+     ],
+     [
+      "collects",
+      1866
+     ],
+     [
+      "collects",
+      1867
+     ],
+     [
+      "collects",
+      1868
+     ],
+     [
+      "collects",
+      1875
+     ],
+     [
+      "collects",
+      1904
+     ],
+     [
+      "collects",
+      1933
+     ],
+     [
+      "collects",
+      1945
+     ],
+     [
+      "collects",
+      2030
+     ],
+     [
+      "collects",
+      2059
+     ],
+     [
+      "collects",
+      2060
+     ],
+     [
+      "collects",
+      2061
+     ],
+     [
+      "collects",
+      2077
+     ],
+     [
+      "collects",
+      2082
+     ],
+     [
+      "collects",
+      2114
+     ],
+     [
+      "collects",
+      2125
+     ],
+     [
+      "collects",
+      2142
+     ],
+     [
+      "collects",
+      2163
+     ],
+     [
+      "collects",
+      2166
+     ],
+     [
+      "collects",
+      2176
+     ],
+     [
+      "collects",
+      2195
+     ],
+     [
+      "collects",
+      2204
+     ],
+     [
+      "collects",
+      2249
+     ],
+     [
+      "collects",
+      2281
+     ],
+     [
+      "collects",
+      2330
+     ],
+     [
+      "collects",
+      2349
+     ],
+     [
+      "collects",
+      2402
+     ],
+     [
+      "collects",
+      2403
+     ],
+     [
+      "collects",
+      2405
+     ],
+     [
+      "collects",
+      2406
+     ],
+     [
+      "collects",
+      2519
+     ],
+     [
+      "collects",
+      2521
+     ],
+     [
+      "collects",
+      2530
+     ],
+     [
+      "collects",
+      2617
+     ],
+     [
+      "collects",
+      2652
+     ],
+     [
+      "collects",
+      2670
+     ],
+     [
+      "collects",
+      2694
+     ],
+     [
+      "collects",
+      2695
+     ],
+     [
+      "collects",
+      2696
+     ],
+     [
+      "collects",
+      2711
+     ],
+     [
+      "collects",
+      2738
+     ],
+     [
+      "collects",
+      2784
+     ],
+     [
+      "collects",
+      2934
+     ],
+     [
+      "collects",
+      2963
+     ],
+     [
+      "collects",
+      2979
+     ],
+     [
+      "collects",
+      3073
+     ],
+     [
+      "collects",
+      3274
+     ],
+     [
+      "collects",
+      3295
+     ],
+     [
+      "collects",
+      3300
+     ],
+     [
+      "collects",
+      3304
+     ],
+     [
+      "collects",
+      3305
+     ],
+     [
+      "collects",
+      3306
+     ],
+     [
+      "collects",
+      3595
+     ],
+     [
+      "collects",
+      3604
+     ],
+     [
+      "collects",
+      3605
+     ],
+     [
+      "collects",
+      3606
+     ],
+     [
+      "collects",
+      3655
+     ],
+     [
+      "collects",
+      3680
+     ]
+    ],
+    "retrieved": "2026-10-23"
+   }
+  },
+  {
    "@id": "https://doi.org/10.25504/FAIRsharing.ccaad2",
    "identifier": "https://doi.org/10.25504/FAIRsharing.ccaad2",
    "schemaType": "schema:CreativeWork",
@@ -9802,6 +10154,12 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
+     "hadRole": "uses"
+    }
+   ],
    "fairsharing": {
     "id": 4396,
     "doi": "10.25504/FAIRsharing.a6dcff",
@@ -11004,6 +11362,20 @@
      "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.6xq0ee",
      "question": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
      "principle": "I2"
+    },
+    {
+     "@id": "https://w3id.org/np/RA8FeBmXjIXHxm2Zlbyd_BQmviLa4Xa8WhfFf70n4VRP0/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.a847f0",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
+     "principle": "R1.2"
+    },
+    {
+     "@id": "https://w3id.org/np/RAzXUSy_WAjiNAd2IbJFHbZJJBxqaLmfEbZI0ul5Lwf_Y/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.a847f0",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+     "principle": "F2"
     },
     {
      "@id": "https://w3id.org/np/RAQKYdfyIVZmEHNRc8JuYzreg9vnN81x6z3RhVzBw7sUE/declaration",
@@ -14394,7 +14766,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "8a8a6b070bf28c2b60e959dcdd4a5df9e24f61ebf33dfaa46b9a7eb2dd9e9deb"
+    "checksumValue": "3d65ebbccde42bb690a23589e1e9cae4b57fb5ae73314bd605de7cc05dfa7fe2"
    }
   },
   {
@@ -14405,7 +14777,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "ed4ef9dec78ffb52c428fb155b786ec470eee36513b5e98ee4e67dcc211d54a9"
+    "checksumValue": "decd10f7d14e25086e24628b602d44506e6cae053428264df10578bc3db9e802"
    }
   },
   {

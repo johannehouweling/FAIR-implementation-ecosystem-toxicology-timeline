@@ -168,6 +168,11 @@
    "@id": "schema:citation",
    "@type": "@id"
   },
+  "contactPoint": {
+   "@id": "dcat:contactPoint",
+   "@type": "@id",
+   "@container": "@set"
+  },
   "fairsharingRecord": {
    "@id": "schema:sameAs",
    "@type": "@vocab",
@@ -236,7 +241,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.8.1",
- "dateModified": "2026-10-22",
+ "dateModified": "2026-10-23",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -2323,7 +2328,8 @@
    ],
    "fairsharingType": "Database: repository",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Identifier-service"
+    "https://w3id.org/fair/fip/terms/Identifier-service",
+    "https://w3id.org/fair/fip/terms/Registry"
    ],
    "scope": "Life Sciences",
    "subdomains": [
@@ -2728,6 +2734,7 @@
    ],
    "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "scope": "Life Sciences",
@@ -2884,6 +2891,7 @@
    ],
    "fairsharingType": "Database: knowledgebase",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "scope": "Life Sciences",
@@ -6991,6 +6999,7 @@
    ],
    "fairsharingType": "Database: repository",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service",
     "https://w3id.org/fair/fip/terms/Registry"
    ],
    "scope": "Life Sciences",
@@ -7279,6 +7288,7 @@
    ],
    "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "scope": "Life Sciences",
@@ -7798,7 +7808,8 @@
    ],
    "fairsharingType": "Standard: identifier schema",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Identifier-service"
+    "https://w3id.org/fair/fip/terms/Identifier-service",
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
    ],
    "scope": "Life Sciences",
    "dateReleased": "2005-04",
@@ -10375,7 +10386,8 @@
    ],
    "fairsharingType": "Standard: reporting guideline",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
+    "https://w3id.org/fair/fip/terms/Metadata-schema",
+    "https://w3id.org/fair/fip/terms/Provenance-model"
    ],
    "scope": "Toxicology",
    "phase": "Data generation",
@@ -14240,7 +14252,7 @@
    "@type": "schema:PropertyValue",
    "name": "fsrType",
    "propertyID": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-   "description": "FAIR Supporting Resource (FSR) type in the FIP ontology, one per resource, by the typing rule of the criteria. IRIs in the JSON-LD, labels in resources.csv."
+   "description": "FAIR Supporting Resource (FSR) types in the FIP ontology, every one that applies, by the typing rule of the criteria. IRIs in the JSON-LD, labels in resources.csv."
   },
   {
    "@type": "schema:PropertyValue",
@@ -14301,6 +14313,12 @@
    "name": "creator",
    "propertyID": "http://schema.org/creator",
    "description": "Organisations that made the resource."
+  },
+  {
+   "@type": "schema:PropertyValue",
+   "name": "contactPoint",
+   "propertyID": "http://www.w3.org/ns/dcat#contactPoint",
+   "description": "Who to contact about the resource: a person's ORCID or an organisation's ROR. In the JSON-LD only."
   },
   {
    "@type": "schema:PropertyValue",
@@ -14372,7 +14390,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "26290496c2d4b6c71279fde7449fb360659c11091031e3f32805e8d4f8e3a101"
+    "checksumValue": "3dc23a42ab7c4fece0983b911fcd12cf6d028dc32a84aae3fbeb178f0d6036ce"
    }
   },
   {
@@ -14417,6 +14435,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-10-22"
+  "sdDatePublished": "2026-10-23"
  }
 }

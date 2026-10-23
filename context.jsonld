@@ -168,6 +168,11 @@
    "@id": "schema:citation",
    "@type": "@id"
   },
+  "contactPoint": {
+   "@id": "dcat:contactPoint",
+   "@type": "@id",
+   "@container": "@set"
+  },
   "fairsharingRecord": {
    "@id": "schema:sameAs",
    "@type": "@vocab",

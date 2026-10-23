@@ -18,7 +18,7 @@
 <https://w3id.org/fair-tox/terms> a owl:Ontology ;
     rdfs:label "Terms of the FAIR implementation ecosystem for toxicology" ;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    owl:versionInfo "0.8.0" .
+    owl:versionInfo "0.8.1" .
 
 terms:deprecates a schema:DefinedTerm,
         skos:Concept ;

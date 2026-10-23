@@ -10883,9 +10883,9 @@
     "https://w3id.org/fair/fip/terms/FAIR-Implementation-Profile"
    ],
    "scope": "Toxicology",
-   "phase": "Data generation",
+   "phase": "Data integration",
    "span": [
-    "Data generation"
+    "Data integration"
    ],
    "creatorType": [
     "Wet-lab research",
@@ -14390,7 +14390,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "3dc23a42ab7c4fece0983b911fcd12cf6d028dc32a84aae3fbeb178f0d6036ce"
+    "checksumValue": "a5b5eb67eca30d932f383f85198eef0c85abf93fb850f54e3219aa7a6ecfb99f"
    }
   },
   {

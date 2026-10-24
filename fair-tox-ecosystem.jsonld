@@ -240,7 +240,7 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "0.10.0",
+ "version": "0.10.1",
  "dateModified": "2026-10-23",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -266,7 +266,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-10-23",
+   "retrieved": "2026-10-24",
    "members": 74
   },
   "fip": {
@@ -278,7 +278,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-23",
+    "retrieved": "2026-10-24",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -309,7 +309,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-23",
+    "retrieved": "2026-10-24",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -487,7 +487,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -582,7 +582,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -1418,7 +1418,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -1566,7 +1566,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -1752,7 +1752,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -1837,7 +1837,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -1896,7 +1896,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -1955,7 +1955,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2014,7 +2014,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2081,7 +2081,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2433,7 +2433,7 @@
       3680
      ]
     ],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2492,7 +2492,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2551,7 +2551,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2666,7 +2666,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2748,7 +2748,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2827,7 +2827,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2913,7 +2913,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -2978,7 +2978,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3072,7 +3072,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3229,7 +3229,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3377,7 +3377,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3465,7 +3465,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3552,7 +3552,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3674,7 +3674,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3797,7 +3797,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -3915,7 +3915,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4005,7 +4005,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4338,7 +4338,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4436,7 +4436,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4549,7 +4549,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4631,7 +4631,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4705,7 +4705,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4807,7 +4807,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4885,7 +4885,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -4971,7 +4971,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5060,7 +5060,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5173,7 +5173,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5269,7 +5269,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5543,7 +5543,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5650,7 +5650,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5798,7 +5798,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5913,7 +5913,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -5996,7 +5996,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6094,7 +6094,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6195,7 +6195,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6278,7 +6278,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6402,7 +6402,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6527,7 +6527,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6686,7 +6686,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -6782,7 +6782,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7079,7 +7079,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7233,7 +7233,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7547,7 +7547,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7626,7 +7626,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7803,7 +7803,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7894,7 +7894,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -7969,7 +7969,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8050,7 +8050,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8145,7 +8145,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8259,7 +8259,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8346,7 +8346,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8472,7 +8472,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8550,7 +8550,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8672,7 +8672,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -8838,7 +8838,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9035,7 +9035,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9130,7 +9130,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9242,7 +9242,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9421,7 +9421,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9559,7 +9559,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9646,7 +9646,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9766,7 +9766,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -9866,7 +9866,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10108,7 +10108,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10188,7 +10188,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10298,7 +10298,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10412,7 +10412,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10555,7 +10555,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10629,7 +10629,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10730,7 +10730,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -10930,7 +10930,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -11025,7 +11025,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -11185,7 +11185,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -11572,7 +11572,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -11798,7 +11798,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -11913,7 +11913,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12115,7 +12115,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12188,7 +12188,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12325,7 +12325,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12627,7 +12627,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12748,7 +12748,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12856,7 +12856,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -12970,7 +12970,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -13066,7 +13066,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -13146,7 +13146,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -13306,7 +13306,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -13403,7 +13403,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -13544,7 +13544,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -13951,7 +13951,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -14135,7 +14135,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -14432,7 +14432,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -14503,7 +14503,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-23"
+    "retrieved": "2026-10-24"
    }
   },
   {
@@ -14788,7 +14788,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "605ceaef2bbdbbede643de4a254b03db395a0c00e51d157c4e4c53814d55fb44"
+    "checksumValue": "e8fa147c145869ffd32172aa5f2f00806b5b47fbd21e570885d89fcbd5b33bfa"
    }
   }
  ],

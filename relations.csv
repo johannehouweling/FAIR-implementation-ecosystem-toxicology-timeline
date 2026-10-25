@@ -31,6 +31,10 @@ aopxplorer,related_to,aopkb
 aopxplorer,implements,aopo
 arraytrack,implements,miame
 biomodels,implements,sbml
+bioschemas,extends,schemadotorg
+bioschemas_chemicalsubstance,implements,bioschemas
+bioschemas_dataset_profile,implements,bioschemas
+bioschemas_molecularentity,implements,bioschemas
 echemportal,implements,oht
 effectopedia,related_to,aopkb
 effectopedia,related_to,aopwiki
@@ -46,7 +50,9 @@ enm_ont,extends,cl
 enm_ont,extends,bao
 eutr_ki,related_to,biostudies
 fairaop,implements,fipwiz
+google_datasetsearch,implements,schemadotorg
 iuclid,related_to,oht
+maoorf,implements,oorf
 miametox,extends,miame
 miriam,related_to,sbml
 nanoaop,extends,aopwikirdf

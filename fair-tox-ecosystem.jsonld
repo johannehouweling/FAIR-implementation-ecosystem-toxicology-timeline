@@ -241,7 +241,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.10.1",
- "dateModified": "2026-10-23",
+ "dateModified": "2026-10-25",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -266,7 +266,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-10-24",
+   "retrieved": "2026-10-25",
    "members": 74
   },
   "fip": {
@@ -278,7 +278,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-24",
+    "retrieved": "2026-10-25",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -309,7 +309,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-24",
+    "retrieved": "2026-10-25",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -487,7 +487,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -582,7 +582,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -781,45 +781,6 @@
    ]
   },
   {
-   "@id": "https://w3id.org/fair-tox/dataset#aopdb_v2",
-   "identifier": "https://w3id.org/fair-tox/dataset#aopdb_v2",
-   "schemaType": "schema:CreativeWork",
-   "key": "aopdb_v2",
-   "name": "AOP-DB 2021 update (version 2)",
-   "alternateName": [
-    "second version of AOP-DB",
-    "aopdb2021",
-    "The 2021 update of the EPA's adverse outcome pathway database"
-   ],
-   "fairsharingType": "Database: knowledgebase",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
-   ],
-   "scope": "Toxicology",
-   "phase": "Data integration",
-   "span": [
-    "Data integration"
-   ],
-   "creatorType": [
-    "Regulator"
-   ],
-   "subdomains": [
-    "AOP-based mechanistic knowledge"
-   ],
-   "dateReleased": "2021-03-11",
-   "dateSource": "https://doi.org/10.6084/m9.figshare.c.5335553.v1",
-   "creator": "US EPA",
-   "url": "https://doi.org/10.23719/1522396",
-   "description": "Version 2 of the EPA AOP-DB (2021 update) added automated AOP-Wiki data pulls, tissue-, individual- and population-level gene data, semantic mapping with a SPARQL endpoint, and the first public web interface. The full database was also released as downloadable SQL files.",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Regulator"
-    }
-   ]
-  },
-  {
    "@id": "https://w3id.org/fair-tox/dataset#aopdbrdf",
    "identifier": "https://w3id.org/fair-tox/dataset#aopdbrdf",
    "schemaType": "schema:CreativeWork",
@@ -922,45 +883,6 @@
     {
      "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
      "hadRole": "related_to"
-    }
-   ]
-  },
-  {
-   "@id": "https://w3id.org/fair-tox/dataset#aophelp_2025",
-   "identifier": "https://w3id.org/fair-tox/dataset#aophelp_2025",
-   "schemaType": "schema:SoftwareApplication",
-   "key": "aophelp_2025",
-   "name": "AOP-helpFinder 3.0",
-   "alternateName": [
-    "AOP-helpFinder 2025 version",
-    "btaf381"
-   ],
-   "fairsharingType": "Tool",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
-   ],
-   "scope": "Toxicology",
-   "phase": "Data integration",
-   "span": [
-    "Data integration"
-   ],
-   "creatorType": [
-    "In silico research"
-   ],
-   "subdomains": [
-    "AOP-based mechanistic knowledge"
-   ],
-   "dateReleased": "2024-11-15",
-   "dateSource": "https://github.com/systox1124/AOP-helpFinder/releases/tag/v3",
-   "creator": "Universite Paris Cite / Inserm",
-   "url": "https://aop-helpfinder-v3.u-paris-sciences.fr/",
-   "description": "AOP-helpFinder 3.0 is the third major version of AOP-helpFinder. It adds network views of the stressor-event and event-event (key event relationship) links found by text mining, and annotates them with data from external sources such as AOP-Wiki, KEGG, WikiPathways, Reactome, UniProt and disease-gene databases.",
-   "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "In silico research"
     }
    ]
   },
@@ -1418,7 +1340,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -1566,7 +1488,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -1752,7 +1674,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -1837,8 +1759,31 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#bioschemas",
+   "identifier": "https://w3id.org/fair-tox/dataset#bioschemas",
+   "schemaType": "schema:CreativeWork",
+   "key": "bioschemas",
+   "name": "Bioschemas",
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Life Sciences",
+   "datePublished": "2017-10-22",
+   "dateSource": "http://ceur-ws.org/Vol-1963/paper579.pdf",
+   "url": "https://bioschemas.org/",
+   "description": "Bioschemas is an open community initiative, supported by ELIXIR, that helps life-science websites describe their resources with schema.org markup so that search engines and registries can find them. It proposes new life-science types and properties to schema.org and publishes profiles that state which properties to use, graded minimum, recommended or optional, for datasets, tools, samples, chemicals, training materials and other resources.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.hzdzq8",
+     "hadRole": "extends"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.82f7b4",
@@ -1873,6 +1818,12 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
+     "hadRole": "implements"
+    }
+   ],
    "fairsharing": {
     "id": 3584,
     "doi": "10.25504/FAIRsharing.82f7b4",
@@ -1896,7 +1847,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -1955,7 +1906,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2014,7 +1965,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2054,6 +2005,12 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
+     "hadRole": "implements"
+    }
+   ],
    "fairsharing": {
     "id": 1203,
     "doi": "10.25504/FAIRsharing.20sbr9",
@@ -2081,7 +2038,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2433,7 +2390,7 @@
       3680
      ]
     ],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2469,6 +2426,12 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
+     "hadRole": "implements"
+    }
+   ],
    "fairsharing": {
     "id": 3588,
     "doi": "10.25504/FAIRsharing.ccaad2",
@@ -2492,7 +2455,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2551,7 +2514,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2666,7 +2629,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2748,7 +2711,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2827,7 +2790,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2913,7 +2876,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -2978,7 +2941,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3072,7 +3035,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3229,7 +3192,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3377,7 +3340,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3465,7 +3428,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3552,7 +3515,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3674,7 +3637,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3797,7 +3760,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -3915,7 +3878,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4005,7 +3968,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4338,7 +4301,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4436,8 +4399,25 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#data_stewardship_wizard_ds",
+   "identifier": "https://w3id.org/fair-tox/dataset#data_stewardship_wizard_ds",
+   "schemaType": "schema:SoftwareApplication",
+   "key": "data_stewardship_wizard_ds",
+   "name": "Data Stewardship Wizard (DS-Wizard)",
+   "fairsharingType": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Editor"
+   ],
+   "scope": "Generic",
+   "dateReleased": "2016-12-20",
+   "dateSource": "https://github.com/ds-wizard/legacy-wizard/commit/f057bc0f9af7d2947273f8747c312a9b211a6f4f",
+   "url": "https://ds-wizard.org/",
+   "description": "The Data Stewardship Wizard is an open-source web platform for writing data management plans together, developed within ELIXIR and begun at the Czech Technical University in Prague. Data stewards encode guidance as knowledge models that drive adaptive questionnaires, and the answers are exported through document templates as readable or machine-actionable plans. Organisations can run their own instances, and the FIP Wizard is built on it.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#dc_data_explorer",
@@ -4549,7 +4529,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4631,7 +4611,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4705,7 +4685,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4807,7 +4787,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4885,7 +4865,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -4971,7 +4951,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5060,7 +5040,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5173,7 +5153,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5269,7 +5249,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5414,6 +5394,193 @@
    ]
   },
   {
+   "@id": "https://doi.org/10.25504/FAIRsharing.mya1ff",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.mya1ff",
+   "schemaType": "schema:CreativeWork",
+   "key": "ega",
+   "name": "The European Genome-phenome Archive",
+   "alternateName": [
+    "EGA"
+   ],
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry",
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2008-07-14",
+   "dateSource": "https://web.archive.org/web/20081203005048/http://www.ebi.ac.uk:80/Information/News/pdf/Press14Jul08_EGA.pdf",
+   "url": "https://ega-archive.org/",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.mya1ff",
+    "about": [
+     {
+      "@id": "http://edamontology.org/topic_3298",
+      "name": "Phenomics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "name": "Biomedical Science"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C15206",
+      "name": "Clinical Studies"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C16345",
+      "name": "Biology"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C84343",
+      "name": "Genomics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_3494",
+      "name": "DNA sequence"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/DOID_162",
+      "name": "cancer"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C17004",
+      "name": "Genetic Polymorphism"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C4873",
+      "name": "Rare Disorder"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C70699",
+      "name": "Biospecimen"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0001271",
+      "name": "RNA-seq assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0001985",
+      "name": "microarray assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0002117",
+      "name": "whole genome sequencing assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OGMS_0000023",
+      "name": "phenotype"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OGMS_0000028",
+      "name": "disease phenotype"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/SO_0001026",
+      "name": "genome"
+     },
+     {
+      "@id": "http://www.ebi.ac.uk/efo/EFO_0000513",
+      "name": "genotype"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "https://w3id.org/fair-tox/dataset#parcfip"
+   ],
+   "principles": [
+    "F4"
+   ],
+   "fairsharing": {
+    "id": 1865,
+    "doi": "10.25504/FAIRsharing.mya1ff",
+    "name": "The European Genome-phenome Archive",
+    "abbreviation": "EGA",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "yearCreation": 2007,
+    "homepage": "https://ega-archive.org/",
+    "subjects": [
+     {
+      "iri": "http://edamontology.org/topic_3298",
+      "label": "Phenomics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "label": "Biomedical Science"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C15206",
+      "label": "Clinical Studies"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C16345",
+      "label": "Biology"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C84343",
+      "label": "Genomics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_3494",
+      "label": "DNA sequence"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/DOID_162",
+      "label": "cancer"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C17004",
+      "label": "Genetic Polymorphism"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C4873",
+      "label": "Rare Disorder"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C70699",
+      "label": "Biospecimen"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0001271",
+      "label": "RNA-seq assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0001985",
+      "label": "microarray assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0002117",
+      "label": "whole genome sequencing assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OGMS_0000023",
+      "label": "phenotype"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OGMS_0000028",
+      "label": "disease phenotype"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/SO_0001026",
+      "label": "genome"
+     },
+     {
+      "iri": "http://www.ebi.ac.uk/efo/EFO_0000513",
+      "label": "genotype"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
+   }
+  },
+  {
    "@id": "https://w3id.org/fair-tox/dataset#elixir_depdb",
    "identifier": "https://w3id.org/fair-tox/dataset#elixir_depdb",
    "schemaType": "schema:CreativeWork",
@@ -5433,6 +5600,24 @@
    "url": "https://elixir-europe.org/platforms/data/elixir-deposition-databases",
    "description": "ELIXIR's list of recommended repositories for depositing experimental life-science data, chosen against technical-quality and governance criteria in line with the FAIR principles. It points researchers, funders and publishers to suitable archives (e.g. ENA, ArrayExpress/BioStudies, PRIDE, MetaboLights, BioModels) for publishing open data.",
    "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#elixir_lp",
+   "identifier": "https://w3id.org/fair-tox/dataset#elixir_lp",
+   "schemaType": "schema:SoftwareApplication",
+   "key": "elixir_lp",
+   "name": "ELIXIR Learning Paths Handbook",
+   "fairsharingType": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2024-08-01",
+   "dateSource": "https://github.com/elixir-europe-training/Learning-Paths-Handbook",
+   "url": "https://elixir-europe-training.github.io/Learning-Paths-Handbook/",
+   "description": "The ELIXIR Learning Paths Handbook, by the ELIXIR Training Platform, sets out a six-step protocol for designing learning paths: ordered sequences of courses and training materials that take learners step by step towards defined skills on a subject. It is still under development, and ELIXIR learning paths built with the protocol are curated and published in TeSS.",
+   "maintained": "in development",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
@@ -5543,7 +5728,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5650,7 +5835,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5798,7 +5983,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5913,7 +6098,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -5996,7 +6181,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6094,7 +6279,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6195,7 +6380,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6278,7 +6463,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6402,7 +6587,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6527,7 +6712,94 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.c26a4e",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.c26a4e",
+   "schemaType": "schema:CreativeWork",
+   "key": "european_registry_of_materials",
+   "name": "European Registry of Materials identifiers (ERM ID)",
+   "fairsharingType": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "dateReleased": "2019-06-11",
+   "dateSource": "https://github.com/NanoCommons/identifiers/commit/3823066c7137781ade64ee7db220be23694e47e3",
+   "url": "https://nanocommons.github.io/identifiers/",
+   "description": "A registry that mints global, unique identifiers (ERM followed by eight digits) for nanomaterials and other materials studied in research projects, including materials whose composition is not disclosed and specific batches or variants. Projects reserve an identifier when they plan to study a material, so that internal documents, datasets and publications refer to the same material and can later be linked to its public data; the identifiers resolve through identifiers.org.",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.c26a4e",
+    "about": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C18478",
+      "name": "Nanotechnology"
+     },
+     {
+      "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000236",
+      "name": "Materials Science"
+     },
+     {
+      "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000290",
+      "name": "Materials Informatics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHEBI_24431",
+      "name": "chemical entity"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "fairsharing": {
+    "id": 816,
+    "doi": "10.25504/FAIRsharing.c26a4e",
+    "name": "European Registry of Materials Identifier",
+    "abbreviation": "ERM Identifier",
+    "registry": "Standard",
+    "recordType": "identifier_schema",
+    "status": "ready",
+    "yearCreation": 2019,
+    "homepage": "https://nanocommons.github.io/identifiers/",
+    "subjects": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C18478",
+      "label": "Nanotechnology"
+     },
+     {
+      "iri": "http://www.fairsharing.org/ontology/subject/SRAO_0000236",
+      "label": "Materials Science"
+     },
+     {
+      "iri": "http://www.fairsharing.org/ontology/subject/SRAO_0000290",
+      "label": "Materials Informatics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHEBI_24431",
+      "label": "chemical entity"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6686,7 +6958,114 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.1gr4tz",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.1gr4tz",
+   "schemaType": "schema:CreativeWork",
+   "key": "experimental_factor_ontology_efo",
+   "name": "Experimental Factor Ontology (EFO)",
+   "fairsharingType": "Standard: terminology artefact",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
+   "scope": "Life Sciences",
+   "datePublished": "2008-06-19",
+   "dateSource": "https://web.archive.org/web/20080725122751/http://bio-ontologies.org.uk/",
+   "url": "https://www.ebi.ac.uk/ols4/ontologies/efo",
+   "description": "The Experimental Factor Ontology (EFO) is an application ontology from EMBL-EBI for the experimental variables recorded in EBI databases, such as diseases, phenotypes, anatomy, cell types and cell lines, chemical compounds and assays. It brings together classes from reference ontologies such as Uberon, ChEBI, the Cell Ontology and MONDO and links them, so that resources such as Expression Atlas, BioSamples, the GWAS Catalog and Open Targets can annotate samples and studies consistently and integrate their data.",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.1gr4tz",
+    "about": [
+     {
+      "@id": "http://edamontology.org/topic_3391",
+      "name": "Omics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C20085",
+      "name": "Proteomics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C84343",
+      "name": "Genomics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_3108",
+      "name": "Experimental measurement"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0000070",
+      "name": "assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0000750",
+      "name": "study design independent variable"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0500000",
+      "name": "study design"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/STATO_0000091",
+      "name": "genome-wide association study"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 1498,
+    "doi": "10.25504/FAIRsharing.1gr4tz",
+    "name": "Experimental Factor Ontology",
+    "abbreviation": "EFO",
+    "registry": "Standard",
+    "recordType": "terminology_artefact",
+    "status": "ready",
+    "yearCreation": 2010,
+    "homepage": "https://www.ebi.ac.uk/efo/",
+    "subjects": [
+     {
+      "iri": "http://edamontology.org/topic_3391",
+      "label": "Omics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C20085",
+      "label": "Proteomics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C84343",
+      "label": "Genomics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_3108",
+      "label": "Experimental measurement"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0000070",
+      "label": "assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0000750",
+      "label": "study design independent variable"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0500000",
+      "label": "study design"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/STATO_0000091",
+      "label": "genome-wide association study"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -6782,7 +7161,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -7079,7 +7458,72 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.drtwnh",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.drtwnh",
+   "schemaType": "schema:CreativeWork",
+   "key": "figshare",
+   "name": "figshare",
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Generalist-Registry"
+   ],
+   "scope": "Generic",
+   "dateReleased": "2011-01-12",
+   "dateSource": "https://web.archive.org/web/20110116044659/http://figshare.com/figblog/2011/01/12/figshare-alpha-release",
+   "url": "https://figshare.com/",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.drtwnh",
+    "about": [
+     {
+      "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "name": "Subject Agnostic"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_2337",
+      "name": "Resource metadata"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0200000",
+      "name": "data transformation"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 1843,
+    "doi": "10.25504/FAIRsharing.drtwnh",
+    "name": "figshare",
+    "abbreviation": "figshare",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "yearCreation": 2010,
+    "homepage": "http://figshare.com/",
+    "subjects": [
+     {
+      "iri": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "label": "Subject Agnostic"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_2337",
+      "label": "Resource metadata"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0200000",
+      "label": "data transformation"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -7233,7 +7677,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -7547,7 +7991,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -7626,7 +8070,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -7803,8 +8247,31 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#google_datasetsearch",
+   "identifier": "https://w3id.org/fair-tox/dataset#google_datasetsearch",
+   "schemaType": "schema:CreativeWork",
+   "key": "google_datasetsearch",
+   "name": "Google Dataset Search",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Registry"
+   ],
+   "scope": "Generic",
+   "dateReleased": "2018-09-05",
+   "dateSource": "https://blog.google/products/search/making-it-easier-discover-datasets/",
+   "url": "https://datasetsearch.research.google.com/",
+   "description": "Google Dataset Search is a free search engine for datasets. It indexes the dataset descriptions that publishers put on their web pages, mostly as schema.org markup, across repositories, publishers, government portals and personal sites. Results link back to the hosting pages, so it makes data findable without storing the data itself.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.hzdzq8",
+     "hadRole": "implements"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.amcv1e",
@@ -7894,7 +8361,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -7969,7 +8436,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8050,7 +8517,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8145,7 +8612,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8259,7 +8726,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8346,7 +8813,137 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.d05nwx",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.d05nwx",
+   "schemaType": "schema:CreativeWork",
+   "key": "intact",
+   "name": "IntAct molecular interaction database",
+   "alternateName": [
+    "IntAct"
+   ],
+   "fairsharingType": "Database: knowledgebase and repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2003",
+   "dateSource": "https://web.archive.org/web/20031215212402/http://www.ebi.ac.uk:80/intact/index.html",
+   "url": "https://www.ebi.ac.uk/intact/home",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.d05nwx",
+    "about": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C16345",
+      "name": "Biology"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_1468",
+      "name": "Protein domain"
+     },
+     {
+      "@id": "http://edamontology.org/data_2299",
+      "name": "Gene name"
+     },
+     {
+      "@id": "http://edamontology.org/data_3108",
+      "name": "Experimental measurement"
+     },
+     {
+      "@id": "http://edamontology.org/data_3754",
+      "name": "GO-term enrichment data"
+     },
+     {
+      "@id": "http://edamontology.org/topic_0128",
+      "name": "Protein interactions"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005488",
+      "name": "binding"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/MI_0000",
+      "name": "molecular interaction"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/PR_000000001",
+      "name": "protein"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/SO_0000312",
+      "name": "experimentally determined"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "https://w3id.org/fair-tox/dataset#parcfip"
+   ],
+   "principles": [
+    "F4"
+   ],
+   "fairsharing": {
+    "id": 1599,
+    "doi": "10.25504/FAIRsharing.d05nwx",
+    "name": "IntAct molecular interaction database",
+    "abbreviation": "IntAct",
+    "registry": "Database",
+    "recordType": "knowledgebase_and_repository",
+    "status": "ready",
+    "yearCreation": 2003,
+    "homepage": "https://www.ebi.ac.uk/intact/home",
+    "subjects": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C16345",
+      "label": "Biology"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_1468",
+      "label": "Protein domain"
+     },
+     {
+      "iri": "http://edamontology.org/data_2299",
+      "label": "Gene name"
+     },
+     {
+      "iri": "http://edamontology.org/data_3108",
+      "label": "Experimental measurement"
+     },
+     {
+      "iri": "http://edamontology.org/data_3754",
+      "label": "GO-term enrichment data"
+     },
+     {
+      "iri": "http://edamontology.org/topic_0128",
+      "label": "Protein interactions"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/GO_0005488",
+      "label": "binding"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/MI_0000",
+      "label": "molecular interaction"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/PR_000000001",
+      "label": "protein"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/SO_0000312",
+      "label": "experimentally determined"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8472,7 +9069,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8550,7 +9147,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8672,7 +9269,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -8838,7 +9435,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9035,7 +9632,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9130,8 +9727,50 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#maoorf",
+   "identifier": "https://w3id.org/fair-tox/dataset#maoorf",
+   "schemaType": "schema:CreativeWork",
+   "key": "maoorf",
+   "name": "Machine-Actionable OECD Omics Reporting Framework",
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "toxicogenomics",
+    "regulatory toxicology"
+   ],
+   "dateReleased": "2026-10-19",
+   "dateSource": "https://github.com/eu-parc/maoorf/commit/17e1758cd22ee7a25e30ec751097d4ee0fefe9d5",
+   "url": "https://eu-parc.github.io/maoorf/",
+   "description": "A modular LinkML data model that translates the reporting templates of the OECD Omics Reporting Framework (OORF) into a machine-readable schema, with modules for the study summary, the toxicology experiment, data acquisition and processing (microarray, RNA-seq, qRT-PCR, mass spectrometry, NMR) and data analysis. It lets omics study reports for regulatory toxicology be written, validated and exchanged as structured data. It is a community effort of the PARC toxicology community, still in development and not endorsed by the OECD.",
+   "maintained": "in development",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.41af40",
+     "hadRole": "implements"
+    }
+   ]
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#mars",
@@ -9158,6 +9797,82 @@
    "description": "MARS (Multi-omics Adapter for Repository Submissions) is an ELIXIR framework, with a command-line tool and repository adapters, for submitting a multi-omics study described in ISA-JSON to several public repositories (BioSamples, ENA, MetaboLights) in one go. It aims to keep metadata and accession numbers consistent across those repositories.",
    "maintained": "in development",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.dk451a",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.dk451a",
+   "schemaType": "schema:CreativeWork",
+   "key": "massbank_eu",
+   "name": "MassBank Europe",
+   "alternateName": [
+    "MassBank"
+   ],
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2011",
+   "dateSource": "https://doi.org/10.1093/nar/gkaf1193",
+   "url": "https://massbank.eu/MassBank/",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.dk451a",
+    "about": [
+     {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "name": "Life Science"
+     },
+     {
+      "@id": "http://edamontology.org/topic_3318",
+      "name": "Physics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C16414",
+      "name": "Chemistry"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_0943",
+      "name": "Mass spectrum"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 2349,
+    "doi": "10.25504/FAIRsharing.dk451a",
+    "name": "MassBank Europe",
+    "abbreviation": "MassBank",
+    "registry": "Database",
+    "recordType": "knowledgebase",
+    "status": "ready",
+    "yearCreation": 2006,
+    "homepage": "https://massbank.eu/MassBank/",
+    "subjects": [
+     {
+      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "label": "Life Science"
+     },
+     {
+      "iri": "http://edamontology.org/topic_3318",
+      "label": "Physics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C16414",
+      "label": "Chemistry"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_0943",
+      "label": "Mass spectrum"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.hxvt6c",
@@ -9242,7 +9957,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9421,7 +10136,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9559,7 +10274,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9646,7 +10361,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9766,7 +10481,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -9866,7 +10581,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10108,7 +10823,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10188,7 +10903,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10298,7 +11013,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10412,7 +11127,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10555,7 +11270,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10629,7 +11344,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10730,7 +11445,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -10930,7 +11645,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -11025,7 +11740,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -11185,7 +11900,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -11392,6 +12107,20 @@
      "principle": "I1"
     },
     {
+     "@id": "https://w3id.org/np/RA26r-ccXnD92eAZxzQHc4RRK2KiHzTd5GJdtO-Nf5jng/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.d05nwx",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAz2mDui5OykR0p1C7j6HmElXIh71d4SQHxsiyABqASNc/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.d05nwx",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+     "principle": "F4"
+    },
+    {
      "@id": "https://w3id.org/np/RAjbJFzmZu_j_2FXzBwYLBognt0IYJ1Zpz7cy4957bxbs/declaration",
      "@type": "fip:FIP-Declaration",
      "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.ddk9t9",
@@ -11441,6 +12170,20 @@
      "principle": "F1"
     },
     {
+     "@id": "https://w3id.org/np/RAvLZpSWZUWHdXw_zGEVoU5WHoatBCjQsoea4R0NQIBDY/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.mya1ff",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+     "principle": "F4"
+    },
+    {
+     "@id": "https://w3id.org/np/RAx1UTqXZtVBhllihSmIbq9Xw6Xxl2K2jWgBWtOlxM_VM/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.mya1ff",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+     "principle": "F4"
+    },
+    {
      "@id": "https://w3id.org/np/RA0eRJdxb9RWySbYaiX3vATq4tDcRk4vVEy7ztAbqVst8/declaration",
      "@type": "fip:FIP-Declaration",
      "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.p77ph9",
@@ -11453,6 +12196,13 @@
      "declares-current-use-of": "https://doi.org/10.25504/FAIRsharing.p77ph9",
      "question": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
      "principle": "I1"
+    },
+    {
+     "@id": "https://w3id.org/np/RAKdiL1mjp3OMavCvO6J8_ltIRP7R_cxmSh_JMCTqduFg/declaration",
+     "@type": "fip:FIP-Declaration",
+     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#pubchem_cid",
+     "question": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+     "principle": "F1"
     }
    ]
   },
@@ -11572,7 +12322,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -11798,7 +12548,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -11913,8 +12663,37 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#pubchem_cid",
+   "identifier": "https://w3id.org/fair-tox/dataset#pubchem_cid",
+   "schemaType": "schema:CreativeWork",
+   "key": "pubchem_cid",
+   "name": "PubChem Compound Identification",
+   "alternateName": [
+    "PubChem CID"
+   ],
+   "fairsharingType": "Standard: identifier schema",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Identifier-service"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2004",
+   "dateSource": "https://doi.org/10.1093/nar/gkv951",
+   "url": "https://registry.identifiers.org/registry/pubchem.compound",
+   "description": "The PubChem Compound Identifier (CID) is the integer accession that NCBI's PubChem gives to each unique chemical structure, obtained by standardising the structures in depositors' substance records. Registered at identifiers.org under the prefix pubchem.compound, a CID can be cited as a compact identifier that resolves to the compound's PubChem record, so data and metadata can refer to a chemical unambiguously.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "declaredIn": [
+    "https://w3id.org/fair-tox/dataset#parcfip"
+   ],
+   "principles": [
+    "F1"
+   ],
+   "fsr": [
+    "https://w3id.org/np/RALGzv6X0tjUaQ--X_7HYv5L7w1P5AUQh_-hLDnrpBGSM#PubChemCID"
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.ad3e10",
@@ -12115,7 +12894,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -12188,7 +12967,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -12325,7 +13104,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -12627,7 +13406,74 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.hzdzq8",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.hzdzq8",
+   "schemaType": "schema:CreativeWork",
+   "key": "schemadotorg",
+   "name": "schema.org",
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema",
+    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+   ],
+   "scope": "Generic",
+   "dateReleased": "2011-06-02",
+   "dateSource": "https://developers.google.com/search/blog/2011/06/introducing-schemaorg-search-engines",
+   "url": "https://schema.org/",
+   "description": "Schema.org is a shared vocabulary of types and properties for describing people, places, events, datasets and other things as structured data in web pages, written in JSON-LD, RDFa or Microdata. Google, Microsoft and Yahoo! started it in 2011 and Yandex joined later that year; it is now developed openly through a W3C community group. Search engines and other applications read this markup, and Bioschemas builds its life-science profiles on it.",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.hzdzq8",
+    "about": [
+     {
+      "@id": "http://edamontology.org/topic_3316",
+      "name": "Computer Science"
+     },
+     {
+      "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "name": "Subject Agnostic"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/operation_0226",
+      "name": "Annotation"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 1024,
+    "doi": "10.25504/FAIRsharing.hzdzq8",
+    "name": "Schema.org",
+    "abbreviation": "Schema.org",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2011,
+    "homepage": "http://schema.org/",
+    "subjects": [
+     {
+      "iri": "http://edamontology.org/topic_3316",
+      "label": "Computer Science"
+     },
+     {
+      "iri": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "label": "Subject Agnostic"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/operation_0226",
+      "label": "Annotation"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -12748,7 +13594,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -12856,7 +13702,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -12970,7 +13816,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -13066,7 +13912,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -13146,7 +13992,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -13306,7 +14152,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -13403,7 +14249,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -13424,6 +14270,23 @@
    "description": "TeMOwl is a Fraunhofer SCAI API service that gives one programmatic access point to controlled vocabularies, terminologies and ontologies from different providers, and maps equivalent concepts across them. In OpenRiskNet it was used to map identifiers and names to concepts.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#tess",
+   "identifier": "https://w3id.org/fair-tox/dataset#tess",
+   "schemaType": "schema:CreativeWork",
+   "key": "tess",
+   "name": "ELIXIR TeSS",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Life Sciences",
+   "dateReleased": "2015-03",
+   "dateSource": "https://doi.org/10.7490/f1000research.1110257.1",
+   "url": "https://tess.elixir-europe.org/",
+   "description": "TeSS (Training eSupport System) is ELIXIR's online registry of life-science training. It collects descriptions of training events and materials from ELIXIR Nodes and other providers, automatically (for example by harvesting Bioschemas markup) or by manual registration, and makes them searchable through a portal, an API and embeddable widgets.",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#tggates",
@@ -13544,7 +14407,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -13951,7 +14814,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -14135,7 +14998,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -14432,7 +15295,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -14503,7 +15366,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-24"
+    "retrieved": "2026-10-25"
    }
   },
   {
@@ -14551,6 +15414,72 @@
      "hadRole": "extends"
     }
    ]
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.wy4egf",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.wy4egf",
+   "schemaType": "schema:CreativeWork",
+   "key": "zenodo",
+   "name": "Zenodo",
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Generalist-Registry"
+   ],
+   "scope": "Generic",
+   "dateReleased": "2013-05-08",
+   "dateSource": "https://sciencenode.org/feature/cern-and-openaireplus-launch-new-european-research-repository.php",
+   "url": "https://zenodo.org/",
+   "description": "Zenodo is a general-purpose open repository, built and run by CERN with OpenAIRE, where researchers from any discipline deposit datasets, software, publications and other research outputs. Each upload gets a DataCite DOI so it can be cited. GitHub repositories can be archived automatically, and records can be grouped in communities and linked to funder grants.",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.wy4egf",
+    "about": [
+     {
+      "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "name": "Subject Agnostic"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/T4FS_0000141",
+      "name": "data management"
+     },
+     {
+      "@id": "http://www.ebi.ac.uk/swo/SWO_0000143",
+      "name": "data storage"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 2358,
+    "doi": "10.25504/FAIRsharing.wy4egf",
+    "name": "Zenodo",
+    "abbreviation": "Zenodo",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "yearCreation": 2013,
+    "homepage": "https://www.zenodo.org",
+    "subjects": [
+     {
+      "iri": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "label": "Subject Agnostic"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/T4FS_0000141",
+      "label": "data management"
+     },
+     {
+      "iri": "http://www.ebi.ac.uk/swo/SWO_0000143",
+      "label": "data storage"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-25"
+   }
   }
  ],
  "inLanguage": "en",
@@ -14766,7 +15695,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "3d65ebbccde42bb690a23589e1e9cae4b57fb5ae73314bd605de7cc05dfa7fe2"
+    "checksumValue": "2c4cad3ee9d2bd2617b8b7a909da540d49627a7218e2f55607b69ce4a2794f1a"
    }
   },
   {
@@ -14777,7 +15706,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "decd10f7d14e25086e24628b602d44506e6cae053428264df10578bc3db9e802"
+    "checksumValue": "b8e66e9a0e0554faee82421317a14468f763281f0f1e29fac6cfde2da215685e"
    }
   },
   {
@@ -14811,6 +15740,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-10-23"
+  "sdDatePublished": "2026-10-25"
  }
 }

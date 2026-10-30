@@ -51,6 +51,7 @@ enm_ont,extends,bao
 eutr_ki,related_to,biostudies
 fairaop,implements,fipwiz
 google_datasetsearch,implements,schemadotorg
+isajson,extends,isatab
 iuclid,related_to,oht
 maoorf,implements,oorf
 miametox,extends,miame

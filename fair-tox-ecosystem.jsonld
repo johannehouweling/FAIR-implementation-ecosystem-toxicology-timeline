@@ -241,7 +241,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.10.5",
- "dateModified": "2026-10-29",
+ "dateModified": "2026-10-30",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -1424,6 +1424,16 @@
    ],
    "principles": [
     "F4"
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.x964fb",
+     "hadRole": "implements"
+    }
    ],
    "fairsharing": {
     "id": 1845,
@@ -2682,6 +2692,16 @@
    ],
    "principles": [
     "F1"
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.6k0kwd",
+     "hadRole": "deprecates"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.ewjdq6",
+     "hadRole": "related_to"
+    }
    ],
    "fairsharing": {
     "id": 2507,
@@ -5689,6 +5709,10 @@
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.njqq5b",
      "hadRole": "implements"
     },
     {
@@ -9151,6 +9175,55 @@
    }
   },
   {
+   "@id": "https://w3id.org/fair-tox/dataset#isaconfig_dixa",
+   "identifier": "https://w3id.org/fair-tox/dataset#isaconfig_dixa",
+   "schemaType": "schema:CreativeWork",
+   "key": "isaconfig_dixa",
+   "name": "isaconfig-diXa (ISA-Tab configuration for toxicogenomics)",
+   "alternateName": [
+    "isaconfig-diXa",
+    "diXa ISA-Tab configuration"
+   ],
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "toxicogenomics"
+   ],
+   "dateReleased": "2013-01-21",
+   "dateSource": "https://bitbucket.org/kanterae/isaconfig-dixa",
+   "creator": "EU FP7 diXa consortium",
+   "url": "https://bitbucket.org/kanterae/isaconfig-dixa",
+   "description": "ISAcreator configuration of the diXa project: ISA-Tab templates and controlled fields for describing toxicogenomics studies for deposition in the diXa data warehouse, carrying the study-level fields of SimpleTox into ISA-Tab.",
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#simpletox",
+     "hadRole": "extends"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
+     "hadRole": "profiles"
+    }
+   ]
+  },
+  {
    "@id": "https://doi.org/10.25504/FAIRsharing.yhLgTV",
    "identifier": "https://doi.org/10.25504/FAIRsharing.yhLgTV",
    "schemaType": "schema:CreativeWork",
@@ -9373,6 +9446,12 @@
    "principles": [
     "F2"
    ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.ak8p5g",
+     "hadRole": "extends"
+    }
+   ],
    "fairsharing": {
     "id": 1497,
     "doi": "10.25504/FAIRsharing.53gp75",
@@ -9437,6 +9516,154 @@
      {
       "iri": "http://purl.obolibrary.org/obo/SO_0000312",
       "label": "experimentally determined"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-30"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.njqq5b",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.njqq5b",
+   "schemaType": "schema:CreativeWork",
+   "key": "isatabnano",
+   "name": "ISA-TAB-Nano",
+   "alternateName": [
+    "ISA-TAB-Nano"
+   ],
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "nanotoxicology"
+   ],
+   "datePublished": "2013-01-14",
+   "dateSource": "https://doi.org/10.1186/1472-6750-13-2",
+   "creator": "NCI caBIG Nanotechnology Working Group",
+   "url": "https://doi.org/10.1186/1472-6750-13-2",
+   "description": "Extension of the ISA-Tab format for sharing nanomaterial research data in spreadsheets: a material file describes the nanomaterial and its components, and the study and assay files gain columns for material samples and their characterisation. Specified by the Nanotechnology Working Group of NCI caBIG, it was taken up by nanosafety databases such as the eNanoMapper database.",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.njqq5b",
+    "about": [
+     {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "name": "Life Science"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "name": "Biomedical Science"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C17837",
+      "name": "Oncology"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C18478",
+      "name": "Nanotechnology"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_2337",
+      "name": "Resource metadata"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHEBI_50803",
+      "name": "nanoparticle"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0000031",
+      "name": "cell line"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0000070",
+      "name": "assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0000115",
+      "name": "intervention design"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/UBERON_0000479",
+      "name": "tissue"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
+     "hadRole": "extends"
+    }
+   ],
+   "fairsharing": {
+    "id": 1339,
+    "doi": "10.25504/FAIRsharing.njqq5b",
+    "name": "ISA-TAB-Nano",
+    "abbreviation": "ISA-TAB-Nano",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2012,
+    "homepage": "https://wiki.nci.nih.gov/display/ICR/ISA-TAB-Nano",
+    "subjects": [
+     {
+      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "label": "Life Science"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "label": "Biomedical Science"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C17837",
+      "label": "Oncology"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C18478",
+      "label": "Nanotechnology"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_2337",
+      "label": "Resource metadata"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHEBI_50803",
+      "label": "nanoparticle"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CLO_0000031",
+      "label": "cell line"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0000070",
+      "label": "assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0000115",
+      "label": "intervention design"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/UBERON_0000479",
+      "label": "tissue"
      }
     ],
     "inCollection": false,
@@ -9737,6 +9964,231 @@
    }
   },
   {
+   "@id": "https://doi.org/10.25504/FAIRsharing.x964fb",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.x964fb",
+   "schemaType": "schema:CreativeWork",
+   "key": "mageml",
+   "name": "MAGE-ML (MicroArray Gene Expression Markup Language)",
+   "alternateName": [
+    "MAGE-ML",
+    "MicroArray Gene Expression Markup Language"
+   ],
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Life Sciences",
+   "subdomains": [
+    "toxicogenomics"
+   ],
+   "datePublished": "2002-08-23",
+   "dateSource": "https://doi.org/10.1186/gb-2002-3-9-research0046",
+   "creator": "FGED (MGED) Society; Object Management Group",
+   "url": "https://www.omg.org/spec/GENE/",
+   "description": "XML format of the MGED Society for exchanging microarray gene expression data and their annotation, generated from the MAGE object model and adopted by the Object Management Group as its Gene Expression specification. It carried MIAME-compliant data between laboratories, tools and public repositories such as ArrayExpress until the simpler MAGE-TAB replaced it.",
+   "maintained": "discontinued",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.x964fb",
+    "about": [
+     {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "name": "Life Science"
+     },
+     {
+      "@id": "http://edamontology.org/topic_0797",
+      "name": "Comparative Genomics"
+     },
+     {
+      "@id": "http://edamontology.org/topic_3308",
+      "name": "Transcriptomics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_2603",
+      "name": "Expression data"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHEBI_33697",
+      "name": "ribonucleic acid"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0400148",
+      "name": "DNA microarray"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
+     "hadRole": "implements"
+    }
+   ],
+   "fairsharing": {
+    "id": 1222,
+    "doi": "10.25504/FAIRsharing.x964fb",
+    "name": "MicroArray Gene Expression Markup Language",
+    "abbreviation": "MAGE-ML",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "deprecated",
+    "homepage": "http://www.mged.org/Workgroups/MAGE/mage-ml.html",
+    "subjects": [
+     {
+      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "label": "Life Science"
+     },
+     {
+      "iri": "http://edamontology.org/topic_0797",
+      "label": "Comparative Genomics"
+     },
+     {
+      "iri": "http://edamontology.org/topic_3308",
+      "label": "Transcriptomics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_2603",
+      "label": "Expression data"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHEBI_33697",
+      "label": "ribonucleic acid"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0400148",
+      "label": "DNA microarray"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-30"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.ak8p5g",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.ak8p5g",
+   "schemaType": "schema:CreativeWork",
+   "key": "magetab",
+   "name": "MAGE-TAB (MicroArray Gene Expression Tabular format)",
+   "alternateName": [
+    "MAGE-TAB",
+    "MicroArray Gene Expression Tabular format"
+   ],
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Life Sciences",
+   "subdomains": [
+    "toxicogenomics"
+   ],
+   "datePublished": "2006-11-06",
+   "dateSource": "https://doi.org/10.1186/1471-2105-7-489",
+   "creator": "FGED (MGED) Society; EMBL-EBI",
+   "url": "https://www.fged.org/projects/mage-tab/",
+   "description": "Tab-delimited, spreadsheet-based format of the MGED Society for MIAME-compliant microarray data and metadata, with an investigation description file (IDF) and a sample and data relationship file (SDRF). It replaced MAGE-ML as the submission format of ArrayExpress, and ISA-Tab shares its syntax.",
+   "maintained": "active",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.ak8p5g",
+    "about": [
+     {
+      "@id": "http://edamontology.org/topic_3173",
+      "name": "Epigenomics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C17964",
+      "name": "Bioinformatics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C84343",
+      "name": "Genomics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_3110",
+      "name": "Raw microarray data"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0000070",
+      "name": "assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0001985",
+      "name": "microarray assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/SO_0000001",
+      "name": "region"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.6k0kwd",
+     "hadRole": "related_to"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.x964fb",
+     "hadRole": "deprecates"
+    }
+   ],
+   "fairsharing": {
+    "id": 1254,
+    "doi": "10.25504/FAIRsharing.ak8p5g",
+    "name": "MicroArray Gene Expression Tabular Format",
+    "abbreviation": "MAGE-TAB",
+    "registry": "Standard",
+    "recordType": "model_and_format",
+    "status": "ready",
+    "yearCreation": 2006,
+    "homepage": "https://www.fged.org/projects/mage-tab",
+    "subjects": [
+     {
+      "iri": "http://edamontology.org/topic_3173",
+      "label": "Epigenomics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C17964",
+      "label": "Bioinformatics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C84343",
+      "label": "Genomics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_3110",
+      "label": "Raw microarray data"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0000070",
+      "label": "assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0001985",
+      "label": "microarray assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/SO_0000001",
+      "label": "region"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-30"
+   }
+  },
+  {
    "@id": "https://w3id.org/fair-tox/dataset#maoorf",
    "identifier": "https://w3id.org/fair-tox/dataset#maoorf",
    "schemaType": "schema:CreativeWork",
@@ -9806,7 +10258,13 @@
    "url": "https://elixir-europe.github.io/MARS/",
    "description": "MARS (Multi-omics Adapter for Repository Submissions) is an ELIXIR framework, with a command-line tool and repository adapters, for submitting a multi-omics study described in ISA-JSON to several public repositories (BioSamples, ENA, MetaboLights) in one go. It aims to keep metadata and accession numbers consistent across those repositories.",
    "maintained": "in development",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.yhLgTV",
+     "hadRole": "implements"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.dk451a",
@@ -13716,6 +14174,56 @@
    }
   },
   {
+   "@id": "https://w3id.org/fair-tox/dataset#simpletox",
+   "identifier": "https://w3id.org/fair-tox/dataset#simpletox",
+   "schemaType": "schema:CreativeWork",
+   "key": "simpletox",
+   "name": "SimpleTox",
+   "alternateName": [
+    "SimpleTox"
+   ],
+   "fairsharingType": "Standard: model/format",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Regulatory assessment"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "toxicogenomics",
+    "regulatory toxicology"
+   ],
+   "datePublished": "2010-08-01",
+   "dateSource": "https://doi.org/10.1186/1479-7364-4-6-428",
+   "creator": "US FDA NCTR",
+   "url": "https://doi.org/10.1186/1479-7364-4-6-428",
+   "description": "Spreadsheet-based format of FDA NCTR for the summary-level animal toxicology study data that accompany toxicogenomics experiments, with the main fields of CDISC SEND combined and extracted. It was the data import format of ArrayTrack and was used for study data from the MAQC project onwards; the diXa project later adapted its fields in ISA-Tab.",
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#arraytrack",
+     "hadRole": "related_to"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.7z842d",
+     "hadRole": "profiles"
+    }
+   ]
+  },
+  {
    "@id": "https://doi.org/10.25504/FAIRsharing.qv4b3c",
    "identifier": "https://doi.org/10.25504/FAIRsharing.qv4b3c",
    "schemaType": "schema:CreativeWork",
@@ -14419,6 +14927,61 @@
     "associations": [],
     "retrieved": "2026-10-30"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#toxbank_dw",
+   "identifier": "https://w3id.org/fair-tox/dataset#toxbank_dw",
+   "schemaType": "schema:CreativeWork",
+   "key": "toxbank_dw",
+   "name": "ToxBank Data Warehouse",
+   "alternateName": [
+    "ToxBank"
+   ],
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
+   "creatorType": [
+    "Wet-lab research",
+    "In silico research"
+   ],
+   "subdomains": [
+    "in vitro toxicology",
+    "toxicogenomics"
+   ],
+   "datePublished": "2013-01-17",
+   "dateSource": "https://doi.org/10.1002/minf.201200114",
+   "creator": "SEURAT-1 ToxBank consortium",
+   "url": "https://doi.org/10.1002/minf.201200114",
+   "description": "Data warehouse of the SEURAT-1 research cluster for the in vitro and omics data and protocols of its seven FP7 projects on repeated dose systemic toxicity, built on ISA-Tab, RESTful web services, RDF and the OpenTox standards. The toxbank.net site survives only as an archive.",
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Wet-lab research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#opentox",
+     "hadRole": "implements"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
+     "hadRole": "implements"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.f60a10",
@@ -15705,7 +16268,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "e660759d57b30e2c3e1c7ebf61bac1c0aca0397eeeb38baf6d343017f92e7865"
+    "checksumValue": "9427234f8de383f908bb7a6379208c9f41f57fee7d64b2b255f04d871a8431fe"
    }
   },
   {
@@ -15716,7 +16279,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "bab5c9854eafc899e3aa005ef706abdebeaed7e90972936d1a6d4dd54c0c44bc"
+    "checksumValue": "99de4b57153f41c85a6d70a1c93f906739f8451698be08b8680028d5650d17e6"
    }
   },
   {
@@ -15750,6 +16313,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-10-29"
+  "sdDatePublished": "2026-10-30"
  }
 }

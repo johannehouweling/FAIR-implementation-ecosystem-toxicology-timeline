@@ -39,6 +39,8 @@ bioschemas_dataset_profile,implements,bioschemas
 bioschemas_molecularentity,implements,bioschemas
 biostudies,deprecates,arrayexpress
 biostudies,related_to,biosd
+cebs,related_to,drugmatrix
+dbzach,implements,miame
 echemportal,implements,oht
 effectopedia,related_to,aopkb
 effectopedia,related_to,aopwiki
@@ -54,6 +56,7 @@ enm_ont,implements,owl
 enm_ont,extends,cl
 enm_ont,extends,bao
 eutr_ki,related_to,biostudies
+fairaop,uses,fip_wizard
 fairaop,implements,fipwiz
 google_datasetsearch,implements,schemadotorg
 isaconfig_dixa,extends,simpletox
@@ -69,6 +72,7 @@ magetab,deprecates,mageml
 maoorf,implements,oorf
 mars,implements,isajson
 miametox,extends,miame
+miametox,related_to,cebs
 miriam,related_to,sbml
 nanoaop,extends,aopwikirdf
 nanoaop,implements,enm_ont
@@ -80,6 +84,7 @@ nanopub,uses,rdf
 omex,related_to,sbml
 oorf,related_to,rodaf
 owl,implements,rdf
+parcfip,uses,fip_wizard
 parcfip,implements,fipwiz
 pbk,profiles,sbml
 rdmtox,extends,rdmkit
@@ -90,10 +95,12 @@ sedml,related_to,sbml
 simpletox,related_to,arraytrack
 simpletox,profiles,send
 sparql,uses,rdf
+tbc,related_to,cebs
 toxbank_dw,implements,opentox
 toxbank_dw,implements,isatab
 toxcoll,extends,fairsharing
 toxtemp,related_to,eutr_ki
 toxtemp,extends,gd211
+txg_mapr,uses,tggates
 wikipathways_aopportal,related_to,aopwiki
 wikipathways_aopportal,extends,wikipathways

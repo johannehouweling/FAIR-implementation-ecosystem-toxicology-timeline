@@ -266,7 +266,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-10-30",
+   "retrieved": "2026-10-31",
    "members": 74
   },
   "fip": {
@@ -278,7 +278,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-30",
+    "retrieved": "2026-10-31",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -309,7 +309,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-10-30",
+    "retrieved": "2026-10-31",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -487,7 +487,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -582,7 +582,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1340,7 +1340,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1498,7 +1498,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1684,7 +1684,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1769,7 +1769,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1857,7 +1857,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1916,7 +1916,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -1975,7 +1975,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2048,7 +2048,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2400,7 +2400,7 @@
       3680
      ]
     ],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2465,7 +2465,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2524,7 +2524,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2639,7 +2639,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2731,7 +2731,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2810,7 +2810,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2896,7 +2896,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -2961,7 +2961,158 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.25504/FAIRsharing.ntv8pe",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.ntv8pe",
+   "schemaType": "schema:CreativeWork",
+   "key": "cebs",
+   "name": "Chemical Effects in Biological Systems",
+   "alternateName": [
+    "CEBS"
+   ],
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
+   "creatorType": [
+    "Wet-lab research",
+    "In silico research"
+   ],
+   "subdomains": [
+    "toxicogenomics",
+    "regulatory toxicology"
+   ],
+   "datePublished": "2003-01",
+   "dateSource": "https://pubmed.ncbi.nlm.nih.gov/12735106/",
+   "creator": "NIEHS and the US National Toxicology Program",
+   "contactPoint": [
+    "https://ror.org/00j4k1h63"
+   ],
+   "url": "https://cebs.niehs.nih.gov/cebs/",
+   "description": "Public NIEHS repository of toxicology study data: the individual-animal and summary data of the US National Toxicology Program studies, and data deposited by academic, industrial and government laboratories, held with their study design so that studies can be compared and combined. It holds the NTP data collections (now DTT Data Collections) and the complete DrugMatrix database.",
+   "maintained": "active",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.ntv8pe",
+    "about": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C142642",
+      "name": "Preclinical Studies"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "name": "Biomedical Science"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C16624",
+      "name": "Genetics"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C20085",
+      "name": "Proteomics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/data_2603",
+      "name": "Expression data"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/MI_1100",
+      "name": "bioactive entity"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0600020",
+      "name": "histological assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OGMS_0000031",
+      "name": "disease"
+     },
+     {
+      "@id": "http://semanticscience.org/resource/SIO_001008",
+      "name": "toxicity"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Wet-lab research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#drugmatrix",
+     "hadRole": "related_to"
+    }
+   ],
+   "fairsharing": {
+    "id": 2069,
+    "doi": "10.25504/FAIRsharing.ntv8pe",
+    "name": "Chemical Effects in Biological Systems",
+    "abbreviation": "CEBS",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "yearCreation": 2003,
+    "homepage": "https://cebs.niehs.nih.gov/cebs/",
+    "subjects": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C142642",
+      "label": "Preclinical Studies"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "label": "Biomedical Science"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C16624",
+      "label": "Genetics"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C20085",
+      "label": "Proteomics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/data_2603",
+      "label": "Expression data"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/MI_1100",
+      "label": "bioactive entity"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0600020",
+      "label": "histological assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OGMS_0000031",
+      "label": "disease"
+     },
+     {
+      "iri": "http://semanticscience.org/resource/SIO_001008",
+      "label": "toxicity"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3055,7 +3206,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3212,7 +3363,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3360,7 +3511,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3448,7 +3599,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3535,7 +3686,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3657,7 +3808,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3780,7 +3931,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3898,7 +4049,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -3988,7 +4139,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4321,7 +4472,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4419,7 +4570,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4438,6 +4589,59 @@
    "url": "https://ds-wizard.org/",
    "description": "The Data Stewardship Wizard is an open-source web platform for writing data management plans together, developed within ELIXIR and begun at the Czech Technical University in Prague. Data stewards encode guidance as knowledge models that drive adaptive questionnaires, and the answers are exported through document templates as readable or machine-actionable plans. Organisations can run their own instances, and the FIP Wizard is built on it.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#dbzach",
+   "identifier": "https://w3id.org/fair-tox/dataset#dbzach",
+   "schemaType": "schema:CreativeWork",
+   "key": "dbzach",
+   "name": "dbZach",
+   "alternateName": [
+    "dbZACH"
+   ],
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
+   "creatorType": [
+    "Wet-lab research",
+    "In silico research"
+   ],
+   "subdomains": [
+    "toxicogenomics"
+   ],
+   "dateReleased": "2001-09-28",
+   "dateSource": "https://web.archive.org/web/20010928121744/http://dbzach.fst.msu.edu/",
+   "creator": "Zacharewski laboratory, Michigan State University",
+   "contactPoint": [
+    "https://ror.org/05hs6h993"
+   ],
+   "url": "https://doi.org/10.1093/toxsci/kfj097",
+   "description": "Relational database of the Zacharewski laboratory at Michigan State University for toxicology and toxicogenomics data, with tools to enter, retrieve and mine them: genes, clones, sample annotation and protocols, microarray, Affymetrix, real-time PCR and toxicology data, and gene regulation, pathway and orthology information, compliant with MIAME. It is no longer accessible.",
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Wet-lab research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
+     "hadRole": "implements"
+    }
+   ]
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#dc_data_explorer",
@@ -4549,8 +4753,53 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#drugmatrix",
+   "identifier": "https://w3id.org/fair-tox/dataset#drugmatrix",
+   "schemaType": "schema:CreativeWork",
+   "key": "drugmatrix",
+   "name": "DrugMatrix",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
+   "creatorType": [
+    "Wet-lab research",
+    "In silico research"
+   ],
+   "subdomains": [
+    "in vitro toxicology",
+    "toxicogenomics"
+   ],
+   "datePublished": "2005-09",
+   "dateSource": "https://doi.org/10.1016/j.jbiotec.2005.03.022",
+   "creator": "Iconix Pharmaceuticals; US National Toxicology Program (NIEHS) from late 2010",
+   "contactPoint": [
+    "https://ror.org/00j4k1h63"
+   ],
+   "url": "https://ntp.niehs.nih.gov/data/drugmatrix",
+   "description": "Toxicogenomics reference database of short-term rat studies of about 600 drugs and other chemicals: gene expression in up to seven tissues and in cultured rat hepatocytes, paired with histopathology, clinical chemistry, haematology and in vitro pharmacology assays. Built by Iconix Pharmaceuticals, it was taken over by the US National Toxicology Program in late 2010 and made free; the complete database is now in CEBS and the gene expression data in GEO.",
+   "maintained": "discontinued",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Wet-lab research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.c5b513",
@@ -4631,7 +4880,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4705,7 +4954,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4807,7 +5056,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4885,7 +5134,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -4971,7 +5220,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -5060,7 +5309,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -5173,7 +5422,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -5269,7 +5518,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -5597,7 +5846,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -5752,7 +6001,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -5859,7 +6108,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6007,7 +6256,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6122,7 +6371,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6205,7 +6454,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6303,7 +6552,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6404,7 +6653,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6487,7 +6736,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6611,7 +6860,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6736,7 +6985,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6823,7 +7072,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -6982,7 +7231,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -7089,7 +7338,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -7185,7 +7434,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -7233,6 +7482,10 @@
     }
    ],
    "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#fip_wizard",
+     "hadRole": "uses"
+    },
     {
      "relation": "https://w3id.org/fair-tox/dataset#fipwiz",
      "hadRole": "implements"
@@ -7482,7 +7735,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -7547,7 +7800,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -7701,7 +7954,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8015,7 +8268,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8094,7 +8347,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8271,7 +8524,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8385,7 +8638,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8460,7 +8713,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8541,7 +8794,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8636,7 +8889,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8750,7 +9003,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8837,7 +9090,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -8967,7 +9220,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9093,7 +9346,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9171,7 +9424,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9348,7 +9601,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9520,7 +9773,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9668,7 +9921,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9865,7 +10118,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -9960,7 +10213,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10064,7 +10317,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10185,7 +10438,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10339,7 +10592,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10425,7 +10678,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10604,7 +10857,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10692,6 +10945,10 @@
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
      "hadRole": "extends"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.ntv8pe",
+     "hadRole": "related_to"
     }
    ],
    "fairsharing": {
@@ -10742,7 +10999,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10829,7 +11086,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -10949,7 +11206,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11049,7 +11306,91 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
+   }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#msigdb",
+   "identifier": "https://w3id.org/fair-tox/dataset#msigdb",
+   "schemaType": "schema:CreativeWork",
+   "key": "msigdb",
+   "name": "Molecular Signatures Database (MSigDB)",
+   "alternateName": [
+    "MSigDB"
+   ],
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "scope": "Life Sciences",
+   "subdomains": [
+    "toxicogenomics"
+   ],
+   "datePublished": "2005-09-30",
+   "dateSource": "https://doi.org/10.1073/pnas.0506580102",
+   "creator": "UC San Diego and Broad Institute",
+   "contactPoint": [
+    "https://ror.org/05a0ya142"
+   ],
+   "url": "https://www.gsea-msigdb.org/gsea/msigdb/",
+   "description": "Resource of tens of thousands of annotated gene sets, in human and mouse collections, for use with Gene Set Enrichment Analysis (GSEA). In toxicogenomics it is used to interpret gene expression changes through gene sets and pathways.",
+   "maintained": "active",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/9343",
+    "about": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C16624",
+      "name": "Genetics"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008150",
+      "name": "biological_process"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OGMS_0000023",
+      "name": "phenotype"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/SO_0000704",
+      "name": "gene"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fairsharing": {
+    "id": 9343,
+    "name": "Molecular Signatures Database",
+    "abbreviation": "MSigDB",
+    "registry": "Database",
+    "recordType": "knowledgebase",
+    "status": "ready",
+    "yearCreation": 2005,
+    "homepage": "https://www.gsea-msigdb.org/gsea/msigdb/",
+    "subjects": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C16624",
+      "label": "Genetics"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://purl.obolibrary.org/obo/GO_0008150",
+      "label": "biological_process"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OGMS_0000023",
+      "label": "phenotype"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/SO_0000704",
+      "label": "gene"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11291,7 +11632,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11371,7 +11712,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11481,7 +11822,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11595,7 +11936,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11738,7 +12079,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11812,7 +12153,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -11913,7 +12254,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -12113,7 +12454,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -12208,7 +12549,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -12368,7 +12709,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -12456,6 +12797,10 @@
     }
    ],
    "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#fip_wizard",
+     "hadRole": "uses"
+    },
     {
      "relation": "https://w3id.org/fair-tox/dataset#fipwiz",
      "hadRole": "implements"
@@ -12790,7 +13135,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13016,7 +13361,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13131,7 +13476,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13362,7 +13707,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13435,7 +13780,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13572,7 +13917,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13874,7 +14219,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -13941,7 +14286,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14062,7 +14407,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14170,7 +14515,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14334,7 +14679,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14430,7 +14775,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14510,7 +14855,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14670,7 +15015,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14739,6 +15084,12 @@
      "hadRole": "Regulator"
     }
    ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.ntv8pe",
+     "hadRole": "related_to"
+    }
+   ],
    "fairsharing": {
     "id": 229,
     "doi": "10.25504/FAIRsharing.jgbxr",
@@ -14767,7 +15118,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -14925,7 +15276,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -15387,7 +15738,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -15571,7 +15922,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -15661,6 +16012,53 @@
     {
      "relation": "https://w3id.org/fair-tox/dataset#gd211",
      "hadRole": "extends"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#txg_mapr",
+   "identifier": "https://w3id.org/fair-tox/dataset#txg_mapr",
+   "schemaType": "schema:SoftwareApplication",
+   "key": "txg_mapr",
+   "name": "TXG-MAPr",
+   "fairsharingType": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
+   ],
+   "scope": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "in vitro toxicology",
+    "toxicogenomics",
+    "computational and predictive toxicology"
+   ],
+   "datePublished": "2021",
+   "dateSource": "https://doi.org/10.1007/s00204-021-03141-w",
+   "creator": "vdWater-Callegaro lab, LACDR, Leiden University",
+   "contactPoint": [
+    "https://orcid.org/0000-0002-7627-7271"
+   ],
+   "url": "https://txg-mapr.eu/",
+   "description": "TXG‑MAPr is an interactive R Shiny–based bioinformatics platform designed to make toxicogenomic data interpretation intuitive, mechanistic, and test‑system specific. Built on large transcriptomic datasets, TXG‑MAPr organizes high‑dimensional gene expression data into biologically meaningful gene co‑expression network modules using Weighted Gene Co‑expression Network Analysis (WGCNA).",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    }
+   ],
+   "qualifiedRelation": [
+    {
+     "relation": "https://w3id.org/fair-tox/dataset#tggates",
+     "hadRole": "uses"
     }
    ]
   },
@@ -15868,7 +16266,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -15939,7 +16337,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   },
   {
@@ -16051,7 +16449,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-10-30"
+    "retrieved": "2026-10-31"
    }
   }
  ],
@@ -16268,7 +16666,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "9427234f8de383f908bb7a6379208c9f41f57fee7d64b2b255f04d871a8431fe"
+    "checksumValue": "d45056d63038615af137238f2c880d455cd6bf4147b14bd90691d5b547441162"
    }
   },
   {
@@ -16279,7 +16677,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "99de4b57153f41c85a6d70a1c93f906739f8451698be08b8680028d5650d17e6"
+    "checksumValue": "921aee947e172911651d380d56e1507ca5b13c74d69ff86f2c2c31884879e433"
    }
   },
   {

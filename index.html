@@ -186,7 +186,7 @@ button.btn:hover { border-color: var(--ink); }
     </div>
     <div>
       <h3>Lanes</h3>
-      <p>Generic and life-science resources have a lane each. The toxicology lanes, together the toxicology infrastructure, arrange toxicology resources by the data life-cycle phase they act on, the earliest if several (the span lists them all), or, with Toxicology lanes set to Creator, by who made them.</p>
+      <p>Generic and life-science resources have a lane each. The toxicology lanes arrange toxicology resources by the data life-cycle phase they act on, the earliest if several (the span lists them all), or, with Toxicology lanes set to Creator, by who made them. Data generation and data integration together form the toxicology infrastructure; regulatory assessment stands apart.</p>
       <dl id="lane-defs"></dl>
     </div>
     <div>
@@ -494,8 +494,8 @@ function figure(G, svg) {
     if (!G.print) el('circle', {cx: n.x, cy: n.y, r: 12, fill: 'transparent'}, g);
   }
   for (const b of lanes) clear(G.M + 12 * u, b.y0 + G.HEAD * .62, G.BIG, b.lane, {'font-weight': bold}, svg, bold + ' ');
-  const tox = lanes.filter(b => TOX.has(b.lane));
-  if (tox.length) {  // together, the toxicology lanes are toxicology infrastructure
+  const tox = lanes.filter(b => TOX.has(b.lane) && b.lane !== META.toxLanes.at(-1));   // regulatory assessment apart
+  if (tox.length) {  // together, the other toxicology lanes are toxicology infrastructure
     const y0 = tox[0].y0, y1 = tox[tox.length - 1].y1, mid = (y0 + y1) / 2, x = G.M - 8 * u;
     const name = ['Toxicology infrastructure', 'Toxicology'].find(s => textWidth(s, G.BIG, bold + ' ') < y1 - y0);
     if (name) {

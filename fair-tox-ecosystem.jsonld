@@ -241,7 +241,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.14.0",
- "dateModified": "2026-11-01",
+ "dateModified": "2026-11-02",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -8299,7 +8299,7 @@
      "hadRole": "uses"
     },
     {
-     "relation": "https://w3id.org/fair-tox/dataset#fipwiz",
+     "relation": "https://doi.org/10.25504/FAIRsharing.343864",
      "hadRole": "implements"
     }
    ],
@@ -8685,7 +8685,7 @@
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
-     "relation": "https://w3id.org/fair-tox/dataset#fipwiz",
+     "relation": "https://doi.org/10.25504/FAIRsharing.343864",
      "hadRole": "implements"
     },
     {
@@ -8719,8 +8719,8 @@
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource"
   },
   {
-   "@id": "https://w3id.org/fair-tox/dataset#fipwiz",
-   "identifier": "https://w3id.org/fair-tox/dataset#fipwiz",
+   "@id": "https://doi.org/10.25504/FAIRsharing.343864",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.343864",
    "schemaType": "schema:CreativeWork",
    "key": "fipwiz",
    "name": "FAIR Implementation Profile (FIP)",
@@ -8729,7 +8729,7 @@
     "FIPs",
     "domain specific FIPs"
    ],
-   "fairsharingType": "Standard: model/format",
+   "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
     "https://w3id.org/fair/fip/terms/FAIR-Implementation-Profile"
    ],
@@ -8740,13 +8740,54 @@
    "url": "https://www.go-fair.org/how-to-go-fair/fair-implementation-profile/",
    "description": "A FAIR Implementation Profile lists, principle by principle, the FAIR-enabling resources (standards, vocabularies, identifier schemes, repositories, licences) that a community of practice has chosen. FIPs are published as machine-actionable nanopublications, so communities can document, compare and reuse each other's choices and move towards interoperable solutions.",
    "maintained": "active",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.343864",
+    "about": [
+     {
+      "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "name": "Subject Agnostic"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://www.fairsharing.org/ontology/domain/DRAO_0000281",
+      "name": "FAIR"
+     }
+    ]
+   },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.a6dcff",
      "hadRole": "uses"
     }
-   ]
+   ],
+   "fairsharing": {
+    "id": 4362,
+    "doi": "10.25504/FAIRsharing.343864",
+    "name": "FAIR Implementation Profile Ontology",
+    "abbreviation": "FIP",
+    "registry": "Standard",
+    "recordType": "terminology_artefact",
+    "status": "ready",
+    "yearCreation": 2019,
+    "homepage": "https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html",
+    "subjects": [
+     {
+      "iri": "http://www.fairsharing.org/ontology/subject/SRAO_0000401",
+      "label": "Subject Agnostic"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://www.fairsharing.org/ontology/domain/DRAO_0000281",
+      "label": "FAIR"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-11-02"
+   }
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.c7bb32",
@@ -13395,7 +13436,7 @@
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
-     "relation": "https://w3id.org/fair-tox/dataset#fipwiz",
+     "relation": "https://doi.org/10.25504/FAIRsharing.343864",
      "hadRole": "related_to"
     },
     {
@@ -14727,7 +14768,7 @@
      "hadRole": "uses"
     },
     {
-     "relation": "https://w3id.org/fair-tox/dataset#fipwiz",
+     "relation": "https://doi.org/10.25504/FAIRsharing.343864",
      "hadRole": "implements"
     }
    ],
@@ -19612,7 +19653,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "4273b5b8321418982c079c47747d5824e1a825259127a52584e7cf7aedf1d4cf"
+    "checksumValue": "acd73b8e3dce917543566002a2f0b39da364529349ca0dbcca3e7345150e8c2e"
    }
   },
   {
@@ -19657,6 +19698,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-11-01"
+  "sdDatePublished": "2026-11-02"
  }
 }

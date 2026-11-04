@@ -22,24 +22,24 @@
 
 terms:deprecates a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "The subject replaces the target." ;
+    schema:description "The target has been retired and is no longer actively maintained." ;
     schema:inDefinedTermSet terms:hadRole-values ;
     schema:name "deprecates" ;
     schema:termCode "deprecates" ;
-    skos:definition "The subject replaces the target." ;
-    skos:exactMatch dct:replaces ;
+    skos:closeMatch dct:replaces ;
+    skos:definition "The target has been retired and is no longer actively maintained." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "deprecates" .
 
 terms:extends a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "The subject builds on and extends the target." ;
+    schema:description "The subject extends or builds upon the target." ;
     schema:inDefinedTermSet terms:hadRole-values ;
     schema:name "extends" ;
     schema:termCode "extends" ;
     skos:broadMatch schema:isBasedOn ;
     skos:closeMatch <http://purl.org/spar/cito/extends> ;
-    skos:definition "The subject builds on and extends the target." ;
+    skos:definition "The subject extends or builds upon the target." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "extends" .
 
@@ -122,22 +122,22 @@ terms:profiles a schema:DefinedTerm,
 
 terms:recommends a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "The policy or guidance recommends the target." ;
+    schema:description "The data policy recommends the target." ;
     schema:inDefinedTermSet terms:hadRole-values ;
     schema:name "recommends" ;
     schema:termCode "recommends" ;
     skos:broadMatch dct:relation ;
-    skos:definition "The policy or guidance recommends the target." ;
+    skos:definition "The data policy recommends the target." ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "recommends" .
 
 terms:related_to a schema:DefinedTerm,
         skos:Concept ;
-    schema:description "The resources are related without one building on the other." ;
+    schema:description "The resources are related; no more precise label applies." ;
     schema:inDefinedTermSet terms:hadRole-values ;
     schema:name "related_to" ;
     schema:termCode "related_to" ;
-    skos:definition "The resources are related without one building on the other." ;
+    skos:definition "The resources are related; no more precise label applies." ;
     skos:exactMatch dct:relation ;
     skos:inScheme terms:hadRole-values ;
     skos:prefLabel "related_to" .
@@ -155,17 +155,6 @@ terms:subdomains-regulatory-toxicology a schema:DefinedTerm,
     skos:inScheme terms:subdomains-values ;
     skos:prefLabel "regulatory toxicology" ;
     skos:relatedMatch <http://www.wikidata.org/entity/Q2448782> .
-
-terms:uses a schema:DefinedTerm,
-        skos:Concept ;
-    schema:description "The subject uses the target." ;
-    schema:inDefinedTermSet terms:hadRole-values ;
-    schema:name "uses" ;
-    schema:termCode "uses" ;
-    skos:broadMatch dct:relation ;
-    skos:definition "The subject uses the target." ;
-    skos:inScheme terms:hadRole-values ;
-    skos:prefLabel "uses" .
 
 terms:maintained-values a schema:DefinedTermSet,
         skos:ConceptScheme ;
@@ -203,7 +192,6 @@ terms:hadRole-values a schema:DefinedTermSet,
         terms:implements,
         terms:profiles,
         terms:recommends,
-        terms:related_to,
-        terms:uses ;
+        terms:related_to ;
     skos:prefLabel "hadRole values" .
 

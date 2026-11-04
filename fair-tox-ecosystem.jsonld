@@ -197,8 +197,7 @@
     "profiles": "https://w3id.org/fair-tox/terms#profiles",
     "recommends": "https://w3id.org/fair-tox/terms#recommends",
     "deprecates": "https://w3id.org/fair-tox/terms#deprecates",
-    "related_to": "https://w3id.org/fair-tox/terms#related_to",
-    "uses": "https://w3id.org/fair-tox/terms#uses"
+    "related_to": "https://w3id.org/fair-tox/terms#related_to"
    }
   },
   "fipDeclaration": {
@@ -401,12 +400,11 @@
   },
   "hadRole": {
    "implements": "The subject implements the standard or FAIR specification.",
-   "extends": "The subject builds on and extends the target.",
+   "extends": "The subject extends or builds upon the target.",
    "profiles": "The standard is a profile of the target standard.",
-   "recommends": "The policy or guidance recommends the target.",
-   "deprecates": "The subject replaces the target.",
-   "related_to": "The resources are related without one building on the other.",
-   "uses": "The subject uses the target."
+   "recommends": "The data policy recommends the target.",
+   "deprecates": "The target has been retired and is no longer actively maintained.",
+   "related_to": "The resources are related; no more precise label applies."
   },
   "declaration": {
    "declares-current-use-of": "The FIP declares that its community uses the target.",
@@ -1081,7 +1079,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#aop_wiki_id",
-     "hadRole": "uses"
+     "hadRole": "implements"
     },
     {
      "relation": "https://w3id.org/fair-tox/dataset#aopkb",
@@ -1719,7 +1717,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.a6dcff",
-     "hadRole": "uses"
+     "hadRole": "implements"
     }
    ]
   },
@@ -4275,6 +4273,7 @@
    "url": "https://compoundcloud.wikibase.cloud/",
    "description": "The Compound Cloud Wikibase contains information about toxic, safe, and potentially toxic compounds related to the VHP4Safety project.",
    "maintained": "active",
+   "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedAttribution": [
     {
@@ -4293,23 +4292,23 @@
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.6s749p",
-     "hadRole": "uses"
+     "hadRole": "related_to"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.87ccfd",
-     "hadRole": "uses"
+     "hadRole": "implements"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.ddk9t9",
-     "hadRole": "uses"
+     "hadRole": "implements"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
-     "hadRole": "uses"
+     "hadRole": "implements"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.qv4b3c",
-     "hadRole": "uses"
+     "hadRole": "implements"
     }
    ]
   },
@@ -6655,7 +6654,7 @@
    "alternateName": [
     "ELIXIR deposition databases"
    ],
-   "fairsharingType": "Collection",
+   "fairsharingType": "Policy: project",
    "fsrType": [
     "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
@@ -7870,6 +7869,7 @@
      }
     ]
    },
+   "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "qualifiedAttribution": [
     {
@@ -7880,11 +7880,11 @@
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.2b0d92",
-     "hadRole": "uses"
+     "hadRole": "related_to"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
-     "hadRole": "uses"
+     "hadRole": "implements"
     }
    ],
    "fairsharing": {
@@ -8331,7 +8331,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#fip_wizard",
-     "hadRole": "uses"
+     "hadRole": "related_to"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.343864",
@@ -8794,7 +8794,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.a6dcff",
-     "hadRole": "uses"
+     "hadRole": "implements"
     }
    ],
    "fairsharing": {
@@ -13526,7 +13526,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
-     "hadRole": "uses"
+     "hadRole": "implements"
     }
    ],
    "fairsharing": {
@@ -14800,7 +14800,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#fip_wizard",
-     "hadRole": "uses"
+     "hadRole": "related_to"
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.343864",
@@ -16775,7 +16775,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.hkk309",
-     "hadRole": "uses"
+     "hadRole": "related_to"
     }
    ],
    "fairsharing": {
@@ -17509,7 +17509,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
-     "hadRole": "uses"
+     "hadRole": "implements"
     }
    ],
    "fairsharing": {
@@ -18872,7 +18872,7 @@
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#tggates",
-     "hadRole": "uses"
+     "hadRole": "extends"
     }
    ]
   },
@@ -19822,7 +19822,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "07dd6367fec502613d38f44be7b2afb2e8ad7c660133d48f734c7e7ecbf20442"
+    "checksumValue": "2ecaacd3352579552857a7814bc2bd71d9de1fbb5add4a8b0446c353859bc764"
    }
   },
   {
@@ -19833,7 +19833,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "995cfaa9fc2b04d2218638379297bf84ff995406c9da8c4b5ced4d71f4f3d305"
+    "checksumValue": "506dee195cabb0eb4f00c14cc8b79919577ae6699b3ca174406487b40599e0cb"
    }
   },
   {
@@ -19844,7 +19844,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "ff6f4000c22d3e1a7439e3ee8106a5a4fd1e2499d7ceba71417ea542932cb013"
+    "checksumValue": "591c873c3bbd0a48fa374c9e2d783e93c26aceb10d0beaddde4ce065f211e821"
    }
   }
  ],

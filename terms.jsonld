@@ -54,16 +54,16 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "The subject replaces the target.",
+   "schema:description": "The target has been retired and is no longer actively maintained.",
    "schema:inDefinedTermSet": {
     "@id": "terms:hadRole-values"
    },
    "schema:name": "deprecates",
    "schema:termCode": "deprecates",
-   "skos:definition": "The subject replaces the target.",
-   "skos:exactMatch": {
+   "skos:closeMatch": {
     "@id": "dct:replaces"
    },
+   "skos:definition": "The target has been retired and is no longer actively maintained.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
@@ -75,7 +75,7 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "The subject builds on and extends the target.",
+   "schema:description": "The subject extends or builds upon the target.",
    "schema:inDefinedTermSet": {
     "@id": "terms:hadRole-values"
    },
@@ -87,7 +87,7 @@
    "skos:closeMatch": {
     "@id": "http://purl.org/spar/cito/extends"
    },
-   "skos:definition": "The subject builds on and extends the target.",
+   "skos:definition": "The subject extends or builds upon the target.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
@@ -122,9 +122,6 @@
     },
     {
      "@id": "terms:related_to"
-    },
-    {
-     "@id": "terms:uses"
     }
    ],
    "skos:prefLabel": "hadRole values"
@@ -342,7 +339,7 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "The policy or guidance recommends the target.",
+   "schema:description": "The data policy recommends the target.",
    "schema:inDefinedTermSet": {
     "@id": "terms:hadRole-values"
    },
@@ -351,7 +348,7 @@
    "skos:broadMatch": {
     "@id": "dct:relation"
    },
-   "skos:definition": "The policy or guidance recommends the target.",
+   "skos:definition": "The data policy recommends the target.",
    "skos:inScheme": {
     "@id": "terms:hadRole-values"
    },
@@ -363,13 +360,13 @@
     "schema:DefinedTerm",
     "skos:Concept"
    ],
-   "schema:description": "The resources are related without one building on the other.",
+   "schema:description": "The resources are related; no more precise label applies.",
    "schema:inDefinedTermSet": {
     "@id": "terms:hadRole-values"
    },
    "schema:name": "related_to",
    "schema:termCode": "related_to",
-   "skos:definition": "The resources are related without one building on the other.",
+   "skos:definition": "The resources are related; no more precise label applies.",
    "skos:exactMatch": {
     "@id": "dct:relation"
    },
@@ -425,27 +422,6 @@
     "@id": "terms:subdomains-regulatory-toxicology"
    },
    "skos:prefLabel": "subdomains values"
-  },
-  {
-   "@id": "terms:uses",
-   "@type": [
-    "schema:DefinedTerm",
-    "skos:Concept"
-   ],
-   "schema:description": "The subject uses the target.",
-   "schema:inDefinedTermSet": {
-    "@id": "terms:hadRole-values"
-   },
-   "schema:name": "uses",
-   "schema:termCode": "uses",
-   "skos:broadMatch": {
-    "@id": "dct:relation"
-   },
-   "skos:definition": "The subject uses the target.",
-   "skos:inScheme": {
-    "@id": "terms:hadRole-values"
-   },
-   "skos:prefLabel": "uses"
   }
  ]
 }

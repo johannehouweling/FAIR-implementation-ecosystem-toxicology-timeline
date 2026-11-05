@@ -233,6 +233,11 @@
    "@id": "schema:sameAs",
    "@type": "@id",
    "@container": "@set"
+  },
+  "fsrNanopublication": {
+   "@id": "schema:mainEntityOfPage",
+   "@type": "@id",
+   "@container": "@set"
   }
  },
  "@id": "https://w3id.org/fair-tox/dataset",
@@ -457,6 +462,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -542,6 +550,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -654,6 +665,9 @@
    "description": "A structured way of describing each AOP Key Event as a biological process, a biological object and an action, each term taken from an existing ontology or controlled vocabulary. Implemented in the AOP-Wiki, it makes Key Events machine-readable so AOPs can be searched, compared and linked computationally.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I3"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -717,7 +731,7 @@
     "https://w3id.org/fair-tox/dataset#fairaop"
    ],
    "principles": [
-    "F1"
+    "F4"
    ],
    "qualifiedAttribution": [
     {
@@ -727,6 +741,9 @@
    ],
    "fsr": [
     "https://w3id.org/np/RAp3fIzqG9r4IlvjvnMpkU6bvJhwD7U_xJAQ-H5niEmlM#AOP-WIKI-ID"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAp3fIzqG9r4IlvjvnMpkU6bvJhwD7U_xJAQ-H5niEmlM"
    ]
   },
   {
@@ -761,6 +778,9 @@
    "description": "The US EPA Adverse Outcome Pathway Database (AOP-DB) links AOP information from the AOP-Wiki to public data on genes, chemicals, diseases, pathways, species orthology and ToxCast assays. It supports computational exploration of the molecular targets and biological context of AOPs; this row covers the first version, described in 2018.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -815,6 +835,9 @@
    "maintained": "active",
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -939,6 +962,9 @@
    ],
    "fsr": [
     "https://w3id.org/np/RA7YayduNraHqcPIydwTnQN6JKrcEmOgpanf1SsFFIpM0#AOP-KB"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RA7YayduNraHqcPIydwTnQN6JKrcEmOgpanf1SsFFIpM0"
    ]
   },
   {
@@ -1015,6 +1041,9 @@
    "url": "https://github.com/DataSciBurgoon/aop-ontology",
    "description": "An OWL ontology for adverse outcome pathways that reuses classes from existing biomedical ontologies to describe molecular initiating events, key events and adverse outcomes in a common vocabulary. It enables computational reasoning over AOPs, and its terms are reused, for example, in the AOP-Wiki RDF.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -1089,6 +1118,9 @@
      "relation": "https://doi.org/10.25504/FAIRsharing.1x53qk",
      "hadRole": "related_to"
     }
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RANeiOpnxatbd9img13duWA6RPl2aKHu6fsbxezleCbUY"
    ]
   },
   {
@@ -1123,6 +1155,9 @@
    "maintained": "active",
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -1210,6 +1245,9 @@
    "description": "The XML schema and exchange format in which the AOP-Wiki exports its full content (AOPs, Key Events, KERs, stressors, Event Components and evidence fields), published as nightly and quarterly frozen downloads. It is the machine-readable source that downstream resources such as AOP-Wiki RDF and AOP-DB are built from.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -1314,6 +1352,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -1440,6 +1481,9 @@
      "relation": "https://doi.org/10.25504/FAIRsharing.x964fb",
      "hadRole": "implements"
     }
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RApxGt1mrdt3tS-O4lT0gs4plJpMwkMQck0is4NXbRddk"
    ],
    "fairsharing": {
     "id": 1845,
@@ -1630,6 +1674,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "fairsharing": {
     "id": 874,
     "doi": "10.25504/FAIRsharing.mye76w",
@@ -1714,6 +1761,10 @@
    "url": "https://w3id.org/spaces/biochementity",
    "description": "The Biochementity Vocabulary describes biochemical entities used in the PARC HBM Community.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2",
+    "I3"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.a6dcff",
@@ -1765,6 +1816,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -1822,6 +1876,9 @@
    "url": "https://bioschemas.org/",
    "description": "Bioschemas is an open community initiative, supported by ELIXIR, that helps life-science websites describe their resources with schema.org markup so that search engines and registries can find them. It proposes new life-science types and properties to schema.org and publishes profiles that state which properties to use, graded minimum, recommended or optional, for datasets, tools, samples, chemicals, training materials and other resources.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.hzdzq8",
@@ -1862,6 +1919,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
@@ -1927,6 +1987,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
@@ -1992,6 +2055,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
@@ -2061,6 +2127,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
@@ -2141,6 +2210,7 @@
    ],
    "principles": [
     "F2",
+    "I2",
     "R1.2"
    ],
    "fsr": [
@@ -2151,6 +2221,9 @@
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
      "hadRole": "related_to"
     }
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAaMZtzVxB0ivqkg32XAeKXFOEN7ktrJlPmSofKNs0v9Y"
    ],
    "fairsharing": {
     "id": 3517,
@@ -2488,6 +2561,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
@@ -2553,6 +2629,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#bioschemas",
@@ -2653,6 +2732,9 @@
    "fsr": [
     "https://fairsharing.org/10.25504/FAIRsharing.ewjdq6"
    ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAIEddMk35yBXzhpofShL4jT1Oh1FcLowkm5gdDRsE4Lk"
+   ],
    "fairsharing": {
     "id": 1554,
     "doi": "10.25504/FAIRsharing.ewjdq6",
@@ -2749,7 +2831,8 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F1"
+    "F1",
+    "F4"
    ],
    "qualifiedRelation": [
     {
@@ -2760,6 +2843,9 @@
      "relation": "https://doi.org/10.25504/FAIRsharing.ewjdq6",
      "hadRole": "related_to"
     }
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RABFB5JSqq0yM8qBWjlsvMJD-w3sCnOQlw7Sdb0Oc-xmU"
    ],
    "fairsharing": {
     "id": 2507,
@@ -2839,6 +2925,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -2921,6 +3010,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -2996,6 +3088,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1"
+   ],
    "fairsharing": {
     "id": 381,
     "doi": "10.25504/FAIRsharing.r7Kwy7",
@@ -3102,6 +3197,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -3212,6 +3310,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.4dvtcz",
@@ -3291,10 +3392,16 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
+    "F2",
+    "I2",
+    "I3",
     "R1.2"
    ],
    "fsr": [
     "http://purl.org/np/RA4b-LIptEtHjOVWfK1uvEwd0s9NAWtKKEHTsXklIC6fU#CERIF"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAtv_q4s-8xxL_is8gV8GPDwoqVY550Omdvy9Rg0Liaqc"
    ],
    "fairsharing": {
     "id": 104,
@@ -3377,6 +3484,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -3502,10 +3612,14 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "I2"
+    "I2",
+    "I3"
    ],
    "fsr": [
     "https://w3id.org/np/RAiHZjVo32RyXg_i777br8u1oT-TW6ul20Xv5HAWszcis#ChEBI"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAghq_pLHNlj9B-e4bEFbDvLiG5vI1p0smmGxljVXNA5M"
    ],
    "fairsharing": {
     "id": 1036,
@@ -3654,10 +3768,14 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "I2"
+    "I2",
+    "I3"
    ],
    "fsr": [
     "http://purl.org/np/RAVAVosrskaZNJP2MtoEkVlNJXyuY4hB5fW2D4jOb4OvQ#ChEMBL"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAqMLXyLi3tvYwbnplInCasVa8IaFtuMFKqq9D9_PFEFE"
    ],
    "fairsharing": {
     "id": 1561,
@@ -3772,6 +3890,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -3858,6 +3979,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.ddk9t9",
@@ -3970,6 +4094,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "fairsharing": {
     "id": 1004,
     "doi": "10.25504/FAIRsharing.j9y503",
@@ -4077,6 +4204,10 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2",
+    "I3"
+   ],
    "fairsharing": {
     "id": 1012,
     "doi": "10.25504/FAIRsharing.4dvtcz",
@@ -4168,6 +4299,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 3495,
     "doi": "10.25504/FAIRsharing.ad3f2b",
@@ -4275,6 +4409,11 @@
    "maintained": "active",
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1",
+    "F4",
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -4378,6 +4517,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -4493,6 +4635,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -4716,6 +4861,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -4913,6 +5061,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5028,10 +5179,15 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F2"
+    "F2",
+    "I3",
+    "R1.2"
    ],
    "fsr": [
     "http://purl.org/np/RAko0U2Q8boW-drM8t11DcbX6Ixu2mcSQf-2BrM07geIQ#datacite_metadata_scheme"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAl80tWl_i_CPaLWi13ofQe3tLCuY74uby1v8VbzfY8_0"
    ],
    "fairsharing": {
     "id": 758,
@@ -5102,6 +5258,9 @@
    "description": "Database service of EURL ECVAM at the JRC that gathered expert-reviewed summaries and step-by-step protocols of non-animal test methods, with test results and validation studies. Its numbered records could be searched by topic, endpoint and test system; the content is now kept as a downloadable static dataset with a DOI.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5145,6 +5304,9 @@
    "description": "Relational database of the Zacharewski laboratory at Michigan State University for toxicology and toxicogenomics data, with tools to enter, retrieve and mine them: genes, clones, sample annotation and protocols, microarray, Affymetrix, real-time PCR and toxicology data, and gene regulation, pathway and orthology information, compliant with MIAME. It is no longer accessible.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5248,6 +5410,9 @@
    "fsr": [
     "http://purl.org/np/RAnAWGdeI_1GGmDAqv-vZjby5XqbL2ZujNz1vgwK_6cRI#DOI"
    ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAVI6ifsFrq3vkzlwYn5-D-x31ORGJEZ8af0DsBfzQprU"
+   ],
    "fairsharing": {
     "id": 1332,
     "doi": "10.25504/FAIRsharing.hFLKCn",
@@ -5319,6 +5484,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 1844,
     "doi": "10.25504/FAIRsharing.353yat",
@@ -5387,6 +5555,9 @@
    "description": "Toxicogenomics reference database of short-term rat studies of about 600 drugs and other chemicals: gene expression in up to seven tissues and in cultured rat hepatocytes, paired with histopathology, clinical chemistry, haematology and in vitro pharmacology assays. Built by Iconix Pharmaceuticals, it was taken over by the US National Toxicology Program in late 2010 and made free; the complete database is now in CEBS and the gene expression data in GEO.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5454,6 +5625,9 @@
    ],
    "principles": [
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RA4-353uWQVyW5KHPOdJdZZxo_759gRGH0WihON-6zF-A"
    ],
    "fairsharing": {
     "id": 1998,
@@ -5541,6 +5715,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 6486,
     "doi": "10.25504/FAIRsharing.c5b513",
@@ -5619,6 +5796,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5714,6 +5894,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5804,6 +5987,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5886,6 +6072,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -5969,6 +6158,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -6171,6 +6363,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -6273,6 +6468,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -6348,6 +6546,9 @@
    "description": "A data management and publishing platform from Edelweiss Connect that ingests, annotates, harmonises and versions tabular datasets and serves them through a web interface and a query API. Its public instance hosts toxicology-related datasets, including in vitro and QSAR data.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -6385,6 +6586,9 @@
    "description": "Effectopedia was the AOP-KB module for building structured and quantitative AOPs collaboratively. AOPs were drawn as diagrams whose elements carried test methods, experimental dose-response data and computational models. It was open-source desktop software (GPLv3) connected to a central OECD database, and it supported the AOP-XML format and OECD Harmonised Template 201.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -6556,7 +6760,11 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
+    "F1",
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAh1KgCtPkz5xcVCwFJ-4K9uaak7Egh3M1CC1Fx2Gx-nQ"
    ],
    "fairsharing": {
     "id": 1865,
@@ -6771,6 +6979,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -6882,6 +7093,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7023,6 +7237,9 @@
    "principles": [
     "F4"
    ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAZ3b3mHDh5a0cKy9Ve1WjMTMjBaDoZ8eM0adnBvVtrIs"
+   ],
    "fairsharing": {
     "id": 1867,
     "doi": "10.25504/FAIRsharing.fx0mw7",
@@ -7153,6 +7370,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "fairsharing": {
     "id": 919,
     "doi": "10.25504/FAIRsharing.azqskx",
@@ -7252,6 +7472,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7342,6 +7565,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7443,6 +7669,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7534,6 +7763,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7643,6 +7875,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7788,6 +8023,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7871,6 +8109,9 @@
    },
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -7956,6 +8197,9 @@
    "url": "https://doi.org/10.1016/j.tiv.2024.105903",
    "description": "The data and knowledge management infrastructure of the EU-ToxRisk project. It combines a common data and metadata format, a methods database documenting test protocols, data archiving, an API for access to individual data points, analysis notebooks and a knowledge portal. It was built to make in vitro new approach method data from many laboratories documented, shareable and reusable for risk assessment.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -8032,6 +8276,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -8137,6 +8384,10 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2",
+    "I3"
+   ],
    "fairsharing": {
     "id": 1498,
     "doi": "10.25504/FAIRsharing.1gr4tz",
@@ -8241,6 +8492,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -8318,6 +8572,9 @@
    "maintained": "active",
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "R1.3"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -8460,7 +8717,10 @@
    "url": "https://fairconnect.pro",
    "description": "An open-access platform for FAIR data stewardship where FAIR-supporting resources, FAIR Implementation Profiles and community good practices are published, searched and discussed. It links the human-readable descriptions in the FAIR Connect journal to their machine-readable nanopublications and offers a search engine and dashboard over them.",
    "maintained": "discontinued",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.2abjs5",
@@ -8554,6 +8814,9 @@
    ],
    "fsr": [
     "https://w3id.org/np/RAqEeg0TsBbCE6tdp3xdZifswbiUEOh8psfJ8LoD5zrDc#FS"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAQtsfhby3ZFYyM5tk5bWHpmBm412PvVUO9RJHjf02Hf8"
    ],
    "fairsharing": {
     "id": 2521,
@@ -8663,6 +8926,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 1843,
     "doi": "10.25504/FAIRsharing.drtwnh",
@@ -8791,6 +9057,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "R1.3"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.a6dcff",
@@ -8871,6 +9140,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -8935,6 +9207,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RARv4EFw3iwjRn01xnpto4yzc15buTVcm2_q-8a3jLoZw#FTP"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAESPjGTx-3Ih4rkLnS8lkYFJ2J0LZm94h62UbQB5MYl8"
    ]
   },
   {
@@ -8995,6 +9270,9 @@
    "description": "OECD guidance with a harmonised template for describing non-guideline in vitro test methods, covering the test system, procedure, data interpretation and performance. It makes method metadata complete and consistent, so regulators can judge whether data from such methods can be used in assessments.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -9163,6 +9441,9 @@
      "hadRole": "implements"
     }
    ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RABYRLJhs1pMduyCZ6PWqhBOOIS1sOX-dOKGM49rWRxOQ"
+   ],
    "fairsharing": {
     "id": 1975,
     "doi": "10.25504/FAIRsharing.5hc8vt",
@@ -9304,6 +9585,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -9433,7 +9717,11 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "I2"
+    "I2",
+    "I3"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAR0nyLWjNdvJmVmflQsbq5jLsbUmjfzVCwHKQvFvPzR8"
    ],
    "fairsharing": {
     "id": 1417,
@@ -9530,6 +9818,9 @@
    "url": "https://datasetsearch.research.google.com/",
    "description": "Google Dataset Search is a free search engine for datasets. It indexes the dataset descriptions that publishers put on their web pages, mostly as schema.org markup, across repositories, publishers, government portals and personal sites. Results link back to the hosting pages, so it makes data findable without storing the data itself.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.hzdzq8",
@@ -9578,6 +9869,9 @@
    ],
    "principles": [
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAS7YOT5t3WJCIQgv2P_67c13qS1Xn6L2E3VLwJyvJcwI"
    ],
    "fairsharing": {
     "id": 2452,
@@ -9657,6 +9951,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "fairsharing": {
     "id": 741,
     "doi": "10.25504/FAIRsharing.amcv1e",
@@ -9725,6 +10022,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RAm6jl2f_ysCwqHyEEJjb7vdEnZXMwtNyIXSjsbNU3In8#HTTP"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAm6jl2f_ysCwqHyEEJjb7vdEnZXMwtNyIXSjsbNU3In8"
    ]
   },
   {
@@ -9762,10 +10062,14 @@
     "https://w3id.org/fair-tox/dataset#fairaop"
    ],
    "principles": [
-    "A1.1"
+    "A1.1",
+    "A1.2"
    ],
    "fsr": [
     "http://purl.org/np/RAF1ANn-BCFop0OBMOC7S8NtG0y_xYhRX4tAu37XZVCo0#HTTPS"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAQMemFusa3RG0PhZ7oY9uL-Io2ey339_Moj1zL2jwvTE"
    ],
    "fairsharing": {
     "id": 941,
@@ -9833,6 +10137,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -9911,6 +10218,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1"
+   ],
    "fairsharing": {
     "id": 5046,
     "doi": "10.25504/FAIRsharing.2b0d92",
@@ -9999,6 +10309,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -10102,10 +10415,14 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F1"
+    "F1",
+    "F2"
    ],
    "fsr": [
     "http://purl.org/np/RAp2h5QufBE4kWgqbhwyajGHzvTN-foKe14pQYypDQKWk#InChI"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAp2h5QufBE4kWgqbhwyajGHzvTN-foKe14pQYypDQKWk"
    ],
    "fairsharing": {
     "id": 1477,
@@ -10204,6 +10521,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -10311,6 +10631,9 @@
    ],
    "principles": [
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAuSX9oWMcrtlHQLeYB4S5dTOQ5pxJzGp6mogjKJwVXTw"
    ],
    "fairsharing": {
     "id": 1599,
@@ -10465,6 +10788,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -10543,6 +10869,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -10613,6 +10942,9 @@
    "description": "ISAcreator configuration of the diXa project: ISA-Tab templates and controlled fields for describing toxicogenomics studies for deposition in the diXa data warehouse, carrying the study-level fields of SimpleTox into ISA-Tab.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -10697,6 +11029,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.53gp75",
@@ -10859,6 +11194,9 @@
      "hadRole": "extends"
     }
    ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAM8mupEEOMKP-2ALnyFq0Aoi6bFmfbUxtGdqocKWegCs"
+   ],
    "fairsharing": {
     "id": 1497,
     "doi": "10.25504/FAIRsharing.53gp75",
@@ -11007,6 +11345,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -11150,6 +11491,9 @@
    "description": "An IUPAC Recommendation that gives agreed definitions, with explanatory notes, for terms used in immunotoxicology. It supports consistent terminology when immunotoxicity data are reported and interpreted.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -11194,6 +11538,9 @@
    "description": "The second edition of IUPAC's glossary of toxicology, giving recommended definitions for terms used in toxicology and chemical risk assessment. It serves as a common reference vocabulary for consistent use of toxicological terms in data and publications.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -11248,6 +11595,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -11335,6 +11685,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -11424,6 +11777,9 @@
    "fsr": [
     "http://purl.org/np/RAQKjgd7Ug9xSo4J0REW_AHGOJyaF9-ydj60nunqQ0qVg#JSON-LD"
    ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAnRDe5tB9qKa67_GjDBPz5ufvBHO9HAnM1xKB5lsIyF4"
+   ],
    "fairsharing": {
     "id": 150,
     "doi": "10.25504/FAIRsharing.8f9bbb",
@@ -11507,6 +11863,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
@@ -11615,6 +11974,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
@@ -11709,6 +12071,9 @@
    "description": "A modular LinkML data model that translates the reporting templates of the OECD Omics Reporting Framework (OORF) into a machine-readable schema, with modules for the study summary, the toxicology experiment, data acquisition and processing (microarray, RNA-seq, qRT-PCR, mass spectrometry, NMR) and data analysis. It lets omics study reports for regulatory toxicology be written, validated and exchanged as structured data. It is a community effort of the PARC toxicology community, still in development and not endorsed by the OECD.",
    "maintained": "in development",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -11795,6 +12160,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.ddk9t9",
@@ -11901,6 +12269,9 @@
    "principles": [
     "F4"
    ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAJjPRaIteP-in0zizP7SC6ZCgFDzRAEVbh0X0XJXMjtY"
+   ],
    "fairsharing": {
     "id": 1893,
     "doi": "10.25504/FAIRsharing.91yrz6",
@@ -11996,6 +12367,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I1"
+   ],
    "fairsharing": {
     "id": 1480,
     "doi": "10.25504/FAIRsharing.hxvt6c",
@@ -12093,6 +12467,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RAt0hUGI9DUyQvTyIorbdbHDHKItMHif6GjSoIYUYvNxM#MeSH"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAt0hUGI9DUyQvTyIorbdbHDHKItMHif6GjSoIYUYvNxM"
    ],
    "fairsharing": {
     "id": 1265,
@@ -12226,6 +12603,9 @@
    ],
    "principles": [
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAdu_Z_Mi1pyQ6U7CjAbSBmiYIHoFg-xHrGbZvX1jMjNc"
    ],
    "fairsharing": {
     "id": 1711,
@@ -12402,6 +12782,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "fairsharing": {
     "id": 96,
     "doi": "10.25504/FAIRsharing.32b10v",
@@ -12556,6 +12939,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -12677,6 +13063,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -12799,6 +13188,9 @@
    ],
    "principles": [
     "F2"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAfn_vTG7TpGD_DRcTHVywoxwpBQusULqlkwz1W0lc0Ms"
    ],
    "fairsharing": {
     "id": 1206,
@@ -12934,6 +13326,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -13017,6 +13412,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RA24ysQcpWDzK6wHANkG_3F1HiTbgOO4ULjYxjaXDi8C4#MIT"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RA24ysQcpWDzK6wHANkG_3F1HiTbgOO4ULjYxjaXDi8C4"
    ]
   },
   {
@@ -13074,6 +13472,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -13169,6 +13570,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 9343,
     "name": "Molecular Signatures Database",
@@ -13239,6 +13643,9 @@
    "maintained": "active",
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -13359,6 +13766,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -13523,6 +13933,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "R1.2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
@@ -13621,6 +14034,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -13699,6 +14115,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RAbhCIJzwMFVkgwvrhsdjnpxtH58oLKoyxgj60DzkS-q4#OAuth"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAMUc_3Ykh5NuxbqF1Liz2h21U67CBEfvm0MXHxtjkjbg"
    ]
   },
   {
@@ -13764,6 +14183,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "fairsharing": {
     "id": 1488,
     "doi": "10.25504/FAIRsharing.284e1z",
@@ -13892,6 +14314,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.atygwy",
@@ -14007,6 +14432,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14070,6 +14498,9 @@
    "description": "Standard data formats, published with XML schemas, for reporting summaries of studies on the physicochemical properties, environmental fate and (eco)toxicological effects of chemicals. Implemented in systems such as IUCLID, they let governments and industry exchange test summary data electronically in one harmonised structure.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14111,6 +14542,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -14242,7 +14676,8 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F2"
+    "F2",
+    "R1.2"
    ],
    "qualifiedAttribution": [
     {
@@ -14263,6 +14698,9 @@
      "relation": "https://w3id.org/fair-tox/dataset#rodaf",
      "hadRole": "related_to"
     }
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RA7oEqhLvsM17UUahLaA7MphqTz3YxU6kmXdGMW3-zlf0"
    ],
    "fairsharing": {
     "id": 5501,
@@ -14365,6 +14803,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RACnVJ6N84471y43_jMo2rkJi-gHG1TB4KFu8uqX9SqMk#ODbL"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RACnVJ6N84471y43_jMo2rkJi-gHG1TB4KFu8uqX9SqMk"
    ]
   },
   {
@@ -14421,6 +14862,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14500,6 +14944,9 @@
    "description": "The OpenRiskNet e-infrastructure offered virtual research environments where containerised data and modelling services for predictive toxicology and risk assessment could be discovered, combined and deployed. The services had documented APIs and semantic annotation, and environments could run on workstations or on public and in-house clouds.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14540,6 +14987,9 @@
    "description": "The web-service API and data model of the OpenTox framework, defining REST interfaces and RDF/OWL representations for compounds, datasets, features, algorithms, models and validation in predictive toxicology. It enabled interoperable, distributed toxicity prediction services and was later reused and extended for nanomaterials by eNanoMapper.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I3"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -14596,10 +15046,15 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F1"
+    "F1",
+    "F4",
+    "A1.1"
    ],
    "fsr": [
     "http://purl.org/np/RA1MzU1MPio-mtLzm1P7zfTBSMnTNc2I8HLNARhPjpif8#ORCID"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAtIFnvA0nuTJjr4QEBw8j_CNW-8D7xLAC42qLxSZqDMo"
    ],
    "fairsharing": {
     "id": 2270,
@@ -14685,6 +15140,9 @@
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
      "hadRole": "implements"
     }
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAOZ4YZDrUS8GCZU_0Quq8ZQE6GDDGpizfkIBtrfYf_Bo"
    ],
    "fairsharing": {
     "id": 409,
@@ -14783,6 +15241,9 @@
    "maintained": "active",
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "R1.3"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -15274,6 +15735,9 @@
    "description": "The FAIR Implementation Profile of the PARC Human Biomonitoring community. It declares which FAIR-enabling resources the community uses for human biomonitoring data for each FAIR principle and is published as machine-readable nanopublications from the FIP Wizard.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "R1.3"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -15322,6 +15786,9 @@
    "description": "A community exchange standard, developed within PARC, for encoding and annotating physiologically based kinetic (PBK) models used in chemical risk assessment, building on the SBML model format. It lets PBK models be shared, understood and reused across software tools in line with the FAIR principles.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -15380,6 +15847,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -15498,6 +15968,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 1863,
     "doi": "10.25504/FAIRsharing.e1byny",
@@ -15696,6 +16169,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I2"
+   ],
    "fairsharing": {
     "id": 1229,
     "doi": "10.25504/FAIRsharing.4ndncv",
@@ -15867,6 +16343,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://w3id.org/fair-tox/dataset#pubchem_cid",
@@ -15955,6 +16434,9 @@
    ],
    "fsr": [
     "https://w3id.org/np/RALGzv6X0tjUaQ--X_7HYv5L7w1P5AUQh_-hLDnrpBGSM#PubChemCID"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RA4qU83DLDR9DvT7Ni6-FyKXHXWlDrMe7JXFd6Y3gLEFs"
    ]
   },
   {
@@ -15996,6 +16478,9 @@
    ],
    "principles": [
     "F1"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAITbd97xCNyi_zf26fcND71qLqoEK90s9e25Q5qxuH94"
    ],
    "fairsharing": {
     "id": 186,
@@ -16125,6 +16610,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 4904,
     "doi": "10.25504/FAIRsharing.ad3e10",
@@ -16266,6 +16754,9 @@
    ],
    "fsr": [
     "http://purl.org/np/RAutRQwoS4d5eLq7eBV1xsnWZ2spDYH4xfhhRzOxSZdhs#RDF"
+   ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAutRQwoS4d5eLq7eBV1xsnWZ2spDYH4xfhhRzOxSZdhs"
    ],
    "fairsharing": {
     "id": 1047,
@@ -16673,6 +17164,9 @@
    "fsr": [
     "http://purl.org/np/RAFP-uWPTN5u2kPR8pYeIgdbwyP1_KYZgoogYIv0Wp-fQ#ROR"
    ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAG6QURkgCCpJnr2Omx1dHA9j7AatPO4Kc1EIfhhg3LyE"
+   ],
    "fairsharing": {
     "id": 4503,
     "doi": "10.25504/FAIRsharing.f73143",
@@ -16772,6 +17266,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.hkk309",
@@ -16944,6 +17441,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I1"
+   ],
    "fairsharing": {
     "id": 18,
     "doi": "10.25504/FAIRsharing.9qv71f",
@@ -17031,6 +17531,10 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2",
+    "I2"
+   ],
    "fairsharing": {
     "id": 1024,
     "doi": "10.25504/FAIRsharing.hzdzq8",
@@ -17146,6 +17650,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.9qv71f",
@@ -17242,6 +17749,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -17324,6 +17834,9 @@
    "description": "Spreadsheet-based format of FDA NCTR for the summary-level animal toxicology study data that accompany toxicogenomics experiments, with the main fields of CDISC SEND combined and extracted. It was the data import format of ArrayTrack and was used for study data from the MAQC project onwards; the diXa project later adapted its fields in ISA-Tab.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -17404,6 +17917,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "I1"
+   ],
    "fairsharing": {
     "id": 140,
     "doi": "10.25504/FAIRsharing.qv4b3c",
@@ -17506,6 +18022,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "A1.1"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.p77ph9",
@@ -17598,6 +18117,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -17718,6 +18240,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -17849,6 +18374,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -17934,7 +18462,10 @@
    "dateSource": "https://doi.org/10.7490/f1000research.1110257.1",
    "url": "https://tess.elixir-europe.org/",
    "description": "TeSS (Training eSupport System) is ELIXIR's online registry of life-science training. It collects descriptions of training events and materials from ELIXIR Nodes and other providers, automatically (for example by harvesting Bioschemas markup) or by manual registration, and makes them searchable through a portal, an API and embeddable widgets.",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource"
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ]
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#tggates",
@@ -18002,6 +18533,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -18092,6 +18626,9 @@
    "description": "Data warehouse of the SEURAT-1 research cluster for the in vitro and omics data and protocols of its seven FP7 projects on repeated dose systemic toxicity, built on ISA-Tab, RESTful web services, RDF and the OpenTox standards. The toxbank.net site survives only as an archive.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -18172,6 +18709,9 @@
    },
    "buildsOnFair": true,
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -18690,6 +19230,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -18808,6 +19351,9 @@
    "description": "A structured template, developed within EU-ToxRisk and aligned with OECD GD 211, for describing cell-based toxicological test methods comprehensively and in a standard order. It captures the metadata needed to judge the readiness, relevance and reliability of in vitro methods and their data for regulatory use.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F2"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -18931,10 +19477,14 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "I2"
+    "I2",
+    "I3"
    ],
    "fsr": [
     "http://purl.org/np/RAT8JraaK8NUg89sUA5I8lJd-FyRfDvaDadRRJm_oC_nU#UBERON"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RA0B68Nh4bbEffx2drdKk1mu4Bd46JBuPat0H3s05yH3M"
    ],
    "fairsharing": {
     "id": 1197,
@@ -19078,6 +19628,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F1"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.6xq0ee",
@@ -19220,6 +19773,9 @@
    "description": "Central web application of the VHP4Safety project for human-based chemical safety assessment. It gives access to the tools, methods and data used in the project, such as AOP, QSPR, PBK and toxicogenomics tools, and shows them at work in three case studies: kidney, Parkinson's disease and thyroid.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -19263,6 +19819,9 @@
    ],
    "principles": [
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAP9BNUxL6nSdf5CMopdlhLY76Cvcuqh7og4x6cAjotDM"
    ],
    "fairsharing": {
     "id": 2329,
@@ -19325,6 +19884,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 1698,
     "doi": "10.25504/FAIRsharing.1x53qk",
@@ -19385,6 +19947,9 @@
    "description": "The AOP community portal of WikiPathways, which collects the molecular pathway models that underlie AOP-Wiki Key Events, including molecular AOPs. It links Key Events to curated, identifier-mapped pathways, so that omics data can be analysed and visualised in the context of an AOP.",
    "maintained": "active",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -19443,6 +20008,9 @@
    ],
    "principles": [
     "F4"
+   ],
+   "fsrNanopublication": [
+    "https://w3id.org/np/RAkBKXLlUPKLtx7zmRS1kYZFWLSoG0XCeG4nZWbGCzjfs"
    ],
    "fairsharing": {
     "id": 3073,
@@ -19516,6 +20084,9 @@
    "fsr": [
     "http://purl.org/np/RA5E0NA_BAilxwHhZKQm-ItnFoxw3ateI8UFxZ0rs8N5Q#XML_Schema"
    ],
+   "fsrNanopublication": [
+    "http://purl.org/np/RAfAreXE6tzkX1FOvK-nDL4tvmNCAJKCa-WVj9XSfTMx4"
+   ],
    "fairsharing": {
     "id": 1002,
     "doi": "10.25504/FAIRsharing.df383c",
@@ -19577,6 +20148,9 @@
     ]
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "fairsharing": {
     "id": 2358,
     "doi": "10.25504/FAIRsharing.wy4egf",
@@ -19744,13 +20318,13 @@
    "@type": "schema:PropertyValue",
    "name": "creator",
    "propertyID": "http://schema.org/creator",
-   "description": "Organisations that made the resource."
+   "description": "Organisations that made the resource, or their ORCID or ROR links, whose registered names are read from the registries when the page is built."
   },
   {
    "@type": "schema:PropertyValue",
    "name": "contactPoint",
    "propertyID": "http://www.w3.org/ns/dcat#contactPoint",
-   "description": "Who to contact about the resource: a person's ORCID or an organisation's ROR. In the JSON-LD only."
+   "description": "Who to contact about the resource: a person's ORCID or an organisation's ROR. In the JSON-LD only; the details link each creator to its ROR when the RORs match the creators one to one."
   },
   {
    "@type": "schema:PropertyValue",
@@ -19805,6 +20379,12 @@
    "name": "fipDeclaration",
    "propertyID": "http://schema.org/hasPart",
    "description": "On a FIP, in the JSON-LD, read from its nanopublications (CC0) when the page is built: its declarations, each a nanopublication (@id) that links a listed resource through one of the properties below for a FIP question (question) and its principle; and declared-by, the FAIR Implementation Community that declares the FIP (declaredBy, its key, in resources.csv). The FIP declarations switch draws the declarations."
+  },
+  {
+   "@type": "schema:PropertyValue",
+   "name": "fsrNanopublication",
+   "propertyID": "http://schema.org/mainEntityOfPage",
+   "description": "Derived: the nanopublication that declares the resource as a FAIR Supporting Resource, the latest valid one when the page is built; the details link it."
   }
  ],
  "distribution": [
@@ -19822,7 +20402,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "af09d5d0b86d30c78d64c49140614869e0ecbba337d4ea5e702d6695d764c63e"
+    "checksumValue": "2ba84a55503090ab42018662cd486dc08a1968c9bdac33ddea7fe08307789ac6"
    }
   },
   {

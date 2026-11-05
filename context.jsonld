@@ -233,6 +233,11 @@
    "@id": "schema:sameAs",
    "@type": "@id",
    "@container": "@set"
+  },
+  "fsrNanopublication": {
+   "@id": "schema:mainEntityOfPage",
+   "@type": "@id",
+   "@container": "@set"
   }
  }
 }

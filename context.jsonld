@@ -100,7 +100,7 @@
    "@type": "@id",
    "@container": "@set"
   },
-  "scope": {
+  "origin": {
    "@id": "schema:about",
    "@type": "@vocab",
    "@context": {

@@ -114,14 +114,13 @@
    "@type": "@vocab",
    "@container": "@set",
    "@context": {
-    "in vitro toxicology": "http://www.wikidata.org/entity/Q6013136",
+    "conventional toxicology": "https://w3id.org/fair-tox/terms#subdomains-conventional-toxicology",
     "nanotoxicology": "https://doi.org/10.1351/goldbook.15908",
     "exposome": "http://id.nlm.nih.gov/mesh/D000081413",
     "eco-toxicology": "http://id.nlm.nih.gov/mesh/D054750",
     "toxicogenomics": "http://purl.obolibrary.org/obo/NCIT_C20179",
     "AOP-based mechanistic knowledge": "http://id.nlm.nih.gov/mesh/D000073931",
-    "computational and predictive toxicology": "https://doi.org/10.1351/goldbook.15583",
-    "regulatory toxicology": "https://w3id.org/fair-tox/terms#subdomains-regulatory-toxicology"
+    "computational and predictive toxicology": "https://doi.org/10.1351/goldbook.15583"
    }
   },
   "span": {
@@ -244,8 +243,8 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "0.14.4",
- "dateModified": "2026-11-05",
+ "version": "0.15.0",
+ "dateModified": "2026-11-07",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -270,7 +269,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-11-05",
+   "retrieved": "2026-11-07",
    "members": 74
   },
   "fip": {
@@ -282,7 +281,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-05",
+    "retrieved": "2026-11-07",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -313,7 +312,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-05",
+    "retrieved": "2026-11-07",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -382,14 +381,13 @@
    "Made jointly": "Toxicology resources made by two or more creator types together."
   },
   "subdomains": {
-   "in vitro toxicology": "Toxicology studied in vitro: in the laboratory, usually with isolated organ, tissue, cell or biochemical systems (after IUPAC, 1993, doi:10.1351/pac199365092003).",
+   "conventional toxicology": "Toxicology studied in vivo, in living organisms, or in vitro, in the laboratory, usually with isolated organ, tissue, cell or biochemical systems (after IUPAC, 1993, doi:10.1351/pac199365092003).",
    "nanotoxicology": "Data generation.",
    "exposome": "Data generation.",
    "eco-toxicology": "Data generation.",
    "toxicogenomics": "Integration and tools.",
    "AOP-based mechanistic knowledge": "Integration and tools.",
-   "computational and predictive toxicology": "Integration and tools.",
-   "regulatory toxicology": "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X)."
+   "computational and predictive toxicology": "Integration and tools."
   },
   "dateBasis": {
    "publication": "Online publication of the paper that first describes the resource.",
@@ -439,8 +437,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "eco-toxicology"
    ],
    "dateReleased": "1986",
    "dateSource": "https://www.data.gouv.fr/datasets/base-de-donnees-agritox",
@@ -493,7 +490,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -516,9 +513,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2020-07-01",
    "dateSource": "https://web.archive.org/web/20200701123743/https://www.industrialchemicals.gov.au/",
@@ -591,7 +585,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -719,7 +713,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "dateReleased": "2013-05",
    "dateSource": "https://aopwiki.org/handbooks/6#section-1-%E2%80%93-aop-description-41",
@@ -774,7 +768,7 @@
    "datePublished": "2018-02-14",
    "dateSource": "https://doi.org/10.1016/j.taap.2018.02.006",
    "creator": "US EPA",
-   "url": "https://aopdb.epa.gov",
+   "url": "https://web.archive.org/web/20250117222244/https://aopdb.epa.gov/",
    "description": "The US EPA Adverse Outcome Pathway Database (AOP-DB) links AOP information from the AOP-Wiki to public data on genes, chemicals, diseases, pathways, species orthology and ToxCast assays. It supports computational exploration of the molecular targets and biological context of AOPs; this row covers the first version, described in 2018.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
@@ -1325,9 +1319,6 @@
    "creatorType": [
     "Regulator"
    ],
-   "subdomains": [
-    "regulatory toxicology"
-   ],
    "dateCreated": "1995",
    "dateSource": "https://fairsharing.org/5630",
    "creator": "APVMA",
@@ -1387,7 +1378,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -1548,7 +1539,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -1613,7 +1604,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "nanotoxicology"
    ],
    "dateReleased": "2010-09-17",
@@ -1737,7 +1728,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -1753,7 +1744,7 @@
    ],
    "origin": "Life Sciences",
    "dateReleased": "2026",
-   "dateSource": "https://w3id.org/spaces/biochementity/r/vocabulary/version/0.0.1",
+   "dateSource": "https://w3id.org/np/RAMa0IVaPLUnQ1sXOdPQfQ1eu2Rh-CVq6yi65tUXFubM8",
    "creator": "PARC (Human Biomonitoring community) / VITO",
    "contactPoint": [
     "https://ror.org/04gq0w522"
@@ -1857,7 +1848,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -1951,7 +1942,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2019,7 +2010,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2087,7 +2078,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2163,7 +2154,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2525,7 +2516,7 @@
       3680
      ]
     ],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2593,7 +2584,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2661,7 +2652,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2779,7 +2770,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2798,7 +2789,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "datePublished": "2015-12-23",
@@ -2875,7 +2866,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -2957,7 +2948,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3046,7 +3037,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3063,9 +3054,6 @@
     "https://w3id.org/fair/fip/terms/Identifier-service"
    ],
    "origin": "Life Sciences",
-   "subdomains": [
-    "regulatory toxicology"
-   ],
    "dateReleased": "1965",
    "dateSource": "https://www.cas.org/cas-data/cas-registry",
    "creator": "CAS (Chemical Abstracts Service), American Chemical Society",
@@ -3114,7 +3102,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3141,8 +3129,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "toxicogenomics",
-    "regulatory toxicology"
+    "toxicogenomics"
    ],
    "datePublished": "2003-01",
    "dateSource": "https://pubmed.ncbi.nlm.nih.gov/12735106/",
@@ -3268,7 +3255,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3283,7 +3270,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "dateReleased": "2012-04-04",
    "dateSource": "https://www.cellosaurus.org/faq#Q25",
@@ -3343,7 +3330,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3427,7 +3414,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3450,9 +3437,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2009-02-05",
    "dateSource": "https://www.echemportal.org/echemportal/content/news",
@@ -3524,7 +3508,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3685,7 +3669,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3837,7 +3821,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -3859,8 +3843,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "eco-toxicology"
    ],
    "dateReleased": "2019",
    "dateSource": "http://web.archive.org/web/20190821200437/https://gsbl.de/",
@@ -3928,7 +3911,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4024,7 +4007,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4149,7 +4132,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4165,7 +4148,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "datePublished": "2007-10-11",
    "dateSource": "https://pubmed.ncbi.nlm.nih.gov/18694200/",
@@ -4244,7 +4227,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4252,7 +4235,7 @@
    "identifier": "https://doi.org/10.25504/FAIRsharing.ad3f2b",
    "schemaType": "schema:CreativeWork",
    "key": "combine_coll",
-   "name": "COMBINE FAIRsharing collection",
+   "name": "COMBINE (Computational Modeling in Biology Network) FAIRsharing collection",
    "alternateName": [
     "Computational Modeling (COMBINE)",
     "FAIRsharing.ad3f2b"
@@ -4269,7 +4252,7 @@
    "dateSource": "https://web.archive.org/web/20190823150934/https://fairsharing.org/collection/ComputationalModelingCOMBINE",
    "creator": "COMBINE (with FAIRsharing)",
    "url": "https://fairsharing.org/FAIRsharing.ad3f2b",
-   "description": "A FAIRsharing collection, maintained with the COMBINE network, that groups the community standards for computational modelling in biology (e.g. SBML, CellML, SED-ML, SBGN and the COMBINE archive format) with related resources. It gives modellers one curated entry point to interoperable formats for exchanging, annotating and simulating models.",
+   "description": "A FAIRsharing collection, maintained  with the COMBINE network, that groups the community standards for computational modelling in biology (e.g. SBML, CellML, SED-ML, SBGN and the COMBINE archive format) with related resources. It gives modellers one curated entry point to interoperable formats for exchanging and annotating computational models in biology.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.ad3f2b",
@@ -4370,7 +4353,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4395,8 +4378,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "AOP-based mechanistic knowledge",
-    "regulatory toxicology"
+    "AOP-based mechanistic knowledge"
    ],
    "dateReleased": "2022",
    "dateSource": "https://compoundcloud.wikibase.cloud/wiki/User:Egonw",
@@ -4471,7 +4453,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "exposome",
     "computational and predictive toxicology"
    ],
@@ -4569,7 +4551,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4616,9 +4598,6 @@
    "creatorType": [
     "Regulator"
    ],
-   "subdomains": [
-    "regulatory toxicology"
-   ],
    "dateReleased": "2008-05",
    "dateSource": "https://web.archive.org/web/20081217150446/http://ec.europa.eu/enterprise/cosmetics/new.xml",
    "creator": "European Commission (DG GROW)",
@@ -4662,7 +4641,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -4689,8 +4668,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "eco-toxicology"
    ],
    "datePublished": "2015-09-24",
    "dateSource": "https://doi.org/10.1002/etc.3259",
@@ -5004,7 +4982,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5028,8 +5006,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "computational and predictive toxicology",
-    "regulatory toxicology"
+    "computational and predictive toxicology"
    ],
    "dateReleased": "2006-04",
    "dateSource": "http://web.archive.org/web/20070502164010/http://ecb.jrc.it:80/whatsnew/content1.php?ANNEE=2006",
@@ -5105,7 +5082,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5224,7 +5201,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5343,7 +5320,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "dateReleased": "2017-07-12",
@@ -5437,7 +5414,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5518,7 +5495,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5542,7 +5519,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "datePublished": "2005-09",
@@ -5665,7 +5642,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5750,7 +5727,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5770,9 +5747,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "1990-06-15",
    "dateSource": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:51990XC0615(01)",
@@ -5833,7 +5807,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5856,9 +5830,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2013-09",
    "dateSource": "https://web.archive.org/web/20130906170546/http://echa.europa.eu/web/guest/information-on-chemicals/biocidal-active-substances",
@@ -5938,7 +5909,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -5961,9 +5932,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2024-01-30",
    "dateSource": "https://echa.europa.eu/-/echa-launches-new-chemicals-database",
@@ -6019,7 +5987,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -6042,9 +6010,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2012-02-13",
    "dateSource": "https://echa.europa.eu/web/guest/view-article/-/journal_content/07005f81-abf1-4081-973b-6c7c526c39df",
@@ -6108,7 +6073,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -6128,9 +6093,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2007-06-13",
    "dateSource": "https://www.echemportal.org/echemportal/content/news",
@@ -6296,7 +6258,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -6322,8 +6284,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "eco-toxicology"
    ],
    "dateReleased": "1996",
    "dateSource": "https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB97500318.xhtml",
@@ -6412,7 +6373,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -6511,7 +6472,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -6537,7 +6498,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "dateReleased": "2019-03-09",
    "dateSource": "https://web.archive.org/web/20190718024857/https://www.edelweissconnect.com/blog/edelweissdata",
@@ -6641,8 +6602,7 @@
    ],
    "subdomains": [
     "eco-toxicology",
-    "computational and predictive toxicology",
-    "regulatory toxicology"
+    "computational and predictive toxicology"
    ],
    "dateAdopted": "2025-10-29",
    "dateSource": "https://web.archive.org/web/20251113112641/https://www.efsa.europa.eu/en/efsajournal/pub/9741",
@@ -6850,7 +6810,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7042,7 +7002,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7152,7 +7112,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7303,7 +7263,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7328,7 +7288,7 @@
    "dateSource": "https://doi.org/10.1038/nbt1346",
    "creator": "EnvO Consortium (from the Genomic Standards Consortium)",
    "url": "http://environmentontology.org/",
-   "description": "An OBO Foundry ontology of environments: biomes, environmental features and systems, environmental materials and processes. Its terms annotate where organisms and samples come from, so environmental metadata can be integrated and searched across databases.",
+   "description": "ENVO is a community ontology in OBO foundry of environmental entities of all kinds, from microscopic to intergalactic scales. ENVO currently deals with 'environmental systems' (i.e. environments) particularly 'biomes' and environments determined by a material entity that assumes the role of an 'environmental feature' (e.g. a digestive tract environment). It also handles 'environmental materials' like soil, water.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.azqskx",
@@ -7421,7 +7381,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7443,8 +7403,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "eco-toxicology"
    ],
    "dateReleased": "2008",
    "dateSource": "http://web.archive.org/web/20080116111035/http://www.epa.gov/oppefed1/ecorisk_ders/aquatic_life_benchmark.htm",
@@ -7507,7 +7466,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7527,9 +7486,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2013",
    "dateSource": "https://web.archive.org/web/20130912141247/http://java.epa.gov/chemview",
@@ -7608,7 +7564,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7631,9 +7587,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "1988",
    "dateSource": "https://www.epa.gov/system/files/other-files/2022-02/iris-timeline-11-2020_update.json",
@@ -7712,7 +7665,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7733,9 +7686,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2001",
    "dateSource": "http://web.archive.org/web/20010502191556/http://www.epa.gov:80/srs/index.htm",
@@ -7804,7 +7754,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7830,7 +7780,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "dateCreated": "2020",
@@ -7931,7 +7881,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -7957,8 +7907,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "computational and predictive toxicology",
-    "regulatory toxicology"
+    "computational and predictive toxicology"
    ],
    "datePublished": "2022-03-07",
    "dateSource": "https://doi.org/10.12688/f1000research.74024.1",
@@ -7996,8 +7945,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "nanotoxicology",
-    "regulatory toxicology"
+    "nanotoxicology"
    ],
    "dateReleased": "2017-06-14",
    "dateSource": "https://echa.europa.eu/-/eu-observatory-for-nanomaterials-launched",
@@ -8059,7 +8007,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -8160,7 +8108,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -8189,7 +8137,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "datePublished": "2020-07-06",
    "dateSource": "https://doi.org/10.1007/s00204-020-02802-6",
@@ -8325,7 +8273,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -8436,7 +8384,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -8535,7 +8483,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -8714,7 +8662,7 @@
    "dateReleased": "2022",
    "dateSource": "https://web.archive.org/web/20221025092955/https://fairconnect.pro/",
    "creator": "GO FAIR Foundation and IOS Press (now Sage), with CODATA, DTL and Health-RI",
-   "url": "https://fairconnect.pro",
+   "url": "https://web.archive.org/web/20260712060656/https://fairconnect.pro/",
    "description": "An open-access platform for FAIR data stewardship where FAIR-supporting resources, FAIR Implementation Profiles and community good practices are published, searched and discussed. It links the human-readable descriptions in the FAIR Connect journal to their machine-readable nanopublications and offers a search engine and dashboard over them.",
    "maintained": "discontinued",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
@@ -8889,7 +8837,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -8957,7 +8905,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9038,7 +8986,7 @@
    "dateReleased": "2020",
    "dateSource": "https://web.archive.org/web/20200811221637/https://www.go-fair.org/how-to-go-fair/fair-implementation-profile/",
    "creator": "GO FAIR Foundation",
-   "url": "https://www.go-fair.org/how-to-go-fair/fair-implementation-profile/",
+   "url": "https://web.archive.org/web/20260716153121/https://www.go-fair.org/how-to-go-fair/fair-implementation-profile/",
    "description": "A FAIR Implementation Profile lists, principle by principle, the FAIR-enabling resources (standards, vocabularies, identifier schemes, repositories, licences) that a community of practice has chosen. FIPs are published as machine-actionable nanopublications, so communities can document, compare and reuse each other's choices and move towards interoperable solutions.",
    "maintained": "active",
    "fairsharingRecord": {
@@ -9090,7 +9038,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9110,9 +9058,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2022",
    "dateSource": "http://web.archive.org/web/20221220225012/https://ec.europa.eu/food/food-feed-portal/",
@@ -9175,7 +9120,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9260,8 +9205,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "regulatory toxicology"
+    "conventional toxicology"
    ],
    "dateAdopted": "2014",
    "dateSource": "https://one.oecd.org/document/ENV/JM/MONO(2014)35/en/pdf",
@@ -9303,9 +9247,6 @@
    "creatorType": [
     "Regulator"
    ],
-   "subdomains": [
-    "regulatory toxicology"
-   ],
    "dateAdopted": "2025-12-03",
    "dateSource": "https://doi.org/10.1787/8d49ec1d-en",
    "creator": "OECD",
@@ -9331,8 +9272,7 @@
    ],
    "fairsharingType": "Database: repository",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Identifier-service",
-    "https://w3id.org/fair/fip/terms/Registry"
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
    ],
    "origin": "Life Sciences",
    "subdomains": [
@@ -9342,7 +9282,7 @@
    "dateSource": "https://web.archive.org/web/20000815073701/http://www.ncbi.nlm.nih.gov/geo/info/news.cgi",
    "creator": "NCBI",
    "url": "https://www.ncbi.nlm.nih.gov/geo/",
-   "description": "NCBI's public archive for high-throughput functional genomics data, mostly microarray and sequencing-based gene expression studies. It stores raw and processed data with MIAME-oriented descriptions under stable accessions, so toxicogenomics datasets can be retrieved and reanalysed.",
+   "description": "NCBI's publically available archive for high-throughput functional genomics data, mostly microarray and sequencing-based gene expression studies. It stores raw and processed data with MIAME-oriented descriptions under stable accessions, so toxicogenomics datasets can be retrieved and reanalysed.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.5hc8vt",
@@ -9432,7 +9372,6 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F1",
     "F4"
    ],
    "qualifiedRelation": [
@@ -9536,7 +9475,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9559,9 +9498,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2020-12-14",
    "dateSource": "https://www.chem-info.nite.go.jp/chem/ghs/ghs_nite_info_old.html",
@@ -9618,7 +9554,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9799,7 +9735,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9896,7 +9832,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -9990,7 +9926,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10090,7 +10026,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10113,9 +10049,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "1989",
    "dateSource": "https://pubmed.ncbi.nlm.nih.gov/2489435/",
@@ -10168,7 +10101,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10186,6 +10119,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
+    "conventional toxicology",
     "computational and predictive toxicology"
    ],
    "dateReleased": "2011-07",
@@ -10252,7 +10186,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10275,9 +10209,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2000",
    "dateSource": "https://web.archive.org/web/20000916034110/http://www.lua.nrw.de/igsstat/startigs.htm",
@@ -10350,7 +10281,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10468,7 +10399,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10491,9 +10422,6 @@
    ],
    "creatorType": [
     "Wet-lab research"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "datePublished": "2009-12",
    "dateSource": "https://doi.org/10.1177/0192623309353423",
@@ -10558,7 +10486,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10691,7 +10619,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10718,7 +10646,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "eco-toxicology"
    ],
    "datePublished": "2024-10-15",
@@ -10763,8 +10691,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "exposome",
-    "regulatory toxicology"
+    "exposome"
    ],
    "dateReleased": "2015",
    "dateSource": "https://web.archive.org/web/20151219144109/https://ipchem.jrc.ec.europa.eu/RDSIdiscovery/ipchem/index.html",
@@ -10820,7 +10747,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10843,9 +10770,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "1997",
    "dateSource": "http://web.archive.org/web/19970511011327/http://www.ccohs.ca:80/ccohs/releases/inchem.html",
@@ -10907,7 +10831,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -10977,7 +10901,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "dateReleased": "2016-02-29",
    "dateSource": "https://github.com/ISA-tools/isa-api/releases/tag/v0.1",
@@ -11090,7 +11014,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -11111,7 +11035,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "nanotoxicology",
     "exposome",
     "toxicogenomics"
@@ -11265,7 +11189,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -11416,7 +11340,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -11439,9 +11363,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "1993",
    "dateSource": "https://web.archive.org/web/20090913001123/http://iuclid.eu/index.php?fuseaction=home.development",
@@ -11570,8 +11491,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "eco-toxicology"
    ],
    "dateReleased": "2008",
    "dateSource": "http://web.archive.org/web/20080607012424/http://www.safe.nite.go.jp:80/jcheck/pages/jsp/index.jsp",
@@ -11628,7 +11548,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -11651,9 +11571,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "1998",
    "dateSource": "http://web.archive.org/web/19981202050410/http://wwwdb.mhw.go.jp:80/ginc/cgi-bin/db1_ls2.pl",
@@ -11726,7 +11643,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -11804,7 +11721,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -11911,7 +11828,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12035,7 +11952,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12058,8 +11975,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "toxicogenomics",
-    "regulatory toxicology"
+    "toxicogenomics"
    ],
    "dateReleased": "2026-10-19",
    "dateSource": "https://github.com/eu-parc/maoorf/commit/17e1758cd22ee7a25e30ec751097d4ee0fefe9d5",
@@ -12102,7 +12018,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "dateReleased": "2023",
@@ -12201,7 +12117,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12316,7 +12232,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12405,7 +12321,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12507,7 +12423,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12683,7 +12599,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -12865,7 +12781,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13010,7 +12926,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13100,7 +13016,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13260,7 +13176,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13383,7 +13299,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13517,7 +13433,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13604,7 +13520,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13852,7 +13768,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -13970,7 +13886,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14083,7 +13999,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14234,7 +14150,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14386,7 +14302,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14406,9 +14322,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2002",
    "dateSource": "http://web.archive.org/web/20021016020615/http://cs3-hq.oecd.org:80/scripts/hpv/",
@@ -14463,7 +14376,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14487,9 +14400,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2006-03",
    "dateSource": "https://web.archive.org/web/20121201174145/http://www.oecd.org/ehs/templates/developmentofoecdharmonisedtemplates.htm",
@@ -14570,7 +14480,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14599,8 +14509,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "toxicogenomics",
-    "regulatory toxicology"
+    "toxicogenomics"
    ],
    "datePublished": "2021-07-29",
    "dateSource": "https://doi.org/10.1016/j.yrtph.2021.105020",
@@ -14774,7 +14683,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -14828,9 +14737,6 @@
    ],
    "creatorType": [
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "datePublished": "2017-01-18",
    "dateSource": "https://doi.org/10.2903/j.efsa.2017.e15011",
@@ -14909,7 +14815,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -15084,7 +14990,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -15168,7 +15074,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -15828,14 +15734,14 @@
     "Regulator"
    ],
    "subdomains": [
-    "eco-toxicology",
-    "regulatory toxicology"
+    "conventional toxicology",
+    "eco-toxicology"
    ],
    "dateReleased": "2009",
    "dateSource": "https://web.archive.org/web/20091227082216/http://www.ineris.fr/substances/fr/content/sitemap",
    "creator": "INERIS (French National Institute for Industrial Environment and Risks)",
    "url": "https://substances.ineris.fr/",
-   "description": "French INERIS portal that brings together toxicological, ecotoxicological, physico-chemical, technical-economic and regulatory information on chemical substances. It includes INERIS toxicological and environmental data sheets, acute toxicity thresholds for accidents and environmental quality standards, mainly in French.",
+   "description": "French INERIS portal that brings together toxicological, ecotoxicological, physico-chemical, environmental fate and behaviour, production and use data, and regulatory information on chemical substances produced by national and international reference organisations. It includes INERIS toxicological and environmental data sheets, acute toxicity thresholds for accidents and environmental quality standards, mainly in French.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.b71e74",
@@ -15875,7 +15781,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16047,7 +15953,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16276,7 +16182,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16294,7 +16200,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "computational and predictive toxicology"
    ],
    "dateReleased": "2004",
@@ -16404,7 +16310,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16500,7 +16406,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16705,7 +16611,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16781,7 +16687,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16830,9 +16736,8 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "eco-toxicology",
-    "regulatory toxicology"
+    "conventional toxicology",
+    "eco-toxicology"
    ],
    "dateReleased": "2021-10-20",
    "dateSource": "https://github.com/elixir-europe/rdmkit/pull/714",
@@ -16918,7 +16823,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -16942,8 +16847,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "regulatory toxicology"
+    "conventional toxicology"
    ],
    "dateReleased": "2022",
    "dateSource": "https://web.archive.org/web/20220815085439/https://readedtest.u-paris-sciences.fr/",
@@ -17038,7 +16942,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology"
+    "conventional toxicology"
    ],
    "datePublished": "2024-11-05",
    "dateSource": "https://github.com/FAIRplus/the-fair-cookbook/issues/666",
@@ -17089,8 +16993,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "toxicogenomics",
-    "regulatory toxicology"
+    "toxicogenomics"
    ],
    "datePublished": "2022-03-02",
    "dateSource": "https://doi.org/10.1016/j.yrtph.2022.105143",
@@ -17195,7 +17098,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -17331,7 +17234,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -17393,6 +17296,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
+    "AOP-based mechanistic knowledge",
     "computational and predictive toxicology"
    ],
    "dateReleased": "2001-03-02",
@@ -17492,7 +17396,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -17563,7 +17467,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -17589,9 +17493,8 @@
     "Wet-lab research"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "eco-toxicology",
-    "regulatory toxicology"
+    "conventional toxicology",
+    "eco-toxicology"
    ],
    "dateReleased": "2013",
    "dateSource": "http://web.archive.org/web/20130814223111/http://scirap.org",
@@ -17687,7 +17590,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -17715,9 +17618,6 @@
     "Wet-lab research",
     "In silico research",
     "Regulator"
-   ],
-   "subdomains": [
-    "regulatory toxicology"
    ],
    "dateReleased": "2004",
    "dateSource": "https://web.archive.org/web/20040519003134/http://www.cdisc.org:80/models/send/v1.4/index.html",
@@ -17798,7 +17698,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -17824,8 +17724,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "toxicogenomics",
-    "regulatory toxicology"
+    "toxicogenomics"
    ],
    "datePublished": "2010-08-01",
    "dateSource": "https://doi.org/10.1186/1479-7364-4-6-428",
@@ -17968,7 +17867,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -18067,7 +17966,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -18092,13 +17991,12 @@
     "Regulator"
    ],
    "subdomains": [
-    "exposome",
-    "regulatory toxicology"
+    "exposome"
    ],
    "dateCreated": "2000",
    "dateSource": "https://doi.org/10.25504/FAIRsharing.5fee61",
    "creator": "Nordic Council of Ministers (Chemicals Group) with the product registers of Norway, Sweden, Denmark and Finland",
-   "url": "http://spin2000.net/",
+   "url": "https://web.archive.org/web/20260806071815/http://spin2000.net/",
    "description": "Public database on the use of chemical substances in products in Norway, Sweden, Denmark and Finland. It is derived from the national product registers without disclosing confidential information and gives tonnages, numbers of products, industry sectors (NACE) and use categories per substance and year, online and as a downloadable offline database. It supports exposure assessment and regulatory prioritisation of chemicals.",
    "maintained": "active",
    "fairsharingRecord": {
@@ -18150,7 +18048,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -18319,7 +18217,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -18425,7 +18323,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -18492,7 +18390,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "dateReleased": "2011-02-25",
@@ -18589,7 +18487,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -18616,7 +18514,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics"
    ],
    "datePublished": "2013-01-17",
@@ -19057,7 +18955,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -19279,7 +19177,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -19304,8 +19202,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "regulatory toxicology"
+    "conventional toxicology"
    ],
    "datePublished": "2009-05-27",
    "dateSource": "https://doi.org/10.1016/j.toxlet.2009.05.013",
@@ -19341,8 +19238,7 @@
     "Regulator"
    ],
    "subdomains": [
-    "in vitro toxicology",
-    "regulatory toxicology"
+    "conventional toxicology"
    ],
    "datePublished": "2019-10",
    "dateSource": "https://doi.org/10.14573/altex.1909271",
@@ -19395,7 +19291,7 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics",
     "computational and predictive toxicology"
    ],
@@ -19438,9 +19334,8 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
-    "in vitro toxicology",
-    "exposome",
-    "regulatory toxicology"
+    "conventional toxicology",
+    "exposome"
    ],
    "dateReleased": "2008",
    "dateSource": "https://web.archive.org/web/20080811160714/http://bioportal.bioontology.org/ontologies",
@@ -19517,7 +19412,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -19733,7 +19628,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -19760,11 +19655,10 @@
     "In silico research"
    ],
    "subdomains": [
-    "in vitro toxicology",
+    "conventional toxicology",
     "toxicogenomics",
     "AOP-based mechanistic knowledge",
-    "computational and predictive toxicology",
-    "regulatory toxicology"
+    "computational and predictive toxicology"
    ],
    "datePublished": "2024-10-09",
    "dateSource": "https://doi.org/10.14573/altex.2407211",
@@ -19841,7 +19735,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -19915,7 +19809,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -20035,7 +19929,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -20110,7 +20004,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   },
   {
@@ -20179,7 +20073,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-05"
+    "retrieved": "2026-11-07"
    }
   }
  ],
@@ -20216,7 +20110,7 @@
   "url": "https://w3id.org/fair-tox/dataset"
  },
  "url": "https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/",
- "datePublished": "2026-11-04",
+ "datePublished": "2026-11-05",
  "temporalCoverage": "1960/2026",
  "wasDerivedFrom": [
   "https://doi.org/10.25504/FAIRsharing.f60a10",
@@ -20402,7 +20296,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "2ba84a55503090ab42018662cd486dc08a1968c9bdac33ddea7fe08307789ac6"
+    "checksumValue": "05822ad714152f10ae32d646666a2e88b3773d29a12a37e3da78456dba413cd0"
    }
   },
   {
@@ -20424,7 +20318,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "7fa897f3277039db65e2841ef3477eb60fe53d5b72e18c3fdaef7af896b6fd0c"
+    "checksumValue": "01a69247cd80211955096dbc03a6b473158059a75be62bb00b46050f0906481e"
    }
   }
  ],
@@ -20447,6 +20341,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-11-05"
+  "sdDatePublished": "2026-11-07"
  }
 }

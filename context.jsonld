@@ -114,14 +114,13 @@
    "@type": "@vocab",
    "@container": "@set",
    "@context": {
-    "in vitro toxicology": "http://www.wikidata.org/entity/Q6013136",
+    "conventional toxicology": "https://w3id.org/fair-tox/terms#subdomains-conventional-toxicology",
     "nanotoxicology": "https://doi.org/10.1351/goldbook.15908",
     "exposome": "http://id.nlm.nih.gov/mesh/D000081413",
     "eco-toxicology": "http://id.nlm.nih.gov/mesh/D054750",
     "toxicogenomics": "http://purl.obolibrary.org/obo/NCIT_C20179",
     "AOP-based mechanistic knowledge": "http://id.nlm.nih.gov/mesh/D000073931",
-    "computational and predictive toxicology": "https://doi.org/10.1351/goldbook.15583",
-    "regulatory toxicology": "https://w3id.org/fair-tox/terms#subdomains-regulatory-toxicology"
+    "computational and predictive toxicology": "https://doi.org/10.1351/goldbook.15583"
    }
   },
   "span": {

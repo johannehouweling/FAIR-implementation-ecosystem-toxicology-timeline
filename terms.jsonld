@@ -29,23 +29,12 @@
    }
   },
   {
-   "@id": "http://www.wikidata.org/entity/Q6013136",
-   "skos:broadMatch": [
-    {
-     "@id": "http://purl.obolibrary.org/obo/NCIT_C17206"
-    },
-    {
-     "@id": "https://doi.org/10.1351/goldbook.T06417"
-    }
-   ]
-  },
-  {
    "@id": "https://w3id.org/fair-tox/terms",
    "@type": "owl:Ontology",
    "dct:license": {
     "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
-   "owl:versionInfo": "0.14.4",
+   "owl:versionInfo": "0.15.0",
    "rdfs:label": "Terms of the FAIR implementation ecosystem for toxicology"
   },
   {
@@ -376,20 +365,20 @@
    "skos:prefLabel": "related_to"
   },
   {
-   "@id": "terms:subdomains-regulatory-toxicology",
+   "@id": "terms:subdomains-conventional-toxicology",
    "@type": [
     "schema:DefinedTerm",
     "skos:Concept"
    ],
    "dct:source": {
-    "@id": "https://doi.org/10.1016/S0378-4274(01)00457-X"
+    "@id": "https://doi.org/10.1351/pac199365092003"
    },
-   "schema:description": "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X).",
+   "schema:description": "Toxicology studied in vivo, in living organisms, or in vitro, in the laboratory, usually with isolated organ, tissue, cell or biochemical systems (after IUPAC, 1993, doi:10.1351/pac199365092003).",
    "schema:inDefinedTermSet": {
     "@id": "terms:subdomains-values"
    },
-   "schema:name": "regulatory toxicology",
-   "schema:termCode": "subdomains-regulatory-toxicology",
+   "schema:name": "conventional toxicology",
+   "schema:termCode": "subdomains-conventional-toxicology",
    "skos:broadMatch": [
     {
      "@id": "http://purl.obolibrary.org/obo/NCIT_C17206"
@@ -398,14 +387,14 @@
      "@id": "https://doi.org/10.1351/goldbook.T06417"
     }
    ],
-   "skos:definition": "Toxicology that collects, processes and evaluates experimental and epidemiological data as the basis for decisions that protect health from the harmful effects of chemical substances, and that develops standard protocols and new test methods for them (after Schwenk et al., 2002, doi:10.1016/S0378-4274(01)00457-X).",
+   "skos:definition": "Toxicology studied in vivo, in living organisms, or in vitro, in the laboratory, usually with isolated organ, tissue, cell or biochemical systems (after IUPAC, 1993, doi:10.1351/pac199365092003).",
    "skos:inScheme": {
     "@id": "terms:subdomains-values"
    },
-   "skos:prefLabel": "regulatory toxicology",
-   "skos:relatedMatch": {
-    "@id": "http://www.wikidata.org/entity/Q2448782"
-   }
+   "skos:narrowMatch": {
+    "@id": "http://www.wikidata.org/entity/Q6013136"
+   },
+   "skos:prefLabel": "conventional toxicology"
   },
   {
    "@id": "terms:subdomains-values",
@@ -419,7 +408,7 @@
    "schema:name": "subdomains values",
    "skos:definition": "Toxicology sub-domains that a resource serves, where no outside concept exists.",
    "skos:hasTopConcept": {
-    "@id": "terms:subdomains-regulatory-toxicology"
+    "@id": "terms:subdomains-conventional-toxicology"
    },
    "skos:prefLabel": "subdomains values"
   }

@@ -63,7 +63,6 @@ echemportal,related_to,apvma_cr
 echemportal,implements,oht
 echemportal,related_to,j_check
 echemportal,related_to,jecdb
-echemportal,related_to,echa_clp
 echemportal,related_to,ecotox
 echemportal,related_to,spin
 echemportal,related_to,echa_bpr
@@ -131,8 +130,6 @@ magetab,deprecates,mageml
 maoorf,implements,oorf
 mars,implements,isajson
 massbank_eu,implements,inchi
-miametox,extends,miame
-miametox,related_to,cebs
 miriam,related_to,sbml
 nanoaop,extends,aopwikirdf
 nanoaop,implements,enm_ont
@@ -160,7 +157,6 @@ recipe_bao,recommends,bao
 rrid,related_to,cellosaurus
 sedml,related_to,sbml
 simpletox,related_to,arraytrack
-simpletox,profiles,send
 sparql,implements,rdf
 t3db,related_to,drugbank
 tbc,related_to,cebs

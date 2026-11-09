@@ -243,8 +243,8 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "0.15.0",
- "dateModified": "2026-11-07",
+ "version": "0.16.0",
+ "dateModified": "2026-11-09",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -269,7 +269,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-11-07",
+   "retrieved": "2026-11-09",
    "members": 74
   },
   "fip": {
@@ -281,7 +281,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-07",
+    "retrieved": "2026-11-09",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -312,7 +312,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-07",
+    "retrieved": "2026-11-09",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -490,7 +490,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -585,7 +585,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -902,6 +902,47 @@
     {
      "relation": "https://w3id.org/fair-tox/dataset#aopwiki",
      "hadRole": "related_to"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#aophelp_2025",
+   "identifier": "https://w3id.org/fair-tox/dataset#aophelp_2025",
+   "schemaType": "schema:SoftwareApplication",
+   "key": "aophelp_2025",
+   "name": "AOP-helpFinder 3.0",
+   "alternateName": [
+    "AOP-helpFinder 2025 version",
+    "btaf381"
+   ],
+   "fairsharingType": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service",
+    "https://w3id.org/fair/fip/terms/FAIR-Enrichment-Service",
+    "https://w3id.org/fair/fip/terms/FAIR-Visualization-Service"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "In silico research"
+   ],
+   "subdomains": [
+    "AOP-based mechanistic knowledge"
+   ],
+   "dateReleased": "2024-11-15",
+   "dateSource": "https://github.com/systox1124/AOP-helpFinder/releases/tag/v3",
+   "creator": "Universite Paris Cite / Inserm",
+   "url": "https://aop-helpfinder-v3.u-paris-sciences.fr/",
+   "description": "AOP-helpFinder 3.0 is the third major version of AOP-helpFinder. AOP-helpFinder is a web tool for identification and extraction of associations between stressors and biological events at various level of the biological organization (molecular initiating event (MIE), key event (KE), and adverse outcome (AO)) so researchers can collect literature evidence to build and weigh adverse outcome. The third version adds network views of the stressor-event and event-event (key event relationship) links found by text mining, and annotates them with data from external sources such as AOP-Wiki, KEGG, WikiPathways, Reactome, UniProt and disease-gene databases.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
     }
    ]
   },
@@ -1378,7 +1419,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -1539,7 +1580,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -1600,6 +1641,7 @@
    ],
    "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "origin": "Life Sciences",
@@ -1666,7 +1708,8 @@
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "principles": [
-    "I2"
+    "I2",
+    "I3"
    ],
    "fairsharing": {
     "id": 874,
@@ -1728,7 +1771,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -1848,7 +1891,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -1942,7 +1985,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2010,7 +2053,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2078,7 +2121,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2154,7 +2197,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2516,7 +2559,7 @@
       3680
      ]
     ],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2584,7 +2627,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2652,7 +2695,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2770,7 +2813,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2866,7 +2909,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -2948,7 +2991,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3037,7 +3080,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3051,7 +3094,7 @@
    ],
    "fairsharingType": "Standard: identifier schema",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Identifier-service"
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
    ],
    "origin": "Life Sciences",
    "dateReleased": "1965",
@@ -3077,7 +3120,7 @@
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "principles": [
-    "F1"
+    "F4"
    ],
    "fairsharing": {
     "id": 381,
@@ -3102,7 +3145,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3255,7 +3298,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3330,7 +3373,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3414,7 +3457,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3508,7 +3551,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3527,6 +3570,7 @@
    ],
    "origin": "Life Sciences",
    "subdomains": [
+    "conventional toxicology",
     "nanotoxicology",
     "computational and predictive toxicology"
    ],
@@ -3669,7 +3713,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3821,7 +3865,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -3911,7 +3955,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4007,7 +4051,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4021,10 +4065,12 @@
    ],
    "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "origin": "Life Sciences",
    "subdomains": [
+    "conventional toxicology",
     "nanotoxicology"
    ],
    "dateReleased": "2003",
@@ -4078,7 +4124,8 @@
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "principles": [
-    "I2"
+    "I2",
+    "I3"
    ],
    "fairsharing": {
     "id": 1004,
@@ -4132,7 +4179,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4227,7 +4274,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4353,7 +4400,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4551,7 +4598,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4641,7 +4688,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -4717,7 +4764,7 @@
    "dateSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1241500/",
    "creator": "MDI Biological Laboratory; NC State University",
    "url": "https://ctdbase.org/",
-   "description": "Public knowledgebase in which biocurators extract chemical-gene, chemical-disease, gene-disease and chemical exposure relationships from the literature. These are integrated with external data such as GO and pathways to infer chemical-gene-disease networks. It helps generate hypotheses on how environmental chemicals affect human health.",
+   "description": "Public knowledgebase in which curators extract chemical-gene, chemical-disease, gene-disease and chemical exposure relationships from the literature. These are integrated with external data such as GO and pathways to infer chemical-gene-disease networks. It helps generate hypotheses on how environmental chemicals affect human health.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.h3tjtr",
@@ -4982,7 +5029,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5082,7 +5129,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5201,7 +5248,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5414,7 +5461,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5495,7 +5542,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5642,7 +5689,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5727,7 +5774,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5738,7 +5785,7 @@
    "name": "EC Inventory",
    "fairsharingType": "Database: knowledgebase",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Identifier-service"
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
    ],
    "origin": "Toxicology",
    "phase": "Regulatory assessment",
@@ -5771,7 +5818,7 @@
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "principles": [
-    "F1"
+    "F4"
    ],
    "qualifiedAttribution": [
     {
@@ -5807,7 +5854,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5909,7 +5956,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -5917,7 +5964,7 @@
    "identifier": "https://doi.org/10.25504/FAIRsharing.ab25e3",
    "schemaType": "schema:CreativeWork",
    "key": "echa_chem_reach",
-   "name": "ECHA CHEM - Registration, Evaluation, Authorisation and Restriction of Chemicals Regulation",
+   "name": "ECHA CHEM",
    "alternateName": [
     "ECHA CHEM - REACH"
    ],
@@ -5987,93 +6034,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
-   }
-  },
-  {
-   "@id": "https://doi.org/10.25504/FAIRsharing.4782f1",
-   "identifier": "https://doi.org/10.25504/FAIRsharing.4782f1",
-   "schemaType": "schema:CreativeWork",
-   "key": "echa_clp",
-   "name": "ECHA Classification, Labelling and Packaging",
-   "alternateName": [
-    "ECHA-CLP"
-   ],
-   "fairsharingType": "Database: knowledgebase",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
-   ],
-   "origin": "Toxicology",
-   "phase": "Regulatory assessment",
-   "span": [
-    "Regulatory assessment"
-   ],
-   "creatorType": [
-    "Regulator"
-   ],
-   "dateReleased": "2012-02-13",
-   "dateSource": "https://echa.europa.eu/web/guest/view-article/-/journal_content/07005f81-abf1-4081-973b-6c7c526c39df",
-   "creator": "ECHA",
-   "url": "https://echa.europa.eu/web/guest/information-on-chemicals/cl-inventory-database",
-   "description": "Public EU database of classification and labelling information on substances notified or registered under the CLP and REACH Regulations. It includes industry self-classifications and the harmonised classifications of CLP Annex VI. The stand-alone database opened in 2012 and has been replaced by the C&L Inventory in ECHA CHEM.",
-   "maintained": "discontinued",
-   "fairsharingRecord": {
-    "@id": "https://fairsharing.org/FAIRsharing.4782f1",
-    "about": [
-     {
-      "@id": "http://purl.obolibrary.org/obo/NCIT_C16414",
-      "name": "Chemistry"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/NCIT_C17206",
-      "name": "Toxicology"
-     }
-    ],
-    "theme": [
-     {
-      "@id": "http://purl.obolibrary.org/obo/CHEBI_24431",
-      "name": "chemical entity"
-     }
-    ]
-   },
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "F4"
-   ],
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Regulator"
-    }
-   ],
-   "fairsharing": {
-    "id": 5679,
-    "doi": "10.25504/FAIRsharing.4782f1",
-    "name": "ECHA Classification, Labelling and Packaging",
-    "abbreviation": "ECHA-CLP",
-    "registry": "Database",
-    "recordType": "knowledgebase",
-    "status": "deprecated",
-    "homepage": "https://echa.europa.eu/web/guest/information-on-chemicals/cl-inventory-database",
-    "subjects": [
-     {
-      "iri": "http://purl.obolibrary.org/obo/NCIT_C16414",
-      "label": "Chemistry"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/NCIT_C17206",
-      "label": "Toxicology"
-     }
-    ],
-    "domains": [
-     {
-      "iri": "http://purl.obolibrary.org/obo/CHEBI_24431",
-      "label": "chemical entity"
-     }
-    ],
-    "inCollection": true,
-    "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -6144,10 +6105,6 @@
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.3b78e1",
-     "hadRole": "related_to"
-    },
-    {
-     "relation": "https://doi.org/10.25504/FAIRsharing.4782f1",
      "hadRole": "related_to"
     },
     {
@@ -6258,7 +6215,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -6373,7 +6330,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -6472,7 +6429,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -6810,7 +6767,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7002,7 +6959,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7112,7 +7069,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7263,7 +7220,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7381,7 +7338,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7408,8 +7365,8 @@
    "dateReleased": "2008",
    "dateSource": "http://web.archive.org/web/20080116111035/http://www.epa.gov/oppefed1/ecorisk_ders/aquatic_life_benchmark.htm",
    "creator": "US EPA (Office of Pesticide Programs)",
-   "url": "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/aquatic-life-benchmarks-and-ecological-risk#benchmarks",
-   "description": "Table from EPA's Office of Pesticide Programs giving freshwater toxicity benchmarks for registered pesticides and their degradates: acute and chronic values for fish, invertebrates and plants. Each value links to the EPA risk assessment it comes from, with Office of Water criteria shown where they exist. States, tribes and others use it to interpret pesticide levels measured in water and to decide which sites to follow up.",
+   "url": "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/aquatic-life-benchmarks-and-ecological-risk",
+   "description": "Table from EPA's Office of Pesticide Programs (OPP) giving freshwater toxicity benchmarks for registered pesticides and their degradation products: acute and chronic values for fish, invertebrates and plants. For each of the chemicals listed, the table provides a link to the source documents from which each of the benchmarks is extracted.  EPA uses Harmonized Test Guidelines and the Evaluation Guidelines for Ecological Toxicity Data in the Open Literature to evaluate the quality and utility of the studies. The toxicity data used to develop Aquatic Life Benchmarks are extracted from the most recent publicly available OPP risk assessment for the individual pesticide and are typically based on the most sensitive value for each taxon. Aquatic Life Benchmarks are estimates of the concentrations below which pesticides are not expected to represent a risk of concern for aquatic life. The Office of Water criteria shows where risks exist. It is used by State, tribal, and local governments  to interpret pesticide levels measured in water and to decide which sites to follow up.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.eca652",
@@ -7466,7 +7423,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7564,7 +7521,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7665,7 +7622,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7754,7 +7711,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -7881,7 +7838,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8007,7 +7964,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8108,7 +8065,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8273,7 +8230,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8384,7 +8341,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8483,7 +8440,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8837,7 +8794,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8905,7 +8862,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -8922,9 +8879,6 @@
     "https://w3id.org/fair/fip/terms/Editor"
    ],
    "origin": "Generic",
-   "subdomains": [
-    "AOP-based mechanistic knowledge"
-   ],
    "dateReleased": "2020",
    "dateSource": "https://doi.org/10.1007/978-3-030-65847-2_13",
    "creator": "GO FAIR Foundation / Data Stewardship Wizard team (CTU Prague) / KnowledgePixels (Tobias Kuhn)",
@@ -9038,7 +8992,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -9120,7 +9074,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -9475,7 +9429,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -9554,7 +9508,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -9735,7 +9689,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -9832,7 +9786,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -9926,7 +9880,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10026,7 +9980,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10101,7 +10055,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10186,7 +10140,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10281,7 +10235,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10399,7 +10353,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10413,7 +10367,7 @@
    ],
    "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Structured-vocabulary"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "origin": "Toxicology",
    "phase": "Data generation",
@@ -10423,11 +10377,16 @@
    "creatorType": [
     "Wet-lab research"
    ],
+   "subdomains": [
+    "conventional toxicology",
+    "nanotoxicology",
+    "AOP-based mechanistic knowledge"
+   ],
    "datePublished": "2009-12",
    "dateSource": "https://doi.org/10.1177/0192623309353423",
    "creator": "STP, ESTP, BSTP and JSTP (INHAND initiative)",
    "url": "https://www.goreni.org/",
-   "description": "An internationally harmonised nomenclature, with diagnostic criteria, for proliferative and non-proliferative lesions in laboratory animals. The toxicologic pathology societies publish it one organ system at a time, and it is maintained on the goRENI platform. It standardises how histopathology findings in non-clinical safety studies are recorded and supports the controlled terminology used for regulatory data exchange (SEND).",
+   "description": "An internationally harmonised nomenclature, with diagnostic criteria, for proliferative and non-proliferative lesions in laboratory animals - it is maintained on the goRENI platform. It standardises how histopathology findings in non-clinical safety studies are recorded and supports the controlled terminology used for regulatory data exchange (SEND).",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.9gqfpm",
@@ -10448,10 +10407,7 @@
      }
     ]
    },
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "I2"
-   ],
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -10486,7 +10442,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10619,53 +10575,8 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
-  },
-  {
-   "@id": "https://w3id.org/fair-tox/dataset#intob",
-   "identifier": "https://w3id.org/fair-tox/dataset#intob",
-   "schemaType": "schema:SoftwareApplication",
-   "key": "intob",
-   "name": "Integrated Effect Database for Toxicological Observations (INTOB)",
-   "alternateName": [
-    "INTOB"
-   ],
-   "fairsharingType": "Tool",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Editor"
-   ],
-   "origin": "Toxicology",
-   "phase": "Data generation",
-   "span": [
-    "Data generation",
-    "Data integration"
-   ],
-   "creatorType": [
-    "Wet-lab research",
-    "In silico research"
-   ],
-   "subdomains": [
-    "conventional toxicology",
-    "eco-toxicology"
-   ],
-   "datePublished": "2024-10-15",
-   "dateSource": "https://doi.org/10.1101/2024.10.11.617795",
-   "creator": "UFZ Helmholtz Centre for Environmental Research (marketed by GREENBAY Software GmbH)",
-   "url": "https://intob.app",
-   "description": "INTOB is a cloud-based data management application with an integrated database and a controlled vocabulary of effects. It records phenotypic observations and metadata from organism-level toxicity tests, mainly the zebrafish embryo acute toxicity test, so that results can be compared and reanalysed across studies.",
-   "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Wet-lab research"
-    },
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "In silico research"
-    }
-   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.667115",
@@ -10747,7 +10658,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -10831,7 +10742,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11014,7 +10925,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11189,7 +11100,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11340,7 +11251,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11548,7 +11459,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11643,7 +11554,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11721,7 +11632,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11828,7 +11739,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -11952,7 +11863,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12117,7 +12028,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12232,7 +12143,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12321,7 +12232,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12423,7 +12334,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12599,7 +12510,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12781,152 +12692,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
-   }
-  },
-  {
-   "@id": "https://doi.org/10.25504/FAIRsharing.zrmjr7",
-   "identifier": "https://doi.org/10.25504/FAIRsharing.zrmjr7",
-   "schemaType": "schema:CreativeWork",
-   "key": "miametox",
-   "name": "Minimum Information about an array-based toxicogenomics experiment",
-   "alternateName": [
-    "MIAME/Tox"
-   ],
-   "fairsharingType": "Standard: reporting guideline",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
-   ],
-   "origin": "Toxicology",
-   "phase": "Data generation",
-   "span": [
-    "Data generation"
-   ],
-   "creatorType": [
-    "Wet-lab research",
-    "In silico research"
-   ],
-   "subdomains": [
-    "toxicogenomics"
-   ],
-   "dateReleased": "2003",
-   "dateSource": "https://doi.org/10.1289/ehp.6497",
-   "creator": "ILSI HESI; EMBL-EBI; NIEHS (MGED)",
-   "url": "https://doi.org/10.1289/ehp.6697",
-   "description": "An extension of MIAME that lists what to report with array-based toxicogenomics experiments, adding toxicology study design, treatments and conventional toxicity endpoints to the microarray description. It was meant to make toxicogenomics data comparable and ready for deposition in ArrayExpress (via Tox-MIAMExpress) and CEBS. It is no longer maintained.",
-   "maintained": "discontinued",
-   "fairsharingRecord": {
-    "@id": "https://fairsharing.org/FAIRsharing.zrmjr7",
-    "about": [
-     {
-      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
-      "name": "Life Science"
-     },
-     {
-      "@id": "http://edamontology.org/topic_3308",
-      "name": "Transcriptomics"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/NCIT_C20179",
-      "name": "Toxicogenomics"
-     }
-    ],
-    "theme": [
-     {
-      "@id": "http://edamontology.org/data_2603",
-      "name": "Expression data"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/CHEBI_33697",
-      "name": "ribonucleic acid"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/MI_0328",
-      "name": "small molecule"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/OBI_0400148",
-      "name": "DNA microarray"
-     },
-     {
-      "@id": "http://semanticscience.org/resource/SIO_001008",
-      "name": "toxicity"
-     }
-    ]
-   },
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "F2"
-   ],
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Wet-lab research"
-    },
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "In silico research"
-    }
-   ],
-   "qualifiedRelation": [
-    {
-     "relation": "https://doi.org/10.25504/FAIRsharing.32b10v",
-     "hadRole": "extends"
-    },
-    {
-     "relation": "https://doi.org/10.25504/FAIRsharing.ntv8pe",
-     "hadRole": "related_to"
-    }
-   ],
-   "fairsharing": {
-    "id": 1258,
-    "doi": "10.25504/FAIRsharing.zrmjr7",
-    "name": "Minimum Information about an array-based toxicogenomics experiment",
-    "abbreviation": "MIAME/Tox",
-    "registry": "Standard",
-    "recordType": "reporting_guideline",
-    "status": "deprecated",
-    "yearCreation": 2003,
-    "homepage": "http://mibbi.sourceforge.net/projects/MIAME-Tox.shtml",
-    "subjects": [
-     {
-      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
-      "label": "Life Science"
-     },
-     {
-      "iri": "http://edamontology.org/topic_3308",
-      "label": "Transcriptomics"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/NCIT_C20179",
-      "label": "Toxicogenomics"
-     }
-    ],
-    "domains": [
-     {
-      "iri": "http://edamontology.org/data_2603",
-      "label": "Expression data"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/CHEBI_33697",
-      "label": "ribonucleic acid"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/MI_0328",
-      "label": "small molecule"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/OBI_0400148",
-      "label": "DNA microarray"
-     },
-     {
-      "iri": "http://semanticscience.org/resource/SIO_001008",
-      "label": "toxicity"
-     }
-    ],
-    "inCollection": true,
-    "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -12951,7 +12717,7 @@
     "Wet-lab research"
    ],
    "subdomains": [
-    "toxicogenomics"
+    "conventional toxicology"
    ],
    "dateReleased": "2019-11-06",
    "dateSource": "https://github.com/zacharewskilab/MIATE/commits/master/",
@@ -13016,7 +12782,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13176,7 +12942,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13299,7 +13065,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13344,7 +13110,7 @@
    ],
    "fairsharingType": "Standard: reporting guideline",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "origin": "Toxicology",
    "phase": "Data generation",
@@ -13362,7 +13128,7 @@
    "dateSource": "https://doi.org/10.1186/s12989-021-00442-x",
    "creator": "Leibniz institutes (INM, IUF, IfADo, IWT, FIZ Karlsruhe)",
    "url": "https://doi.org/10.1186/s12989-021-00442-x",
-   "description": "A modular minimum information table that sets out what to report with experimental results on the biological effects of engineered nanomaterials. Its six modules are general information, material, biological model, exposure, endpoint read-out, and analysis and statistics. It supports structured, harmonised documentation of nanosafety studies so the data can be reused.",
+   "description": "A modular minimum information table that sets out what to report with experimental results on the biological effects of engineered nanomaterials. Its six modules are: general information, material information, biological model information, exposure information, endpoint readout information, and analysis and statistics. It supports structured, harmonised documentation of nanosafety studies so the data can be reused.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.e2b341",
@@ -13387,10 +13153,7 @@
      }
     ]
    },
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "F2"
-   ],
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -13433,7 +13196,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13520,7 +13283,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13768,7 +13531,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13782,7 +13545,8 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Editor"
+    "https://w3id.org/fair/fip/terms/Editor",
+    "https://w3id.org/fair/fip/terms/Registry"
    ],
    "origin": "Generic",
    "dateReleased": "2020-02-24",
@@ -13794,7 +13558,10 @@
    "url": "https://nanodash.net",
    "description": "Web client, previously called Nanobench, to browse and publish nanopublications: users sign in with ORCID and publish small statements from templates that are themselves nanopublications. Its FAIR Implementation Space lists FAIR Implementation Communities and their FIPs, including the PARC Toxicology FIP and the Reference AOP FIP.",
    "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.343864",
@@ -13817,12 +13584,10 @@
    ],
    "fairsharingType": "Standard: model/format",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/FAIR-Publishing-Service",
     "https://w3id.org/fair/fip/terms/Provenance-model"
    ],
    "origin": "Generic",
-   "subdomains": [
-    "AOP-based mechanistic knowledge"
-   ],
    "datePublished": "2009-10-20",
    "dateSource": "https://ceur-ws.org/Vol-523/",
    "creator": "Concept Web Alliance / NBIC",
@@ -13886,7 +13651,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -13920,7 +13685,7 @@
    "dateSource": "https://web.archive.org/web/20170625051616/http://www.norman-network.com/datatable/",
    "creator": "NORMAN Association",
    "url": "https://www.norman-network.com/nds/susdat/",
-   "description": "Merged and curated database of more than 100,000 substances of environmental concern, compiled from the suspect lists contributed to the NORMAN Suspect List Exchange. It adds harmonised identifiers (CAS, SMILES, InChIKey, PubChem CID, DTXSID), MS-ready structures and predicted properties and ecotoxicity thresholds. It supports suspect and non-target screening, prioritisation and exposure assessment of emerging contaminants.",
+   "description": "Merged and curated database of more than 100,000 substances of environmental concern, compiled from the substances contributed to the NORMAN Suspect List Exchange. It adds harmonised identifiers (CAS, SMILES, InChIKey, PubChem CID, DTXSID), MS-ready structures and predicted properties and ecotoxicity thresholds. It supports suspect and non-target screening, prioritisation and exposure assessment of emerging contaminants in the environment.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.9ATgeT",
@@ -13999,7 +13764,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14047,12 +13812,10 @@
    ],
    "fairsharingType": "Standard: terminology artefact",
    "fsrType": [
+    "https://w3id.org/fair/fip/terms/Semantic-model",
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "origin": "Life Sciences",
-   "subdomains": [
-    "nanotoxicology"
-   ],
    "datePublished": "2006",
    "dateSource": "https://doi.org/10.1089/omi.2006.10.199",
    "creator": "OBI Consortium",
@@ -14100,7 +13863,8 @@
    },
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "principles": [
-    "I2"
+    "I2",
+    "I3"
    ],
    "fairsharing": {
     "id": 1488,
@@ -14150,7 +13914,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14302,7 +14066,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14376,7 +14140,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14480,7 +14244,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14494,8 +14258,8 @@
    ],
    "fairsharingType": "Standard: reporting guideline",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema",
-    "https://w3id.org/fair/fip/terms/Provenance-model"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice",
+    "https://w3id.org/fair/fip/terms/Metadata-schema"
    ],
    "origin": "Toxicology",
    "phase": "Data generation",
@@ -14585,8 +14349,7 @@
     "https://w3id.org/fair-tox/dataset#parcfip"
    ],
    "principles": [
-    "F2",
-    "R1.2"
+    "F2"
    ],
    "qualifiedAttribution": [
     {
@@ -14683,7 +14446,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14815,7 +14578,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -14990,7 +14753,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -15007,9 +14770,6 @@
     "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
    ],
    "origin": "Generic",
-   "subdomains": [
-    "nanotoxicology"
-   ],
    "dateAdopted": "2004-02-10",
    "dateSource": "https://www.w3.org/TR/2004/REC-owl-features-20040210/",
    "creator": "W3C",
@@ -15074,7 +14834,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -15781,7 +15541,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -15953,7 +15713,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -16182,7 +15942,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -16310,7 +16070,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -16406,7 +16166,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -16611,7 +16371,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -16629,9 +16389,6 @@
     "https://w3id.org/fair/fip/terms/Knowledge-representation-language"
    ],
    "origin": "Generic",
-   "subdomains": [
-    "AOP-based mechanistic knowledge"
-   ],
    "dateAdopted": "1999-02-22",
    "dateSource": "https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/",
    "creator": "W3C",
@@ -16687,7 +16444,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -16823,7 +16580,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17098,7 +16855,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17234,7 +16991,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17396,7 +17153,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17467,7 +17224,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17590,115 +17347,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
-   }
-  },
-  {
-   "@id": "https://doi.org/10.25504/FAIRsharing.7z842d",
-   "identifier": "https://doi.org/10.25504/FAIRsharing.7z842d",
-   "schemaType": "schema:CreativeWork",
-   "key": "send",
-   "name": "SEND (Standard for Exchange of Nonclinical Data)",
-   "alternateName": [
-    "SEND",
-    "CDISC SEND"
-   ],
-   "fairsharingType": "Standard: model/format",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
-   ],
-   "origin": "Toxicology",
-   "phase": "Data generation",
-   "span": [
-    "Data generation",
-    "Data integration",
-    "Regulatory assessment"
-   ],
-   "creatorType": [
-    "Wet-lab research",
-    "In silico research",
-    "Regulator"
-   ],
-   "dateReleased": "2004",
-   "dateSource": "https://web.archive.org/web/20040519003134/http://www.cdisc.org:80/models/send/v1.4/index.html",
-   "creator": "CDISC",
-   "url": "https://www.cdisc.org/standards/foundational/send",
-   "description": "A CDISC standard that specifies how data from nonclinical (animal) toxicology studies are organised, formatted and coded for exchange and electronic submission to regulators such as the US FDA. Its implementation guides define domains, variables and controlled terminology so study data can be reviewed, pooled and reused consistently.",
-   "maintained": "active",
-   "fairsharingRecord": {
-    "@id": "https://fairsharing.org/FAIRsharing.7z842d",
-    "about": [
-     {
-      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
-      "name": "Life Science"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/NCIT_C142642",
-      "name": "Preclinical Studies"
-     }
-    ],
-    "theme": [
-     {
-      "@id": "http://edamontology.org/data_2337",
-      "name": "Resource metadata"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/OBI_0001199",
-      "name": "in vivo design"
-     }
-    ]
-   },
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "F2"
-   ],
-   "qualifiedAttribution": [
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Wet-lab research"
-    },
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "In silico research"
-    },
-    {
-     "@type": "prov:Attribution",
-     "hadRole": "Regulator"
-    }
-   ],
-   "fairsharing": {
-    "id": 790,
-    "doi": "10.25504/FAIRsharing.7z842d",
-    "name": "CDISC Standard for Exchange of Nonclinical Data Format",
-    "abbreviation": "SEND",
-    "registry": "Standard",
-    "recordType": "model_and_format",
-    "status": "ready",
-    "yearCreation": 2011,
-    "homepage": "https://www.cdisc.org/standards/foundational/send",
-    "subjects": [
-     {
-      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
-      "label": "Life Science"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/NCIT_C142642",
-      "label": "Preclinical Studies"
-     }
-    ],
-    "domains": [
-     {
-      "iri": "http://edamontology.org/data_2337",
-      "label": "Resource metadata"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/OBI_0001199",
-      "label": "in vivo design"
-     }
-    ],
-    "inCollection": false,
-    "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17746,10 +17395,6 @@
     {
      "relation": "https://w3id.org/fair-tox/dataset#arraytrack",
      "hadRole": "related_to"
-    },
-    {
-     "relation": "https://doi.org/10.25504/FAIRsharing.7z842d",
-     "hadRole": "profiles"
     }
    ]
   },
@@ -17867,7 +17512,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -17875,7 +17520,7 @@
    "identifier": "https://doi.org/10.25504/FAIRsharing.87ccfd",
    "schemaType": "schema:CreativeWork",
    "key": "sparql",
-   "name": "SPARQL",
+   "name": "SPARQL Query",
    "alternateName": [
     "SPARQL endpoint"
    ],
@@ -17884,9 +17529,6 @@
     "https://w3id.org/fair/fip/terms/Communication-protocol"
    ],
    "origin": "Generic",
-   "subdomains": [
-    "AOP-based mechanistic knowledge"
-   ],
    "dateAdopted": "2008-01-15",
    "dateSource": "https://www.w3.org/TR/2008/REC-rdf-sparql-query-20080115/",
    "creator": "W3C",
@@ -17966,7 +17608,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -18048,7 +17690,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -18217,7 +17859,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -18250,8 +17892,8 @@
    "dateSource": "https://doi.org/10.1093/toxsci/kfm090",
    "creator": "NIEHS-led working group (with US EPA and US FDA NCTR)",
    "url": "https://doi.org/10.1093/toxsci/kfm090",
-   "description": "A checklist of the information that should accompany data from a toxicology or toxicogenomics study: subject characteristics, treatment and sample collection, husbandry and disposition, and the study timeline. It was proposed so that study data deposited in databases such as CEBS could be interpreted and compared across studies. It is no longer maintained.",
-   "maintained": "discontinued",
+   "description": "A checklist of the information that should accompany data from a toxicology or toxicogenomics study: subject characteristics, treatment and sample collection, husbandry and disposition, and the study timeline. It was proposed so that study data deposited in databases such as CEBS ( Chemical Effects in Biological Systems) could be interpreted and compared across studies.",
+   "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.jgbxr",
     "about": [
@@ -18323,7 +17965,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -18487,7 +18129,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -18955,7 +18597,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -18965,7 +18607,6 @@
     "https://doi.org/10.25504/FAIRsharing.353yat",
     "https://doi.org/10.25504/FAIRsharing.39044c",
     "https://doi.org/10.25504/FAIRsharing.3b78e1",
-    "https://doi.org/10.25504/FAIRsharing.4782f1",
     "https://doi.org/10.25504/FAIRsharing.4a5271",
     "https://doi.org/10.25504/FAIRsharing.4b2234",
     "https://doi.org/10.25504/FAIRsharing.522e02",
@@ -19024,7 +18665,6 @@
     "https://doi.org/10.25504/FAIRsharing.s1ne3g",
     "https://doi.org/10.25504/FAIRsharing.tfj7gt",
     "https://doi.org/10.25504/FAIRsharing.wYScsE",
-    "https://doi.org/10.25504/FAIRsharing.zrmjr7",
     "https://w3id.org/fair-tox/dataset#apvma_cr",
     "https://w3id.org/fair-tox/dataset#ec_inventory",
     "https://w3id.org/fair-tox/dataset#epicrdb",
@@ -19177,7 +18817,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -19412,7 +19052,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -19628,7 +19268,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -19735,7 +19375,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -19809,7 +19449,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -19929,7 +19569,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -20004,7 +19644,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   },
   {
@@ -20073,7 +19713,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-07"
+    "retrieved": "2026-11-09"
    }
   }
  ],
@@ -20110,7 +19750,7 @@
   "url": "https://w3id.org/fair-tox/dataset"
  },
  "url": "https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/",
- "datePublished": "2026-11-05",
+ "datePublished": "2026-11-07",
  "temporalCoverage": "1960/2026",
  "wasDerivedFrom": [
   "https://doi.org/10.25504/FAIRsharing.f60a10",
@@ -20296,7 +19936,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "05822ad714152f10ae32d646666a2e88b3773d29a12a37e3da78456dba413cd0"
+    "checksumValue": "8a1a66b47681ec0b2eea35b1b4d94cb4cb49a63ef9063ce3d7686c2893fc4ea9"
    }
   },
   {
@@ -20307,7 +19947,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "506dee195cabb0eb4f00c14cc8b79919577ae6699b3ca174406487b40599e0cb"
+    "checksumValue": "df315cf74222f210d7960c7b915290de77501306daab2165454d0f8e3bb40e91"
    }
   },
   {
@@ -20318,7 +19958,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "01a69247cd80211955096dbc03a6b473158059a75be62bb00b46050f0906481e"
+    "checksumValue": "27429e65fb85d3e59f8467c309f604a6a0d8a0aec90264ea9dffc597bd558da8"
    }
   }
  ],
@@ -20341,6 +19981,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-11-07"
+  "sdDatePublished": "2026-11-09"
  }
 }

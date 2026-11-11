@@ -244,7 +244,7 @@
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
  "version": "0.16.0",
- "dateModified": "2026-11-09",
+ "dateModified": "2026-11-11",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
   "@type": "schema:CreativeWork",
@@ -269,7 +269,7 @@
  ],
  "sources": {
   "fairsharing": {
-   "retrieved": "2026-11-09",
+   "retrieved": "2026-11-11",
    "members": 74
   },
   "fip": {
@@ -281,7 +281,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-09",
+    "retrieved": "2026-11-11",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -312,7 +312,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-09",
+    "retrieved": "2026-11-11",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -441,7 +441,7 @@
    ],
    "dateReleased": "1986",
    "dateSource": "https://www.data.gouv.fr/datasets/base-de-donnees-agritox",
-   "creator": "INRA; ANSES",
+   "creator": "https://ror.org/0471kz689; https://ror.org/05y503v71",
    "url": "https://www.data.gouv.fr/fr/datasets/base-de-donnees-agritox/",
    "description": "French database of pesticide active substances, created by INRA and now run by ANSES. It holds expert-validated data from regulatory dossiers and the literature: identity, physicochemical properties, acute toxicity, reference values (ADI, ARfD, AOEL), ecotoxicity and classification. The data are released as open files, so regulatory pesticide hazard data can be reused.",
    "maintained": "active",
@@ -490,7 +490,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -585,7 +585,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -615,9 +615,9 @@
    "subdomains": [
     "nanotoxicology"
    ],
-   "datePublished": "2022-07-05",
-   "dateSource": "https://doi.org/10.26434/chemrxiv-2022-l8vk8",
-   "creator": "Maastricht University (BiGCaT)",
+   "dateReleased": "2024-03-27",
+   "dateSource": "https://github.com/NSDRA/nsdra-maturity-indicators/releases",
+   "creator": "https://ror.org/02jz4aj89",
    "url": "https://github.com/NSDRA/nsdra-maturity-indicators",
    "description": "These are machine-readable FAIR maturity indicators derived from twelve nanosafety minimum reporting standards. The NSDRA framework uses them to annotate nanosafety datasets and score how reusable the datasets are for specific computational risk assessment use cases.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
@@ -654,7 +654,7 @@
    ],
    "datePublished": "2017-12",
    "dateSource": "https://doi.org/10.1089/aivt.2017.0017",
-   "creator": "US EPA; EC JRC",
+   "creator": "https://ror.org/03tns0030; https://ror.org/04j5wtv36",
    "url": "https://aopwiki.org/sub_events",
    "description": "A structured way of describing each AOP Key Event as a biological process, a biological object and an action, each term taken from an existing ontology or controlled vocabulary. Implemented in the AOP-Wiki, it makes Key Events machine-readable so AOPs can be searched, compared and linked computationally.",
    "maintained": "active",
@@ -1419,7 +1419,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -1580,7 +1580,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -1771,7 +1771,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -1807,6 +1807,189 @@
    ]
   },
   {
+   "@id": "https://doi.org/10.25504/FAIRsharing.x38D2k",
+   "identifier": "https://doi.org/10.25504/FAIRsharing.x38D2k",
+   "schemaType": "schema:CreativeWork",
+   "key": "bioimage_archive",
+   "name": "BioImage Archive",
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "origin": "Life Sciences",
+   "dateReleased": "2019-07",
+   "dateSource": "https://doi.org/10.1093/nar/gkz1033",
+   "creator": "https://ror.org/02catss52",
+   "url": "https://www.ebi.ac.uk/bioimage-archive/",
+   "description": "EMBL-EBI's public archive for biological images from any imaging modality and scale, from molecules to whole organisms, for datasets linked to a publication or of value beyond a single experiment; patient-identifiable medical images are excluded. It implements the REMBI metadata guidelines, archives data for related image resources such as EMPIAR and IDR, and is adding OME-Zarr access for interactive viewing and streaming.",
+   "maintained": "active",
+   "fairsharingRecord": {
+    "@id": "https://fairsharing.org/FAIRsharing.x38D2k",
+    "about": [
+     {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "name": "Life Science"
+     },
+     {
+      "@id": "http://edamontology.org/topic_3047",
+      "name": "Molecular biology"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C142642",
+      "name": "Preclinical Studies"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "name": "Biomedical Science"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C15206",
+      "name": "Clinical Studies"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C17992",
+      "name": "Cell Biology"
+     }
+    ],
+    "theme": [
+     {
+      "@id": "http://edamontology.org/topic_3382",
+      "name": "Imaging"
+     },
+     {
+      "@id": "http://edamontology.org/topic_3383",
+      "name": "Bioimaging"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000067",
+      "name": "microscopy"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000068",
+      "name": "electron microscopy"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000102",
+      "name": "optical microscopy"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0001112",
+      "name": "super-resolution bright-field microscopy"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/CL_0000000",
+      "name": "cell"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_0600020",
+      "name": "histological assay"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/OBI_1000049",
+      "name": "whole mount tissue"
+     },
+     {
+      "@id": "http://purl.obolibrary.org/obo/UBERON_0000479",
+      "name": "tissue"
+     },
+     {
+      "@id": "http://www.ebi.ac.uk/efo/EFO_0007550",
+      "name": "high content screen"
+     }
+    ]
+   },
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "fairsharing": {
+    "id": 2830,
+    "doi": "10.25504/FAIRsharing.x38D2k",
+    "name": "BioImage Archive",
+    "abbreviation": "BioImage Archive",
+    "registry": "Database",
+    "recordType": "repository",
+    "status": "ready",
+    "yearCreation": 2019,
+    "homepage": "https://www.ebi.ac.uk/bioimage-archive/",
+    "subjects": [
+     {
+      "iri": "http://aims.fao.org/aos/agrovoc/c_4318",
+      "label": "Life Science"
+     },
+     {
+      "iri": "http://edamontology.org/topic_3047",
+      "label": "Molecular biology"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C142642",
+      "label": "Preclinical Studies"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C15188",
+      "label": "Biomedical Science"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C15206",
+      "label": "Clinical Studies"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/NCIT_C17992",
+      "label": "Cell Biology"
+     }
+    ],
+    "domains": [
+     {
+      "iri": "http://edamontology.org/topic_3382",
+      "label": "Imaging"
+     },
+     {
+      "iri": "http://edamontology.org/topic_3383",
+      "label": "Bioimaging"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHMO_0000067",
+      "label": "microscopy"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHMO_0000068",
+      "label": "electron microscopy"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHMO_0000102",
+      "label": "optical microscopy"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CHMO_0001112",
+      "label": "super-resolution bright-field microscopy"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/CL_0000000",
+      "label": "cell"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_0600020",
+      "label": "histological assay"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/OBI_1000049",
+      "label": "whole mount tissue"
+     },
+     {
+      "iri": "http://purl.obolibrary.org/obo/UBERON_0000479",
+      "label": "tissue"
+     },
+     {
+      "iri": "http://www.ebi.ac.uk/efo/EFO_0007550",
+      "label": "high content screen"
+     }
+    ],
+    "inCollection": false,
+    "associations": [],
+    "retrieved": "2026-11-11"
+   }
+  },
+  {
    "@id": "https://doi.org/10.25504/FAIRsharing.paz6mh",
    "identifier": "https://doi.org/10.25504/FAIRsharing.paz6mh",
    "schemaType": "schema:CreativeWork",
@@ -1822,7 +2005,7 @@
    ],
    "dateReleased": "2005-04-11",
    "dateSource": "https://web.archive.org/web/20050414044700/http://www.ebi.ac.uk/biomodels/",
-   "creator": "EMBL-EBI",
+   "creator": "https://ror.org/02catss52",
    "url": "https://www.biomodels.org/",
    "description": "A repository of mathematical models of biological processes taken from the literature, many of them manually curated, annotated and checked for reproducibility, mostly in SBML. Models get stable identifiers and semantic annotations, so they can be found, cited, simulated and reused, including in quantitative systems toxicology and PBK modelling.",
    "maintained": "active",
@@ -1891,7 +2074,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -1985,7 +2168,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2053,7 +2236,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2121,7 +2304,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2197,7 +2380,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2559,7 +2742,7 @@
       3680
      ]
     ],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2627,7 +2810,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2695,7 +2878,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2717,7 +2900,7 @@
    ],
    "dateReleased": "2011",
    "dateSource": "http://web.archive.org/web/20111009081118/http://www.ebi.ac.uk:80/biosamples/",
-   "creator": "EMBL-EBI",
+   "creator": "https://ror.org/02catss52",
    "url": "https://www.ebi.ac.uk/biosamples/",
    "description": "EMBL-EBI database that stores and curates metadata about biological samples used in assays and gives each one a stable accession. A sample can be described once and then linked to data in archives such as ENA, ArrayExpress and PRIDE, so omics data can be searched and combined across databases by sample characteristics.",
    "maintained": "active",
@@ -2813,7 +2996,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2837,7 +3020,7 @@
    ],
    "datePublished": "2015-12-23",
    "dateSource": "https://doi.org/10.15252/msb.20156658",
-   "creator": "EMBL-EBI",
+   "creator": "https://ror.org/02catss52",
    "url": "https://www.ebi.ac.uk/biostudies/",
    "description": "An EMBL-EBI archive for whole biological studies. It stores study-level metadata, links to data held in other archives, and data files that have no dedicated repository. It hosts project collections, including those of toxicology projects, and now holds the ArrayExpress functional genomics data.",
    "maintained": "active",
@@ -2909,7 +3092,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -2928,7 +3111,8 @@
    "origin": "Toxicology",
    "phase": "Data integration",
    "span": [
-    "Data integration"
+    "Data integration",
+    "Regulatory assessment"
    ],
    "creatorType": [
     "Regulator"
@@ -2939,9 +3123,9 @@
    ],
    "dateReleased": "2023",
    "dateSource": "https://web.archive.org/web/20230607160355/https://recherche.chemikalieninfo.de/biu",
-   "creator": "German Environment Agency (UBA)",
+   "creator": "https://ror.org/0329ynx05",
    "url": "https://recherche.chemikalieninfo.de/biu",
-   "description": "Database of the German Environment Agency on the ChemInfo platform. It collects monitoring data on biocidal active substances in water, wastewater, soil, sediment, sewage sludge and biota from Germany, Austria and Switzerland, together with approval status, physicochemical properties and CLP classification. Environmental occurrence data for biocides can be searched and exported.",
+   "description": "Database of the German Environment Agency on the ChemInfo platform. The site provides environmental monitoring data for biocidal substances from Germany, Austria, and Switzerland, including measurements in water, wastewater, soil, sediment, sewage sludge, and biota, together with approval status, physicochemical properties and CLP classification. Environmental occurrence data for biocides can be searched and exported.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.f37bb6",
@@ -2991,7 +3175,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3020,7 +3204,7 @@
    ],
    "datePublished": "2019-09-26",
    "dateSource": "https://doi.org/10.1289/EHP4713",
-   "creator": "UC Davis (West Coast Metabolomics Center)",
+   "creator": "https://ror.org/05rrcem69",
    "url": "https://bloodexposome.org/",
    "description": "Database of chemicals reported in human blood. It was built by text-mining PubMed and PubChem and merging chemical lists from metabolomics, exposure science, toxicology and nutrition. It supports exposome research and the annotation of untargeted metabolomics and exposomics data.",
    "maintained": "active",
@@ -3080,7 +3264,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3145,7 +3329,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3298,7 +3482,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3373,7 +3557,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3457,7 +3641,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3483,7 +3667,7 @@
    ],
    "dateReleased": "2009-02-05",
    "dateSource": "https://www.echemportal.org/echemportal/content/news",
-   "creator": "Environment and Climate Change Canada; Health Canada",
+   "creator": "https://ror.org/026ny0e17; https://ror.org/05p8nb362",
    "url": "https://www.canada.ca/en/health-canada/services/chemical-substances.html",
    "description": "Canadian repository of risk and other regulatory assessment reports on existing substances under the Canadian Environmental Protection Act, from the Priority Substances List and the Chemicals Management Plan. Each report covers substance identity, exposure, effects and risk characterisation. Reports are reached through eChemPortal and Health Canada's chemical substances portal.",
    "maintained": "active",
@@ -3551,7 +3735,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3713,7 +3897,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3865,7 +4049,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -3955,7 +4139,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -4051,7 +4235,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -4179,7 +4363,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -4274,7 +4458,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -4400,7 +4584,7 @@
       1537
      ]
     ],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -4502,13 +4686,13 @@
    "subdomains": [
     "conventional toxicology",
     "exposome",
-    "computational and predictive toxicology"
+    "eco-toxicology"
    ],
-   "dateReleased": "2016-04",
-   "dateSource": "https://doi.org/10.1186/s13321-017-0247-6",
-   "creator": "US EPA",
+   "dateReleased": "2016-08",
+   "dateSource": "https://www.epa.gov/comptox-tools/comptox-chemicals-dashboard-about",
+   "creator": "https://ror.org/03tns0030",
    "url": "https://comptox.epa.gov/dashboard",
-   "description": "US EPA web application built on the curated DSSTox substance and structure database. For about a million chemicals it brings together physicochemical, fate, exposure, use, in vivo toxicity and ToxCast/Tox21 in vitro bioactivity data. Batch search, identifier mapping and downloads make these data reusable for computational toxicology and risk assessment.",
+   "description": "US EPA web application built on the curated DSSTox substance and structure database for about a million chemicals.  The available data includes, but is not limited to, chemical properties, environmental fate and transport, hazard (e.g., point of departure, legacy toxicity values, screening levels, exposure limits), in vitro to in vivo extrapolation (IVIVE), exposure, use categories, toxic release inventory, monitoring data), bioactivity (e.g., high-throughput data from ToxCast and Tox21 efforts).Batch search, identifier mapping and downloads make these data reusable for computational toxicology and risk assessment.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.tfj7gt",
@@ -4598,7 +4782,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -4688,7 +4872,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5029,7 +5213,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5129,7 +5313,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5248,7 +5432,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5368,11 +5552,13 @@
    ],
    "subdomains": [
     "conventional toxicology",
-    "toxicogenomics"
+    "toxicogenomics",
+    "AOP-based mechanistic knowledge",
+    "computational and predictive toxicology"
    ],
-   "dateReleased": "2017-07-12",
-   "dateSource": "https://doi.org/10.5281/zenodo.831444",
-   "creator": "Douglas Connect (now Edelweiss Connect)",
+   "dateReleased": "2017-01-13",
+   "dateSource": "https://github.com/DouglasConnect/opentox-toxcast/tags?after=api1.31",
+   "creator": "https://ror.org/05cpjy057",
    "url": "https://data.douglasconnect.com/",
    "description": "DC Data Explorer is a Douglas Connect web interface with REST APIs. It gives harmonised programmatic access to the US EPA ToxCast/Tox21 and ToxRefDB data and to the Open TG-GATEs toxicogenomics data, so users can search across these sources and pull the data into workflow tools.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
@@ -5461,7 +5647,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5542,7 +5728,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5689,7 +5875,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5774,7 +5960,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5854,7 +6040,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -5956,7 +6142,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -6034,7 +6220,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -6057,7 +6243,7 @@
    ],
    "dateReleased": "2007-06-13",
    "dateSource": "https://www.echemportal.org/echemportal/content/news",
-   "creator": "OECD",
+   "creator": "https://ror.org/0438wbg98",
    "url": "https://www.echemportal.org/echemportal/",
    "description": "OECD global portal that searches many national, regional and international government chemical databases at once. It returns physicochemical, fate, ecotoxicity and toxicity data, hazard and risk assessments and GHS classifications, with direct links to the source records.",
    "maintained": "active",
@@ -6164,10 +6350,6 @@
      "hadRole": "related_to"
     },
     {
-     "relation": "https://doi.org/10.25504/FAIRsharing.d4074e",
-     "hadRole": "related_to"
-    },
-    {
      "relation": "https://doi.org/10.25504/FAIRsharing.d6e8fa",
      "hadRole": "related_to"
     },
@@ -6215,7 +6397,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -6245,9 +6427,9 @@
    ],
    "dateReleased": "1996",
    "dateSource": "https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB97500318.xhtml",
-   "creator": "US EPA",
+   "creator": "https://ror.org/03tns0030",
    "url": "https://cfpub.epa.gov/ecotox/",
-   "description": "US EPA knowledgebase of curated single-chemical toxicity test results for aquatic organisms, terrestrial plants and wildlife, taken from the literature and coded with controlled vocabularies. Its searchable, downloadable records, linked to other chemical resources, support ecological risk assessment, water-quality criteria and model development.",
+   "description": "US EPA knowledgebase of curated single-chemical toxicity test results for aquatic organisms, terrestrial plants and wildlife, taken from the literature and coded with controlled vocabularies. Its searchable, downloadable records, linked to other chemical resources, support ecological risk assessment, water-quality criteria, and model development.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.4b2234",
@@ -6330,7 +6512,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -6344,8 +6526,9 @@
     "https://w3id.org/fair/fip/terms/Structured-vocabulary"
    ],
    "origin": "Toxicology",
-   "phase": "Data integration",
+   "phase": "Data generation",
    "span": [
+    "Data generation",
     "Data integration"
    ],
    "creatorType": [
@@ -6356,9 +6539,9 @@
    ],
    "dateReleased": "2017-11-21",
    "dateSource": "https://loterre.istex.fr/3WV/en/",
-   "creator": "INIST-CNRS",
+   "creator": "https://ror.org/02mn0vt57",
    "url": "https://loterre.istex.fr/3WV/en/",
-   "description": "A bilingual French-English SKOS thesaurus of about 4,700 ecotoxicology concepts, published by INIST-CNRS on the Loterre platform. It covers pollutants and their effects on ecosystems and human health, as well as organisms, places and chemical compounds. It provides controlled, linkable terms with synonyms for indexing and searching ecotoxicology literature and data.",
+   "description": "A bilingual French-English SKOS thesaurus of about 4,700 ecotoxicology concepts, published by INIST-CNRS on the Loterre platform. It covers pollutants and their effects on ecosystems and human health. It also contains terms from geography, animal and plant taxonomy and chemical compounds. It uses polyhierarchy. Concepts are grouped into semantic categories. It provides controlled, linkable terms with synonyms for indexing and searching ecotoxicology literature and data.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.560f4e",
@@ -6429,7 +6612,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -6563,7 +6746,7 @@
    ],
    "dateAdopted": "2025-10-29",
    "dateSource": "https://web.archive.org/web/20251113112641/https://www.efsa.europa.eu/en/efsajournal/pub/9741",
-   "creator": "EFSA",
+   "creator": "https://ror.org/056nc1c48",
    "url": "https://doi.org/10.2903/j.efsa.2025.9741",
    "description": "This EFSA statement interprets the FAIR principles for mechanistic effect models used in the environmental risk assessment of pesticides. It covers the underlying data, the model code and the model assessment, lists supporting resources, and gives recommendations for putting the principles into practice.",
    "maintained": "active",
@@ -6767,7 +6950,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -6786,7 +6969,7 @@
    "origin": "Life Sciences",
    "dateAdopted": "2017-07",
    "dateSource": "https://web.archive.org/web/20170725133703/https://www.elixir-europe.org/platforms/data/elixir-deposition-databases",
-   "creator": "ELIXIR",
+   "creator": "https://ror.org/044rwnt51",
    "url": "https://elixir-europe.org/platforms/data/elixir-deposition-databases",
    "description": "ELIXIR's list of recommended repositories for depositing experimental life-science data, chosen against technical-quality and governance criteria in line with the FAIR principles. It points researchers, funders and publishers to suitable archives (e.g. ENA, ArrayExpress/BioStudies, PRIDE, MetaboLights, BioModels) for publishing open data.",
    "maintained": "active",
@@ -6822,6 +7005,10 @@
     },
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.paz6mh",
+     "hadRole": "recommends"
+    },
+    {
+     "relation": "https://doi.org/10.25504/FAIRsharing.x38D2k",
      "hadRole": "recommends"
     }
    ]
@@ -6959,7 +7146,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -7069,7 +7256,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -7088,7 +7275,7 @@
    ],
    "dateReleased": "2000-07",
    "dateSource": "https://web.archive.org/web/20150109165257/http://www.ensembl.org/info/about/index.html",
-   "creator": "EMBL-EBI and Wellcome Sanger Institute",
+   "creator": "https://ror.org/02catss52; https://ror.org/05cy4wa09",
    "url": "https://www.ensembl.org/",
    "description": "Genome database and browser that produces and distributes reference genome assemblies, gene and transcript annotation with stable identifiers, comparative genomics, variation and regulatory data for vertebrates and other eukaryotes, through the web, APIs and bulk downloads. Toxicology uses it to map, identify and annotate genes in omics data.",
    "maintained": "active",
@@ -7220,7 +7407,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -7338,7 +7525,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -7423,8 +7610,46 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#epa_chad",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_chad",
+   "schemaType": "schema:CreativeWork",
+   "key": "epa_chad",
+   "name": "Consolidated Human Activity Database (CHAD)",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "exposome"
+   ],
+   "datePublished": "2000-11-01",
+   "dateSource": "https://doi.org/10.1038/sj.jea.7500114",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://www.epa.gov/fera/consolidated-human-activity-database-chad",
+   "description": "Human activity diaries compiled from many studies, used to model how people come into contact with chemicals.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.4a5271",
@@ -7521,8 +7746,47 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#epa_cpdat",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_cpdat",
+   "schemaType": "schema:CreativeWork",
+   "key": "epa_cpdat",
+   "name": "Chemical and Products Database (CPDat)",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "exposome",
+    "computational and predictive toxicology"
+   ],
+   "dateReleased": "2017-08-28",
+   "dateSource": "https://doi.org/10.23645/epacomptox.5352997.v1",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://www.epa.gov/chemical-research/chemical-and-products-database-cpdat",
+   "description": "Chemical use and product composition data for exposure assessment, released in versions with DOIs on the EPA CompTox figshare portal.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.e1124d",
@@ -7547,7 +7811,7 @@
    ],
    "dateReleased": "1988",
    "dateSource": "https://www.epa.gov/system/files/other-files/2022-02/iris-timeline-11-2020_update.json",
-   "creator": "US EPA",
+   "creator": "https://ror.org/03tns0030",
    "url": "https://www.epa.gov/iris",
    "description": "US EPA programme and database of chemical health hazard assessments. Each assessment has a peer-reviewed toxicological review and toxicity values such as oral reference doses, inhalation reference concentrations and cancer slope factors or unit risks. It gives agencies and others a consistent, citable source of human-health toxicity values for risk assessment.",
    "maintained": "active",
@@ -7622,15 +7886,15 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
-   "@id": "https://doi.org/10.25504/FAIRsharing.d4074e",
-   "identifier": "https://doi.org/10.25504/FAIRsharing.d4074e",
+   "@id": "https://w3id.org/fair-tox/dataset#epa_naknowbase",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_naknowbase",
    "schemaType": "schema:CreativeWork",
-   "key": "epa_substance_registry_services",
-   "name": "EPA Substance Registry Services",
+   "key": "epa_naknowbase",
+   "name": "NaKnowBase",
    "fairsharingType": "Database: knowledgebase",
    "fsrType": [
     "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
@@ -7638,37 +7902,19 @@
    "origin": "Toxicology",
    "phase": "Data integration",
    "span": [
-    "Data integration",
-    "Regulatory assessment"
+    "Data integration"
    ],
    "creatorType": [
     "Regulator"
    ],
-   "dateReleased": "2001",
-   "dateSource": "http://web.archive.org/web/20010502191556/http://www.epa.gov:80/srs/index.htm",
-   "creator": "US EPA",
-   "url": "https://cdxapps.epa.gov/oms-substance-registry-services/search",
-   "description": "EPA's central registry of the chemicals, biological organisms and other substances that EPA tracks or regulates. Each substance gets an EPA identifier with its names, synonyms and CAS number, and links to the EPA programmes, lists and regulations that cover it, so substances are identified the same way across EPA data systems.",
-   "maintained": "active",
-   "fairsharingRecord": {
-    "@id": "https://fairsharing.org/FAIRsharing.d4074e",
-    "about": [
-     {
-      "@id": "http://purl.obolibrary.org/obo/NCIT_C16414",
-      "name": "Chemistry"
-     },
-     {
-      "@id": "http://purl.obolibrary.org/obo/NCIT_C17039",
-      "name": "Public Health"
-     }
-    ],
-    "theme": [
-     {
-      "@id": "http://purl.obolibrary.org/obo/CHEBI_24431",
-      "name": "chemical entity"
-     }
-    ]
-   },
+   "subdomains": [
+    "nanotoxicology"
+   ],
+   "dateReleased": "2020-12-29",
+   "dateSource": "https://doi.org/10.6084/m9.figshare.13499292.v1",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://assessments.epa.gov/risk/document/%26deid%3D366656",
+   "description": "Relational database of physicochemical and toxicity data on engineered nanomaterials from US EPA research.",
    "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
    "principles": [
     "F4"
@@ -7678,41 +7924,161 @@
      "@type": "prov:Attribution",
      "hadRole": "Regulator"
     }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#epa_ow_aquatic_criteria",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_ow_aquatic_criteria",
+   "schemaType": "schema:CreativeWork",
+   "key": "epa_ow_aquatic_criteria",
+   "name": "National Recommended Aquatic Life Criteria",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
    ],
-   "qualifiedRelation": [
+   "origin": "Toxicology",
+   "phase": "Regulatory assessment",
+   "span": [
+    "Regulatory assessment"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "eco-toxicology"
+   ],
+   "dateReleased": "1998-12-07",
+   "dateSource": "https://www.federalregister.gov/documents/1998/12/07/98-30272/national-recommended-water-quality-criteria",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://www.epa.gov/wqc/national-recommended-water-quality-criteria-aquatic-life-criteria-table",
+   "description": "The US EPA's national recommended water quality criteria for the protection of aquatic life.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
     {
-     "relation": "https://doi.org/10.25504/FAIRsharing.r7Kwy7",
-     "hadRole": "implements"
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
     }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#epa_toxrefdb",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_toxrefdb",
+   "schemaType": "schema:CreativeWork",
+   "key": "epa_toxrefdb",
+   "name": "Toxicity Reference Database (ToxRefDB)",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
    ],
-   "fairsharing": {
-    "id": 5684,
-    "doi": "10.25504/FAIRsharing.d4074e",
-    "name": "EPA Substance Registry Services",
-    "registry": "Database",
-    "recordType": "knowledgebase",
-    "status": "ready",
-    "homepage": "https://cdxapps.epa.gov/oms-substance-registry-services/search",
-    "subjects": [
-     {
-      "iri": "http://purl.obolibrary.org/obo/NCIT_C16414",
-      "label": "Chemistry"
-     },
-     {
-      "iri": "http://purl.obolibrary.org/obo/NCIT_C17039",
-      "label": "Public Health"
-     }
-    ],
-    "domains": [
-     {
-      "iri": "http://purl.obolibrary.org/obo/CHEBI_24431",
-      "label": "chemical entity"
-     }
-    ],
-    "inCollection": true,
-    "associations": [],
-    "retrieved": "2026-11-09"
-   }
+   "origin": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "conventional toxicology",
+    "computational and predictive toxicology"
+   ],
+   "datePublished": "2008-10-20",
+   "dateSource": "https://doi.org/10.1289/ehp.0800074",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data",
+   "description": "Results of in vivo animal toxicity studies for chemicals, released in versions with DOIs on the EPA CompTox figshare portal.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#epa_toxvaldb",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_toxvaldb",
+   "schemaType": "schema:CreativeWork",
+   "key": "epa_toxvaldb",
+   "name": "Toxicity Values Database (ToxValDB)",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "conventional toxicology",
+    "computational and predictive toxicology"
+   ],
+   "dateReleased": "2016",
+   "dateSource": "https://doi.org/10.1016/j.comtox.2025.100365",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data",
+   "description": "Toxicity values such as points of departure and reference doses compiled from many sources, released in versions with DOIs on the EPA CompTox figshare portal.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#epa_ucmr5_occurrence",
+   "identifier": "https://w3id.org/fair-tox/dataset#epa_ucmr5_occurrence",
+   "schemaType": "schema:CreativeWork",
+   "key": "epa_ucmr5_occurrence",
+   "name": "UCMR 5 Drinking-Water Contaminant Occurrence Data",
+   "fairsharingType": "Database: knowledgebase",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation"
+   ],
+   "creatorType": [
+    "Regulator"
+   ],
+   "subdomains": [
+    "exposome"
+   ],
+   "dateReleased": "2023-08-17",
+   "dateSource": "https://web.archive.org/web/20230817190517/https://www.epa.gov/dwucmr/data-summary-fifth-unregulated-contaminant-monitoring-rule",
+   "creator": "https://ror.org/03tns0030",
+   "url": "https://www.epa.gov/dwucmr/occurrence-data-unregulated-contaminant-monitoring-rule",
+   "description": "Occurrence data for unregulated contaminants in US drinking water from the fifth Unregulated Contaminant Monitoring Rule.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#epicrdb",
@@ -7838,7 +8204,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -7964,7 +8330,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8065,7 +8431,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8149,7 +8515,7 @@
    ],
    "dateReleased": "2011",
    "dateSource": "http://web.archive.org/web/20120205103448/http://ctdbase.org/reports/CTD_exposure_ontology.obo",
-   "creator": "CTD team (NC State University) and US EPA",
+   "creator": "https://ror.org/04tj63d06; https://ror.org/03tns0030",
    "url": "https://github.com/CTDbase/exposure-ontology",
    "description": "An exposure-science ontology built on four core concepts: exposure stressor, exposure receptor, exposure event and exposure outcome. It was developed with the Comparative Toxicogenomics Database and gives shared terms for capturing exposure data and linking them to toxicology, epidemiology and health data.",
    "maintained": "active",
@@ -8230,7 +8596,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8341,7 +8707,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8440,7 +8806,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8794,7 +9160,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8862,7 +9228,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -8992,7 +9358,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9074,7 +9440,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9429,7 +9795,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9455,7 +9821,7 @@
    ],
    "dateReleased": "2020-12-14",
    "dateSource": "https://www.chem-info.nite.go.jp/chem/ghs/ghs_nite_info_old.html",
-   "creator": "NITE (National Institute of Technology and Evaluation, Japan)",
+   "creator": "https://ror.org/044jdke57",
    "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/ghs_nite_download_e.html",
    "description": "NITE's consolidated database of the Japanese Government's GHS hazard classifications. For each substance it gives only the latest classification, with hazard categories, label elements and the rationale, as web pages and downloadable Excel lists in Japanese and English. It supports GHS labels and safety data sheets and the reuse of authoritative hazard classifications.",
    "maintained": "active",
@@ -9508,7 +9874,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9689,7 +10055,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9786,7 +10152,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9880,7 +10246,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -9980,7 +10346,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10055,7 +10421,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10140,7 +10506,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10235,7 +10601,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10353,7 +10719,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10442,7 +10808,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10575,7 +10941,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10658,7 +11024,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10742,7 +11108,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10816,7 +11182,7 @@
    ],
    "dateReleased": "2016-02-29",
    "dateSource": "https://github.com/ISA-tools/isa-api/releases/tag/v0.1",
-   "creator": "ISA team, University of Oxford",
+   "creator": "https://ror.org/052gg0110",
    "url": "https://isa-specs.readthedocs.io/en/latest/isajson.html",
    "description": "ISA-JSON is the JSON serialisation of the ISA (Investigation-Study-Assay) metadata model, defined by JSON schemas and implemented in the ISA-API. It records study design, sample provenance, protocols and data files in machine-actionable form, so metadata can be validated, converted and submitted to repositories.",
    "maintained": "active",
@@ -10925,7 +11291,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -10953,7 +11319,7 @@
    ],
    "datePublished": "2008",
    "dateSource": "https://doi.org/10.1089/omi.2008.0019",
-   "creator": "ISA team (EMBL-EBI, later University of Oxford)",
+   "creator": "https://ror.org/02catss52; https://ror.org/052gg0110",
    "url": "https://isa-tools.org",
    "description": "The ISA framework is a general Investigation-Study-Assay metadata model, with ISA-Tab as its tab-delimited format and a set of supporting tools, for describing multi-omics and other life-science experiments. It records study design, sample characteristics, protocols and data files, so experimental metadata can be reported consistently, validated and reused.",
    "maintained": "active",
@@ -11100,7 +11466,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -11251,7 +11617,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -11459,7 +11825,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -11554,7 +11920,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -11632,7 +11998,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -11739,7 +12105,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -11863,7 +12229,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12028,7 +12394,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12143,7 +12509,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12232,7 +12598,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12334,7 +12700,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12510,7 +12876,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12692,7 +13058,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12782,7 +13148,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -12796,7 +13162,7 @@
    ],
    "fairsharingType": "Standard: reporting guideline",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Metadata-schema"
+    "https://w3id.org/fair/fip/terms/FAIR-Practice"
    ],
    "origin": "Life Sciences",
    "dateReleased": "2008-04-01",
@@ -12864,12 +13230,9 @@
      }
     ]
    },
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "declaredIn": [
     "https://w3id.org/fair-tox/dataset#parcfip"
-   ],
-   "principles": [
-    "F2"
    ],
    "fsrNanopublication": [
     "https://w3id.org/np/RAfn_vTG7TpGD_DRcTHVywoxwpBQusULqlkwz1W0lc0Ms"
@@ -12942,7 +13305,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -13065,7 +13428,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -13196,7 +13559,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -13283,7 +13646,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -13299,7 +13662,7 @@
    ],
    "fairsharingType": "Database: knowledgebase",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+    "https://w3id.org/fair/fip/terms/FAIR-Representation-Service"
    ],
    "origin": "Toxicology",
    "phase": "Data integration",
@@ -13316,15 +13679,12 @@
    ],
    "dateReleased": "2023-06-23",
    "dateSource": "https://doi.org/10.5281/zenodo.8076364",
-   "creator": "Maastricht University (BiGCaT)",
+   "creator": "https://ror.org/02jz4aj89",
    "url": "https://nanosafety.rdf.bigcat-bioinformatics.org",
-   "description": "An RDF knowledge graph that combines literature-curated physicochemical data on nanomaterials with AOP information from the AOP-Wiki, using ontology terms and European Registry of Materials identifiers. A public SPARQL endpoint supports federated queries that relate nanomaterial properties to molecular initiating events and key events.",
+   "description": "An RDF knowledge graph that combines curated physicochemical data of nanomaterials from literature, with AOP information from the AOP-Wiki, using ontology terms and European Registry of Materials identifiers. A public SPARQL endpoint supports federated queries that relate nanomaterial properties to molecular initiating events and key events.",
    "maintained": "active",
    "buildsOnFair": true,
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "F4"
-   ],
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedAttribution": [
     {
      "@type": "prov:Attribution",
@@ -13531,7 +13891,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -13651,8 +14011,48 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#norman_bioassays",
+   "identifier": "https://w3id.org/fair-tox/dataset#norman_bioassays",
+   "schemaType": "schema:CreativeWork",
+   "key": "norman_bioassays",
+   "name": "NORMAN Bioassays Monitoring Database",
+   "fairsharingType": "Database: repository",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data generation",
+   "span": [
+    "Data generation",
+    "Data integration"
+   ],
+   "creatorType": [
+    "Wet-lab research"
+   ],
+   "subdomains": [
+    "exposome",
+    "eco-toxicology"
+   ],
+   "dateReleased": "2019",
+   "dateSource": "https://web.archive.org/web/20190825113313/https://www.norman-network.com/nds/bioassay/",
+   "creator": "NORMAN Association",
+   "url": "https://www.norman-network.com/nds/bioassays/",
+   "description": "Database of the NORMAN network for results of bioassays (effect-based methods) applied to environmental samples. It holds in vitro and in vivo effect data for river water, such as receptor activity (estrogen, androgen, glucocorticoid, thyroid), mutagenicity, cytotoxicity, algal growth inhibition and zebrafish embryo toxicity, searchable by country, site, bioassay, endpoint and effect concentration. Data providers submit results with NORMAN Data Collection Templates.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Wet-lab research"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.25504/FAIRsharing.9ATgeT",
@@ -13764,7 +14164,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -13914,7 +14314,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -14066,7 +14466,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -14089,7 +14489,7 @@
    ],
    "dateReleased": "2002",
    "dateSource": "http://web.archive.org/web/20021016020615/http://cs3-hq.oecd.org:80/scripts/hpv/",
-   "creator": "OECD",
+   "creator": "https://ror.org/0438wbg98",
    "url": "https://hpvchemicals.oecd.org/",
    "description": "OECD database that tracks the chemicals in the OECD Cooperative Chemicals Assessment Programme (formerly the HPV Chemicals Programme). It shows each chemical's assessment status, sponsoring countries, SIDS contacts and categories, and gives access to the published assessment profiles, reports and dossiers.",
    "maintained": "active",
@@ -14140,8 +14540,53 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
+  },
+  {
+   "@id": "https://w3id.org/fair-tox/dataset#oecd_qsar_toolbox",
+   "identifier": "https://w3id.org/fair-tox/dataset#oecd_qsar_toolbox",
+   "schemaType": "schema:SoftwareApplication",
+   "key": "oecd_qsar_toolbox",
+   "name": "OECD QSAR Toolbox",
+   "fairsharingType": "Tool",
+   "fsrType": [
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry",
+    "https://w3id.org/fair/fip/terms/FAIR-Analysis-Service"
+   ],
+   "origin": "Toxicology",
+   "phase": "Data integration",
+   "span": [
+    "Data integration",
+    "Regulatory assessment"
+   ],
+   "creatorType": [
+    "In silico research",
+    "Regulator"
+   ],
+   "subdomains": [
+    "computational and predictive toxicology"
+   ],
+   "dateReleased": "2008-03",
+   "dateSource": "https://web.archive.org/web/20080420135721/http://www.oecd.org/document/23/0,3343,en_2649_34379_33957015_1_1_1_1,00.html",
+   "creator": "https://ror.org/0438wbg98; https://ror.org/01ayrdf49; Laboratory of Mathematical Chemistry",
+   "url": "https://www.oecd.org/en/data/tools/oecd-qsar-toolbox.html",
+   "description": "Free software application of the OECD, co-owned with ECHA, that supports chemical hazard assessment while reducing animal testing. It retrieves experimental data from many databases, profiles chemicals and simulates their metabolism, and groups them into categories of analogues, so that data gaps can be filled by read-across, trend analysis or QSAR models and the results reported transparently, for example for regulatory use.",
+   "maintained": "active",
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
+   "principles": [
+    "F4"
+   ],
+   "qualifiedAttribution": [
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "In silico research"
+    },
+    {
+     "@type": "prov:Attribution",
+     "hadRole": "Regulator"
+    }
+   ]
   },
   {
    "@id": "https://w3id.org/fair-tox/dataset#oht",
@@ -14167,7 +14612,7 @@
    ],
    "dateReleased": "2006-03",
    "dateSource": "https://web.archive.org/web/20121201174145/http://www.oecd.org/ehs/templates/developmentofoecdharmonisedtemplates.htm",
-   "creator": "OECD",
+   "creator": "https://ror.org/0438wbg98",
    "url": "https://www.oecd.org/en/topics/sub-issues/assessment-of-chemicals/harmonised-templates.html",
    "description": "Standard data formats, published with XML schemas, for reporting summaries of studies on the physicochemical properties, environmental fate and (eco)toxicological effects of chemicals. Implemented in systems such as IUCLID, they let governments and industry exchange test summary data electronically in one harmonised structure.",
    "maintained": "active",
@@ -14244,7 +14689,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -14446,7 +14891,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -14578,7 +15023,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -14593,7 +15038,7 @@
    ],
    "fairsharingType": "Tool",
    "fsrType": [
-    "https://w3id.org/fair/fip/terms/Registry"
+    "https://w3id.org/fair/fip/terms/Domain-Specific-Registry"
    ],
    "origin": "Toxicology",
    "phase": "Data integration",
@@ -14753,7 +15198,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -14834,7 +15279,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -15541,7 +15986,7 @@
     "domains": [],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -15713,7 +16158,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -15942,7 +16387,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16070,7 +16515,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16166,7 +16611,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16371,7 +16816,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16444,7 +16889,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16580,7 +17025,7 @@
       5708
      ]
     ],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16652,7 +17097,7 @@
    "subdomains": [
     "AOP-based mechanistic knowledge"
    ],
-   "datePublished": "2024-11-05",
+   "datePublished": "2026-07-16",
    "dateSource": "https://doi.org/10.37044/osf.io/un2rw",
    "creator": "ELIXIR Toxicology Community (INTOXICOM)",
    "url": "https://github.com/FAIRplus/the-fair-cookbook/issues/668",
@@ -16855,7 +17300,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -16991,7 +17436,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17153,7 +17598,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17224,7 +17669,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17347,7 +17792,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17512,7 +17957,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17608,7 +18053,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17690,7 +18135,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17720,7 +18165,7 @@
    ],
    "datePublished": "2009-11-06",
    "dateSource": "https://doi.org/10.1093/nar/gkp934",
-   "creator": "University of Alberta (Wishart group)",
+   "creator": "https://ror.org/0160cpw27",
    "url": "https://www.t3db.ca/",
    "description": "Bioinformatics knowledgebase of common toxic substances, such as pollutants, pesticides, drugs and food toxins. Each toxin record links to its protein targets, mechanisms of action, toxicity values, and chemical and spectral data, and can be searched by text, structure or sequence. It was later presented as the Toxic Exposome Database.",
    "maintained": "active",
@@ -17859,7 +18304,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17965,7 +18410,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -17981,7 +18426,7 @@
    "origin": "Life Sciences",
    "dateReleased": "2019",
    "dateSource": "https://web.archive.org/web/20191208160125/https://openrisknet.org/e-infrastructure/services/163/",
-   "creator": "Fraunhofer SCAI",
+   "creator": "https://ror.org/00trw9c49",
    "url": "https://openrisknet.org/e-infrastructure/services/163/",
    "description": "TeMOwl is a Fraunhofer SCAI API service that gives one programmatic access point to controlled vocabularies, terminologies and ontologies from different providers, and maps equivalent concepts across them. In OpenRiskNet it was used to map identifiers and names to concepts.",
    "maintained": "discontinued",
@@ -18129,7 +18574,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -18597,7 +19042,7 @@
       7183
      ]
     ],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    },
    "resource": [
     "https://doi.org/10.25504/FAIRsharing.1x53qk",
@@ -18640,7 +19085,6 @@
     "https://doi.org/10.25504/FAIRsharing.c8f1cd",
     "https://doi.org/10.25504/FAIRsharing.ccaad2",
     "https://doi.org/10.25504/FAIRsharing.ced127",
-    "https://doi.org/10.25504/FAIRsharing.d4074e",
     "https://doi.org/10.25504/FAIRsharing.d6e8fa",
     "https://doi.org/10.25504/FAIRsharing.e1124d",
     "https://doi.org/10.25504/FAIRsharing.e2b341",
@@ -18817,7 +19261,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19052,7 +19496,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19268,7 +19712,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19375,7 +19819,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19394,7 +19838,7 @@
    ],
    "dateReleased": "2007",
    "dateSource": "https://doi.org/10.1093/nar/gkad960",
-   "creator": "Gladstone Institutes / Maastricht University (BiGCaT)",
+   "creator": "https://ror.org/02jz4aj89; https://ror.org/038321296",
    "url": "https://www.wikipathways.org",
    "description": "An open, community-curated database of biological pathways, edited collaboratively and released under CC0 in machine-readable formats such as GPML and RDF. Pathway elements are linked to gene, protein and metabolite identifiers, so the pathways support omics enrichment analysis and links to adverse outcome pathways.",
    "maintained": "active",
@@ -19449,7 +19893,7 @@
     ],
     "inCollection": true,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19569,7 +20013,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19644,7 +20088,7 @@
     "domains": [],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   },
   {
@@ -19713,7 +20157,7 @@
     ],
     "inCollection": false,
     "associations": [],
-    "retrieved": "2026-11-09"
+    "retrieved": "2026-11-11"
    }
   }
  ],
@@ -19936,7 +20380,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "8a1a66b47681ec0b2eea35b1b4d94cb4cb49a63ef9063ce3d7686c2893fc4ea9"
+    "checksumValue": "ad73d0873d338e75ebfcb4cc318d5c0ca765db593747391397a7f0312e901d54"
    }
   },
   {
@@ -19947,7 +20391,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "df315cf74222f210d7960c7b915290de77501306daab2165454d0f8e3bb40e91"
+    "checksumValue": "abdafcefe470608059f421800005e87baf8457482564281a92df30efddd18ebb"
    }
   },
   {
@@ -19981,6 +20425,6 @@
     "name": "ELIXIR"
    }
   },
-  "sdDatePublished": "2026-11-09"
+  "sdDatePublished": "2026-11-11"
  }
 }

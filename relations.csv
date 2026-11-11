@@ -77,7 +77,6 @@ echemportal,related_to,cheminfo
 echemportal,related_to,portail_substances_chimiques_psc
 echemportal,related_to,ghs_j
 echemportal,related_to,oecd_existing_chemicals_database
-echemportal,related_to,epa_substance_registry_services
 echemportal,related_to,icscs
 echemportal,related_to,epa_integrated_risk_information
 echemportal,related_to,epa_aquatic_life_benchmarks
@@ -94,6 +93,7 @@ elixir_depdb,recommends,metabolights
 elixir_depdb,recommends,biostudies
 elixir_depdb,recommends,ega
 elixir_depdb,recommends,biomodels
+elixir_depdb,recommends,bioimage_archive
 enm_db,implements,opentox
 enm_db,implements,enm_ont
 enm_db,implements,isatab
@@ -104,7 +104,6 @@ enm_ont,extends,chebi
 enm_ont,implements,owl
 enm_ont,extends,cl
 enm_ont,extends,bao
-epa_substance_registry_services,implements,cas_rn
 european_registry_of_materials,related_to,identifiersorg
 european_registry_of_materials,implements,rdf
 eutr_ki,related_to,biostudies

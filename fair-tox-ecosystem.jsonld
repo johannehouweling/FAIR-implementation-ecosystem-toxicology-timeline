@@ -243,7 +243,7 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "0.16.0",
+ "version": "0.16.1",
  "dateModified": "2026-11-11",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -518,7 +518,7 @@
    "dateSource": "https://web.archive.org/web/20200701123743/https://www.industrialchemicals.gov.au/",
    "creator": "AICIS (Australian Government)",
    "url": "https://services.industrialchemicals.gov.au",
-   "description": "Online database search portal of Australia's industrial chemicals regulator, which replaced NICNAS in July 2020. It gives access to the Australian Inventory of Industrial Chemicals, published human-health and environmental hazard, exposure and risk assessments (including reports inherited from NICNAS) and risk-management recommendations.",
+   "description": "Online database search portal of Australia's industrial chemicals regulator, which replaced National Industrial Chemicals Notification and Assessment Scheme (NICNAS) in July 2020. It gives access to the Australian Inventory of Industrial Chemicals which is a searchable database of around 40,000 chemicals that are being manufactured or imported (introduced) into Australia for industrial use. It included published human-health and environmental hazard, exposure and risk assessments (including reports inherited from NICNAS) and risk-management recommendations.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.79e002",
@@ -3206,7 +3206,7 @@
    "dateSource": "https://doi.org/10.1289/EHP4713",
    "creator": "https://ror.org/05rrcem69",
    "url": "https://bloodexposome.org/",
-   "description": "Database of chemicals reported in human blood. It was built by text-mining PubMed and PubChem and merging chemical lists from metabolomics, exposure science, toxicology and nutrition. It supports exposome research and the annotation of untargeted metabolomics and exposomics data.",
+   "description": "The Blood Exposome Database catalogues the chemicals (endogenous and exogenous) that are expected and detected in human blood specimens. The database was created using a text mining approach using the NCBI PubChem , NCBI PubMed and NCBI PMC databases. Additionally, data from biomonitoring surveys and metabolomics datasets (publicly available) for human blood specimens are also covered in the database. It supports exposome research and the annotation of untargeted metabolomics and exposomics data.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.68a369",
@@ -3668,7 +3668,7 @@
    "dateReleased": "2009-02-05",
    "dateSource": "https://www.echemportal.org/echemportal/content/news",
    "creator": "https://ror.org/026ny0e17; https://ror.org/05p8nb362",
-   "url": "https://www.canada.ca/en/health-canada/services/chemical-substances.html",
+   "url": "https://pollution-waste.canada.ca/substances-search/Substance",
    "description": "Canadian repository of risk and other regulatory assessment reports on existing substances under the Canadian Environmental Protection Act, from the Priority Substances List and the Chemicals Management Plan. Each report covers substance identity, exposure, effects and risk characterisation. Reports are reached through eChemPortal and Health Canada's chemical substances portal.",
    "maintained": "active",
    "fairsharingRecord": {
@@ -4077,7 +4077,7 @@
    "dateSource": "http://web.archive.org/web/20190821200437/https://gsbl.de/",
    "creator": "German federal and Länder authorities (ChemInfo cooperation, UBA)",
    "url": "https://recherche.chemikalieninfo.de/",
-   "description": "Chemical information system run jointly by the German federal and state authorities as the successor of the GSBL substance data pool. For each substance it compiles identity, physicochemical, toxicological and ecotoxicological data, environmental occurrence, hazard and emergency-response information and the relevant legal provisions. A public subset can be searched without registration; the full data set is open to authorities and emergency services.",
+   "description": "Chemical information system run jointly by the German federal and state authorities as the successor of the GSBL substance data pool. For each substance it compiles identity, physicochemical, toxicological and ecotoxicological data, environmental occurrence, hazard and emergency-response information and the relevant legal provisions. A subset of information can be searched without registration by the user; the full data set is open to authorities and emergency services.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.b5a070",
@@ -7813,7 +7813,7 @@
    "dateSource": "https://www.epa.gov/system/files/other-files/2022-02/iris-timeline-11-2020_update.json",
    "creator": "https://ror.org/03tns0030",
    "url": "https://www.epa.gov/iris",
-   "description": "US EPA programme and database of chemical health hazard assessments. Each assessment has a peer-reviewed toxicological review and toxicity values such as oral reference doses, inhalation reference concentrations and cancer slope factors or unit risks. It gives agencies and others a consistent, citable source of human-health toxicity values for risk assessment.",
+   "description": "US EPA programme and database of human health hazard assessments of chemicals,  which includes toxicity values such as oral reference doses and inhalation reference concentrations from chronic exposures and cancer hazard assessments,  inhalation unit risks. It gives agencies and others a consistent, citable source of human-health toxicity values for risk assessment erived from scientific evaluations of the available toxicological, epidemiological, and mechanistic evidence for chemicals.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.e1124d",
@@ -13906,7 +13906,7 @@
    "fairsharingType": "Tool",
    "fsrType": [
     "https://w3id.org/fair/fip/terms/Editor",
-    "https://w3id.org/fair/fip/terms/Registry"
+    "https://w3id.org/fair/fip/terms/FAIR-Visualization-Service"
    ],
    "origin": "Generic",
    "dateReleased": "2020-02-24",
@@ -13918,10 +13918,7 @@
    "url": "https://nanodash.net",
    "description": "Web client, previously called Nanobench, to browse and publish nanopublications: users sign in with ORCID and publish small statements from templates that are themselves nanopublications. Its FAIR Implementation Space lists FAIR Implementation Communities and their FIPs, including the PARC Toxicology FIP and the Reference AOP FIP.",
    "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "principles": [
-    "F4"
-   ],
+   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Supporting-Resource",
    "qualifiedRelation": [
     {
      "relation": "https://doi.org/10.25504/FAIRsharing.343864",
@@ -18167,7 +18164,7 @@
    "dateSource": "https://doi.org/10.1093/nar/gkp934",
    "creator": "https://ror.org/0160cpw27",
    "url": "https://www.t3db.ca/",
-   "description": "Bioinformatics knowledgebase of common toxic substances, such as pollutants, pesticides, drugs and food toxins. Each toxin record links to its protein targets, mechanisms of action, toxicity values, and chemical and spectral data, and can be searched by text, structure or sequence. It was later presented as the Toxic Exposome Database.",
+   "description": "Bioinformatics knowledgebase of common toxic substances, such as pollutants, pesticides, drugs and food toxins. Each toxin record links to its protein targets, mechanisms of action, toxicity values, and chemical and spectral data, and can be searched by text, structure or sequence. It was later presented as the Toxic Exposome Database. Potential applications of T3DB include toxin metabolism prediction, toxin/drug interaction prediction, and general toxin hazard awareness by the public, making it applicable to various fields. Overall, the variety and accessibility of the T3DB make it a valuable resource for both the casual user and the advanced researcher.",
    "maintained": "active",
    "fairsharingRecord": {
     "@id": "https://fairsharing.org/FAIRsharing.psn0h2",
@@ -20194,7 +20191,7 @@
   "url": "https://w3id.org/fair-tox/dataset"
  },
  "url": "https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/",
- "datePublished": "2026-11-07",
+ "datePublished": "2026-11-11",
  "temporalCoverage": "1960/2026",
  "wasDerivedFrom": [
   "https://doi.org/10.25504/FAIRsharing.f60a10",
@@ -20380,7 +20377,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "ad73d0873d338e75ebfcb4cc318d5c0ca765db593747391397a7f0312e901d54"
+    "checksumValue": "1b455f5aa61d821622cbb6a0e0e8d3ba0eccbf633730a89c833dfd95276bc8b8"
    }
   },
   {
@@ -20402,7 +20399,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "27429e65fb85d3e59f8467c309f604a6a0d8a0aec90264ea9dffc597bd558da8"
+    "checksumValue": "222670baed4d888da3a27ffb014b1675907baf2edde5d4d29c5974b1d9cb3124"
    }
   }
  ],

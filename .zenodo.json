@@ -1,0 +1,129 @@
+{
+ "title": "FAIR implementation ecosystem for toxicology",
+ "upload_type": "dataset",
+ "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
+ "version": "0.16.1",
+ "license": "cc-by-sa-4.0",
+ "language": "eng",
+ "access_right": "open",
+ "keywords": [
+  "FAIR",
+  "toxicology",
+  "FAIR supporting resources",
+  "FAIRsharing",
+  "research data management"
+ ],
+ "creators": [
+  {
+   "name": "Houweling, Jente",
+   "orcid": "0009-0005-3680-0645",
+   "affiliation": "National Institute for Public Health and the Environment (RIVM); Maastricht University"
+  },
+  {
+   "name": "Mahapatra, Indrani",
+   "orcid": "0000-0002-6396-0848",
+   "affiliation": "University of Birmingham"
+  },
+  {
+   "name": "Burger, Gerhard",
+   "orcid": "0000-0003-1062-5576",
+   "affiliation": "Leiden University; GO FAIR Foundation"
+  },
+  {
+   "name": "Dönmez, Arif",
+   "orcid": "0000-0003-3828-7724",
+   "affiliation": "DNTOX GmbH; Leibniz Institute of Environmental Medicine (IUF)"
+  },
+  {
+   "name": "Jennen, Danyel",
+   "orcid": "0000-0002-8618-2487",
+   "affiliation": "Maastricht University"
+  },
+  {
+   "name": "Kumar, Saurav",
+   "orcid": "0000-0003-0593-2598",
+   "affiliation": "German Federal Institute for Risk Assessment (BfR)"
+  },
+  {
+   "name": "Kumar, Vikas",
+   "orcid": "0000-0002-9795-5967",
+   "affiliation": "German Federal Institute for Risk Assessment (BfR)"
+  },
+  {
+   "name": "Kienhuis, Anne",
+   "orcid": "0000-0002-6465-4498",
+   "affiliation": "National Institute for Public Health and the Environment (RIVM); Utrecht University"
+  },
+  {
+   "name": "Callegaro, Giulia",
+   "orcid": "0000-0002-7627-7271",
+   "affiliation": "Leiden University"
+  },
+  {
+   "name": "Audouze, Karine",
+   "orcid": "0000-0001-7525-4089",
+   "affiliation": "Université Paris Cité"
+  },
+  {
+   "name": "Teunis, Marc",
+   "orcid": "0000-0002-3496-6669",
+   "affiliation": "HU University of Applied Sciences Utrecht"
+  },
+  {
+   "name": "Stierum, Rob",
+   "orcid": "0000-0002-4409-1974",
+   "affiliation": "TNO"
+  },
+  {
+   "name": "Lynch, Iseult",
+   "orcid": "0000-0003-4250-4584",
+   "affiliation": "University of Birmingham"
+  },
+  {
+   "name": "Evelo, Chris",
+   "orcid": "0000-0002-5301-3142",
+   "affiliation": "Maastricht University"
+  },
+  {
+   "name": "Martens, Marvin",
+   "orcid": "0000-0003-2230-0840",
+   "affiliation": "Maastricht University"
+  },
+  {
+   "name": "Willighagen, Egon",
+   "orcid": "0000-0001-7542-0286",
+   "affiliation": "Maastricht University"
+  },
+  {
+   "name": "Morsy, Sara",
+   "orcid": "0000-0002-2477-1139",
+   "affiliation": "University of Hertfordshire"
+  }
+ ],
+ "contributors": [
+  {
+   "name": "ELIXIR Toxicology Community",
+   "type": "ResearchGroup"
+  }
+ ],
+ "grants": [
+  {
+   "id": "10.13039/501100000780::101057014"
+  },
+  {
+   "id": "10.13039/100014013::10045979"
+  }
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/johannehouweling/FAIR-implementation-ecosystem-for-toxicology",
+   "relation": "isCompiledBy",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "https://doi.org/10.25504/FAIRsharing.f60a10",
+   "relation": "isDerivedFrom",
+   "resource_type": "dataset"
+  }
+ ]
+}

@@ -21979,8 +21979,9 @@
  ],
  "identifier": {
   "@type": "schema:PropertyValue",
-  "value": "https://w3id.org/fair-tox/dataset",
-  "url": "https://w3id.org/fair-tox/dataset"
+  "value": "https://doi.org/10.5281/zenodo.24215047",
+  "url": "https://doi.org/10.5281/zenodo.24215047",
+  "propertyID": "https://registry.identifiers.org/registry/doi"
  },
  "url": "https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/",
  "datePublished": "2026-11-14",

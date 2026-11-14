@@ -13286,10 +13286,7 @@
    "identifier": "https://w3id.org/fair-tox/dataset#kherroubi",
    "schemaType": "schema:CreativeWork",
    "key": "kherroubi",
-   "name": "Best practices for computational model sharing (Kherroubi et al.)",
-   "alternateName": [
-    "Kherroubi et al."
-   ],
+   "name": "Best practices for computational model sharing (Kherroubi Garcia et al.)",
    "fairsharingType": "Standard: principle",
    "fsrType": [
     "https://w3id.org/fair/fip/terms/FAIR-Practice"
@@ -14806,37 +14803,6 @@
    ]
   },
   {
-   "@id": "https://w3id.org/fair-tox/dataset#mit_license",
-   "identifier": "https://w3id.org/fair-tox/dataset#mit_license",
-   "schemaType": "schema:CreativeWork",
-   "key": "mit_license",
-   "name": "MIT License",
-   "fairsharingType": "Policy: institution",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Data-usage-license"
-   ],
-   "origin": "Generic",
-   "dateReleased": "1984-02-01",
-   "dateSource": "https://doi.org/10.1109/MAHC.2020.3020234",
-   "creator": "Massachusetts Institute of Technology",
-   "url": "https://opensource.org/license/mit",
-   "description": "A short permissive license that lets anyone use, copy, change and redistribute software, also commercially, on condition that the copyright and permission notice is kept. It states reuse terms for code plainly and has a standard identifier (SPDX: MIT).",
-   "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "declaredIn": [
-    "https://w3id.org/fair-tox/dataset#parcfip"
-   ],
-   "principles": [
-    "R1.1"
-   ],
-   "fsr": [
-    "http://purl.org/np/RA24ysQcpWDzK6wHANkG_3F1HiTbgOO4ULjYxjaXDi8C4#MIT"
-   ],
-   "fsrNanopublication": [
-    "http://purl.org/np/RA24ysQcpWDzK6wHANkG_3F1HiTbgOO4ULjYxjaXDi8C4"
-   ]
-  },
-  {
    "@id": "https://doi.org/10.25504/FAIRsharing.e2b341",
    "identifier": "https://doi.org/10.25504/FAIRsharing.e2b341",
    "schemaType": "schema:CreativeWork",
@@ -16284,37 +16250,6 @@
    }
   },
   {
-   "@id": "https://w3id.org/fair-tox/dataset#open_data_commons_open_database",
-   "identifier": "https://w3id.org/fair-tox/dataset#open_data_commons_open_database",
-   "schemaType": "schema:CreativeWork",
-   "key": "open_data_commons_open_database",
-   "name": "Open Data Commons Open Database License",
-   "fairsharingType": "Policy: institution",
-   "fsrType": [
-    "https://w3id.org/fair/fip/terms/Data-usage-license"
-   ],
-   "origin": "Generic",
-   "dateReleased": "2009-06-29",
-   "dateSource": "https://lists-archive.okfn.org/pipermail/odc-discuss/2009-June/000676.html",
-   "creator": "Open Knowledge Foundation (Open Data Commons)",
-   "url": "https://opendatacommons.org/licenses/odbl/",
-   "description": "An open license from Open Data Commons for databases. Anyone may share, adapt and reuse a database under it, provided they credit the source and release adapted databases under the same terms, so the conditions for reusing data are explicit.",
-   "maintained": "active",
-   "fsrCategory": "https://w3id.org/fair/fip/terms/FAIR-Enabling-Resource",
-   "declaredIn": [
-    "https://w3id.org/fair-tox/dataset#parcfip"
-   ],
-   "principles": [
-    "R1.1"
-   ],
-   "fsr": [
-    "http://purl.org/np/RACnVJ6N84471y43_jMo2rkJi-gHG1TB4KFu8uqX9SqMk#ODbL"
-   ],
-   "fsrNanopublication": [
-    "http://purl.org/np/RACnVJ6N84471y43_jMo2rkJi-gHG1TB4KFu8uqX9SqMk"
-   ]
-  },
-  {
    "@id": "https://w3id.org/fair-tox/dataset#openaire",
    "identifier": "https://w3id.org/fair-tox/dataset#openaire",
    "schemaType": "schema:CreativeWork",
@@ -17307,39 +17242,11 @@
      "principle": "A1.1"
     },
     {
-     "@id": "https://w3id.org/np/RA1kZtzg9KRtjmZkQrv1QLBwSenrs902pQjVl7YrwLokk/declaration",
-     "@type": "fip:FIP-Declaration",
-     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#mit_license",
-     "question": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
-     "principle": "R1.1"
-    },
-    {
-     "@id": "https://w3id.org/np/RA6bKewo_oGhP1WkxzCatSsROU-67WvRd_7OyoNK0JiXw/declaration",
-     "@type": "fip:FIP-Declaration",
-     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#mit_license",
-     "question": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
-     "principle": "R1.1"
-    },
-    {
      "@id": "https://w3id.org/np/RAXVLv-amrdmaHX5peXygEvwsypgr9Y8_2i0lSijJsStc/declaration",
      "@type": "fip:FIP-Declaration",
      "declares-current-use-of": "https://w3id.org/fair-tox/dataset#oauth",
      "question": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
      "principle": "A1.2"
-    },
-    {
-     "@id": "https://w3id.org/np/RA2JNDITBax4q6wB58XKcBAiL9BBJBbaQmVtlmjexur-s/declaration",
-     "@type": "fip:FIP-Declaration",
-     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#open_data_commons_open_database",
-     "question": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
-     "principle": "R1.1"
-    },
-    {
-     "@id": "https://w3id.org/np/RAxLIRlJNCfVqCAH4jN2-jGnyt1hHywl0nRAo0T--dM3g/declaration",
-     "@type": "fip:FIP-Declaration",
-     "declares-current-use-of": "https://w3id.org/fair-tox/dataset#open_data_commons_open_database",
-     "question": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
-     "principle": "R1.1"
     },
     {
      "@id": "https://w3id.org/np/RAKdiL1mjp3OMavCvO6J8_ltIRP7R_cxmSh_JMCTqduFg/declaration",
@@ -22170,7 +22077,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "3c348cd4c45aff5fef09b1642c6f11c0b5e5c90dacb278d811597f8c6a3fb937"
+    "checksumValue": "28241f38349296edb167716c23977392aef7cff6f245582d1f8a21eab3743b31"
    }
   },
   {

@@ -1,5 +1,7 @@
 # FAIR-supporting resources in toxicology
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24215047.svg)](https://doi.org/10.5281/zenodo.24215047)
+
 This repository hosts the dashboard at https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/.
 It shows standards, databases, policies and tools that make toxicology data findable, accessible,
 interoperable and reusable, curated by the ELIXIR Toxicology Community together with the FAIRsharing

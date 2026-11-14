@@ -23,6 +23,11 @@
   "creator": "schema:creator",
   "version": "schema:version",
   "inLanguage": "schema:inLanguage",
+  "givenName": "schema:givenName",
+  "familyName": "schema:familyName",
+  "affiliation": "schema:affiliation",
+  "funding": "schema:funding",
+  "funder": "schema:funder",
   "dateModified": "schema:dateModified",
   "license": {
    "@id": "schema:license",
@@ -196,7 +201,8 @@
     "profiles": "https://w3id.org/fair-tox/terms#profiles",
     "recommends": "https://w3id.org/fair-tox/terms#recommends",
     "deprecates": "https://w3id.org/fair-tox/terms#deprecates",
-    "related_to": "https://w3id.org/fair-tox/terms#related_to"
+    "related_to": "https://w3id.org/fair-tox/terms#related_to",
+    "uses": "https://w3id.org/fair-tox/terms#uses"
    }
   },
   "fipDeclaration": {

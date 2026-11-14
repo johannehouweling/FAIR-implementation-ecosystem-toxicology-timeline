@@ -153,6 +153,17 @@ terms:subdomains-conventional-toxicology a schema:DefinedTerm,
     skos:narrowMatch <http://www.wikidata.org/entity/Q6013136> ;
     skos:prefLabel "conventional toxicology" .
 
+terms:uses a schema:DefinedTerm,
+        skos:Concept ;
+    schema:description "The subject uses the target." ;
+    schema:inDefinedTermSet terms:hadRole-values ;
+    schema:name "uses" ;
+    schema:termCode "uses" ;
+    skos:broadMatch dct:relation ;
+    skos:definition "The subject uses the target." ;
+    skos:inScheme terms:hadRole-values ;
+    skos:prefLabel "uses" .
+
 terms:maintained-values a schema:DefinedTermSet,
         skos:ConceptScheme ;
     dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
@@ -183,12 +194,13 @@ terms:hadRole-values a schema:DefinedTermSet,
         skos:ConceptScheme ;
     dct:conformsTo <https://w3id.org/cdif/conceptscheme/1.1> ;
     schema:name "hadRole values" ;
-    skos:definition "FAIRsharing's labels for relations between records, read subject first." ;
+    skos:definition "FAIRsharing's labels for relations between records, and uses, the dataset's own, read subject first." ;
     skos:hasTopConcept terms:deprecates,
         terms:extends,
         terms:implements,
         terms:profiles,
         terms:recommends,
-        terms:related_to ;
+        terms:related_to,
+        terms:uses ;
     skos:prefLabel "hadRole values" .
 

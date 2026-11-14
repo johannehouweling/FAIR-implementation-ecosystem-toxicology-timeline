@@ -92,7 +92,7 @@
     "@id": "https://w3id.org/cdif/conceptscheme/1.1"
    },
    "schema:name": "hadRole values",
-   "skos:definition": "FAIRsharing's labels for relations between records, read subject first.",
+   "skos:definition": "FAIRsharing's labels for relations between records, and uses, the dataset's own, read subject first.",
    "skos:hasTopConcept": [
     {
      "@id": "terms:implements"
@@ -111,6 +111,9 @@
     },
     {
      "@id": "terms:related_to"
+    },
+    {
+     "@id": "terms:uses"
     }
    ],
    "skos:prefLabel": "hadRole values"
@@ -411,6 +414,27 @@
     "@id": "terms:subdomains-conventional-toxicology"
    },
    "skos:prefLabel": "subdomains values"
+  },
+  {
+   "@id": "terms:uses",
+   "@type": [
+    "schema:DefinedTerm",
+    "skos:Concept"
+   ],
+   "schema:description": "The subject uses the target.",
+   "schema:inDefinedTermSet": {
+    "@id": "terms:hadRole-values"
+   },
+   "schema:name": "uses",
+   "schema:termCode": "uses",
+   "skos:broadMatch": {
+    "@id": "dct:relation"
+   },
+   "skos:definition": "The subject uses the target.",
+   "skos:inScheme": {
+    "@id": "terms:hadRole-values"
+   },
+   "skos:prefLabel": "uses"
   }
  ]
 }

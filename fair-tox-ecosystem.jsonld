@@ -249,7 +249,7 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "1.0.0",
+ "version": "1.1.0",
  "dateModified": "2026-11-14",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -22192,7 +22192,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "3be1f51eb4ca1402dad7a1bde7eda016479ddc5f3d3f03a877910d420eb84c9a"
+    "checksumValue": "fd73613750513701bca2f4935baa038bfbf3289cbb54d0dae54ced8f3bf5d819"
    }
   }
  ],

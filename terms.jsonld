@@ -34,7 +34,7 @@
    "dct:license": {
     "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
    },
-   "owl:versionInfo": "1.0.0",
+   "owl:versionInfo": "1.1.0",
    "rdfs:label": "Terms of the FAIR implementation ecosystem for toxicology"
   },
   {

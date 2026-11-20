@@ -1,0 +1,23 @@
+name: Release
+
+# Kept in place by the build of the source repository (.github/dashboard-release.yml there). After a build has
+# published a version, this makes its release, once, at the commit that carries it; Zenodo archives every release.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(jq -er .version .zenodo.json)
+          if gh release view "v$version" > /dev/null 2>&1; then echo "Version $version has its release."; exit 0; fi
+          gh release create "v$version" --target "$GITHUB_SHA" --title "v$version" --notes "FAIR implementation ecosystem for toxicology, version $version: the published dataset (JSON-LD and CSV), its vocabulary and the dashboard that draws it, built from https://github.com/johannehouweling/FAIR-implementation-ecosystem-for-toxicology/releases/tag/v$version."

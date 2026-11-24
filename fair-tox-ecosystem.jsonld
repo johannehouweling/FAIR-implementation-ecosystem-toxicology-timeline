@@ -249,7 +249,7 @@
  "@type": "schema:Dataset",
  "name": "FAIR implementation ecosystem for toxicology",
  "description": "Standards, databases, policies and tools used in toxicology, each typed as a FAIR-Enabling Resource or another FAIR Supporting Resource, curated by the ELIXIR Toxicology Community together with the FAIRsharing Toxicology collection, with first publication dates, FAIRsharing types, lifecycle phases, sub-domains and relations.",
- "version": "1.2.2",
+ "version": "1.2.3",
  "dateModified": "2026-11-14",
  "license": {
   "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -585,7 +585,7 @@
     "fic": "http://purl.org/np/RAoZsfUhNx4sYz-IXfsp1xPBH1-YgTGtHpp3BbMQtWHJg#PARCToxicology",
     "created": "2026-09-07T12:48:22Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-23",
+    "retrieved": "2026-11-24",
     "declarations": 74,
     "noChoice": [
      "A1.2-MD",
@@ -616,7 +616,7 @@
     "fic": "http://purl.org/np/RAgsbUg4xWCe6Jgjm6aDAiHiRqb4U6PYbrRvqO3PrDxTk#FAIR-AOPs",
     "created": "2025-07-14T13:50:02Z",
     "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "retrieved": "2026-11-23",
+    "retrieved": "2026-11-24",
     "declarations": 13,
     "noChoice": [
      "A1.2-D",
@@ -21891,7 +21891,7 @@
   "propertyID": "https://registry.identifiers.org/registry/doi"
  },
  "url": "https://johannehouweling.github.io/FAIR-implementation-ecosystem-toxicology-timeline/",
- "datePublished": "2026-11-23",
+ "datePublished": "2026-11-24",
  "temporalCoverage": "1960/2026",
  "wasDerivedFrom": [
   "https://doi.org/10.25504/FAIRsharing.f60a10",
@@ -22099,7 +22099,7 @@
    "checksum": {
     "@type": "spdx:Checksum",
     "algorithm": "SHA-256",
-    "checksumValue": "a5776e607b7569ef7c87c84d3ed5958fb25a49827f17f7a721b5d5c5c0e2af51"
+    "checksumValue": "946abfc9b240668443ad10667e0d8272aed43ad04b3f8acce58adefb8f3051cb"
    }
   }
  ],
